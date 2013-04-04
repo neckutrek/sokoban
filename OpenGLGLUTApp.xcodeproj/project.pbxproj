@@ -426,19 +426,12 @@
 		29B97314FDCFA39411CA2CEA /* «PROJECTNAMEASXML» */ = {
 			isa = PBXGroup;
 			children = (
-				115EEE4D16D37A0900E3644E /* MicroGlut.h */,
 				115EEE4E16D37A0900E3644E /* MicroGlut.m */,
-				115EED7C16D379C100E3644E /* GL_utilities.h */,
-				115EED8116D379C100E3644E /* loadobj.h */,
-				115EED8316D379C100E3644E /* LoadTGA2.h */,
 				115EED8616D379C100E3644E /* models */,
-				115EEDCE16D379C100E3644E /* OpenGLCamera.h */,
-				115EEDD116D379C100E3644E /* OpenGLObject.h */,
 				115EEDD316D379C100E3644E /* terrain.frag */,
 				115EEDD516D379C100E3644E /* terrain.vert */,
 				115EEDD716D379C100E3644E /* terrains */,
 				115EEDE016D379C100E3644E /* textures */,
-				115EEDEB16D379C100E3644E /* VectorUtils2.h */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
 				F4EAD2EE0D11D50A00A7D2A0 /* Headers */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -484,6 +477,13 @@
 		F4EAD2EE0D11D50A00A7D2A0 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				115EEE4D16D37A0900E3644E /* MicroGlut.h */,
+				115EED7C16D379C100E3644E /* GL_utilities.h */,
+				115EED8116D379C100E3644E /* loadobj.h */,
+				115EED8316D379C100E3644E /* LoadTGA2.h */,
+				115EEDCE16D379C100E3644E /* OpenGLCamera.h */,
+				115EEDD116D379C100E3644E /* OpenGLObject.h */,
+				115EEDEB16D379C100E3644E /* VectorUtils2.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
