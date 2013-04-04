@@ -9,6 +9,8 @@
 #ifndef __OpenGLGLUTApp__Body__
 #define __OpenGLGLUTApp__Body__
 
-#include <iostream>
+class Body : virtual public Particle {
+    
+};
 
 #endif /* defined(__OpenGLGLUTApp__Body__) */
