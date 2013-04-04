@@ -74,12 +74,7 @@
 		115EEE2F16D379C100E3644E /* windmill-roof.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCA16D379C100E3644E /* windmill-roof.obj */; };
 		115EEE3016D379C100E3644E /* windmill-walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCB16D379C100E3644E /* windmill-walls.obj */; };
 		115EEE3116D379C100E3644E /* OpenGLCamera.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDCC16D379C100E3644E /* OpenGLCamera.c */; };
-		115EEE3216D379C100E3644E /* OpenGLCamera.c~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCD16D379C100E3644E /* OpenGLCamera.c~ */; };
-		115EEE3316D379C100E3644E /* OpenGLCamera.h~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCF16D379C100E3644E /* OpenGLCamera.h~ */; };
 		115EEE3416D379C100E3644E /* OpenGLObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDD016D379C100E3644E /* OpenGLObject.c */; };
-		115EEE3516D379C100E3644E /* OpenGLObject.h~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD216D379C100E3644E /* OpenGLObject.h~ */; };
-		115EEE3716D379C100E3644E /* terrain.frag~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD416D379C100E3644E /* terrain.frag~ */; };
-		115EEE3916D379C100E3644E /* terrain.vert~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD616D379C100E3644E /* terrain.vert~ */; };
 		115EEE3A16D379C100E3644E /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
 		115EEE3B16D379C100E3644E /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
 		115EEE3C16D379C100E3644E /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
@@ -97,8 +92,6 @@
 		115EEE4816D379C100E3644E /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
 		115EEE4916D379C100E3644E /* wall_512_1_05.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE816D379C100E3644E /* wall_512_1_05.tga */; };
 		115EEE4A16D379C100E3644E /* VectorUtils2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDE916D379C100E3644E /* VectorUtils2.c */; };
-		115EEE4B16D379C100E3644E /* VectorUtils2.c~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDEA16D379C100E3644E /* VectorUtils2.c~ */; };
-		115EEE4C16D379C100E3644E /* VectorUtils2.h~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDEC16D379C100E3644E /* VectorUtils2.h~ */; };
 		115EEE4F16D37A0900E3644E /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
 		115EEE5216D3813200E3644E /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		115EEE5316D3813200E3644E /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -131,7 +124,6 @@
 		115EED8116D379C100E3644E /* loadobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadobj.h; sourceTree = "<group>"; };
 		115EED8216D379C100E3644E /* LoadTGA2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoadTGA2.c; sourceTree = "<group>"; };
 		115EED8316D379C100E3644E /* LoadTGA2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadTGA2.h; sourceTree = "<group>"; };
-		115EED8416D379C100E3644E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		115EED8816D379C100E3644E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		115EED8916D379C100E3644E /* rooftops.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rooftops.obj; sourceTree = "<group>"; };
 		115EED8A16D379C100E3644E /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
@@ -193,16 +185,11 @@
 		115EEDCA16D379C100E3644E /* windmill-roof.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "windmill-roof.obj"; sourceTree = "<group>"; };
 		115EEDCB16D379C100E3644E /* windmill-walls.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "windmill-walls.obj"; sourceTree = "<group>"; };
 		115EEDCC16D379C100E3644E /* OpenGLCamera.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpenGLCamera.c; sourceTree = "<group>"; };
-		115EEDCD16D379C100E3644E /* OpenGLCamera.c~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenGLCamera.c~"; sourceTree = "<group>"; };
 		115EEDCE16D379C100E3644E /* OpenGLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLCamera.h; sourceTree = "<group>"; };
-		115EEDCF16D379C100E3644E /* OpenGLCamera.h~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenGLCamera.h~"; sourceTree = "<group>"; };
 		115EEDD016D379C100E3644E /* OpenGLObject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpenGLObject.c; sourceTree = "<group>"; };
 		115EEDD116D379C100E3644E /* OpenGLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLObject.h; sourceTree = "<group>"; };
-		115EEDD216D379C100E3644E /* OpenGLObject.h~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OpenGLObject.h~"; sourceTree = "<group>"; };
 		115EEDD316D379C100E3644E /* terrain.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = terrain.frag; sourceTree = "<group>"; };
-		115EEDD416D379C100E3644E /* terrain.frag~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "terrain.frag~"; sourceTree = "<group>"; };
 		115EEDD516D379C100E3644E /* terrain.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = terrain.vert; sourceTree = "<group>"; };
-		115EEDD616D379C100E3644E /* terrain.vert~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "terrain.vert~"; sourceTree = "<group>"; };
 		115EEDD816D379C100E3644E /* 44-terrain.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "44-terrain.tga"; sourceTree = "<group>"; };
 		115EEDD916D379C100E3644E /* f3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = f3.tga; sourceTree = "<group>"; };
 		115EEDDA16D379C100E3644E /* f3gr.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = f3gr.tga; sourceTree = "<group>"; };
@@ -220,9 +207,7 @@
 		115EEDE716D379C100E3644E /* SkyBox512.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = SkyBox512.tga; sourceTree = "<group>"; };
 		115EEDE816D379C100E3644E /* wall_512_1_05.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall_512_1_05.tga; sourceTree = "<group>"; };
 		115EEDE916D379C100E3644E /* VectorUtils2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils2.c; sourceTree = "<group>"; };
-		115EEDEA16D379C100E3644E /* VectorUtils2.c~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "VectorUtils2.c~"; sourceTree = "<group>"; };
 		115EEDEB16D379C100E3644E /* VectorUtils2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils2.h; sourceTree = "<group>"; };
-		115EEDEC16D379C100E3644E /* VectorUtils2.h~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "VectorUtils2.h~"; sourceTree = "<group>"; };
 		115EEE4D16D37A0900E3644E /* MicroGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGlut.h; sourceTree = "<group>"; };
 		115EEE4E16D37A0900E3644E /* MicroGlut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGlut.m; sourceTree = "<group>"; };
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
@@ -450,25 +435,17 @@
 				115EED8116D379C100E3644E /* loadobj.h */,
 				115EED8216D379C100E3644E /* LoadTGA2.c */,
 				115EED8316D379C100E3644E /* LoadTGA2.h */,
-				115EED8416D379C100E3644E /* makefile */,
 				115EED8616D379C100E3644E /* models */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
-				115EEDCD16D379C100E3644E /* OpenGLCamera.c~ */,
 				115EEDCE16D379C100E3644E /* OpenGLCamera.h */,
-				115EEDCF16D379C100E3644E /* OpenGLCamera.h~ */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
 				115EEDD116D379C100E3644E /* OpenGLObject.h */,
-				115EEDD216D379C100E3644E /* OpenGLObject.h~ */,
 				115EEDD316D379C100E3644E /* terrain.frag */,
-				115EEDD416D379C100E3644E /* terrain.frag~ */,
 				115EEDD516D379C100E3644E /* terrain.vert */,
-				115EEDD616D379C100E3644E /* terrain.vert~ */,
 				115EEDD716D379C100E3644E /* terrains */,
 				115EEDE016D379C100E3644E /* textures */,
 				115EEDE916D379C100E3644E /* VectorUtils2.c */,
-				115EEDEA16D379C100E3644E /* VectorUtils2.c~ */,
 				115EEDEB16D379C100E3644E /* VectorUtils2.h */,
-				115EEDEC16D379C100E3644E /* VectorUtils2.h~ */,
 				29B97315FDCFA39411CA2CEA /* Sources */,
 				F4EAD2EE0D11D50A00A7D2A0 /* Headers */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -622,11 +599,6 @@
 				115EEE2E16D379C100E3644E /* windmill-balcony.obj in Resources */,
 				115EEE2F16D379C100E3644E /* windmill-roof.obj in Resources */,
 				115EEE3016D379C100E3644E /* windmill-walls.obj in Resources */,
-				115EEE3216D379C100E3644E /* OpenGLCamera.c~ in Resources */,
-				115EEE3316D379C100E3644E /* OpenGLCamera.h~ in Resources */,
-				115EEE3516D379C100E3644E /* OpenGLObject.h~ in Resources */,
-				115EEE3716D379C100E3644E /* terrain.frag~ in Resources */,
-				115EEE3916D379C100E3644E /* terrain.vert~ in Resources */,
 				115EEE3A16D379C100E3644E /* 44-terrain.tga in Resources */,
 				115EEE3B16D379C100E3644E /* f3.tga in Resources */,
 				115EEE3C16D379C100E3644E /* f3gr.tga in Resources */,
@@ -643,8 +615,6 @@
 				115EEE4716D379C100E3644E /* rutor.tga in Resources */,
 				115EEE4816D379C100E3644E /* SkyBox512.tga in Resources */,
 				115EEE4916D379C100E3644E /* wall_512_1_05.tga in Resources */,
-				115EEE4B16D379C100E3644E /* VectorUtils2.c~ in Resources */,
-				115EEE4C16D379C100E3644E /* VectorUtils2.h~ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
