@@ -10,7 +10,6 @@
 		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		115EEDED16D379C100E3644E /* GL_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7B16D379C100E3644E /* GL_utilities.c */; };
-		115EEDEF16D379C100E3644E /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7E16D379C100E3644E /* lab4-1.c */; };
 		115EEDF116D379C100E3644E /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
 		115EEDF216D379C100E3644E /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
 		115EEDF516D379C100E3644E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8816D379C100E3644E /* license.txt */; };
@@ -96,6 +95,94 @@
 		115EEE5216D3813200E3644E /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		115EEE5316D3813200E3644E /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
+		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
+		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
+		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
+		89FECBD1170DE02E00F40F3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		89FECBD2170DE02E00F40F3A /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8816D379C100E3644E /* license.txt */; };
+		89FECBD3170DE02E00F40F3A /* rooftops.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8916D379C100E3644E /* rooftops.obj */; };
+		89FECBD4170DE02E00F40F3A /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8A16D379C100E3644E /* screenshot.jpg */; };
+		89FECBD5170DE02E00F40F3A /* walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8B16D379C100E3644E /* walls.obj */; };
+		89FECBD6170DE02E00F40F3A /* face-lefthalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8E16D379C100E3644E /* face-lefthalf.jpg */; };
+		89FECBD7170DE02E00F40F3A /* face-lefthalf.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8F16D379C100E3644E /* face-lefthalf.obj */; };
+		89FECBD8170DE02E00F40F3A /* face-lefthalf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9016D379C100E3644E /* face-lefthalf.tga */; };
+		89FECBD9170DE02E00F40F3A /* face-righthalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9116D379C100E3644E /* face-righthalf.jpg */; };
+		89FECBDA170DE02E00F40F3A /* face-righthalf.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9216D379C100E3644E /* face-righthalf.obj */; };
+		89FECBDB170DE02E00F40F3A /* face-righthalf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9316D379C100E3644E /* face-righthalf.tga */; };
+		89FECBDC170DE02E00F40F3A /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9616D379C100E3644E /* a.jpg */; };
+		89FECBDD170DE02E00F40F3A /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9716D379C100E3644E /* b.jpg */; };
+		89FECBDE170DE02E00F40F3A /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9816D379C100E3644E /* c.jpg */; };
+		89FECBDF170DE02E00F40F3A /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9916D379C100E3644E /* d.jpg */; };
+		89FECBE0170DE02E00F40F3A /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9A16D379C100E3644E /* e.jpg */; };
+		89FECBE1170DE02E00F40F3A /* f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9B16D379C100E3644E /* f.jpg */; };
+		89FECBE2170DE02E00F40F3A /* girl-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9C16D379C100E3644E /* girl-body.jpg */; };
+		89FECBE3170DE02E00F40F3A /* girl-body.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9D16D379C100E3644E /* girl-body.obj */; };
+		89FECBE4170DE02E00F40F3A /* girl-body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9E16D379C100E3644E /* girl-body.tga */; };
+		89FECBE5170DE02E00F40F3A /* girl-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9F16D379C100E3644E /* girl-head.jpg */; };
+		89FECBE6170DE02E00F40F3A /* girl-head.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA016D379C100E3644E /* girl-head.obj */; };
+		89FECBE7170DE02E00F40F3A /* girl-head.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA116D379C100E3644E /* girl-head.tga */; };
+		89FECBE8170DE02E00F40F3A /* hawk-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA216D379C100E3644E /* hawk-body.jpg */; };
+		89FECBE9170DE02E00F40F3A /* hawk-body.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA316D379C100E3644E /* hawk-body.obj */; };
+		89FECBEA170DE02E00F40F3A /* hawk-body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA416D379C100E3644E /* hawk-body.tga */; };
+		89FECBEB170DE02E00F40F3A /* hawk-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA516D379C100E3644E /* hawk-head.jpg */; };
+		89FECBEC170DE02E00F40F3A /* hawk-head.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA616D379C100E3644E /* hawk-head.obj */; };
+		89FECBED170DE02E00F40F3A /* hawk-head.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA716D379C100E3644E /* hawk-head.tga */; };
+		89FECBEE170DE02E00F40F3A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA916D379C100E3644E /* 1.jpg */; };
+		89FECBEF170DE02E00F40F3A /* 1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAA16D379C100E3644E /* 1.obj */; };
+		89FECBF0170DE02E00F40F3A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAB16D379C100E3644E /* 2.jpg */; };
+		89FECBF1170DE02E00F40F3A /* 2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAC16D379C100E3644E /* 2.obj */; };
+		89FECBF2170DE02E00F40F3A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAD16D379C100E3644E /* 3.jpg */; };
+		89FECBF3170DE02E00F40F3A /* 3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAE16D379C100E3644E /* 3.obj */; };
+		89FECBF4170DE02E00F40F3A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAF16D379C100E3644E /* 4.jpg */; };
+		89FECBF5170DE02E00F40F3A /* 4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB016D379C100E3644E /* 4.obj */; };
+		89FECBF6170DE02E00F40F3A /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB116D379C100E3644E /* license.txt */; };
+		89FECBF7170DE02E00F40F3A /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB216D379C100E3644E /* readme.txt */; };
+		89FECBF8170DE02E00F40F3A /* ground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB416D379C100E3644E /* ground.jpg */; };
+		89FECBF9170DE02E00F40F3A /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB516D379C100E3644E /* ground.obj */; };
+		89FECBFA170DE02E00F40F3A /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB616D379C100E3644E /* tree.jpg */; };
+		89FECBFB170DE02E00F40F3A /* tree.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB716D379C100E3644E /* tree.obj */; };
+		89FECBFC170DE02E00F40F3A /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB916D379C100E3644E /* bunny.obj */; };
+		89FECBFD170DE02E00F40F3A /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBA16D379C100E3644E /* bunnyplus.obj */; };
+		89FECBFE170DE02E00F40F3A /* cow.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBB16D379C100E3644E /* cow.obj */; };
+		89FECBFF170DE02E00F40F3A /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBC16D379C100E3644E /* cube.obj */; };
+		89FECC00170DE02E00F40F3A /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBD16D379C100E3644E /* ground.obj */; };
+		89FECC01170DE02E00F40F3A /* klingon.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBE16D379C100E3644E /* klingon.obj */; };
+		89FECC02170DE02E00F40F3A /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBF16D379C100E3644E /* license.txt */; };
+		89FECC03170DE02E00F40F3A /* plutt.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC016D379C100E3644E /* plutt.obj */; };
+		89FECC04170DE02E00F40F3A /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC116D379C100E3644E /* teapot.obj */; };
+		89FECC05170DE02E00F40F3A /* teddy.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC216D379C100E3644E /* teddy.obj */; };
+		89FECC06170DE02E00F40F3A /* venus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC316D379C100E3644E /* venus.obj */; };
+		89FECC07170DE02E00F40F3A /* windmill-walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC416D379C100E3644E /* windmill-walls.obj */; };
+		89FECC08170DE02E00F40F3A /* blade.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC616D379C100E3644E /* blade.obj */; };
+		89FECC09170DE02E00F40F3A /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC716D379C100E3644E /* license.txt */; };
+		89FECC0A170DE02E00F40F3A /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC816D379C100E3644E /* screenshot.jpg */; };
+		89FECC0B170DE02E00F40F3A /* windmill-balcony.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC916D379C100E3644E /* windmill-balcony.obj */; };
+		89FECC0C170DE02E00F40F3A /* windmill-roof.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCA16D379C100E3644E /* windmill-roof.obj */; };
+		89FECC0D170DE02E00F40F3A /* windmill-walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCB16D379C100E3644E /* windmill-walls.obj */; };
+		89FECC0E170DE02E00F40F3A /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
+		89FECC0F170DE02E00F40F3A /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
+		89FECC10170DE02E00F40F3A /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
+		89FECC11170DE02E00F40F3A /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
+		89FECC12170DE02E00F40F3A /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
+		89FECC13170DE02E00F40F3A /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
+		89FECC14170DE02E00F40F3A /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
+		89FECC15170DE02E00F40F3A /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
+		89FECC16170DE02E00F40F3A /* bilskissred.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE116D379C100E3644E /* bilskissred.tga */; };
+		89FECC17170DE02E00F40F3A /* conc.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE216D379C100E3644E /* conc.tga */; };
+		89FECC18170DE02E00F40F3A /* dirt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE316D379C100E3644E /* dirt.tga */; };
+		89FECC19170DE02E00F40F3A /* grass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE416D379C100E3644E /* grass.tga */; };
+		89FECC1A170DE02E00F40F3A /* maskros512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE516D379C100E3644E /* maskros512.tga */; };
+		89FECC1B170DE02E00F40F3A /* rutor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE616D379C100E3644E /* rutor.tga */; };
+		89FECC1C170DE02E00F40F3A /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
+		89FECC1D170DE02E00F40F3A /* wall_512_1_05.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE816D379C100E3644E /* wall_512_1_05.tga */; };
+		89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
+		89FECC28170DE02E00F40F3A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		89FECC29170DE02E00F40F3A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		89FECC2A170DE02E00F40F3A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
+		89FECC32170DE05000F40F3A /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 002F3A3E09D088BA00EBEB88 /* main.cc */; };
+		89FECC33170DE06600F40F3A /* Cocoa.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
+		89FECC34170DE06600F40F3A /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		89FECC35170DE06600F40F3A /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -110,16 +197,28 @@
 			name = "Copy Frameworks into .app bundle";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89FECC2B170DE02E00F40F3A /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89FECC33170DE06600F40F3A /* Cocoa.framework in Copy Frameworks into .app bundle */,
+				89FECC34170DE06600F40F3A /* GLUT.framework in Copy Frameworks into .app bundle */,
+				89FECC35170DE06600F40F3A /* OpenGL.framework in Copy Frameworks into .app bundle */,
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		002F3A3E09D088BA00EBEB88 /* main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = SOURCE_ROOT; };
+		002F3A3E09D088BA00EBEB88 /* main.cc */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = SOURCE_ROOT; };
 		002F3C0009D093BD00EBEB88 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		002F3C6009D0951E00EBEB88 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = SOURCE_ROOT; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		115EED7B16D379C100E3644E /* GL_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GL_utilities.c; sourceTree = "<group>"; };
 		115EED7C16D379C100E3644E /* GL_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GL_utilities.h; sourceTree = "<group>"; };
-		115EED7E16D379C100E3644E /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
 		115EED8016D379C100E3644E /* loadobj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadobj.c; sourceTree = "<group>"; };
 		115EED8116D379C100E3644E /* loadobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadobj.h; sourceTree = "<group>"; };
 		115EED8216D379C100E3644E /* LoadTGA2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoadTGA2.c; sourceTree = "<group>"; };
@@ -211,11 +310,24 @@
 		115EEE4D16D37A0900E3644E /* MicroGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGlut.h; sourceTree = "<group>"; };
 		115EEE4E16D37A0900E3644E /* MicroGlut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGlut.m; sourceTree = "<group>"; };
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		89FECBCB170DDF6400F40F3A /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
+		89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME» copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "«PROJECTNAME» copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/«PROJECTNAME» copy-Info.plist"; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* «PROJECTNAME».app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME».app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		89FECC27170DE02E00F40F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89FECC28170DE02E00F40F3A /* GLUT.framework in Frameworks */,
+				89FECC29170DE02E00F40F3A /* OpenGL.framework in Frameworks */,
+				89FECC2A170DE02E00F40F3A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +531,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* «PROJECTNAME».app */,
+				89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -437,6 +550,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */,
 			);
 			name = "«PROJECTNAMEASXML»";
 			sourceTree = "<group>";
@@ -445,13 +559,13 @@
 			isa = PBXGroup;
 			children = (
 				115EED7B16D379C100E3644E /* GL_utilities.c */,
-				115EED7E16D379C100E3644E /* lab4-1.c */,
 				115EED8016D379C100E3644E /* loadobj.c */,
 				115EED8216D379C100E3644E /* LoadTGA2.c */,
+				89FECBCB170DDF6400F40F3A /* lab4-1.c */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
 				115EEDE916D379C100E3644E /* VectorUtils2.c */,
-				002F3A3E09D088BA00EBEB88 /* main.c */,
+				002F3A3E09D088BA00EBEB88 /* main.cc */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -491,6 +605,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		89FECBCD170DE02E00F40F3A /* main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */;
+			buildPhases = (
+				89FECBCE170DE02E00F40F3A /* Resources */,
+				89FECC1E170DE02E00F40F3A /* Sources */,
+				89FECC27170DE02E00F40F3A /* Frameworks */,
+				89FECC2B170DE02E00F40F3A /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = main;
+			productInstallPath = "$(HOME)/Applications";
+			productName = "«PROJECTNAME»";
+			productReference = 89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8D1107260486CEB800E47090 /* «PROJECTNAME» */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "«PROJECTNAME»" */;
@@ -527,11 +660,98 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* «PROJECTNAME» */,
+				89FECBCD170DE02E00F40F3A /* main */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		89FECBCE170DE02E00F40F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */,
+				89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */,
+				89FECBD1170DE02E00F40F3A /* InfoPlist.strings in Resources */,
+				89FECBD2170DE02E00F40F3A /* license.txt in Resources */,
+				89FECBD3170DE02E00F40F3A /* rooftops.obj in Resources */,
+				89FECBD4170DE02E00F40F3A /* screenshot.jpg in Resources */,
+				89FECBD5170DE02E00F40F3A /* walls.obj in Resources */,
+				89FECBD6170DE02E00F40F3A /* face-lefthalf.jpg in Resources */,
+				89FECBD7170DE02E00F40F3A /* face-lefthalf.obj in Resources */,
+				89FECBD8170DE02E00F40F3A /* face-lefthalf.tga in Resources */,
+				89FECBD9170DE02E00F40F3A /* face-righthalf.jpg in Resources */,
+				89FECBDA170DE02E00F40F3A /* face-righthalf.obj in Resources */,
+				89FECBDB170DE02E00F40F3A /* face-righthalf.tga in Resources */,
+				89FECBDC170DE02E00F40F3A /* a.jpg in Resources */,
+				89FECBDD170DE02E00F40F3A /* b.jpg in Resources */,
+				89FECBDE170DE02E00F40F3A /* c.jpg in Resources */,
+				89FECBDF170DE02E00F40F3A /* d.jpg in Resources */,
+				89FECBE0170DE02E00F40F3A /* e.jpg in Resources */,
+				89FECBE1170DE02E00F40F3A /* f.jpg in Resources */,
+				89FECBE2170DE02E00F40F3A /* girl-body.jpg in Resources */,
+				89FECBE3170DE02E00F40F3A /* girl-body.obj in Resources */,
+				89FECBE4170DE02E00F40F3A /* girl-body.tga in Resources */,
+				89FECBE5170DE02E00F40F3A /* girl-head.jpg in Resources */,
+				89FECBE6170DE02E00F40F3A /* girl-head.obj in Resources */,
+				89FECBE7170DE02E00F40F3A /* girl-head.tga in Resources */,
+				89FECBE8170DE02E00F40F3A /* hawk-body.jpg in Resources */,
+				89FECBE9170DE02E00F40F3A /* hawk-body.obj in Resources */,
+				89FECBEA170DE02E00F40F3A /* hawk-body.tga in Resources */,
+				89FECBEB170DE02E00F40F3A /* hawk-head.jpg in Resources */,
+				89FECBEC170DE02E00F40F3A /* hawk-head.obj in Resources */,
+				89FECBED170DE02E00F40F3A /* hawk-head.tga in Resources */,
+				89FECBEE170DE02E00F40F3A /* 1.jpg in Resources */,
+				89FECBEF170DE02E00F40F3A /* 1.obj in Resources */,
+				89FECBF0170DE02E00F40F3A /* 2.jpg in Resources */,
+				89FECBF1170DE02E00F40F3A /* 2.obj in Resources */,
+				89FECBF2170DE02E00F40F3A /* 3.jpg in Resources */,
+				89FECBF3170DE02E00F40F3A /* 3.obj in Resources */,
+				89FECBF4170DE02E00F40F3A /* 4.jpg in Resources */,
+				89FECBF5170DE02E00F40F3A /* 4.obj in Resources */,
+				89FECBF6170DE02E00F40F3A /* license.txt in Resources */,
+				89FECBF7170DE02E00F40F3A /* readme.txt in Resources */,
+				89FECBF8170DE02E00F40F3A /* ground.jpg in Resources */,
+				89FECBF9170DE02E00F40F3A /* ground.obj in Resources */,
+				89FECBFA170DE02E00F40F3A /* tree.jpg in Resources */,
+				89FECBFB170DE02E00F40F3A /* tree.obj in Resources */,
+				89FECBFC170DE02E00F40F3A /* bunny.obj in Resources */,
+				89FECBFD170DE02E00F40F3A /* bunnyplus.obj in Resources */,
+				89FECBFE170DE02E00F40F3A /* cow.obj in Resources */,
+				89FECBFF170DE02E00F40F3A /* cube.obj in Resources */,
+				89FECC00170DE02E00F40F3A /* ground.obj in Resources */,
+				89FECC01170DE02E00F40F3A /* klingon.obj in Resources */,
+				89FECC02170DE02E00F40F3A /* license.txt in Resources */,
+				89FECC03170DE02E00F40F3A /* plutt.obj in Resources */,
+				89FECC04170DE02E00F40F3A /* teapot.obj in Resources */,
+				89FECC05170DE02E00F40F3A /* teddy.obj in Resources */,
+				89FECC06170DE02E00F40F3A /* venus.obj in Resources */,
+				89FECC07170DE02E00F40F3A /* windmill-walls.obj in Resources */,
+				89FECC08170DE02E00F40F3A /* blade.obj in Resources */,
+				89FECC09170DE02E00F40F3A /* license.txt in Resources */,
+				89FECC0A170DE02E00F40F3A /* screenshot.jpg in Resources */,
+				89FECC0B170DE02E00F40F3A /* windmill-balcony.obj in Resources */,
+				89FECC0C170DE02E00F40F3A /* windmill-roof.obj in Resources */,
+				89FECC0D170DE02E00F40F3A /* windmill-walls.obj in Resources */,
+				89FECC0E170DE02E00F40F3A /* 44-terrain.tga in Resources */,
+				89FECC0F170DE02E00F40F3A /* f3.tga in Resources */,
+				89FECC10170DE02E00F40F3A /* f3gr.tga in Resources */,
+				89FECC11170DE02E00F40F3A /* fft-terrain.tga in Resources */,
+				89FECC12170DE02E00F40F3A /* newterrain.tga in Resources */,
+				89FECC13170DE02E00F40F3A /* ok1.tga in Resources */,
+				89FECC14170DE02E00F40F3A /* ok2.tga in Resources */,
+				89FECC15170DE02E00F40F3A /* TERRA2.tga in Resources */,
+				89FECC16170DE02E00F40F3A /* bilskissred.tga in Resources */,
+				89FECC17170DE02E00F40F3A /* conc.tga in Resources */,
+				89FECC18170DE02E00F40F3A /* dirt.tga in Resources */,
+				89FECC19170DE02E00F40F3A /* grass.tga in Resources */,
+				89FECC1A170DE02E00F40F3A /* maskros512.tga in Resources */,
+				89FECC1B170DE02E00F40F3A /* rutor.tga in Resources */,
+				89FECC1C170DE02E00F40F3A /* SkyBox512.tga in Resources */,
+				89FECC1D170DE02E00F40F3A /* wall_512_1_05.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -621,18 +841,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		89FECC1E170DE02E00F40F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */,
+				89FECC32170DE05000F40F3A /* main.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				115EEDED16D379C100E3644E /* GL_utilities.c in Sources */,
-				115EEDEF16D379C100E3644E /* lab4-1.c in Sources */,
 				115EEDF116D379C100E3644E /* loadobj.c in Sources */,
 				115EEDF216D379C100E3644E /* LoadTGA2.c in Sources */,
 				115EEE3116D379C100E3644E /* OpenGLCamera.c in Sources */,
 				115EEE3416D379C100E3644E /* OpenGLObject.c in Sources */,
 				115EEE4A16D379C100E3644E /* VectorUtils2.c in Sources */,
 				115EEE4F16D37A0900E3644E /* MicroGlut.m in Sources */,
+				89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +879,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		89FECC2D170DE02E00F40F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "«PROJECTNAME» copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "«PROJECTNAME» copy";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		89FECC2E170DE02E00F40F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "«PROJECTNAME» copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "«PROJECTNAME» copy";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,6 +986,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FECC2D170DE02E00F40F3A /* Debug */,
+				89FECC2E170DE02E00F40F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "«PROJECTNAME»" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -13,6 +13,7 @@
 #include "loadobj.h"
 #include "LoadTGA2.h"
 #include <stdlib.h>
+//#include <iostream>
 
 const GLint WINDOW_WIDTH = 700;
 const GLint WINDOW_HEIGHT = 700;
@@ -301,6 +302,7 @@ void updateMouse(int x, int y) {
 
 int main(int argc, char **argv)
 {
+    //std::cout << "hello world" << std::endl;
 	srand(time(0));
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
