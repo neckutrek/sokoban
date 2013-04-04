@@ -10,12 +10,9 @@
 		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		115EEDED16D379C100E3644E /* GL_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7B16D379C100E3644E /* GL_utilities.c */; };
-		115EEDEE16D379C100E3644E /* lab4-1 in Resources */ = {isa = PBXBuildFile; fileRef = 115EED7D16D379C100E3644E /* lab4-1 */; };
 		115EEDEF16D379C100E3644E /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7E16D379C100E3644E /* lab4-1.c */; };
-		115EEDF016D379C100E3644E /* lab4-1.c~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EED7F16D379C100E3644E /* lab4-1.c~ */; };
 		115EEDF116D379C100E3644E /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
 		115EEDF216D379C100E3644E /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
-		115EEDF416D379C100E3644E /* makefile~ in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8516D379C100E3644E /* makefile~ */; };
 		115EEDF516D379C100E3644E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8816D379C100E3644E /* license.txt */; };
 		115EEDF616D379C100E3644E /* rooftops.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8916D379C100E3644E /* rooftops.obj */; };
 		115EEDF716D379C100E3644E /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8A16D379C100E3644E /* screenshot.jpg */; };
@@ -129,15 +126,12 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		115EED7B16D379C100E3644E /* GL_utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GL_utilities.c; sourceTree = "<group>"; };
 		115EED7C16D379C100E3644E /* GL_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GL_utilities.h; sourceTree = "<group>"; };
-		115EED7D16D379C100E3644E /* lab4-1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lab4-1"; sourceTree = "<group>"; };
 		115EED7E16D379C100E3644E /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
-		115EED7F16D379C100E3644E /* lab4-1.c~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "lab4-1.c~"; sourceTree = "<group>"; };
 		115EED8016D379C100E3644E /* loadobj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = loadobj.c; sourceTree = "<group>"; };
 		115EED8116D379C100E3644E /* loadobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadobj.h; sourceTree = "<group>"; };
 		115EED8216D379C100E3644E /* LoadTGA2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoadTGA2.c; sourceTree = "<group>"; };
 		115EED8316D379C100E3644E /* LoadTGA2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadTGA2.h; sourceTree = "<group>"; };
 		115EED8416D379C100E3644E /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
-		115EED8516D379C100E3644E /* makefile~ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "makefile~"; sourceTree = "<group>"; };
 		115EED8816D379C100E3644E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		115EED8916D379C100E3644E /* rooftops.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rooftops.obj; sourceTree = "<group>"; };
 		115EED8A16D379C100E3644E /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
@@ -451,15 +445,12 @@
 				115EEE4E16D37A0900E3644E /* MicroGlut.m */,
 				115EED7B16D379C100E3644E /* GL_utilities.c */,
 				115EED7C16D379C100E3644E /* GL_utilities.h */,
-				115EED7D16D379C100E3644E /* lab4-1 */,
 				115EED7E16D379C100E3644E /* lab4-1.c */,
-				115EED7F16D379C100E3644E /* lab4-1.c~ */,
 				115EED8016D379C100E3644E /* loadobj.c */,
 				115EED8116D379C100E3644E /* loadobj.h */,
 				115EED8216D379C100E3644E /* LoadTGA2.c */,
 				115EED8316D379C100E3644E /* LoadTGA2.h */,
 				115EED8416D379C100E3644E /* makefile */,
-				115EED8516D379C100E3644E /* makefile~ */,
 				115EED8616D379C100E3644E /* models */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDCD16D379C100E3644E /* OpenGLCamera.c~ */,
@@ -571,9 +562,6 @@
 				115EEE5216D3813200E3644E /* terrain.frag in Resources */,
 				115EEE5316D3813200E3644E /* terrain.vert in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				115EEDEE16D379C100E3644E /* lab4-1 in Resources */,
-				115EEDF016D379C100E3644E /* lab4-1.c~ in Resources */,
-				115EEDF416D379C100E3644E /* makefile~ in Resources */,
 				115EEDF516D379C100E3644E /* license.txt in Resources */,
 				115EEDF616D379C100E3644E /* rooftops.obj in Resources */,
 				115EEDF716D379C100E3644E /* screenshot.jpg in Resources */,
