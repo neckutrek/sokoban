@@ -17,9 +17,13 @@ public:
     //Constructor
     //Destructor
     
-    void setPosition();
-    void setVelocity();
-    void setAcceleration();
+    void setPosition(GLfloat x, GLfloat y, GLfloat z);
+    void setVelocity(GLfloat x, GLfloat y, GLfloat z);
+    void setAcceleration(GLfloat x, GLfloat y, GLfloat z);
+	
+	vec3 getPosition();
+	vec3 getVelocity();
+	vec3 getAcceleration();
     
     int update_function(unsigned int time);
     

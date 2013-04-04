@@ -95,6 +95,10 @@
 		115EEE5316D3813200E3644E /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		11E82CA1170DE8F400911D57 /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
+		11E82CA2170DF16D00911D57 /* Particle.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC37170DE73A00F40F3A /* Particle.h */; };
+		11E82CA3170DF16F00911D57 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
+		11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
+		11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -607,8 +611,8 @@
 			children = (
 				89FECC37170DE73A00F40F3A /* Particle.h */,
 				89FECC36170DE73A00F40F3A /* Particle.cpp */,
-				89FECC3B170DE88800F40F3A /* Body.cpp */,
 				89FECC3C170DE88800F40F3A /* Body.h */,
+				89FECC3B170DE88800F40F3A /* Body.cpp */,
 			);
 			name = Physics;
 			sourceTree = "<group>";
@@ -889,7 +893,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */,
+				11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */,
 				89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */,
+				11E82CA2170DF16D00911D57 /* Particle.h in Sources */,
+				11E82CA3170DF16F00911D57 /* Particle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
