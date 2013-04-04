@@ -183,6 +183,8 @@
 		89FECC33170DE06600F40F3A /* Cocoa.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		89FECC34170DE06600F40F3A /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		89FECC35170DE06600F40F3A /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		89FECC38170DE73A00F40F3A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
+		89FECC3D170DE88800F40F3A /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3B170DE88800F40F3A /* Body.cpp */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -313,6 +315,10 @@
 		89FECBCB170DDF6400F40F3A /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
 		89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME» copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "«PROJECTNAME» copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/«PROJECTNAME» copy-Info.plist"; sourceTree = "<absolute>"; };
+		89FECC36170DE73A00F40F3A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		89FECC37170DE73A00F40F3A /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		89FECC3B170DE88800F40F3A /* Body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Body.cpp; sourceTree = "<group>"; };
+		89FECC3C170DE88800F40F3A /* Body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Body.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* «PROJECTNAME».app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME».app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -539,6 +545,8 @@
 		29B97314FDCFA39411CA2CEA /* «PROJECTNAMEASXML» */ = {
 			isa = PBXGroup;
 			children = (
+				89FECC3A170DE80000F40F3A /* Physics */,
+				89FECC39170DE75000F40F3A /* Math */,
 				115EEE4E16D37A0900E3644E /* MicroGlut.m */,
 				115EED8616D379C100E3644E /* models */,
 				115EEDD316D379C100E3644E /* terrain.frag */,
@@ -586,6 +594,24 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89FECC39170DE75000F40F3A /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		89FECC3A170DE80000F40F3A /* Physics */ = {
+			isa = PBXGroup;
+			children = (
+				89FECC37170DE73A00F40F3A /* Particle.h */,
+				89FECC36170DE73A00F40F3A /* Particle.cpp */,
+				89FECC3B170DE88800F40F3A /* Body.cpp */,
+				89FECC3C170DE88800F40F3A /* Body.h */,
+			);
+			name = Physics;
 			sourceTree = "<group>";
 		};
 		F4EAD2EE0D11D50A00A7D2A0 /* Headers */ = {
@@ -862,6 +888,8 @@
 				115EEE4A16D379C100E3644E /* VectorUtils2.c in Sources */,
 				115EEE4F16D37A0900E3644E /* MicroGlut.m in Sources */,
 				89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */,
+				89FECC38170DE73A00F40F3A /* Particle.cpp in Sources */,
+				89FECC3D170DE88800F40F3A /* Body.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
