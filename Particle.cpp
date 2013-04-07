@@ -31,8 +31,8 @@ void Particle::setAcceleration(GLfloat x, GLfloat y, GLfloat z)
 
 int Particle::update_function(unsigned int time)
 {
-	_velocity += _acceleration;
-	_position += _velocity;
+	_velocity += _acceleration * time;
+	_position += _velocity * time;
 	
 	return 0;
 }
