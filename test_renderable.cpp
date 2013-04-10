@@ -21,7 +21,7 @@
 using namespace std;
 
 mat4 projection_transformation;
-Renderable r;
+GameObject* my_game_object;
 GLuint program_ref_id;
 
 void init(void) {
@@ -37,7 +37,8 @@ void init(void) {
     glUniformMatrix4fv(glGetUniformLocation(program, "projection_transformation"),
                        1, GL_TRUE, projection_transformation);
     
-    r = Renderable("bunnyplus.obj");
+    my_game_object = new GameObject();
+    my_game_object->loadModel("bunnyplus.obj");
 }
 
 void display(void) {
@@ -55,7 +56,7 @@ void display(void) {
 	glUniformMatrix4fv(glGetUniformLocation(program, "camera_transformation"),
                        1, GL_TRUE, camera_transformation);
 	
-    r.render(program_ref_id);
+    my_game_object->render(program_ref_id);
     
     glutSwapBuffers();
 }

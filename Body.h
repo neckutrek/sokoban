@@ -25,11 +25,11 @@ public:
 	mat4 getRotVelocity() const;
 	mat4 getRotAcceleration() const;
 	mat4 getScaling() const;
-    mat4 getModelMatrix() const;
 	
 	virtual int update_function(unsigned int time);
 	
 protected:
+    mat4 getModelMatrix() const;
 	
 private:
     mat4 _rotation;

@@ -9,6 +9,7 @@
 #ifndef __OpenGLGLUTApp__GameObject__
 #define __OpenGLGLUTApp__GameObject__
 
+#include <string>
 #include "Renderable.h"
 #include "Body.h"
 
@@ -17,7 +18,7 @@ public:
     GameObject() = default;
     ~GameObject() = default;
     
-    
+    int loadModel(std::string model_filename);
     
 protected:
     virtual mat4 getModelTransformationMatrix();

@@ -203,6 +203,24 @@
 		89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
 		89CE01991715C2D000D6783A /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		89CE01A01715CA6200D6783A /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
+		89CE01A91715D94700D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
+		89CE01AA1715D94900D6783A /* Renderable.h in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01851715B22100D6783A /* Renderable.h */; };
+		89CE01AB1715D94E00D6783A /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
+		89CE01AC1715D95000D6783A /* GameObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01981715C2D000D6783A /* GameObject.h */; };
+		89CE01AD1715D95700D6783A /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
+		89CE01AE1715D95A00D6783A /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
+		89CE01AF1715D95C00D6783A /* MicroGlut.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4D16D37A0900E3644E /* MicroGlut.h */; };
+		89CE01B01715D95E00D6783A /* loadobj.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8116D379C100E3644E /* loadobj.h */; };
+		89CE01B11715D95F00D6783A /* LoadTGA2.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8316D379C100E3644E /* LoadTGA2.h */; };
+		89CE01B21715D96100D6783A /* GL_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7B16D379C100E3644E /* GL_utilities.c */; };
+		89CE01B31715D96200D6783A /* GL_utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7C16D379C100E3644E /* GL_utilities.h */; };
+		89CE01B41715D96A00D6783A /* Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3C170DE88800F40F3A /* Body.h */; };
+		89CE01B51715D96B00D6783A /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3B170DE88800F40F3A /* Body.cpp */; };
+		89CE01B61715D97200D6783A /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
+		89CE01B71715D97400D6783A /* VectorUtils3.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA0170DE8F400911D57 /* VectorUtils3.h */; };
+		89CE01B81715D97500D6783A /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
+		89CE01B91715D97700D6783A /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
+		89CE01BA1715D97B00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -843,9 +861,9 @@
 			productReference = 11E82D0C1715B8BA00911D57 /* Test (Simon).app */;
 			productType = "com.apple.product-type.application";
 		};
-		89FECBCD170DE02E00F40F3A /* main */ = {
+		89FECBCD170DE02E00F40F3A /* test_renderable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */;
+			buildConfigurationList = 89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "test_renderable" */;
 			buildPhases = (
 				89FECBCE170DE02E00F40F3A /* Resources */,
 				89FECC1E170DE02E00F40F3A /* Sources */,
@@ -856,7 +874,7 @@
 			);
 			dependencies = (
 			);
-			name = main;
+			name = test_renderable;
 			productInstallPath = "$(HOME)/Applications";
 			productName = "«PROJECTNAME»";
 			productReference = 89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */;
@@ -898,7 +916,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* «PROJECTNAME» */,
-				89FECBCD170DE02E00F40F3A /* main */,
+				89FECBCD170DE02E00F40F3A /* test_renderable */,
 				11E82CA91715B8BA00911D57 /* test_physics */,
 			);
 		};
@@ -1190,9 +1208,27 @@
 			files = (
 				11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */,
 				11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */,
-				89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */,
+				89CE01A91715D94700D6783A /* Renderable.cpp in Sources */,
+				89CE01AE1715D95A00D6783A /* LoadTGA2.c in Sources */,
+				89CE01AC1715D95000D6783A /* GameObject.h in Sources */,
+				89CE01AD1715D95700D6783A /* loadobj.c in Sources */,
+				89CE01B71715D97400D6783A /* VectorUtils3.h in Sources */,
+				89CE01AA1715D94900D6783A /* Renderable.h in Sources */,
+				89CE01B61715D97200D6783A /* VectorUtils3.c in Sources */,
+				89CE01BA1715D97B00D6783A /* test_renderable.cpp in Sources */,
+				89CE01B21715D96100D6783A /* GL_utilities.c in Sources */,
+				89CE01B81715D97500D6783A /* VectorUtils3Addons.cpp in Sources */,
+				89CE01B91715D97700D6783A /* VectorUtils3Addons.h in Sources */,
 				11E82CA2170DF16D00911D57 /* Particle.h in Sources */,
+				89CE01B41715D96A00D6783A /* Body.h in Sources */,
+				89CE01B51715D96B00D6783A /* Body.cpp in Sources */,
+				89CE01B11715D95F00D6783A /* LoadTGA2.h in Sources */,
 				11E82CA3170DF16F00911D57 /* Particle.cpp in Sources */,
+				89CE01B31715D96200D6783A /* GL_utilities.h in Sources */,
+				89CE01AB1715D94E00D6783A /* GameObject.cpp in Sources */,
+				89CE01AF1715D95C00D6783A /* MicroGlut.h in Sources */,
+				89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */,
+				89CE01B01715D95E00D6783A /* loadobj.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1385,7 +1421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */ = {
+		89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "test_renderable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89FECC2D170DE02E00F40F3A /* Debug */,

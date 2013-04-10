@@ -23,9 +23,9 @@
 
 class Renderable {
 public:
-    Renderable() = default;
-    Renderable(std::string model_filename);
+    Renderable() : _is_model_loaded(false) {};
     
+    int loadModel(std::string model_filename)
     virtual int render(GLuint program_reference_id);
     
 protected:
@@ -33,6 +33,7 @@ protected:
     
 private:
     Model* _model;
+    bool _is_model_loaded;
     
 };
 
