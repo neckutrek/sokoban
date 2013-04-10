@@ -8,7 +8,7 @@
 
 #include "GameObject.h"
 
-virtual mat4 GameObject::getModelTransformationMatrix()
+mat4 GameObject::getModelTransformationMatrix()
 {
     return Body::getModelMatrix();
 }

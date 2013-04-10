@@ -16,7 +16,7 @@
     #include "MicroGlut.h"
 #endif
 
-//#include "GL_utilities.h"
+#include "GL_utilities.h"
 #include "VectorUtils3.h"
 #include "loadobj.h"
 //#include "LoadTGA2.h"
@@ -25,7 +25,7 @@ class Renderable {
 public:
     Renderable() : _is_model_loaded(false) {};
     
-    int loadModel(std::string model_filename)
+    int loadModel(std::string model_filename);
     virtual int render(GLuint program_reference_id);
     
 protected:

@@ -14,8 +14,7 @@
 #include "VectorUtils3.h"
 #include "loadobj.h"
 #include "LoadTGA2.h"
-
-#include "Renderable.h"
+#include "GameObject.h"
 
 #include <iostream>
 using namespace std;
@@ -29,7 +28,7 @@ void init(void) {
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
     
-    program = loadShaders("terrain.vert", "terrain.frag");
+    program_ref_id = loadShaders("terrain.vert", "terrain.frag");
     glUseProgram(program_ref_id);
 
     frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0, projection_transformation);
@@ -51,18 +50,14 @@ void display(void) {
 	IdentityMatrix(model_transformation);
     IdentityMatrix(camera_transformation);
     
-	glUniformMatrix4fv(glGetUniformLocation(program, "model_transformation"),
+	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "model_transformation"),
                        1, GL_TRUE, model_transformation);
-	glUniformMatrix4fv(glGetUniformLocation(program, "camera_transformation"),
+	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),
                        1, GL_TRUE, camera_transformation);
 	
     my_game_object->render(program_ref_id);
     
     glutSwapBuffers();
-}
-
-void timer(void) {
-    
 }
 
 int main(int argc, char *argv[]) {
@@ -74,7 +69,7 @@ int main(int argc, char *argv[]) {
 	glutCreateWindow("TSBK07 Lab 4");
 	glutDisplayFunc(display);
 	init();
-	glutTimerFunc(20, &timer, 0);
+	//glutTimerFunc(20, &timer, 0);
     
 	glutMainLoop();
 	exit(0);

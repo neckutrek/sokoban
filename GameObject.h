@@ -18,8 +18,6 @@ public:
     GameObject() = default;
     ~GameObject() = default;
     
-    int loadModel(std::string model_filename);
-    
 protected:
     virtual mat4 getModelTransformationMatrix();
     
