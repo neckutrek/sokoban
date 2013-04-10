@@ -202,6 +202,7 @@
 		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
+		89CE01991715C2D000D6783A /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -441,6 +442,8 @@
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; };
 		89CE018A1715B33700D6783A /* shader_1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.vert; sourceTree = "<group>"; };
 		89CE01921715B92D00D6783A /* test_renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderable.cpp; sourceTree = "<group>"; };
+		89CE01971715C2D000D6783A /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		89CE01981715C2D000D6783A /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		89FECBCB170DDF6400F40F3A /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
 		89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME» copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "«PROJECTNAME» copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/«PROJECTNAME» copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -801,6 +804,8 @@
 			children = (
 				89FECC46170DEB8600F40F3A /* GameComponent.cpp */,
 				89FECC47170DEB8600F40F3A /* GameComponent.h */,
+				89CE01971715C2D000D6783A /* GameObject.cpp */,
+				89CE01981715C2D000D6783A /* GameObject.h */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -1210,6 +1215,7 @@
 				89FECC51170DF2A500F40F3A /* test_renderable.cpp in Sources */,
 				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
 				11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
+				89CE01991715C2D000D6783A /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
