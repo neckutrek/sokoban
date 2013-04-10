@@ -12,15 +12,27 @@
 #include <iostream>
 #include "Body.h"
 
-class Camera : public Body
+class Camera : protected Body
 {
+public:
 	Camera(GLfloat x=0, GLfloat y=0, GLfloat z=0);
 	
-	void setViewLocation(GLfloat x, GLfloat y, GLfloat z);
+	~Camera() = default;
+	
 	void setViewDirection(GLfloat theta, GLfloat phi);
 	void setViewDirection(GLfloat x, GLfloat y, GLfloat z);
+	void setUpDirection(GLfloat x, GLfloat y, GLfloat z);
 	
-	mat4 getCameraMatrix;
+	vec3 getUpDirection() const;
+	vec3 getViewDirection() const;
+	
+	mat4 getCameraMatrix() const;
+	
+protected:
+	
+private:
+	vec3 _upDirection;
+	vec3 _viewDirection;
 };
 
 #endif /* defined(__OpenGLGLUTApp__Camera__) */
