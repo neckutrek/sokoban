@@ -18,6 +18,7 @@ public:
         if (_active) {
             update_function(time);
         }
+        return 0;
     }
     virtual int update_function(unsigned int time) = 0;
     

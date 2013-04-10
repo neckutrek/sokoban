@@ -6,6 +6,7 @@
 //
 //
 
+#include "loadobj.h"
 #include "Body.h"
 #include "VectorUtils3.h"
 #include "VectorUtils3Addons.h"
@@ -14,6 +15,8 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
+    
+    Model* m = LoadModelPlus("bunnyplus.obj");
     
     cout << " - Testing a particle - " << endl;
     Body* p = new Body(0, 0, 0);

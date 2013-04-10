@@ -221,6 +221,8 @@
 		89CE01B81715D97500D6783A /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		89CE01B91715D97700D6783A /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
 		89CE01BA1715D97B00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
+		89CE01BB1715DEC700D6783A /* loadobj.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8116D379C100E3644E /* loadobj.h */; };
+		89CE01BC1715DEC900D6783A /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -342,7 +344,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 6;
 			files = (
 				89FECC33170DE06600F40F3A /* Cocoa.framework in Copy Frameworks into .app bundle */,
 				89FECC34170DE06600F40F3A /* GLUT.framework in Copy Frameworks into .app bundle */,
@@ -1190,8 +1192,10 @@
 			files = (
 				89CE01A01715CA6200D6783A /* VectorUtils3Addons.h in Sources */,
 				11E82CFE1715B8BA00911D57 /* MicroGlut.m in Sources */,
+				89CE01BC1715DEC900D6783A /* loadobj.c in Sources */,
 				11E82D0E1715B8EB00911D57 /* test_physics.cpp in Sources */,
 				11E82D0F1715B91700911D57 /* Body.h in Sources */,
+				89CE01BB1715DEC700D6783A /* loadobj.h in Sources */,
 				11E82CFF1715B8BA00911D57 /* Particle.h in Sources */,
 				11E82D111715B9D200911D57 /* VectorUtils3.c in Sources */,
 				11E82D121715B9D500911D57 /* VectorUtils3.h in Sources */,
@@ -1206,10 +1210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */,
 				11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */,
 				89CE01A91715D94700D6783A /* Renderable.cpp in Sources */,
 				89CE01AE1715D95A00D6783A /* LoadTGA2.c in Sources */,
+				11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */,
 				89CE01AC1715D95000D6783A /* GameObject.h in Sources */,
 				89CE01AD1715D95700D6783A /* loadobj.c in Sources */,
 				89CE01B71715D97400D6783A /* VectorUtils3.h in Sources */,
