@@ -8,7 +8,7 @@
 
 #include "VectorUtils3Addons.h"
 
-std::ostream& operator<<(std::ostream &os, mat4 &a)
+std::ostream& operator<<(std::ostream &os, const mat4 &a)
 {
 	for(int y=0; y<4; y++)
 	{
@@ -19,9 +19,9 @@ std::ostream& operator<<(std::ostream &os, mat4 &a)
 	return os;
 }
 
-std::ostream& operator<<(std::ostream &os, vec3 &a)
+std::ostream& operator<<(std::ostream &os, const vec3 &a)
 {
-	os << a.x << " " << a.y << " " << a.z << std::endl;
+	os << a.x << " " << a.y << " " << a.z;
 	return os;
 }
 
