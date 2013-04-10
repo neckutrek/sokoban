@@ -21,7 +21,7 @@ std::ostream& operator<<(std::ostream &os, const mat4 &a)
 
 std::ostream& operator<<(std::ostream &os, const vec3 &a)
 {
-	os << a.x << " " << a.y << " " << a.z;
+	os << "[" << a.x << ", " << a.y << ", " << a.z << "]";
 	return os;
 }
 

@@ -20,7 +20,7 @@ class Camera : public Body
 	void setViewDirection(GLfloat theta, GLfloat phi);
 	void setViewDirection(GLfloat x, GLfloat y, GLfloat z);
 	
-	mat4 getCameraMatrix
+	mat4 getCameraMatrix;
 };
 
 #endif /* defined(__OpenGLGLUTApp__Camera__) */

@@ -31,29 +31,37 @@ void Particle::setAcceleration(GLfloat ddx, GLfloat ddy, GLfloat ddz)
 	_acceleration.z = ddz;
 }
 
-vec3 Particle::getPosition()
+vec3 Particle::getPosition() const
 {
-	return vec3(_translation.m[0], _translation.m[5], _translation.m[10]);
+	return vec3(_translation.m[3], _translation.m[7], _translation.m[11]);
 }
 
-vec3 Particle::getVelocity()
+vec3 Particle::getVelocity() const
 {
 	return _velocity;
 }
 
-vec3 Particle::getAcceleration()
+vec3 Particle::getAcceleration() const
 {
 	return _acceleration;
 }
 
-mat4 Particle::getModelMatrix()
+mat4 Particle::getModelMatrix() const
 {
 	return _translation;
 }
 
 int Particle::update_function(unsigned int time)
 {
-	_velocity += _acceleration * time;
 	_translation *= T(_velocity.x, _velocity.y, _velocity.z) * time;
+    _velocity += _acceleration * time;
 	return 0;
+}
+
+std::ostream& operator<<(std::ostream& os, const Particle& p)
+{
+    os << "T: " << p.getPosition()
+    << " V: " << p._velocity
+    << " A: " << p._acceleration;
+    return os;
 }

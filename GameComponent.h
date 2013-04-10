@@ -12,6 +12,8 @@
 class GameComponent
 {
 public:
+    GameComponent() : _active(true) {}
+    
     int update(unsigned int time) {
         if (_active) {
             update_function(time);
@@ -23,7 +25,7 @@ public:
     inline void activate() {_active = true;}
     
 private:
-    bool _active = true;
+    bool _active;
     
 };
 

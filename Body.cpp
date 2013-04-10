@@ -32,22 +32,22 @@ void Body::setScaling(GLfloat x, GLfloat y, GLfloat z)
 	_scaling = S(x, y, z);
 }
 
-mat4 Body::getRot()
+mat4 Body::getRot() const
 {
 	return _rotation;
 }
 
-mat4 Body::getRotVelocity()
+mat4 Body::getRotVelocity() const
 {
 	return _rotationVelocity;
 }
 
-mat4 Body::getRotAcceleration()
+mat4 Body::getRotAcceleration() const
 {
 	return _rotationAcceleration;
 }
 
-mat4 Body::getModelMatrix()
+mat4 Body::getModelMatrix() const
 {
 	return Particle::getModelMatrix() * _rotation;
 }
@@ -55,8 +55,8 @@ mat4 Body::getModelMatrix()
 int Body::update_function(unsigned int time)
 {
 	Particle::update_function(time);
-	_rotationVelocity *= _rotationAcceleration * time;
 	_rotation *= _rotationVelocity * time;
+    _rotationVelocity *= _rotationAcceleration * time;
 	
 	return 0;
 }

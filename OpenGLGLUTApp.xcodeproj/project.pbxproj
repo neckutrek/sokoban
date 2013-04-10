@@ -99,7 +99,7 @@
 		11E82CA3170DF16F00911D57 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
 		11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
 		11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
-		11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
+		11E82CA81715B7F000911D57 /* test_physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* test_physics.cpp */; };
 		11E82CAB1715B8BA00911D57 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		11E82CAC1715B8BA00911D57 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11E82CAD1715B8BA00911D57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -188,7 +188,7 @@
 		11E82D061715B8BA00911D57 /* Cocoa.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		11E82D071715B8BA00911D57 /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		11E82D081715B8BA00911D57 /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
-		11E82D0E1715B8EB00911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
+		11E82D0E1715B8EB00911D57 /* test_physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* test_physics.cpp */; };
 		11E82D0F1715B91700911D57 /* Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3C170DE88800F40F3A /* Body.h */; };
 		11E82D101715B91A00911D57 /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3B170DE88800F40F3A /* Body.cpp */; };
 		11E82D111715B9D200911D57 /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
@@ -432,7 +432,7 @@
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
 		11E82CA0170DE8F400911D57 /* VectorUtils3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3.h; sourceTree = "<group>"; };
-		11E82CA61715B7EF00911D57 /* testSimon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testSimon.cpp; sourceTree = "<group>"; };
+		11E82CA61715B7EF00911D57 /* test_physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_physics.cpp; sourceTree = "<group>"; };
 		11E82D0C1715B8BA00911D57 /* Test (Simon).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test (Simon).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E82D0D1715B8BA00911D57 /* main copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "main copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/main copy-Info.plist"; sourceTree = "<absolute>"; };
 		11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtils3Addons.cpp; sourceTree = "<group>"; };
@@ -721,7 +721,7 @@
 				89FECBCB170DDF6400F40F3A /* lab4-1.c */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
-				11E82CA61715B7EF00911D57 /* testSimon.cpp */,
+				11E82CA61715B7EF00911D57 /* test_physics.cpp */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -824,9 +824,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11E82CA91715B8BA00911D57 /* Test (Simon) */ = {
+		11E82CA91715B8BA00911D57 /* test_physics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "Test (Simon)" */;
+			buildConfigurationList = 11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "test_physics" */;
 			buildPhases = (
 				11E82CAA1715B8BA00911D57 /* Resources */,
 				11E82CFA1715B8BA00911D57 /* Sources */,
@@ -837,7 +837,7 @@
 			);
 			dependencies = (
 			);
-			name = "Test (Simon)";
+			name = test_physics;
 			productInstallPath = "$(HOME)/Applications";
 			productName = "«PROJECTNAME»";
 			productReference = 11E82D0C1715B8BA00911D57 /* Test (Simon).app */;
@@ -899,7 +899,7 @@
 			targets = (
 				8D1107260486CEB800E47090 /* «PROJECTNAME» */,
 				89FECBCD170DE02E00F40F3A /* main */,
-				11E82CA91715B8BA00911D57 /* Test (Simon) */,
+				11E82CA91715B8BA00911D57 /* test_physics */,
 			);
 		};
 /* End PBXProject section */
@@ -1172,7 +1172,7 @@
 			files = (
 				89CE01A01715CA6200D6783A /* VectorUtils3Addons.h in Sources */,
 				11E82CFE1715B8BA00911D57 /* MicroGlut.m in Sources */,
-				11E82D0E1715B8EB00911D57 /* testSimon.cpp in Sources */,
+				11E82D0E1715B8EB00911D57 /* test_physics.cpp in Sources */,
 				11E82D0F1715B91700911D57 /* Body.h in Sources */,
 				11E82CFF1715B8BA00911D57 /* Particle.h in Sources */,
 				11E82D111715B9D200911D57 /* VectorUtils3.c in Sources */,
@@ -1214,9 +1214,9 @@
 				89CE01861715B22100D6783A /* Renderable.cpp in Sources */,
 				89CE01891715B32C00D6783A /* shader_1.frag in Sources */,
 				89CE018B1715B33700D6783A /* shader_1.vert in Sources */,
-				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
+				11E82CA81715B7F000911D57 /* test_physics.cpp in Sources */,
 				89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */,
-				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
+				11E82CA81715B7F000911D57 /* test_physics.cpp in Sources */,
 				11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
 				89CE01991715C2D000D6783A /* GameObject.cpp in Sources */,
 				11E82D1D1715CC5400911D57 /* Camera.cpp in Sources */,
@@ -1376,7 +1376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "Test (Simon)" */ = {
+		11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "test_physics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11E82D0A1715B8BA00911D57 /* Debug */,
