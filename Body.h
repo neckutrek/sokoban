@@ -15,9 +15,11 @@ class Body : public Particle {
 public:
 	//Constructor
 	Body(GLfloat x=0, GLfloat y=0, GLfloat z=0);
-	//Destructor
 	
-	mat4 generateResultMatrix();
+	//Destructor
+	~Body() = default;
+	
+	mat4 getModelMatrix();
 	
 	void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
 	void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);

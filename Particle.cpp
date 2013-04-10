@@ -12,11 +12,6 @@ Particle::Particle(GLfloat x, GLfloat y, GLfloat z)
 : _velocity(0.0, 0.0, 0.0), _acceleration(0.0, 0.0, 0.0), _translation(T(x, y, z))
 {}
 
-Particle::~Particle()
-{
-	//???
-}
-
 void Particle::setPosition(GLfloat x, GLfloat y, GLfloat z)
 {
 	_translation = T(x, y, z);
@@ -51,7 +46,7 @@ vec3 Particle::getAcceleration()
 	return _acceleration;
 }
 
-mat4 Particle::generateResultMatrix()
+mat4 Particle::getModelMatrix()
 {
 	return _translation;
 }

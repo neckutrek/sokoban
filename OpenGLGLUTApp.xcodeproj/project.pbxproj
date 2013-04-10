@@ -100,10 +100,6 @@
 		11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
 		11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
-		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
-		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
-		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
-		89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
 		11E82CAB1715B8BA00911D57 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		11E82CAC1715B8BA00911D57 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11E82CAD1715B8BA00911D57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -199,9 +195,12 @@
 		11E82D121715B9D500911D57 /* VectorUtils3.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA0170DE8F400911D57 /* VectorUtils3.h */; };
 		11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
+		11E82D1D1715CC5400911D57 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
+		11E82D1E1715CC5400911D57 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
 		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
+		89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
 		89CE01991715C2D000D6783A /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
@@ -437,6 +436,8 @@
 		11E82D0D1715B8BA00911D57 /* main copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "main copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/main copy-Info.plist"; sourceTree = "<absolute>"; };
 		11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtils3Addons.cpp; sourceTree = "<group>"; };
 		11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3Addons.h; sourceTree = "<group>"; };
+		11E82D1B1715CC5400911D57 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		11E82D1C1715CC5400911D57 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; };
@@ -719,8 +720,6 @@
 				89FECBCB170DDF6400F40F3A /* lab4-1.c */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
-				89FECC4F170DF2A500F40F3A /* test_renderable.cpp */,
-				89FECC4F170DF2A500F40F3A /* test_renderable.cpp */,
 				11E82CA61715B7EF00911D57 /* testSimon.cpp */,
 			);
 			name = Targets;
@@ -806,6 +805,8 @@
 				89FECC47170DEB8600F40F3A /* GameComponent.h */,
 				89CE01971715C2D000D6783A /* GameObject.cpp */,
 				89CE01981715C2D000D6783A /* GameObject.h */,
+				11E82D1B1715CC5400911D57 /* Camera.cpp */,
+				11E82D1C1715CC5400911D57 /* Camera.h */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -1177,6 +1178,7 @@
 				11E82D001715B8BA00911D57 /* Particle.cpp in Sources */,
 				11E82D101715B91A00911D57 /* Body.cpp in Sources */,
 				11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
+				11E82D1E1715CC5400911D57 /* Camera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1212,10 +1214,10 @@
 				89CE018B1715B33700D6783A /* shader_1.vert in Sources */,
 				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
 				89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */,
-				89FECC51170DF2A500F40F3A /* test_renderable.cpp in Sources */,
 				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
 				11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
 				89CE01991715C2D000D6783A /* GameObject.cpp in Sources */,
+				11E82D1D1715CC5400911D57 /* Camera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

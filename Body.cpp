@@ -47,9 +47,9 @@ mat4 Body::getRotAcceleration()
 	return _rotationAcceleration;
 }
 
-mat4 Body::generateResultMatrix()
+mat4 Body::getModelMatrix()
 {
-	return Particle::generateResultMatrix() * _rotation;
+	return Particle::getModelMatrix() * _rotation;
 }
 
 int Body::update_function(unsigned int time)
