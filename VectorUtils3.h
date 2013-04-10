@@ -297,6 +297,13 @@ vec3 operator*(const mat3 &a, const vec3 &b)
 	return MultMat3Vec3(a, b); // result = a * b
 }
 
+// mat4 * mat4
+inline
+void operator*=(const mat4 &a, const mat4 &b)
+{
+	a = Mult(a, b);
+}
+
 #endif
 
 

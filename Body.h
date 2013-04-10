@@ -16,23 +16,22 @@ public:
 	//Constructor
 	//Destructor
 	
-	void setRot();
-	void setRotVelocity();
-	void setRotAcceleration();
+	void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
+	void setRotVelocity(GLfloat dx, GLfloat dy, GLfloat dz, GLfloat da);
+	void setRotAcceleration(GLfloat ddx, GLfloat ddy, GLfloat ddz, GLfloat dda);
 	
-	vec3 getRot();
-	vec3 getRotVelocity();
-	vec3 getRotAcceleration();
+	mat4 getRot();
+	mat4 getRotVelocity();
+	mat4 getRotAcceleration();
 	
 	int update_function(unsigned int time);
 	
 protected:
 	
 private:
-    vec3 _rot;
-    vec3 _rot_velocity;
-    vec3 _rot_acceleration;
-	
+    mat4 rotMatrix;
+    mat4 rotVelMatrix;
+    mat4 rotAccMatrix;
 };
 
 #endif /* defined(__OpenGLGLUTApp__Body__) */
