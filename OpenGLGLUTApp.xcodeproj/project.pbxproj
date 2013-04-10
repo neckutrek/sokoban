@@ -99,10 +99,11 @@
 		11E82CA3170DF16F00911D57 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
 		11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
 		11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
+		11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
 		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
-		11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
+		89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -193,8 +194,6 @@
 		89FECC38170DE73A00F40F3A /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
 		89FECC3D170DE88800F40F3A /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3B170DE88800F40F3A /* Body.cpp */; };
 		89FECC48170DEB8600F40F3A /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
-		89FECC51170DF2A500F40F3A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC4F170DF2A500F40F3A /* test_renderable.cpp */; };
-		89FECC52170DF2E000F40F3A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC4F170DF2A500F40F3A /* test_renderable.cpp */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -321,11 +320,12 @@
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
 		11E82CA0170DE8F400911D57 /* VectorUtils3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3.h; sourceTree = "<group>"; };
+		11E82CA61715B7EF00911D57 /* testSimon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testSimon.cpp; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; };
 		89CE018A1715B33700D6783A /* shader_1.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.vert; sourceTree = "<group>"; };
-		11E82CA61715B7EF00911D57 /* testSimon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testSimon.cpp; sourceTree = "<group>"; };
+		89CE01921715B92D00D6783A /* test_renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderable.cpp; sourceTree = "<group>"; };
 		89FECBCB170DDF6400F40F3A /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
 		89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME» copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "«PROJECTNAME» copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/«PROJECTNAME» copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -335,7 +335,6 @@
 		89FECC3C170DE88800F40F3A /* Body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Body.h; sourceTree = "<group>"; };
 		89FECC46170DEB8600F40F3A /* GameComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameComponent.cpp; sourceTree = "<group>"; };
 		89FECC47170DEB8600F40F3A /* GameComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponent.h; sourceTree = "<group>"; };
-		89FECC4F170DF2A500F40F3A /* test_renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderable.cpp; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* «PROJECTNAME».app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "«PROJECTNAME».app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -584,13 +583,12 @@
 		29B97315FDCFA39411CA2CEA /* Targets */ = {
 			isa = PBXGroup;
 			children = (
+				89CE01921715B92D00D6783A /* test_renderable.cpp */,
 				115EEDD316D379C100E3644E /* terrain.frag */,
 				115EEDD516D379C100E3644E /* terrain.vert */,
 				89FECBCB170DDF6400F40F3A /* lab4-1.c */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
-				89FECC4F170DF2A500F40F3A /* test_renderable.cpp */,
-				89FECC4F170DF2A500F40F3A /* main.cpp */,
 				11E82CA61715B7EF00911D57 /* testSimon.cpp */,
 			);
 			name = Targets;
@@ -929,7 +927,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E82CA4170DF1CC00911D57 /* GameComponent.cpp in Sources */,
-				89FECC52170DF2E000F40F3A /* test_renderable.cpp in Sources */,
 				11E82CA5170DF1CF00911D57 /* GameComponent.h in Sources */,
 				89FECC25170DE02E00F40F3A /* MicroGlut.m in Sources */,
 				11E82CA2170DF16D00911D57 /* Particle.h in Sources */,
@@ -952,12 +949,11 @@
 				89FECC3D170DE88800F40F3A /* Body.cpp in Sources */,
 				11E82CA1170DE8F400911D57 /* VectorUtils3.c in Sources */,
 				89FECC48170DEB8600F40F3A /* GameComponent.cpp in Sources */,
-				89FECC51170DF2A500F40F3A /* test_renderable.cpp in Sources */,
 				89CE01861715B22100D6783A /* Renderable.cpp in Sources */,
 				89CE01891715B32C00D6783A /* shader_1.frag in Sources */,
 				89CE018B1715B33700D6783A /* shader_1.vert in Sources */,
-				89FECC51170DF2A500F40F3A /* main.cpp in Sources */,
 				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
+				89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
