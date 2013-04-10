@@ -304,11 +304,6 @@ void operator*=(mat4 &a, const mat4 &b)
 	a = Mult(a, b);
 }
 
-//mat4 * scalar
-
-mat4 operator*(const mat4 &a, const float &b);
-
-friend ostream& operator<<(ostream &os, const mat4 &a);
 
 #endif
 

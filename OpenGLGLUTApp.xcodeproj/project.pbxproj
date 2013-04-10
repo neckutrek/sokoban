@@ -104,6 +104,104 @@
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01921715B92D00D6783A /* test_renderable.cpp */; };
+		11E82CAB1715B8BA00911D57 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
+		11E82CAC1715B8BA00911D57 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
+		11E82CAD1715B8BA00911D57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		11E82CAE1715B8BA00911D57 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8816D379C100E3644E /* license.txt */; };
+		11E82CAF1715B8BA00911D57 /* rooftops.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8916D379C100E3644E /* rooftops.obj */; };
+		11E82CB01715B8BA00911D57 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8A16D379C100E3644E /* screenshot.jpg */; };
+		11E82CB11715B8BA00911D57 /* walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8B16D379C100E3644E /* walls.obj */; };
+		11E82CB21715B8BA00911D57 /* face-lefthalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8E16D379C100E3644E /* face-lefthalf.jpg */; };
+		11E82CB31715B8BA00911D57 /* face-lefthalf.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED8F16D379C100E3644E /* face-lefthalf.obj */; };
+		11E82CB41715B8BA00911D57 /* face-lefthalf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9016D379C100E3644E /* face-lefthalf.tga */; };
+		11E82CB51715B8BA00911D57 /* face-righthalf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9116D379C100E3644E /* face-righthalf.jpg */; };
+		11E82CB61715B8BA00911D57 /* face-righthalf.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9216D379C100E3644E /* face-righthalf.obj */; };
+		11E82CB71715B8BA00911D57 /* face-righthalf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9316D379C100E3644E /* face-righthalf.tga */; };
+		11E82CB81715B8BA00911D57 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9616D379C100E3644E /* a.jpg */; };
+		11E82CB91715B8BA00911D57 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9716D379C100E3644E /* b.jpg */; };
+		11E82CBA1715B8BA00911D57 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9816D379C100E3644E /* c.jpg */; };
+		11E82CBB1715B8BA00911D57 /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9916D379C100E3644E /* d.jpg */; };
+		11E82CBC1715B8BA00911D57 /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9A16D379C100E3644E /* e.jpg */; };
+		11E82CBD1715B8BA00911D57 /* f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9B16D379C100E3644E /* f.jpg */; };
+		11E82CBE1715B8BA00911D57 /* girl-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9C16D379C100E3644E /* girl-body.jpg */; };
+		11E82CBF1715B8BA00911D57 /* girl-body.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9D16D379C100E3644E /* girl-body.obj */; };
+		11E82CC01715B8BA00911D57 /* girl-body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9E16D379C100E3644E /* girl-body.tga */; };
+		11E82CC11715B8BA00911D57 /* girl-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EED9F16D379C100E3644E /* girl-head.jpg */; };
+		11E82CC21715B8BA00911D57 /* girl-head.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA016D379C100E3644E /* girl-head.obj */; };
+		11E82CC31715B8BA00911D57 /* girl-head.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA116D379C100E3644E /* girl-head.tga */; };
+		11E82CC41715B8BA00911D57 /* hawk-body.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA216D379C100E3644E /* hawk-body.jpg */; };
+		11E82CC51715B8BA00911D57 /* hawk-body.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA316D379C100E3644E /* hawk-body.obj */; };
+		11E82CC61715B8BA00911D57 /* hawk-body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA416D379C100E3644E /* hawk-body.tga */; };
+		11E82CC71715B8BA00911D57 /* hawk-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA516D379C100E3644E /* hawk-head.jpg */; };
+		11E82CC81715B8BA00911D57 /* hawk-head.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA616D379C100E3644E /* hawk-head.obj */; };
+		11E82CC91715B8BA00911D57 /* hawk-head.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA716D379C100E3644E /* hawk-head.tga */; };
+		11E82CCA1715B8BA00911D57 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDA916D379C100E3644E /* 1.jpg */; };
+		11E82CCB1715B8BA00911D57 /* 1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAA16D379C100E3644E /* 1.obj */; };
+		11E82CCC1715B8BA00911D57 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAB16D379C100E3644E /* 2.jpg */; };
+		11E82CCD1715B8BA00911D57 /* 2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAC16D379C100E3644E /* 2.obj */; };
+		11E82CCE1715B8BA00911D57 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAD16D379C100E3644E /* 3.jpg */; };
+		11E82CCF1715B8BA00911D57 /* 3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAE16D379C100E3644E /* 3.obj */; };
+		11E82CD01715B8BA00911D57 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDAF16D379C100E3644E /* 4.jpg */; };
+		11E82CD11715B8BA00911D57 /* 4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB016D379C100E3644E /* 4.obj */; };
+		11E82CD21715B8BA00911D57 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB116D379C100E3644E /* license.txt */; };
+		11E82CD31715B8BA00911D57 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB216D379C100E3644E /* readme.txt */; };
+		11E82CD41715B8BA00911D57 /* ground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB416D379C100E3644E /* ground.jpg */; };
+		11E82CD51715B8BA00911D57 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB516D379C100E3644E /* ground.obj */; };
+		11E82CD61715B8BA00911D57 /* tree.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB616D379C100E3644E /* tree.jpg */; };
+		11E82CD71715B8BA00911D57 /* tree.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB716D379C100E3644E /* tree.obj */; };
+		11E82CD81715B8BA00911D57 /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDB916D379C100E3644E /* bunny.obj */; };
+		11E82CD91715B8BA00911D57 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBA16D379C100E3644E /* bunnyplus.obj */; };
+		11E82CDA1715B8BA00911D57 /* cow.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBB16D379C100E3644E /* cow.obj */; };
+		11E82CDB1715B8BA00911D57 /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBC16D379C100E3644E /* cube.obj */; };
+		11E82CDC1715B8BA00911D57 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBD16D379C100E3644E /* ground.obj */; };
+		11E82CDD1715B8BA00911D57 /* klingon.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBE16D379C100E3644E /* klingon.obj */; };
+		11E82CDE1715B8BA00911D57 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDBF16D379C100E3644E /* license.txt */; };
+		11E82CDF1715B8BA00911D57 /* plutt.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC016D379C100E3644E /* plutt.obj */; };
+		11E82CE01715B8BA00911D57 /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC116D379C100E3644E /* teapot.obj */; };
+		11E82CE11715B8BA00911D57 /* teddy.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC216D379C100E3644E /* teddy.obj */; };
+		11E82CE21715B8BA00911D57 /* venus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC316D379C100E3644E /* venus.obj */; };
+		11E82CE31715B8BA00911D57 /* windmill-walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC416D379C100E3644E /* windmill-walls.obj */; };
+		11E82CE41715B8BA00911D57 /* blade.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC616D379C100E3644E /* blade.obj */; };
+		11E82CE51715B8BA00911D57 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC716D379C100E3644E /* license.txt */; };
+		11E82CE61715B8BA00911D57 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC816D379C100E3644E /* screenshot.jpg */; };
+		11E82CE71715B8BA00911D57 /* windmill-balcony.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDC916D379C100E3644E /* windmill-balcony.obj */; };
+		11E82CE81715B8BA00911D57 /* windmill-roof.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCA16D379C100E3644E /* windmill-roof.obj */; };
+		11E82CE91715B8BA00911D57 /* windmill-walls.obj in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDCB16D379C100E3644E /* windmill-walls.obj */; };
+		11E82CEA1715B8BA00911D57 /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
+		11E82CEB1715B8BA00911D57 /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
+		11E82CEC1715B8BA00911D57 /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
+		11E82CED1715B8BA00911D57 /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
+		11E82CEE1715B8BA00911D57 /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
+		11E82CEF1715B8BA00911D57 /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
+		11E82CF01715B8BA00911D57 /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
+		11E82CF11715B8BA00911D57 /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
+		11E82CF21715B8BA00911D57 /* bilskissred.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE116D379C100E3644E /* bilskissred.tga */; };
+		11E82CF31715B8BA00911D57 /* conc.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE216D379C100E3644E /* conc.tga */; };
+		11E82CF41715B8BA00911D57 /* dirt.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE316D379C100E3644E /* dirt.tga */; };
+		11E82CF51715B8BA00911D57 /* grass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE416D379C100E3644E /* grass.tga */; };
+		11E82CF61715B8BA00911D57 /* maskros512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE516D379C100E3644E /* maskros512.tga */; };
+		11E82CF71715B8BA00911D57 /* rutor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE616D379C100E3644E /* rutor.tga */; };
+		11E82CF81715B8BA00911D57 /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
+		11E82CF91715B8BA00911D57 /* wall_512_1_05.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE816D379C100E3644E /* wall_512_1_05.tga */; };
+		11E82CFE1715B8BA00911D57 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
+		11E82CFF1715B8BA00911D57 /* Particle.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC37170DE73A00F40F3A /* Particle.h */; };
+		11E82D001715B8BA00911D57 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC36170DE73A00F40F3A /* Particle.cpp */; };
+		11E82D021715B8BA00911D57 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		11E82D031715B8BA00911D57 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		11E82D041715B8BA00911D57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
+		11E82D061715B8BA00911D57 /* Cocoa.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
+		11E82D071715B8BA00911D57 /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
+		11E82D081715B8BA00911D57 /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
+		11E82D0E1715B8EB00911D57 /* testSimon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA61715B7EF00911D57 /* testSimon.cpp */; };
+		11E82D0F1715B91700911D57 /* Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3C170DE88800F40F3A /* Body.h */; };
+		11E82D101715B91A00911D57 /* Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3B170DE88800F40F3A /* Body.cpp */; };
+		11E82D111715B9D200911D57 /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
+		11E82D121715B9D500911D57 /* VectorUtils3.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA0170DE8F400911D57 /* VectorUtils3.h */; };
+		11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
+		11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
+		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
+		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
+		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		89FECBCC170DDF6400F40F3A /* lab4-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FECBCB170DDF6400F40F3A /* lab4-1.c */; };
 		89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
@@ -204,6 +302,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+			);
+			name = "Copy Frameworks into .app bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11E82D051715B8BA00911D57 /* Copy Frameworks into .app bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11E82D061715B8BA00911D57 /* Cocoa.framework in Copy Frameworks into .app bundle */,
+				11E82D071715B8BA00911D57 /* GLUT.framework in Copy Frameworks into .app bundle */,
+				11E82D081715B8BA00911D57 /* OpenGL.framework in Copy Frameworks into .app bundle */,
 			);
 			name = "Copy Frameworks into .app bundle";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +432,10 @@
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
 		11E82CA0170DE8F400911D57 /* VectorUtils3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3.h; sourceTree = "<group>"; };
 		11E82CA61715B7EF00911D57 /* testSimon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testSimon.cpp; sourceTree = "<group>"; };
+		11E82D0C1715B8BA00911D57 /* Test (Simon).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test (Simon).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11E82D0D1715B8BA00911D57 /* main copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "main copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/main copy-Info.plist"; sourceTree = "<absolute>"; };
+		11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtils3Addons.cpp; sourceTree = "<group>"; };
+		11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3Addons.h; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; };
@@ -340,6 +455,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		11E82D011715B8BA00911D57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E82D021715B8BA00911D57 /* GLUT.framework in Frameworks */,
+				11E82D031715B8BA00911D57 /* OpenGL.framework in Frameworks */,
+				11E82D041715B8BA00911D57 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89FECC27170DE02E00F40F3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,6 +679,7 @@
 			children = (
 				8D1107320486CEB800E47090 /* «PROJECTNAME».app */,
 				89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */,
+				11E82D0C1715B8BA00911D57 /* Test (Simon).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -576,6 +702,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */,
+				11E82D0D1715B8BA00911D57 /* main copy-Info.plist */,
 			);
 			name = "«PROJECTNAMEASXML»";
 			sourceTree = "<group>";
@@ -589,6 +716,8 @@
 				89FECBCB170DDF6400F40F3A /* lab4-1.c */,
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
+				89FECC4F170DF2A500F40F3A /* test_renderable.cpp */,
+				89FECC4F170DF2A500F40F3A /* test_renderable.cpp */,
 				11E82CA61715B7EF00911D57 /* testSimon.cpp */,
 			);
 			name = Targets;
@@ -635,6 +764,8 @@
 			children = (
 				11E82C9F170DE8F400911D57 /* VectorUtils3.c */,
 				11E82CA0170DE8F400911D57 /* VectorUtils3.h */,
+				11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */,
+				11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */,
 			);
 			name = Math;
 			sourceTree = "<group>";
@@ -686,6 +817,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		11E82CA91715B8BA00911D57 /* Test (Simon) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "Test (Simon)" */;
+			buildPhases = (
+				11E82CAA1715B8BA00911D57 /* Resources */,
+				11E82CFA1715B8BA00911D57 /* Sources */,
+				11E82D011715B8BA00911D57 /* Frameworks */,
+				11E82D051715B8BA00911D57 /* Copy Frameworks into .app bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test (Simon)";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "«PROJECTNAME»";
+			productReference = 11E82D0C1715B8BA00911D57 /* Test (Simon).app */;
+			productType = "com.apple.product-type.application";
+		};
 		89FECBCD170DE02E00F40F3A /* main */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */;
@@ -742,11 +892,98 @@
 			targets = (
 				8D1107260486CEB800E47090 /* «PROJECTNAME» */,
 				89FECBCD170DE02E00F40F3A /* main */,
+				11E82CA91715B8BA00911D57 /* Test (Simon) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		11E82CAA1715B8BA00911D57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E82CAB1715B8BA00911D57 /* terrain.frag in Resources */,
+				11E82CAC1715B8BA00911D57 /* terrain.vert in Resources */,
+				11E82CAD1715B8BA00911D57 /* InfoPlist.strings in Resources */,
+				11E82CAE1715B8BA00911D57 /* license.txt in Resources */,
+				11E82CAF1715B8BA00911D57 /* rooftops.obj in Resources */,
+				11E82CB01715B8BA00911D57 /* screenshot.jpg in Resources */,
+				11E82CB11715B8BA00911D57 /* walls.obj in Resources */,
+				11E82CB21715B8BA00911D57 /* face-lefthalf.jpg in Resources */,
+				11E82CB31715B8BA00911D57 /* face-lefthalf.obj in Resources */,
+				11E82CB41715B8BA00911D57 /* face-lefthalf.tga in Resources */,
+				11E82CB51715B8BA00911D57 /* face-righthalf.jpg in Resources */,
+				11E82CB61715B8BA00911D57 /* face-righthalf.obj in Resources */,
+				11E82CB71715B8BA00911D57 /* face-righthalf.tga in Resources */,
+				11E82CB81715B8BA00911D57 /* a.jpg in Resources */,
+				11E82CB91715B8BA00911D57 /* b.jpg in Resources */,
+				11E82CBA1715B8BA00911D57 /* c.jpg in Resources */,
+				11E82CBB1715B8BA00911D57 /* d.jpg in Resources */,
+				11E82CBC1715B8BA00911D57 /* e.jpg in Resources */,
+				11E82CBD1715B8BA00911D57 /* f.jpg in Resources */,
+				11E82CBE1715B8BA00911D57 /* girl-body.jpg in Resources */,
+				11E82CBF1715B8BA00911D57 /* girl-body.obj in Resources */,
+				11E82CC01715B8BA00911D57 /* girl-body.tga in Resources */,
+				11E82CC11715B8BA00911D57 /* girl-head.jpg in Resources */,
+				11E82CC21715B8BA00911D57 /* girl-head.obj in Resources */,
+				11E82CC31715B8BA00911D57 /* girl-head.tga in Resources */,
+				11E82CC41715B8BA00911D57 /* hawk-body.jpg in Resources */,
+				11E82CC51715B8BA00911D57 /* hawk-body.obj in Resources */,
+				11E82CC61715B8BA00911D57 /* hawk-body.tga in Resources */,
+				11E82CC71715B8BA00911D57 /* hawk-head.jpg in Resources */,
+				11E82CC81715B8BA00911D57 /* hawk-head.obj in Resources */,
+				11E82CC91715B8BA00911D57 /* hawk-head.tga in Resources */,
+				11E82CCA1715B8BA00911D57 /* 1.jpg in Resources */,
+				11E82CCB1715B8BA00911D57 /* 1.obj in Resources */,
+				11E82CCC1715B8BA00911D57 /* 2.jpg in Resources */,
+				11E82CCD1715B8BA00911D57 /* 2.obj in Resources */,
+				11E82CCE1715B8BA00911D57 /* 3.jpg in Resources */,
+				11E82CCF1715B8BA00911D57 /* 3.obj in Resources */,
+				11E82CD01715B8BA00911D57 /* 4.jpg in Resources */,
+				11E82CD11715B8BA00911D57 /* 4.obj in Resources */,
+				11E82CD21715B8BA00911D57 /* license.txt in Resources */,
+				11E82CD31715B8BA00911D57 /* readme.txt in Resources */,
+				11E82CD41715B8BA00911D57 /* ground.jpg in Resources */,
+				11E82CD51715B8BA00911D57 /* ground.obj in Resources */,
+				11E82CD61715B8BA00911D57 /* tree.jpg in Resources */,
+				11E82CD71715B8BA00911D57 /* tree.obj in Resources */,
+				11E82CD81715B8BA00911D57 /* bunny.obj in Resources */,
+				11E82CD91715B8BA00911D57 /* bunnyplus.obj in Resources */,
+				11E82CDA1715B8BA00911D57 /* cow.obj in Resources */,
+				11E82CDB1715B8BA00911D57 /* cube.obj in Resources */,
+				11E82CDC1715B8BA00911D57 /* ground.obj in Resources */,
+				11E82CDD1715B8BA00911D57 /* klingon.obj in Resources */,
+				11E82CDE1715B8BA00911D57 /* license.txt in Resources */,
+				11E82CDF1715B8BA00911D57 /* plutt.obj in Resources */,
+				11E82CE01715B8BA00911D57 /* teapot.obj in Resources */,
+				11E82CE11715B8BA00911D57 /* teddy.obj in Resources */,
+				11E82CE21715B8BA00911D57 /* venus.obj in Resources */,
+				11E82CE31715B8BA00911D57 /* windmill-walls.obj in Resources */,
+				11E82CE41715B8BA00911D57 /* blade.obj in Resources */,
+				11E82CE51715B8BA00911D57 /* license.txt in Resources */,
+				11E82CE61715B8BA00911D57 /* screenshot.jpg in Resources */,
+				11E82CE71715B8BA00911D57 /* windmill-balcony.obj in Resources */,
+				11E82CE81715B8BA00911D57 /* windmill-roof.obj in Resources */,
+				11E82CE91715B8BA00911D57 /* windmill-walls.obj in Resources */,
+				11E82CEA1715B8BA00911D57 /* 44-terrain.tga in Resources */,
+				11E82CEB1715B8BA00911D57 /* f3.tga in Resources */,
+				11E82CEC1715B8BA00911D57 /* f3gr.tga in Resources */,
+				11E82CED1715B8BA00911D57 /* fft-terrain.tga in Resources */,
+				11E82CEE1715B8BA00911D57 /* newterrain.tga in Resources */,
+				11E82CEF1715B8BA00911D57 /* ok1.tga in Resources */,
+				11E82CF01715B8BA00911D57 /* ok2.tga in Resources */,
+				11E82CF11715B8BA00911D57 /* TERRA2.tga in Resources */,
+				11E82CF21715B8BA00911D57 /* bilskissred.tga in Resources */,
+				11E82CF31715B8BA00911D57 /* conc.tga in Resources */,
+				11E82CF41715B8BA00911D57 /* dirt.tga in Resources */,
+				11E82CF51715B8BA00911D57 /* grass.tga in Resources */,
+				11E82CF61715B8BA00911D57 /* maskros512.tga in Resources */,
+				11E82CF71715B8BA00911D57 /* rutor.tga in Resources */,
+				11E82CF81715B8BA00911D57 /* SkyBox512.tga in Resources */,
+				11E82CF91715B8BA00911D57 /* wall_512_1_05.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89FECBCE170DE02E00F40F3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -922,6 +1159,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		11E82CFA1715B8BA00911D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E82CFE1715B8BA00911D57 /* MicroGlut.m in Sources */,
+				11E82D0E1715B8EB00911D57 /* testSimon.cpp in Sources */,
+				11E82D0F1715B91700911D57 /* Body.h in Sources */,
+				11E82CFF1715B8BA00911D57 /* Particle.h in Sources */,
+				11E82D111715B9D200911D57 /* VectorUtils3.c in Sources */,
+				11E82D121715B9D500911D57 /* VectorUtils3.h in Sources */,
+				11E82D001715B8BA00911D57 /* Particle.cpp in Sources */,
+				11E82D101715B91A00911D57 /* Body.cpp in Sources */,
+				11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89FECC1E170DE02E00F40F3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,6 +1207,9 @@
 				89CE018B1715B33700D6783A /* shader_1.vert in Sources */,
 				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
 				89CE01931715B92D00D6783A /* test_renderable.cpp in Sources */,
+				89FECC51170DF2A500F40F3A /* test_renderable.cpp in Sources */,
+				11E82CA81715B7F000911D57 /* testSimon.cpp in Sources */,
+				11E82D191715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +1227,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		11E82D0A1715B8BA00911D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "main copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Test (Simon)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		11E82D0B1715B8BA00911D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "main copy-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "Test (Simon)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		89FECC2D170DE02E00F40F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1078,6 +1366,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		11E82D091715B8BA00911D57 /* Build configuration list for PBXNativeTarget "Test (Simon)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E82D0A1715B8BA00911D57 /* Debug */,
+				11E82D0B1715B8BA00911D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "main" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

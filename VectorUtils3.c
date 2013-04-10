@@ -876,21 +876,5 @@ mat4 InvertMat4(mat4 a)
 	return b;
 };
 
-mat4 operator*(const mat4 &a, const float &b)
-{
-	mat4 temp = a;
-	for (int i=0; i<16; i++)
-		temp.m[i] *= b;
-		return temp;
-}
 
-ostream& operator<<(const ostream &os, mat4 &a)
-{
-	for(int x=0; y<4; x++)
-	{
-		for(int y=0; x<4; y++)
-			os << a.m[4*y + x] << " ";
-		os << std::endl;
-	}
-}
 

@@ -14,13 +14,14 @@
 class Body : public Particle {
 public:
 	//Constructor
+	Body(GLfloat x=0, GLfloat y=0, GLfloat z=0);
 	//Destructor
 	
 	mat4 generateResultMatrix();
 	
 	void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
-	void setRotVelocity(GLfloat dx, GLfloat dy, GLfloat dz, GLfloat da);
-	void setRotAcceleration(GLfloat ddx, GLfloat ddy, GLfloat ddz, GLfloat dda);
+	void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);
+	void setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda);
 	void setScaling(GLfloat x, GLfloat y, GLfloat z);
 	
 	mat4 getRot();

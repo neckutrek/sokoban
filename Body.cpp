@@ -8,19 +8,23 @@
 
 #include "Body.h"
 
-void Body::setRot(GLfloat x, GLfloaty, GLfloat z, GLfloat a)
+Body::Body(GLfloat x, GLfloat y, GLfloat z)
+: Particle(x, y, z), _rotation(IdentityMatrix()), _rotationVelocity(IdentityMatrix()), _rotationAcceleration(IdentityMatrix()), _scaling(IdentityMatrix())
+{}
+
+void Body::setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a)
 {
-	rotMatrix = ArbRotate(vec3(x, y, z), a);
+	_rotation = ArbRotate(vec3(x, y, z), a);
 }
 
-void Body::setRotVelocity(GLfloat dx, GLfloat dy, GLfloat dz, GLfloat da)
+void Body::setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da)
 {
-	rotVelMatrix = ArbRotate(vec3(x, y, z), a);
+	_rotationVelocity = ArbRotate(vec3(x, y, z), da);
 }
 
-void Body::setRotAcceleration(GLfloat dx, GLfloat dy, GLfloat dz, GLfloat da)
+void Body::setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda)
 {
-	rotAccMatrix = ArbRotate(vec3(x, y, z), a);
+	_rotationAcceleration = ArbRotate(vec3(x, y, z), dda);
 }
 
 void Body::setScaling(GLfloat x, GLfloat y, GLfloat z)

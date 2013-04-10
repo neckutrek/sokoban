@@ -10,12 +10,16 @@
 #define __OpenGLGLUTApp__Particle__
 
 #include "VectorUtils3.h"
+#include "VectorUtils3Addons.h"
 #include "GameComponent.h"
 
 class Particle : virtual public GameComponent {
 public:
     //Constructor
+	Particle(GLfloat x=0, GLfloat y=0, GLfloat z=0);
+	
     //Destructor
+	~Particle();
 	
 	mat4 generateResultMatrix();
     
