@@ -299,10 +299,16 @@ vec3 operator*(const mat3 &a, const vec3 &b)
 
 // mat4 * mat4
 inline
-void operator*=(const mat4 &a, const mat4 &b)
+void operator*=(mat4 &a, const mat4 &b)
 {
 	a = Mult(a, b);
 }
+
+//mat4 * scalar
+
+mat4 operator*(const mat4 &a, const float &b);
+
+friend ostream& operator<<(ostream &os, const mat4 &a);
 
 #endif
 

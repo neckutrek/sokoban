@@ -33,7 +33,6 @@ protected:
     
     
 private:
-	mat4 resultMatrix;
     mat4 _translation;
     vec3 _velocity;
     vec3 _acceleration;
