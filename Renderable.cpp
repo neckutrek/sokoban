@@ -43,6 +43,10 @@ int Renderable::render(GLuint program_reference_id)
         }*/
         
         glDrawElements(GL_TRIANGLES, _model->numIndices, GL_UNSIGNED_INT, 0L);
-        DrawModel(_model, program_reference_id, "vertex_coordinate", "normal_vector", "texture_coordinate");
+        DrawModel(_model,
+                  program_reference_id,
+                  "in_vertex_coordinate",
+                  "in_vertex_normal_vector",
+                  "in_texture_coordinate");
     }
 }
