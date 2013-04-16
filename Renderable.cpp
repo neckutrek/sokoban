@@ -6,6 +6,7 @@
 //
 //
 
+#include <iostream>
 #include "Renderable.h"
 #include "loadobj.h"
 
@@ -19,6 +20,8 @@ int Renderable::loadModel(const char* model_filename)
 int Renderable::render(GLuint program_reference_id)
 {
     if (_is_model_loaded) {
+        std::cout << "rendering model" << std::endl;
+        std::cout << getModelTransformationMatrix() << std::endl;
         glBindVertexArray(_model->vao);
         glUniformMatrix4fv(glGetUniformLocation(program_reference_id,
                                                 "model_transformation"),

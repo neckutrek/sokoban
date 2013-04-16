@@ -204,6 +204,8 @@
 		8964AF79171D7830009BD6A2 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		8964AF7A171D7830009BD6A2 /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
 		8964AF7B171D7830009BD6A2 /* test_vectorAddons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
+		8964AF7C171D7ABA009BD6A2 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
+		8964AF7D171D7ABA009BD6A2 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -1073,6 +1075,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8964AF7C171D7ABA009BD6A2 /* shader_1.frag in Resources */,
+				8964AF7D171D7ABA009BD6A2 /* shader_1.vert in Resources */,
 				89FECBCF170DE02E00F40F3A /* terrain.frag in Resources */,
 				89FECBD0170DE02E00F40F3A /* terrain.vert in Resources */,
 				89FECBD1170DE02E00F40F3A /* InfoPlist.strings in Resources */,

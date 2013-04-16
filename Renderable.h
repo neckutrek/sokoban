@@ -15,7 +15,7 @@
 #endif
 
 #include "GL_utilities.h"
-#include "VectorUtils3.h"
+#include "VectorUtils3Addons.h"
 #include "loadobj.h"
 //#include "LoadTGA2.h"
 

@@ -15,12 +15,14 @@
 #include "loadobj.h"
 #include "LoadTGA2.h"
 #include "GameObject.h"
+#include "Camera.h"
 
 #include <iostream>
 using namespace std;
 
 mat4 projection_transformation;
 GameObject* my_game_object;
+Model* bunnyModel;
 GLuint program_ref_id;
 
 void init(void) {
@@ -28,16 +30,19 @@ void init(void) {
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
     
-    program_ref_id = loadShaders("terrain.vert", "terrain.frag");
+    program_ref_id = loadShaders("shader_1.vert", "shader_1.frag");
     glUseProgram(program_ref_id);
 
-    projection_transformation = frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0);
+    //projection_transformation = frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0);
     
+    projection_transformation = IdentityMatrix();
     glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "projection_transformation"),
                        1, GL_TRUE, projection_transformation.m);
     
-    my_game_object = new GameObject();
-    my_game_object->loadModel("bunnyplus.obj");
+    bunnyModel = LoadModelPlus("bunnyplus.obj");
+    
+    //my_game_object = new GameObject();
+    //my_game_object->loadModel("bunnyplus.obj");
 }
 
 void display(void) {
@@ -55,8 +60,19 @@ void display(void) {
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),
                        1, GL_TRUE, camera_transformation.m);
 	
-    my_game_object->render(program_ref_id);
-    my_game_object->setPosition(0, 0, -3);
+    /*mat4 trans_matrix = IdentityMatrix();
+    trans_matrix.m[11] = -3;
+    
+    glBindVertexArray(bunnyModel->vao);
+    glUniformMatrix4fv(glGetUniformLocation(program_ref_id,
+                                            "model_transformation"),
+                       1, GL_TRUE, trans_matrix.m);
+    */
+    glDrawElements(GL_TRIANGLES, bunnyModel->numIndices, GL_UNSIGNED_INT, 0L);
+    
+    
+    //my_game_object->setPosition(0, 0, -3);
+    //my_game_object->render(program_ref_id);
     
     glutSwapBuffers();
 }
