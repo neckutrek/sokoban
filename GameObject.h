@@ -15,8 +15,8 @@
 
 class GameObject : virtual public Renderable, virtual public Body {
 public:
-    GameObject() = default;
-    ~GameObject() = default;
+    GameObject() : Renderable(), Body() {}
+    ~GameObject() {}
     
 protected:
     virtual mat4 getModelTransformationMatrix();

@@ -14,7 +14,7 @@
 class Body : public Particle {
 public:
 	Body(GLfloat x=0, GLfloat y=0, GLfloat z=0);
-	~Body() = default;
+	~Body() {}
 	
 	void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
 	void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);

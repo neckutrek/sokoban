@@ -799,7 +799,7 @@ static Model* generateModel(Mesh* mesh)
 }
 
 
-Model* LoadModel(char* name)
+Model* LoadModel(const char* name)
 {
 	Model* model = 0;
 	Mesh* mesh = LoadOBJ(name);
@@ -942,7 +942,7 @@ void BuildModelVAO2(Model *m/*,
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, m->numIndices*sizeof(GLuint), m->indexArray, GL_STATIC_DRAW);
 }
 
-Model* LoadModelPlus(char* name/*,
+Model* LoadModelPlus(const char* name/*,
 			GLuint program,
 			char* vertexVariableName,
 			char* normalVariableName,

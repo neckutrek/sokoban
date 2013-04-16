@@ -26,14 +26,14 @@ typedef struct
   GLuint vb, ib, nb, tb; // VBOs
 } Model;
 
-Model* LoadModel(char* name);
+Model* LoadModel(const char* name);
 
 // NEW:
 
 void DrawModel(Model *m, GLuint program, char* vertexVariableName, char* normalVariableName, char* texCoordVariableName);
 void DrawWireframeModel(Model *m, GLuint program, char* vertexVariableName, char* normalVariableName, char* texCoordVariableName);
 
-Model* LoadModelPlus(char* name/*,
+Model* LoadModelPlus(const char* name/*,
 			GLuint program,
 			char* vertexVariableName,
 			char* normalVariableName,

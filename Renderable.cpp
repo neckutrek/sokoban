@@ -22,7 +22,7 @@ int Renderable::render(GLuint program_reference_id)
         glBindVertexArray(_model->vao);
         glUniformMatrix4fv(glGetUniformLocation(program_reference_id,
                                                 "model_transformation"),
-                           1, GL_TRUE, getModelTransformation());
+                           1, GL_TRUE, getModelTransformation().m);
         //glUniform1i(glGetUniformLocation(program, "nTextures"), o->nTextures);
         /*
         for (int i=0; i<o->nTextures; i++) {

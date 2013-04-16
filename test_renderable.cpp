@@ -31,10 +31,10 @@ void init(void) {
     program_ref_id = loadShaders("terrain.vert", "terrain.frag");
     glUseProgram(program_ref_id);
 
-    frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0, projection_transformation);
+    projection_transformation = frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0);
     
-    glUniformMatrix4fv(glGetUniformLocation(program, "projection_transformation"),
-                       1, GL_TRUE, projection_transformation);
+    glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "projection_transformation"),
+                       1, GL_TRUE, projection_transformation.m);
     
     my_game_object = new GameObject();
     my_game_object->loadModel("bunnyplus.obj");
@@ -47,13 +47,13 @@ void display(void) {
 	mat4 model_transformation;
 	mat4 camera_transformation;
     
-	IdentityMatrix(model_transformation);
-    IdentityMatrix(camera_transformation);
+	model_transformation = IdentityMatrix();
+    camera_transformation= IdentityMatrix();
     
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "model_transformation"),
-                       1, GL_TRUE, model_transformation);
+                       1, GL_TRUE, model_transformation.m);
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),
-                       1, GL_TRUE, camera_transformation);
+                       1, GL_TRUE, camera_transformation.m);
 	
     my_game_object->render(program_ref_id);
     
