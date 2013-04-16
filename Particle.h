@@ -9,7 +9,7 @@
 #ifndef __OpenGLGLUTApp__Particle__
 #define __OpenGLGLUTApp__Particle__
 
-#include <iostream>
+//#include <iostream>
 #include "GameComponent.h"
 #include "VectorUtils3.h"
 #include "VectorUtils3Addons.h"
@@ -30,7 +30,7 @@ public:
     
     virtual int update_function(unsigned int time);
     
-    friend std::ostream& operator<<(std::ostream& os, const Particle& p);
+    //friend std::ostream& operator<<(std::ostream& os, const Particle& p);
     
 protected:
     

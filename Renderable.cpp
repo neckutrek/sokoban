@@ -9,9 +9,9 @@
 #include "Renderable.h"
 #include "loadobj.h"
 
-int Renderable::loadModel(std::string model_filename)
+int Renderable::loadModel(const char* model_filename)
 {
-    _model = LoadModelPlus(model_filename.c_str());
+    _model = LoadModelPlus(model_filename);
     _is_model_loaded = true;
     return 0;
 }
@@ -22,7 +22,7 @@ int Renderable::render(GLuint program_reference_id)
         glBindVertexArray(_model->vao);
         glUniformMatrix4fv(glGetUniformLocation(program_reference_id,
                                                 "model_transformation"),
-                           1, GL_TRUE, getModelTransformation().m);
+                           1, GL_TRUE, getModelTransformationMatrix().m);
         //glUniform1i(glGetUniformLocation(program, "nTextures"), o->nTextures);
         /*
         for (int i=0; i<o->nTextures; i++) {

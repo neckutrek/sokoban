@@ -197,6 +197,13 @@
 		11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		11E82D1D1715CC5400911D57 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
 		11E82D1E1715CC5400911D57 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
+		8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
+		8964AF73171D780A009BD6A2 /* test_vecorAddons.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8964AF72171D780A009BD6A2 /* test_vecorAddons.1 */; };
+		8964AF77171D7830009BD6A2 /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
+		8964AF78171D7830009BD6A2 /* VectorUtils3.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA0170DE8F400911D57 /* VectorUtils3.h */; };
+		8964AF79171D7830009BD6A2 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
+		8964AF7A171D7830009BD6A2 /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
+		8964AF7B171D7830009BD6A2 /* test_vectorAddons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
 		89CE01861715B22100D6783A /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89CE01891715B32C00D6783A /* shader_1.frag in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89CE018B1715B33700D6783A /* shader_1.vert in Sources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -340,6 +347,16 @@
 			name = "Copy Frameworks into .app bundle";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8964AF6B171D780A009BD6A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8964AF73171D780A009BD6A2 /* test_vecorAddons.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		89FECC2B170DE02E00F40F3A /* Copy Frameworks into .app bundle */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,6 +476,10 @@
 		11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3Addons.h; sourceTree = "<group>"; };
 		11E82D1B1715CC5400911D57 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		11E82D1C1715CC5400911D57 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_vectorAddons.cpp; sourceTree = "<group>"; };
+		8964AF6D171D780A009BD6A2 /* test_vecorAddons */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test_vecorAddons; sourceTree = BUILT_PRODUCTS_DIR; };
+		8964AF70171D780A009BD6A2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8964AF72171D780A009BD6A2 /* test_vecorAddons.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = test_vecorAddons.1; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; };
@@ -487,6 +508,13 @@
 				11E82D021715B8BA00911D57 /* GLUT.framework in Frameworks */,
 				11E82D031715B8BA00911D57 /* OpenGL.framework in Frameworks */,
 				11E82D041715B8BA00911D57 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8964AF6A171D780A009BD6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +733,7 @@
 				8D1107320486CEB800E47090 /* «PROJECTNAME».app */,
 				89FECC2F170DE02E00F40F3A /* «PROJECTNAME» copy.app */,
 				11E82D0C1715B8BA00911D57 /* Test (Simon).app */,
+				8964AF6D171D780A009BD6A2 /* test_vecorAddons */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -724,6 +753,7 @@
 				29B97315FDCFA39411CA2CEA /* Targets */,
 				F4EAD2EE0D11D50A00A7D2A0 /* Headers */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				8964AF6F171D780A009BD6A2 /* test_vecorAddons */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */,
@@ -742,6 +772,7 @@
 				115EEDCC16D379C100E3644E /* OpenGLCamera.c */,
 				115EEDD016D379C100E3644E /* OpenGLObject.c */,
 				11E82CA61715B7EF00911D57 /* test_physics.cpp */,
+				8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -762,6 +793,15 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8964AF6F171D780A009BD6A2 /* test_vecorAddons */ = {
+			isa = PBXGroup;
+			children = (
+				8964AF70171D780A009BD6A2 /* main.cpp */,
+				8964AF72171D780A009BD6A2 /* test_vecorAddons.1 */,
+			);
+			path = test_vecorAddons;
 			sourceTree = "<group>";
 		};
 		89CE01821715B20E00D6783A /* Renderable */ = {
@@ -863,6 +903,23 @@
 			productReference = 11E82D0C1715B8BA00911D57 /* Test (Simon).app */;
 			productType = "com.apple.product-type.application";
 		};
+		8964AF6C171D780A009BD6A2 /* test_vecorAddons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8964AF74171D780A009BD6A2 /* Build configuration list for PBXNativeTarget "test_vecorAddons" */;
+			buildPhases = (
+				8964AF69171D780A009BD6A2 /* Sources */,
+				8964AF6A171D780A009BD6A2 /* Frameworks */,
+				8964AF6B171D780A009BD6A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test_vecorAddons;
+			productName = test_vecorAddons;
+			productReference = 8964AF6D171D780A009BD6A2 /* test_vecorAddons */;
+			productType = "com.apple.product-type.tool";
+		};
 		89FECBCD170DE02E00F40F3A /* test_renderable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "test_renderable" */;
@@ -920,6 +977,7 @@
 				8D1107260486CEB800E47090 /* «PROJECTNAME» */,
 				89FECBCD170DE02E00F40F3A /* test_renderable */,
 				11E82CA91715B8BA00911D57 /* test_physics */,
+				8964AF6C171D780A009BD6A2 /* test_vecorAddons */,
 			);
 		};
 /* End PBXProject section */
@@ -1180,6 +1238,7 @@
 				115EEE4716D379C100E3644E /* rutor.tga in Resources */,
 				115EEE4816D379C100E3644E /* SkyBox512.tga in Resources */,
 				115EEE4916D379C100E3644E /* wall_512_1_05.tga in Resources */,
+				8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,6 +1262,18 @@
 				11E82D101715B91A00911D57 /* Body.cpp in Sources */,
 				11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */,
 				11E82D1E1715CC5400911D57 /* Camera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8964AF69171D780A009BD6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8964AF77171D7830009BD6A2 /* VectorUtils3.c in Sources */,
+				8964AF78171D7830009BD6A2 /* VectorUtils3.h in Sources */,
+				8964AF79171D7830009BD6A2 /* VectorUtils3Addons.cpp in Sources */,
+				8964AF7A171D7830009BD6A2 /* VectorUtils3Addons.h in Sources */,
+				8964AF7B171D7830009BD6A2 /* test_vectorAddons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,7 +1356,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "main copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "Test (Simon)";
@@ -1302,12 +1373,58 @@
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "main copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "Test (Simon)";
 				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8964AF75171D780A009BD6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_64)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8964AF76171D780A009BD6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1319,7 +1436,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "«PROJECTNAME» copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "«PROJECTNAME» copy";
@@ -1336,7 +1453,7 @@
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "«PROJECTNAME» copy-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "«PROJECTNAME» copy";
@@ -1353,7 +1470,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "«PROJECTNAME»";
@@ -1370,7 +1487,7 @@
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "«PROJECTNAME»";
@@ -1387,7 +1504,7 @@
 					/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1408,7 +1525,7 @@
 					/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1432,6 +1549,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8964AF74171D780A009BD6A2 /* Build configuration list for PBXNativeTarget "test_vecorAddons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8964AF75171D780A009BD6A2 /* Debug */,
+				8964AF76171D780A009BD6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		89FECC2C170DE02E00F40F3A /* Build configuration list for PBXNativeTarget "test_renderable" */ = {
 			isa = XCConfigurationList;

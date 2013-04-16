@@ -9,8 +9,6 @@
 #ifndef __OpenGLGLUTApp__Renderable__
 #define __OpenGLGLUTApp__Renderable__
 
-#include <string>
-
 #ifdef __APPLE__
     #include <OpenGL/gl3.h>
     #include "MicroGlut.h"
@@ -25,11 +23,11 @@ class Renderable {
 public:
     Renderable() : _is_model_loaded(false) {};
     
-    int loadModel(std::string model_filename);
+    int loadModel(const char* model_filename);
     virtual int render(GLuint program_reference_id);
     
 protected:
-    virtual mat4 getModelTransformation() = 0;
+    virtual mat4 getModelTransformationMatrix() = 0;
     
 private:
     Model* _model;

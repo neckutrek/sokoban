@@ -11,7 +11,7 @@
 #endif
 
 #include "GL_utilities.h"
-#include "VectorUtils3.h"
+#include "VectorUtils3Addons.h"
 #include "loadobj.h"
 #include "LoadTGA2.h"
 #include "GameObject.h"
@@ -56,12 +56,13 @@ void display(void) {
                        1, GL_TRUE, camera_transformation.m);
 	
     my_game_object->render(program_ref_id);
+    my_game_object->setPosition(0, 0, -3);
     
     glutSwapBuffers();
 }
 
-int main(int argc, char *argv[]) {
-    
+int main(int argc, char *argv[])
+{
     srand(time(0));
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);

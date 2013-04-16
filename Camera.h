@@ -17,7 +17,7 @@ class Camera : protected Body
 public:
 	Camera(GLfloat x=0, GLfloat y=0, GLfloat z=0);
 	
-	~Camera() = default;
+	~Camera() {}
 	
 	void setViewDirection(GLfloat theta, GLfloat phi);
 	void setViewDirection(GLfloat x, GLfloat y, GLfloat z);

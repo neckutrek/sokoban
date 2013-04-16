@@ -9,7 +9,6 @@
 #ifndef __OpenGLGLUTApp__GameObject__
 #define __OpenGLGLUTApp__GameObject__
 
-#include <string>
 #include "Renderable.h"
 #include "Body.h"
 

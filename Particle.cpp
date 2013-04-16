@@ -57,7 +57,7 @@ int Particle::update_function(unsigned int time)
     _velocity += _acceleration * time;
 	return 0;
 }
-
+/*
 std::ostream& operator<<(std::ostream& os, const Particle& p)
 {
     os << "T: " << p.getPosition()
@@ -65,3 +65,4 @@ std::ostream& operator<<(std::ostream& os, const Particle& p)
     << " A: " << p._acceleration;
     return os;
 }
+ */
