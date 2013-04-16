@@ -44,7 +44,8 @@ void init(void) {
     my_game_object = new GameObject();
     my_game_object->loadModel("bunnyplus.obj");
     my_game_object->setPosition(0, 0, -3);
-    my_game_object->setRotVelocity(1, 1, 1, 0.1);
+	my_game_object->setAcceleration(0, 0, 0.001);
+    my_game_object->setRotAcceleration(1, 1, 0, 0.01);
 }
 
 void display(void) {

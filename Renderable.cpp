@@ -20,7 +20,6 @@ int Renderable::loadModel(const char* model_filename)
 int Renderable::render(GLuint program_reference_id)
 {
     if (_is_model_loaded) {
-        std::cout << getModelTransformationMatrix() << std::endl;
         glUniformMatrix4fv(glGetUniformLocation(program_reference_id,
                                                 "model_transformation"),
                            1, GL_TRUE, getModelTransformationMatrix().m);

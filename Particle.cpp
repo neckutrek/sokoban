@@ -53,8 +53,8 @@ mat4 Particle::getModelMatrix() const
 
 int Particle::update_function(unsigned int time)
 {
-	_translation *= T(_velocity.x, _velocity.y, _velocity.z) * time;
-    _velocity += _acceleration * time;
+	_translation *= T(_velocity.x, _velocity.y, _velocity.z);
+    _velocity += _acceleration;
 	return 0;
 }
 /*

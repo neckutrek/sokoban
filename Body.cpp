@@ -55,8 +55,7 @@ mat4 Body::getModelMatrix() const
 int Body::update_function(unsigned int time)
 {
 	Particle::update_function(time);
-	_rotation *= _rotationVelocity * time;
-    _rotationVelocity *= _rotationAcceleration * time;
-	
+	_rotation *= _rotationVelocity;
+    _rotationVelocity *= _rotationAcceleration;
 	return 0;
 }
