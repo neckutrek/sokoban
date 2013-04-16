@@ -33,16 +33,18 @@ void init(void) {
     program_ref_id = loadShaders("shader_1.vert", "shader_1.frag");
     glUseProgram(program_ref_id);
 
-    //projection_transformation = frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0);
+    projection_transformation = frustum(-0.2, 0.2, -0.2, 0.2, 0.1, 500.0);
     
-    projection_transformation = IdentityMatrix();
+    //projection_transformation = IdentityMatrix();
     glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "projection_transformation"),
                        1, GL_TRUE, projection_transformation.m);
     
-    bunnyModel = LoadModelPlus("bunnyplus.obj");
+    //bunnyModel = LoadModelPlus("bunnyplus.obj");
     
-    //my_game_object = new GameObject();
-    //my_game_object->loadModel("bunnyplus.obj");
+    my_game_object = new GameObject();
+    my_game_object->loadModel("bunnyplus.obj");
+    my_game_object->setPosition(0, 0, -3);
+    my_game_object->setRotVelocity(1, 1, 1, 0.1);
 }
 
 void display(void) {
@@ -68,13 +70,19 @@ void display(void) {
                                             "model_transformation"),
                        1, GL_TRUE, trans_matrix.m);
     */
-    glDrawElements(GL_TRIANGLES, bunnyModel->numIndices, GL_UNSIGNED_INT, 0L);
+    //DrawModel(bunnyModel, program_ref_id, "vertex_coordinate", "normal_vector", "texture_coordinate");
+    //glDrawElements(GL_TRIANGLES, bunnyModel->numIndices, GL_UNSIGNED_INT, 0L);
     
-    
-    //my_game_object->setPosition(0, 0, -3);
-    //my_game_object->render(program_ref_id);
+    my_game_object->render(program_ref_id);
     
     glutSwapBuffers();
+}
+
+void update(int dtime)
+{
+    glutTimerFunc(20, &update, dtime);
+    my_game_object->update(dtime);
+    glutPostRedisplay();
 }
 
 int main(int argc, char *argv[])
@@ -86,7 +94,7 @@ int main(int argc, char *argv[])
 	glutCreateWindow("TSBK07 Lab 4");
 	glutDisplayFunc(display);
 	init();
-	//glutTimerFunc(20, &timer, 0);
+	glutTimerFunc(20, &update, 0);
     
 	glutMainLoop();
 	exit(0);

@@ -9,7 +9,7 @@
 */
 
 #include <math.h>
-#include "VectorUtils2.h"
+#include "VectorUtils3.h"
 
 #ifndef __OPENGLCAMERA_H__
 #define __OPENGLCAMERA_H__
