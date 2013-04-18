@@ -20,6 +20,7 @@ public:
 	void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);
 	void setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda);
 	void setScaling(GLfloat x, GLfloat y, GLfloat z);
+	void setScaling(vec3 v);
 	
 	mat4 getRot() const;
 	mat4 getRotVelocity() const;

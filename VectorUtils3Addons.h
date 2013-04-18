@@ -20,4 +20,6 @@ std::ostream& operator<<(std::ostream &os, const vec3 &a);
 
 mat4 operator*(const mat4 &a, const float &b);
 
+GLfloat clamp(GLfloat x, GLfloat min, GLfloat max);
+
 #endif /* defined(__OpenGLGLUTApp__VectorUtils3Addons__) */

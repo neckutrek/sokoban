@@ -14,21 +14,32 @@ Particle::Particle(GLfloat x, GLfloat y, GLfloat z)
 
 void Particle::setPosition(GLfloat x, GLfloat y, GLfloat z)
 {
-	_translation = T(x, y, z);
+	setPosition(vec3(x, y, z));
+}
+
+void Particle::setPosition(vec3 v)
+{
+	_translation = T(v.x, v.y, v.z);
 }
 
 void Particle::setVelocity(GLfloat dx, GLfloat dy, GLfloat dz)
 {
-	_velocity.x = dx;
-	_velocity.y = dy;
-	_velocity.z = dz;
+	setVelocity(vec3(dx, dy, dz));
+}
+
+void Particle::setVelocity(vec3 v)
+{
+	_velocity = v;
 }
 
 void Particle::setAcceleration(GLfloat ddx, GLfloat ddy, GLfloat ddz)
 {
-	_acceleration.x = ddx;
-	_acceleration.y = ddy;
-	_acceleration.z = ddz;
+	setAcceleration(vec3(ddx, ddy, ddz));
+}
+
+void Particle::setAcceleration(vec3 v)
+{
+	_acceleration = v;
 }
 
 vec3 Particle::getPosition() const

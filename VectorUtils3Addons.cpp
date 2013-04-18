@@ -32,3 +32,8 @@ mat4 operator*(const mat4 &a, const float &b)
 		temp.m[i] *= b;
 	return temp;
 }
+
+GLfloat clamp(GLfloat x, GLfloat min, GLfloat max)
+{
+	return (x < min ? min : (x > max ? max : x));
+}

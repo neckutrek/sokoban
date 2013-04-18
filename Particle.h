@@ -20,8 +20,11 @@ public:
 	~Particle() {}
 	
     void setPosition(GLfloat x, GLfloat y, GLfloat z);
+	void setPosition(vec3 v);
     void setVelocity(GLfloat dx, GLfloat dy, GLfloat dz);
+	void setVelocity(vec3 v);
     void setAcceleration(GLfloat ddx, GLfloat ddy, GLfloat ddz);
+	void setAcceleration(vec3 v);
 	
 	vec3 getPosition() const;
 	vec3 getVelocity() const;

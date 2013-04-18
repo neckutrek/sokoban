@@ -10,19 +10,8 @@
 #include <cmath>
 
 Camera::Camera(GLfloat x, GLfloat y, GLfloat z)
-: Body(x, y, z), _upDirection(0,1,0), _viewDirection(0,0,-1)
+: Particle(x, y, z), _upDirection(0,1,0), _viewDirection(0,0,-1)
 {}
-
-void Camera::setViewDirection(GLfloat theta, GLfloat phi)
-{
-	theta = (theta < 0 ? 0 : (theta > M_PI ? M_PI : theta));
-	phi = fmod(phi,2*M_PI);
-	if (phi < 0)
-		phi += 2*M_PI;
-	_viewDirection.x = -sin(theta)*sin(phi);
-	_viewDirection.y = cos(theta);
-	_viewDirection.z = sin(theta)*cos(phi);
-}
 
 void Camera::setViewDirection(GLfloat x, GLfloat y, GLfloat z)
 {
@@ -38,6 +27,21 @@ void Camera::setUpDirection(GLfloat x, GLfloat y, GLfloat z)
 	_upDirection.z = z;
 }
 
+void Camera::setViewLocation(GLfloat x, GLfloat y, GLfloat z)
+{
+	setViewLocation(vec3(x, y, z));
+}
+
+void Camera::setViewLocation(vec3 v)
+{
+	_viewDirection = v - getPosition();
+}
+
+void Camera::setViewLocation(Particle* p)
+{
+	setViewLocation(p->getPosition());
+}
+
 vec3 Camera::getViewDirection() const
 {
 	return _viewDirection;
@@ -50,5 +54,5 @@ vec3 Camera::getUpDirection() const
 
 mat4 Camera::getCameraMatrix() const
 {
-	return lookAtv(getPosition(), _viewDirection, _upDirection);
+	return lookAtv(getPosition(), getPosition() + _viewDirection, _upDirection);
 }

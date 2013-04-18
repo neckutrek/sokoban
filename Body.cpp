@@ -29,7 +29,12 @@ void Body::setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda)
 
 void Body::setScaling(GLfloat x, GLfloat y, GLfloat z)
 {
-	_scaling = S(x, y, z);
+	setScaling(vec3(x, y, z));
+}
+
+void Body::setScaling(vec3 v)
+{
+	_scaling = S(v.x, v.y, v.z);
 }
 
 mat4 Body::getRot() const
