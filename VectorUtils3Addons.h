@@ -22,4 +22,6 @@ mat4 operator*(const mat4 &a, const float &b);
 
 GLfloat clamp(GLfloat x, GLfloat min, GLfloat max);
 
+vec3 interpolate(vec3 v1, vec3 v2, GLfloat factor);
+
 #endif /* defined(__OpenGLGLUTApp__VectorUtils3Addons__) */

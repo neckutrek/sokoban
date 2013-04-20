@@ -8,47 +8,62 @@
 
 #include "CutsceneCamera.h"
 
-CutsceneCamera::CutsceneCamera(GLfloat x, GLfloat y, GLfloat z) : Camera(x, y, z),
-_startPos(vec3(0,0,0)), _endPos(vec3(0,0,0)), _startViewLoc(vec3(0,0,0)), _endViewLoc(vec3(0,0,0)), _time(3), _currTime(0)
+CutsceneCamera::CutsceneCamera(GLfloat x, GLfloat y, GLfloat z) : Camera(x, y, z)
 {}
 
-void CutsceneCamera::setStartPos(vec3 startPos)
+void CutsceneCamera::addWaypoint(CameraWaypoint waypoint)
 {
-	_startPos = startPos;
+	int insertIndex = _waypoints.size();
+	for(int i=0; i<_waypoints.size(); i++)
+	{
+		if(_waypoints[i].time > waypoint.time)
+		{
+			insertIndex = i;
+			break;
+		}
+	}
+	_waypoints.insert(_waypoints.begin()+insertIndex, waypoint);
 }
 
-void CutsceneCamera::setEndPos(vec3 endPos)
+void CutsceneCamera::addWaypoint(vec3 pos, vec3 dir, GLfloat time)
 {
-	_endPos = endPos;
+	CameraWaypoint c = {pos, dir, time};
+	addWaypoint(c);
 }
 
-void CutsceneCamera::setStartViewLoc(vec3 startViewLoc)
+bool CutsceneCamera::trackFinished()
 {
-	_startViewLoc = startViewLoc;
-}
-
-void CutsceneCamera::setEndViewLoc(vec3 endViewLoc)
-{
-	_endViewLoc = endViewLoc;
-}
-
-void CutsceneCamera::setTime(GLfloat time)
-{
-	_time = time;
-}
-
-vec3 CutsceneCamera::interpolate(vec3 v1, vec3 v2)
-{
-	GLfloat factor = 1/(1+exp((0.5-_currTime/_time)*10));
-	return (1-factor)*v1 + factor*v2;
+	return _waypoints.size() == 0 || _time >= _waypoints.back().time;
 }
 
 int CutsceneCamera::update_function(unsigned int time)
 {
-	//_currTime+=((GLfloat)time)/1000;
-	_currTime++;
-	std::cout << time << std::endl;
-	setPosition(interpolate(_startPos, _endPos));
-	setViewLocation(interpolate(_startViewLoc, _endViewLoc));
+	_time++;
+	if(trackFinished())
+		return 0;
+	if(_waypoints.size() == 1 || _time < _waypoints.front().time)
+	{
+		setPosition(_waypoints.front().pos);
+		setViewLocation(_waypoints.front().dir);
+	}
+	else
+	{
+		int firstWaypointIndex;
+		for(int i=0; i<_waypoints.size(); i++)
+		{
+			if(_time < _waypoints[i].time)
+			{
+				firstWaypointIndex = (i==0 ? 0 : i-1);
+				break;
+			}
+		}
+		
+		CameraWaypoint* waypoint1 = &_waypoints[firstWaypointIndex];
+		CameraWaypoint* waypoint2 = &_waypoints[firstWaypointIndex+1];
+		GLfloat factor = (_time - waypoint1->time)/(waypoint2->time - waypoint1->time);
+		
+		setPosition(interpolate(waypoint1->pos, waypoint2->pos, factor));
+		setViewLocation(interpolate(waypoint1->dir, waypoint2->dir, factor));
+	}
 	return 0;
 }

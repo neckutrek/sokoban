@@ -27,7 +27,7 @@ CameraManager::CameraManager() : _activeCamera(new Camera(0, 0, 5))
 void CameraManager::update()
 {
 	CutsceneCamera* cc = dynamic_cast<CutsceneCamera*>(_activeCamera);
-	if(cc != NULL && cc->isDone())
+	if(cc != NULL && cc->trackFinished())
 	{
 		cc->reset();
 		_activeCamera = _previousCamera;

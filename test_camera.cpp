@@ -57,11 +57,11 @@ void init(void) {
 				objects[9*x+3*y+z].setPosition(3*(x-1), 3*(y-1), 3*(z-1));
 			}
 	
-	c3->setStartPos(vec3(6, 5, 4));
-	c3->setEndPos(vec3(3.5, 3.5, -1.5));
-	c3->setStartViewLoc(objects[0].getPosition());
-	c3->setEndViewLoc(objects[24].getPosition());
-	c3->setTime(150);
+	c3->addWaypoint(vec3(5.5,5.5,-3.5), objects[13].getPosition(), 250);
+	c3->addWaypoint(vec3(6,5,4), objects[0].getPosition(), 20);
+	c3->addWaypoint(vec3(3.5,3.5,-1.5), objects[24].getPosition(), 150);
+	c3->addWaypoint(vec3(0,0,-8), objects[13].getPosition(), 400);
+	c3->addWaypoint(vec3(0,0,-8), objects[13].getPosition(), 450);
 }
 
 void display(void) {
@@ -103,8 +103,8 @@ void update(int dtime)
 	activeCamera->update(dtime);
 	CameraManager::getInstance().update();
 	updateKeyboard();
-	std::cout << "viewDirection = " << activeCamera->getViewDirection() << std::endl;
-	std::cout << "position = " << activeCamera->getPosition() << std::endl << std::endl;
+	//std::cout << "viewDirection = " << activeCamera->getViewDirection() << std::endl;
+	//std::cout << "position = " << activeCamera->getPosition() << std::endl << std::endl;
     glutPostRedisplay();
 }
 

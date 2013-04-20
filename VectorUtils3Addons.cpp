@@ -37,3 +37,9 @@ GLfloat clamp(GLfloat x, GLfloat min, GLfloat max)
 {
 	return (x < min ? min : (x > max ? max : x));
 }
+
+vec3 interpolate(vec3 v1, vec3 v2, GLfloat factor)
+{
+	GLfloat f = 1 - 3*factor*factor + 2*factor*factor*factor;
+	return f*v1 + (1-f)*v2;
+}
