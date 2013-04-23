@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
     srand(time(0));
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
-	glutInitWindowSize(500, 500);
+	glutInitWindowSize(800, 800);
 	glutCreateWindow("TSBK07 Lab 4");
 	glutDisplayFunc(display);
 	glutKeyboardFunc(setKeyDown);

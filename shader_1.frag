@@ -19,6 +19,7 @@ void main(void)
     for (int i = 0; i < counter; ++i)
     {
         vec4 light_travel_vector = transformed_light_source_pos_array[i] - view_vector;
+        
         //float light_travel_distance = sqrt( light_travel_vector[0]*light_travel_vector[0] +
         //                                light_travel_vector[1]*light_travel_vector[1] +
         //                                   light_travel_vector[2]*light_travel_vector[2] );
