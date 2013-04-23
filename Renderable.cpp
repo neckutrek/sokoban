@@ -41,7 +41,7 @@ int Renderable::render(GLuint program_reference_id)
             glBindTexture(GL_TEXTURE_2D, o->textures[i]);
         }*/
         
-        glDrawElements(GL_TRIANGLES, _model->numIndices, GL_UNSIGNED_INT, 0L);
+        //glDrawElements(GL_TRIANGLES, _model->numIndices, GL_UNSIGNED_INT, 0L);
         DrawModel(_model,
                   program_reference_id,
                   "in_vertex_coordinate",
