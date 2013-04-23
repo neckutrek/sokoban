@@ -19,6 +19,7 @@
 #include "DebugCamera.h"
 #include "CutsceneCamera.h"
 #include "CameraManager.h"
+#include "LightContainer.h"
 
 #include <iostream>
 using namespace std;
@@ -31,6 +32,7 @@ ObjectCamera* c2 = new ObjectCamera(&objects[0]);
 CutsceneCamera* c3 = new CutsceneCamera();
 int keyboardMap[256];
 GLuint program_ref_id;
+LightContainer* light_instances;
 
 void init(void) {
     glClearColor(0.2,0.2,0.5,0);
@@ -62,10 +64,25 @@ void init(void) {
 	c3->addWaypoint(vec3(3.5,3.5,-1.5), objects[24].getPosition(), 150);
 	c3->addWaypoint(vec3(0,0,-8), objects[13].getPosition(), 400);
 	c3->addWaypoint(vec3(0,0,-8), objects[13].getPosition(), 450);
+    
+    light_instances = new LightContainer();
+    light_instances->addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 0.0, 0.0), 1.0);
+    light_instances->addLight(vec3(0.0, 0.0, 5.0), vec3(0.0, 1.0, 0.0), 0.5);
+    light_instances->addLight(vec3(5.0, 0.0, 0.0), vec3(0.0, 0.0, 1.0), 1.0);
 }
 
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
+    // upload light information to shader
+    glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), light_instances->getLightCounter());
+    glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_pos_array"),
+                 8, light_instances->getLightSourcesPositionArray());
+    glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_color_array"),
+                 8, light_instances->getLightSourcesColorArray());
+    glUniform1fv(glGetUniformLocation(program_ref_id, "light_sources_lux_array"),
+                 8, light_instances->getLightSourcesLuxArray());
+    
 	glUseProgram(program_ref_id);
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),
                        1, GL_TRUE, CameraManager::getInstance().getActiveCamera()->getCameraMatrix().m);

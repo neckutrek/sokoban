@@ -1,7 +1,7 @@
 #version 150
 
 in vec3 in_vertex_coordinate;
-//in vec3 in_vertex_normal_vector;
+in vec3 in_vertex_normal_vector;
 //in vec2 in_texture_coordinate;
 //out vec2 texCoord;
 

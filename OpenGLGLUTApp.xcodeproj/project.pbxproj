@@ -309,6 +309,8 @@
 		11E82D121715B9D500911D57 /* VectorUtils3.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82CA0170DE8F400911D57 /* VectorUtils3.h */; };
 		11E82D1A1715BB1B00911D57 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		11E82D1E1715CC5400911D57 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
+		8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
+		8941779717266ACC00D30FBA /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		895C7DB21725387C00A18429 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
@@ -1986,6 +1988,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */,
+				8941779717266ACC00D30FBA /* LightContainer.h in Sources */,
 				11B5608B171F647300D5A5DA /* GameComponent.h in Sources */,
 				11B5608C171F647300D5A5DA /* Renderable.cpp in Sources */,
 				11B5608D171F647300D5A5DA /* LoadTGA2.c in Sources */,

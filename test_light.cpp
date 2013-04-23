@@ -61,18 +61,13 @@ void display(void) {
 	glUseProgram(program_ref_id);
 	
     // upload light information to shader
-    
     glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), light_instances->getLightCounter());
-    
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_pos_array"),
                  8, light_instances->getLightSourcesPositionArray());
-    
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_color_array"),
                  8, light_instances->getLightSourcesColorArray());
-    
     glUniform1fv(glGetUniformLocation(program_ref_id, "light_sources_lux_array"),
                  8, light_instances->getLightSourcesLuxArray());
-    
     
     // upload model and camera matrices to shader
 	mat4 model_transformation;
