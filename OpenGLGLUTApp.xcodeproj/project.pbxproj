@@ -201,6 +201,9 @@
 		11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		11924B6B17266008006AF594 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
 		11924B6D172660C5006AF594 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
+		11924B6E17267041006AF594 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
+		11924B6F17267041006AF594 /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
+		11B56033171D956800D5A5DA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B56039171F647300D5A5DA /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11B5603A171F647300D5A5DA /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -1370,6 +1373,9 @@
 				11924B6B17266008006AF594 /* LevelGenerator.h in Sources */,
 				11924B5A17265F72006AF594 /* loadobj.h in Sources */,
 				11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */,
+				11924B6E17267041006AF594 /* LightContainer.cpp in Sources */,
+				11924B6F17267041006AF594 /* LightContainer.h in Sources */,
+				11924B5B17265F72006AF594 /* ObjectCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

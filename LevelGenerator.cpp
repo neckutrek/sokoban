@@ -41,7 +41,8 @@ void LevelGenerator::close()
 
 void LevelGenerator::readMap()
 {
-	//_fileStream->getline(<#char_type *__s#>, <#streamsize __n#>, <#char_type __delim#>)
+	_fileStream->getline(_buffer, _buffSize);
+	std::cout << _buffer << std::endl;
 }
 
 std::string& LevelGenerator::getFileName()
@@ -50,5 +51,5 @@ std::string& LevelGenerator::getFileName()
 }
 
 
-LevelGenerator::LevelGenerator()
+LevelGenerator::LevelGenerator() : _buffSize(UINT_MAX)
 {}

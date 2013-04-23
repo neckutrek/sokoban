@@ -40,6 +40,7 @@ protected:
 	
 private:
 	char* _buffer;
+	const unsigned _buffSize;
 	std::string _fileName;
 	std::ifstream* _fileStream;
 	LevelGenerator();
