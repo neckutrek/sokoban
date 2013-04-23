@@ -4,7 +4,7 @@
 //
 //  Created by Simon Borgenvall on 2013-04-18.
 //
-//
+// hej
 
 #ifndef __OpenGLGLUTApp__CameraManager__
 #define __OpenGLGLUTApp__CameraManager__
