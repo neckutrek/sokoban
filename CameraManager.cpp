@@ -20,7 +20,6 @@ Camera* CameraManager::getActiveCamera()
 	return _activeCamera;
 }
 
-//Temporärt, kolla med marcus hur man gör...
 CameraManager::CameraManager() : _activeCamera(new Camera(0, 0, 5))
 {}
 

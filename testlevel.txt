@@ -1,0 +1,14 @@
+MAP
+  XXXXX
+XXX   X
+X.po  X  
+XXX o.X
+X.XXo X
+X X . XX
+Xo Ooo.X
+X   .  X
+XXXXXXXX
+
+EXTRAS
+setting1=foo
+setting2=bar
