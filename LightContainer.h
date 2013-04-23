@@ -14,19 +14,9 @@
 
 const unsigned int MAX_LIGHT_SOURCES = 8;
 
-class LightContainer //: public GameComponent
+class LightContainer
 {
 public:
-    //static const unsigned int MAX_LIGHT_SOURCES = 64;
-    
-    //SINGLETON
-    //static LightContainer* getInstance() {
-    //    if (_instance != nullptr) {
-    //        _instance = new LightContainer();
-    //    }
-    //    return _instance;
-    //}
-    
     LightContainer()
     : _light_counter(0)
     {}
@@ -59,10 +49,6 @@ public:
     
     
 private:
-    //SINGLETON
-    //static bool instance_created
-    //static LightContainer* _instance;
-    
     unsigned int _light_counter;
     
     vec3 _light_sources_position_array[MAX_LIGHT_SOURCES];
