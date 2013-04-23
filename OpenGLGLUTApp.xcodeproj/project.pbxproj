@@ -203,7 +203,6 @@
 		11924B6D172660C5006AF594 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
 		11924B6E17267041006AF594 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		11924B6F17267041006AF594 /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
-		11B56033171D956800D5A5DA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B56039171F647300D5A5DA /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11B5603A171F647300D5A5DA /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -318,6 +317,26 @@
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		8941779717266ACC00D30FBA /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
+		894177AB1726715200D30FBA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
+		894177AC1726715200D30FBA /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1C1715CC5400911D57 /* Camera.h */; };
+		894177AD1726715200D30FBA /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */; };
+		894177AE1726715200D30FBA /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B5171FD3CC00D5A5DA /* CameraManager.h */; };
+		894177AF1726715200D30FBA /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121817204383000B636B /* CutsceneCamera.cpp */; };
+		894177B01726715200D30FBA /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121917204383000B636B /* CutsceneCamera.h */; };
+		894177B11726715200D30FBA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
+		894177B21726715200D30FBA /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B56032171D956800D5A5DA /* DebugCamera.h */; };
+		894177B31726715200D30FBA /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121317200706000B636B /* ObjectCamera.cpp */; };
+		894177B41726715200D30FBA /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121417200706000B636B /* ObjectCamera.h */; };
+		894177B61726715D00D30FBA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
+		894177B71726715D00D30FBA /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1C1715CC5400911D57 /* Camera.h */; };
+		894177B81726715D00D30FBA /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */; };
+		894177B91726715D00D30FBA /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B5171FD3CC00D5A5DA /* CameraManager.h */; };
+		894177BA1726715D00D30FBA /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121817204383000B636B /* CutsceneCamera.cpp */; };
+		894177BB1726715D00D30FBA /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121917204383000B636B /* CutsceneCamera.h */; };
+		894177BC1726715D00D30FBA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
+		894177BD1726715D00D30FBA /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B56032171D956800D5A5DA /* DebugCamera.h */; };
+		894177BE1726715D00D30FBA /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121317200706000B636B /* ObjectCamera.cpp */; };
+		894177BF1726715D00D30FBA /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121417200706000B636B /* ObjectCamera.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
@@ -1348,6 +1367,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894177B61726715D00D30FBA /* Camera.cpp in Sources */,
+				894177B71726715D00D30FBA /* Camera.h in Sources */,
+				894177B81726715D00D30FBA /* CameraManager.cpp in Sources */,
+				894177B91726715D00D30FBA /* CameraManager.h in Sources */,
+				894177BA1726715D00D30FBA /* CutsceneCamera.cpp in Sources */,
+				894177BB1726715D00D30FBA /* CutsceneCamera.h in Sources */,
+				894177BC1726715D00D30FBA /* DebugCamera.cpp in Sources */,
+				894177BD1726715D00D30FBA /* DebugCamera.h in Sources */,
+				894177BE1726715D00D30FBA /* ObjectCamera.cpp in Sources */,
+				894177BF1726715D00D30FBA /* ObjectCamera.h in Sources */,
 				11924B3C17265F72006AF594 /* GameComponent.h in Sources */,
 				11924B3D17265F72006AF594 /* Renderable.cpp in Sources */,
 				11924B3E17265F72006AF594 /* LoadTGA2.c in Sources */,
@@ -1375,7 +1404,6 @@
 				11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */,
 				11924B6E17267041006AF594 /* LightContainer.cpp in Sources */,
 				11924B6F17267041006AF594 /* LightContainer.h in Sources */,
-				11924B5B17265F72006AF594 /* ObjectCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1383,6 +1411,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894177AB1726715200D30FBA /* Camera.cpp in Sources */,
+				894177AC1726715200D30FBA /* Camera.h in Sources */,
+				894177AD1726715200D30FBA /* CameraManager.cpp in Sources */,
+				894177AE1726715200D30FBA /* CameraManager.h in Sources */,
+				894177AF1726715200D30FBA /* CutsceneCamera.cpp in Sources */,
+				894177B01726715200D30FBA /* CutsceneCamera.h in Sources */,
+				894177B11726715200D30FBA /* DebugCamera.cpp in Sources */,
+				894177B21726715200D30FBA /* DebugCamera.h in Sources */,
+				894177B31726715200D30FBA /* ObjectCamera.cpp in Sources */,
+				894177B41726715200D30FBA /* ObjectCamera.h in Sources */,
 				8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */,
 				8941779717266ACC00D30FBA /* LightContainer.h in Sources */,
 				11B5608B171F647300D5A5DA /* GameComponent.h in Sources */,
