@@ -133,17 +133,17 @@ int main(int argc, char *argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("TSBK07 Lab 4");
-	if(LevelGenerator::getInstance().open("testlevel.txt"))
-	{
-		std::cout << LevelGenerator::getInstance().getFileName() << std::endl;
-		//LevelGenerator::getInstance().readMap();
-	}
 	glutDisplayFunc(display);
 	glutKeyboardFunc(setKeyDown);
 	glutKeyboardUpFunc(setKeyUp);
 	init();
 	glutTimerFunc(20, &update, 0);
     
+	if(LevelGenerator::getInstance().fileExists("testlevel.txt"))
+	{
+		LevelGenerator::getInstance().load("testLevel.txt");
+	}
+	
 	glutMainLoop();
 	exit(0);
 }

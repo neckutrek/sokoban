@@ -203,6 +203,21 @@
 		11924B6D172660C5006AF594 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
 		11924B6E17267041006AF594 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		11924B6F17267041006AF594 /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
+		11924B7A172671D3006AF594 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
+		11924B7B172671D3006AF594 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
+		11924B7C172671D3006AF594 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
+		11924B7D172671D3006AF594 /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B72172671D3006AF594 /* CameraManager.cpp */; };
+		11924B7E172671D3006AF594 /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B72172671D3006AF594 /* CameraManager.cpp */; };
+		11924B7F172671D3006AF594 /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B72172671D3006AF594 /* CameraManager.cpp */; };
+		11924B80172671D3006AF594 /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B74172671D3006AF594 /* CutsceneCamera.cpp */; };
+		11924B81172671D3006AF594 /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B74172671D3006AF594 /* CutsceneCamera.cpp */; };
+		11924B82172671D3006AF594 /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B74172671D3006AF594 /* CutsceneCamera.cpp */; };
+		11924B83172671D3006AF594 /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B76172671D3006AF594 /* DebugCamera.cpp */; };
+		11924B84172671D3006AF594 /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B76172671D3006AF594 /* DebugCamera.cpp */; };
+		11924B85172671D3006AF594 /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B76172671D3006AF594 /* DebugCamera.cpp */; };
+		11924B86172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
+		11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
+		11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B56039171F647300D5A5DA /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11B5603A171F647300D5A5DA /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -317,26 +332,6 @@
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		8941779717266ACC00D30FBA /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
-		894177AB1726715200D30FBA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
-		894177AC1726715200D30FBA /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1C1715CC5400911D57 /* Camera.h */; };
-		894177AD1726715200D30FBA /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */; };
-		894177AE1726715200D30FBA /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B5171FD3CC00D5A5DA /* CameraManager.h */; };
-		894177AF1726715200D30FBA /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121817204383000B636B /* CutsceneCamera.cpp */; };
-		894177B01726715200D30FBA /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121917204383000B636B /* CutsceneCamera.h */; };
-		894177B11726715200D30FBA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
-		894177B21726715200D30FBA /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B56032171D956800D5A5DA /* DebugCamera.h */; };
-		894177B31726715200D30FBA /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121317200706000B636B /* ObjectCamera.cpp */; };
-		894177B41726715200D30FBA /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121417200706000B636B /* ObjectCamera.h */; };
-		894177B61726715D00D30FBA /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1B1715CC5400911D57 /* Camera.cpp */; };
-		894177B71726715D00D30FBA /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D1C1715CC5400911D57 /* Camera.h */; };
-		894177B81726715D00D30FBA /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */; };
-		894177B91726715D00D30FBA /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B560B5171FD3CC00D5A5DA /* CameraManager.h */; };
-		894177BA1726715D00D30FBA /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121817204383000B636B /* CutsceneCamera.cpp */; };
-		894177BB1726715D00D30FBA /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121917204383000B636B /* CutsceneCamera.h */; };
-		894177BC1726715D00D30FBA /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56031171D956800D5A5DA /* DebugCamera.cpp */; };
-		894177BD1726715D00D30FBA /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B56032171D956800D5A5DA /* DebugCamera.h */; };
-		894177BE1726715D00D30FBA /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1177121317200706000B636B /* ObjectCamera.cpp */; };
-		894177BF1726715D00D30FBA /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 1177121417200706000B636B /* ObjectCamera.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
@@ -496,23 +491,25 @@
 		115EEDE816D379C100E3644E /* wall_512_1_05.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall_512_1_05.tga; sourceTree = "<group>"; };
 		115EEE4D16D37A0900E3644E /* MicroGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGlut.h; sourceTree = "<group>"; };
 		115EEE4E16D37A0900E3644E /* MicroGlut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGlut.m; sourceTree = "<group>"; };
-		1177121317200706000B636B /* ObjectCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObjectCamera.cpp; path = /Users/neckutrek/XCode_workspace/sokoban/ObjectCamera.cpp; sourceTree = "<absolute>"; };
-		1177121417200706000B636B /* ObjectCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectCamera.h; path = /Users/neckutrek/XCode_workspace/sokoban/ObjectCamera.h; sourceTree = "<absolute>"; };
-		1177121817204383000B636B /* CutsceneCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CutsceneCamera.cpp; path = /Users/neckutrek/XCode_workspace/sokoban/CutsceneCamera.cpp; sourceTree = "<absolute>"; };
-		1177121917204383000B636B /* CutsceneCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CutsceneCamera.h; path = /Users/neckutrek/XCode_workspace/sokoban/CutsceneCamera.h; sourceTree = "<absolute>"; };
 		11924AE217251FC6006AF594 /* LevelGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGenerator.cpp; sourceTree = "<group>"; };
 		11924AE317251FC6006AF594 /* LevelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGenerator.h; sourceTree = "<group>"; };
 		11924AE617265F55006AF594 /* test_level_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_level_generator.cpp; sourceTree = "<group>"; };
 		11924B6717265F72006AF594 /* test_camera copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_camera copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11924B6817265F72006AF594 /* test_camera copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_camera copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_camera copy-Info.plist"; sourceTree = "<absolute>"; };
 		11924B6C172660C5006AF594 /* testlevel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testlevel.txt; sourceTree = "<group>"; };
-		11B56031171D956800D5A5DA /* DebugCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DebugCamera.cpp; path = /Users/neckutrek/XCode_workspace/sokoban/DebugCamera.cpp; sourceTree = "<absolute>"; };
-		11B56032171D956800D5A5DA /* DebugCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugCamera.h; path = /Users/neckutrek/XCode_workspace/sokoban/DebugCamera.h; sourceTree = "<absolute>"; };
+		11924B70172671D3006AF594 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		11924B71172671D3006AF594 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		11924B72172671D3006AF594 /* CameraManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraManager.cpp; sourceTree = "<group>"; };
+		11924B73172671D3006AF594 /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		11924B74172671D3006AF594 /* CutsceneCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CutsceneCamera.cpp; sourceTree = "<group>"; };
+		11924B75172671D3006AF594 /* CutsceneCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutsceneCamera.h; sourceTree = "<group>"; };
+		11924B76172671D3006AF594 /* DebugCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugCamera.cpp; sourceTree = "<group>"; };
+		11924B77172671D3006AF594 /* DebugCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCamera.h; sourceTree = "<group>"; };
+		11924B78172671D3006AF594 /* ObjectCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCamera.cpp; sourceTree = "<group>"; };
+		11924B79172671D3006AF594 /* ObjectCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCamera.h; sourceTree = "<group>"; };
 		11B56034171F644700D5A5DA /* test_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_camera.cpp; sourceTree = "<group>"; };
 		11B560AD171F647300D5A5DA /* test_renderable copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_renderable copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B560AE171F647400D5A5DA /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
-		11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CameraManager.cpp; path = /Users/neckutrek/XCode_workspace/sokoban/CameraManager.cpp; sourceTree = "<absolute>"; };
-		11B560B5171FD3CC00D5A5DA /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraManager.h; path = /Users/neckutrek/XCode_workspace/sokoban/CameraManager.h; sourceTree = "<absolute>"; };
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
 		11E82CA0170DE8F400911D57 /* VectorUtils3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3.h; sourceTree = "<group>"; };
@@ -520,8 +517,6 @@
 		11E82D0D1715B8BA00911D57 /* main copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "main copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/main copy-Info.plist"; sourceTree = "<absolute>"; };
 		11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VectorUtils3Addons.cpp; sourceTree = "<group>"; };
 		11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3Addons.h; sourceTree = "<group>"; };
-		11E82D1B1715CC5400911D57 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Camera.cpp; path = /Users/neckutrek/XCode_workspace/sokoban/Camera.cpp; sourceTree = "<absolute>"; };
-		11E82D1C1715CC5400911D57 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = /Users/neckutrek/XCode_workspace/sokoban/Camera.h; sourceTree = "<absolute>"; };
 		895C7D5B172520DA00A18429 /* test_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_light.cpp; sourceTree = "<group>"; };
 		895C7D5E17252F2800A18429 /* LightContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightContainer.cpp; sourceTree = "<group>"; };
 		895C7D5F17252F2800A18429 /* LightContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightContainer.h; sourceTree = "<group>"; };
@@ -794,16 +789,16 @@
 		11924AE5172525AF006AF594 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				11E82D1B1715CC5400911D57 /* Camera.cpp */,
-				11E82D1C1715CC5400911D57 /* Camera.h */,
-				11B560B4171FD3CB00D5A5DA /* CameraManager.cpp */,
-				11B560B5171FD3CC00D5A5DA /* CameraManager.h */,
-				1177121817204383000B636B /* CutsceneCamera.cpp */,
-				1177121917204383000B636B /* CutsceneCamera.h */,
-				11B56031171D956800D5A5DA /* DebugCamera.cpp */,
-				11B56032171D956800D5A5DA /* DebugCamera.h */,
-				1177121317200706000B636B /* ObjectCamera.cpp */,
-				1177121417200706000B636B /* ObjectCamera.h */,
+				11924B70172671D3006AF594 /* Camera.cpp */,
+				11924B71172671D3006AF594 /* Camera.h */,
+				11924B72172671D3006AF594 /* CameraManager.cpp */,
+				11924B73172671D3006AF594 /* CameraManager.h */,
+				11924B74172671D3006AF594 /* CutsceneCamera.cpp */,
+				11924B75172671D3006AF594 /* CutsceneCamera.h */,
+				11924B76172671D3006AF594 /* DebugCamera.cpp */,
+				11924B77172671D3006AF594 /* DebugCamera.h */,
+				11924B78172671D3006AF594 /* ObjectCamera.cpp */,
+				11924B79172671D3006AF594 /* ObjectCamera.h */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -1367,16 +1362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				894177B61726715D00D30FBA /* Camera.cpp in Sources */,
-				894177B71726715D00D30FBA /* Camera.h in Sources */,
-				894177B81726715D00D30FBA /* CameraManager.cpp in Sources */,
-				894177B91726715D00D30FBA /* CameraManager.h in Sources */,
-				894177BA1726715D00D30FBA /* CutsceneCamera.cpp in Sources */,
-				894177BB1726715D00D30FBA /* CutsceneCamera.h in Sources */,
-				894177BC1726715D00D30FBA /* DebugCamera.cpp in Sources */,
-				894177BD1726715D00D30FBA /* DebugCamera.h in Sources */,
-				894177BE1726715D00D30FBA /* ObjectCamera.cpp in Sources */,
-				894177BF1726715D00D30FBA /* ObjectCamera.h in Sources */,
 				11924B3C17265F72006AF594 /* GameComponent.h in Sources */,
 				11924B3D17265F72006AF594 /* Renderable.cpp in Sources */,
 				11924B3E17265F72006AF594 /* LoadTGA2.c in Sources */,
@@ -1404,6 +1389,11 @@
 				11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */,
 				11924B6E17267041006AF594 /* LightContainer.cpp in Sources */,
 				11924B6F17267041006AF594 /* LightContainer.h in Sources */,
+				11924B7C172671D3006AF594 /* Camera.cpp in Sources */,
+				11924B7F172671D3006AF594 /* CameraManager.cpp in Sources */,
+				11924B82172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
+				11924B85172671D3006AF594 /* DebugCamera.cpp in Sources */,
+				11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1411,16 +1401,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				894177AB1726715200D30FBA /* Camera.cpp in Sources */,
-				894177AC1726715200D30FBA /* Camera.h in Sources */,
-				894177AD1726715200D30FBA /* CameraManager.cpp in Sources */,
-				894177AE1726715200D30FBA /* CameraManager.h in Sources */,
-				894177AF1726715200D30FBA /* CutsceneCamera.cpp in Sources */,
-				894177B01726715200D30FBA /* CutsceneCamera.h in Sources */,
-				894177B11726715200D30FBA /* DebugCamera.cpp in Sources */,
-				894177B21726715200D30FBA /* DebugCamera.h in Sources */,
-				894177B31726715200D30FBA /* ObjectCamera.cpp in Sources */,
-				894177B41726715200D30FBA /* ObjectCamera.h in Sources */,
 				8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */,
 				8941779717266ACC00D30FBA /* LightContainer.h in Sources */,
 				11B5608B171F647300D5A5DA /* GameComponent.h in Sources */,
@@ -1446,6 +1426,11 @@
 				11B5609F171F647300D5A5DA /* MicroGlut.h in Sources */,
 				11B560A0171F647300D5A5DA /* MicroGlut.m in Sources */,
 				11B560A1171F647300D5A5DA /* loadobj.h in Sources */,
+				11924B7B172671D3006AF594 /* Camera.cpp in Sources */,
+				11924B7E172671D3006AF594 /* CameraManager.cpp in Sources */,
+				11924B81172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
+				11924B84172671D3006AF594 /* DebugCamera.cpp in Sources */,
+				11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1477,6 +1462,11 @@
 				895C7D5C172520DA00A18429 /* test_light.cpp in Sources */,
 				895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */,
 				11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */,
+				11924B7A172671D3006AF594 /* Camera.cpp in Sources */,
+				11924B7D172671D3006AF594 /* CameraManager.cpp in Sources */,
+				11924B80172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
+				11924B83172671D3006AF594 /* DebugCamera.cpp in Sources */,
+				11924B86172671D3006AF594 /* ObjectCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
