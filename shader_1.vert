@@ -2,8 +2,7 @@
 
 in vec3 in_vertex_coordinate;
 in vec3 in_vertex_normal_vector;
-//in vec2 in_texture_coordinate;
-//out vec2 texCoord;
+in vec2 in_texture_coordinate;
 
 uniform mat4 model_transformation;
 uniform mat4 camera_transformation;
@@ -15,7 +14,7 @@ uniform int light_counter;
 
 out vec3 transformed_normal_vector;
 out vec4 view_vector;
-
+out vec2 texture_coordinate;
 out vec4 transformed_light_source_pos_array[8];
 
 void main(void)
@@ -42,5 +41,5 @@ void main(void)
             vec4(light_sources_pos_array[i], 1.0);
 	}
     
-    //texCoord = inTexCoord;
+    texture_coordinate = in_texture_coordinate;
 }

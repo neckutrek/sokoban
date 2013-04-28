@@ -334,6 +334,7 @@
 		8941779717266ACC00D30FBA /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
+		895EC46E172D2A8600BF8EF7 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC46C172D2A8600BF8EF7 /* BoundingBox.cpp */; };
 		8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */; };
 		8964AFBE171D814D009BD6A2 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
 		8964AFBF171D814D009BD6A2 /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
@@ -354,7 +355,7 @@
 		8964AFCF171D817A009BD6A2 /* OpenGLCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDCE16D379C100E3644E /* OpenGLCamera.h */; };
 		8964AFD0171D817A009BD6A2 /* OpenGLObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDD116D379C100E3644E /* OpenGLObject.h */; };
 		8964AFD1171D818A009BD6A2 /* GL_utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7C16D379C100E3644E /* GL_utilities.h */; };
-		8964AFEA171D9D97009BD6A2 /* GameComponentContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8964AFE8171D9D97009BD6A2 /* GameComponentContainer.cpp */; };
+		8964AFEA171D9D97009BD6A2 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8964AFE8171D9D97009BD6A2 /* GameObjectManager.cpp */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -533,6 +534,8 @@
 		895C7D8A1725379300A18429 /* test_lightTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_lightTests.h; sourceTree = "<group>"; };
 		895C7D8B1725379300A18429 /* test_lightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_lightTests.m; sourceTree = "<group>"; };
 		895C7E281725387C00A18429 /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
+		895EC46C172D2A8600BF8EF7 /* BoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundingBox.cpp; sourceTree = "<group>"; };
+		895EC46D172D2A8600BF8EF7 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
 		8964AF67171D77B6009BD6A2 /* test_vectorAddons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_vectorAddons.cpp; sourceTree = "<group>"; };
 		8964AF7E171D8043009BD6A2 /* lab1-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab1-1.c"; sourceTree = "<group>"; };
 		8964AF7F171D8043009BD6A2 /* lab1-1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = "lab1-1.frag"; sourceTree = "<group>"; };
@@ -542,8 +545,8 @@
 		8964AF8D171D8058009BD6A2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8964AF8E171D8058009BD6A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8964AFA7171D8058009BD6A2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
-		8964AFE8171D9D97009BD6A2 /* GameComponentContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameComponentContainer.cpp; sourceTree = "<group>"; };
-		8964AFE9171D9D97009BD6A2 /* GameComponentContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameComponentContainer.h; sourceTree = "<group>"; };
+		8964AFE8171D9D97009BD6A2 /* GameObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectManager.cpp; sourceTree = "<group>"; };
+		8964AFE9171D9D97009BD6A2 /* GameObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectManager.h; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -816,6 +819,7 @@
 		29B97314FDCFA39411CA2CEA /* «PROJECTNAMEASXML» */ = {
 			isa = PBXGroup;
 			children = (
+				895EC46B172D28A600BF8EF7 /* Collision */,
 				11924AE5172525AF006AF594 /* Camera */,
 				89CE01871715B2EA00D6783A /* Shaders */,
 				89CE01821715B20E00D6783A /* Renderable */,
@@ -926,6 +930,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		895EC46B172D28A600BF8EF7 /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				895EC46C172D2A8600BF8EF7 /* BoundingBox.cpp */,
+				895EC46D172D2A8600BF8EF7 /* BoundingBox.h */,
+			);
+			name = Collision;
+			sourceTree = "<group>";
+		};
 		89CE01821715B20E00D6783A /* Renderable */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,8 +1003,8 @@
 				89FECC47170DEB8600F40F3A /* GameComponent.h */,
 				89CE01971715C2D000D6783A /* GameObject.cpp */,
 				89CE01981715C2D000D6783A /* GameObject.h */,
-				8964AFE8171D9D97009BD6A2 /* GameComponentContainer.cpp */,
-				8964AFE9171D9D97009BD6A2 /* GameComponentContainer.h */,
+				8964AFE8171D9D97009BD6A2 /* GameObjectManager.cpp */,
+				8964AFE9171D9D97009BD6A2 /* GameObjectManager.h */,
 				11924AE217251FC6006AF594 /* LevelGenerator.cpp */,
 				11924AE317251FC6006AF594 /* LevelGenerator.h */,
 			);
@@ -1458,7 +1471,7 @@
 				8964AFC3171D814D009BD6A2 /* LoadTGA2.h in Sources */,
 				8964AFC4171D814D009BD6A2 /* GL_utilities.c in Sources */,
 				11B56036171F644700D5A5DA /* test_camera.cpp in Sources */,
-				8964AFEA171D9D97009BD6A2 /* GameComponentContainer.cpp in Sources */,
+				8964AFEA171D9D97009BD6A2 /* GameObjectManager.cpp in Sources */,
 				895C7D5C172520DA00A18429 /* test_light.cpp in Sources */,
 				895C7D6017252F2800A18429 /* LightContainer.cpp in Sources */,
 				11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */,
@@ -1467,6 +1480,7 @@
 				11924B80172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
 				11924B83172671D3006AF594 /* DebugCamera.cpp in Sources */,
 				11924B86172671D3006AF594 /* ObjectCamera.cpp in Sources */,
+				895EC46E172D2A8600BF8EF7 /* BoundingBox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
