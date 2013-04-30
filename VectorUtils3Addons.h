@@ -20,6 +20,8 @@ std::ostream& operator<<(std::ostream &os, const vec3 &a);
 
 mat4 operator*(const mat4 &a, const float &b);
 
+bool operator==(const vec3 &a, const vec3 &b);
+
 GLfloat clamp(GLfloat x, GLfloat min, GLfloat max);
 
 vec3 interpolate(vec3 v1, vec3 v2, GLfloat factor);

@@ -218,6 +218,20 @@
 		11924B86172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
+		11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
+		11924B8F172D32E6006AF594 /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* Wall.cpp */; };
+		11924B92172D4E63006AF594 /* Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8E172D32E6006AF594 /* Wall.h */; };
+		11924B95172D4E63006AF594 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
+		11924B96172D4E63006AF594 /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B73172671D3006AF594 /* CameraManager.h */; };
+		11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
+		11924B98172D4E63006AF594 /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B77172671D3006AF594 /* DebugCamera.h */; };
+		11924B99172D4E63006AF594 /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B79172671D3006AF594 /* ObjectCamera.h */; };
+		11924B9A172D4E63006AF594 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8964AFE8171D9D97009BD6A2 /* GameObjectManager.cpp */; };
+		11924B9B172D4E63006AF594 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 8964AFE9171D9D97009BD6A2 /* GameObjectManager.h */; };
+		11924B9C172D4E63006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
+		11924B9D172D4E63006AF594 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
+		11924B9E172F9BA3006AF594 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC46C172D2A8600BF8EF7 /* BoundingBox.cpp */; };
+		11924B9F172F9BA3006AF594 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC46D172D2A8600BF8EF7 /* BoundingBox.h */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B56039171F647300D5A5DA /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11B5603A171F647300D5A5DA /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -556,6 +570,10 @@
 		11924B77172671D3006AF594 /* DebugCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCamera.h; sourceTree = "<group>"; };
 		11924B78172671D3006AF594 /* ObjectCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCamera.cpp; sourceTree = "<group>"; };
 		11924B79172671D3006AF594 /* ObjectCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCamera.h; sourceTree = "<group>"; };
+		11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectFactory.cpp; sourceTree = "<group>"; };
+		11924B8A172D2F0E006AF594 /* GameObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectFactory.h; sourceTree = "<group>"; };
+		11924B8D172D32E6006AF594 /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
+		11924B8E172D32E6006AF594 /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
 		11B56034171F644700D5A5DA /* test_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_camera.cpp; sourceTree = "<group>"; };
 		11B560AD171F647300D5A5DA /* test_renderable copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_renderable copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B560AE171F647400D5A5DA /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -876,6 +894,15 @@
 			name = Camera;
 			sourceTree = "<group>";
 		};
+		11924B8C172D32D1006AF594 /* Sokoban */ = {
+			isa = PBXGroup;
+			children = (
+				11924B8D172D32E6006AF594 /* Wall.cpp */,
+				11924B8E172D32E6006AF594 /* Wall.h */,
+			);
+			name = Sokoban;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -890,6 +917,8 @@
 		29B97314FDCFA39411CA2CEA /* «PROJECTNAMEASXML» */ = {
 			isa = PBXGroup;
 			children = (
+				11924B8C172D32D1006AF594 /* Sokoban */,
+				895EC46B172D28A600BF8EF7 /* Collision */,
 				11924AE5172525AF006AF594 /* Camera */,
 				89CE01871715B2EA00D6783A /* Shaders */,
 				89CE01821715B20E00D6783A /* Renderable */,
@@ -1097,6 +1126,8 @@
 				89CE01981715C2D000D6783A /* GameObject.h */,
 				11924AE217251FC6006AF594 /* LevelGenerator.cpp */,
 				11924AE317251FC6006AF594 /* LevelGenerator.h */,
+				11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */,
+				11924B8A172D2F0E006AF594 /* GameObjectFactory.h */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -1495,6 +1526,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11924B9E172F9BA3006AF594 /* BoundingBox.cpp in Sources */,
+				11924B9F172F9BA3006AF594 /* BoundingBox.h in Sources */,
+				11924B92172D4E63006AF594 /* Wall.h in Sources */,
+				11924B95172D4E63006AF594 /* Camera.h in Sources */,
+				11924B96172D4E63006AF594 /* CameraManager.h in Sources */,
+				11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */,
+				11924B98172D4E63006AF594 /* DebugCamera.h in Sources */,
+				11924B99172D4E63006AF594 /* ObjectCamera.h in Sources */,
+				11924B9A172D4E63006AF594 /* GameObjectManager.cpp in Sources */,
+				11924B9B172D4E63006AF594 /* GameObjectManager.h in Sources */,
+				11924B9C172D4E63006AF594 /* GameObjectFactory.cpp in Sources */,
+				11924B9D172D4E63006AF594 /* GameObjectFactory.h in Sources */,
 				11924B3C17265F72006AF594 /* GameComponent.h in Sources */,
 				11924B3D17265F72006AF594 /* Renderable.cpp in Sources */,
 				11924B3E17265F72006AF594 /* LoadTGA2.c in Sources */,
@@ -1527,6 +1570,7 @@
 				11924B82172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
 				11924B85172671D3006AF594 /* DebugCamera.cpp in Sources */,
 				11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */,
+				11924B8F172D32E6006AF594 /* Wall.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1648,6 +1692,8 @@
 				895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */,
 				895EC481172D53EC00BF8EF7 /* RenderableMultilayer.cpp in Sources */,
 				895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */,
+				895EC46E172D2A8600BF8EF7 /* BoundingBox.cpp in Sources */,
+				11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

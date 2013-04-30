@@ -11,17 +11,21 @@
 
 #include "Renderable.h"
 #include "Body.h"
+#include "BoundingBox.h"
 
 class GameObject : virtual public Renderable, virtual public Body {
 public:
-    GameObject() : Renderable(), Body() {}
-    ~GameObject() {}
+    GameObject(BoundingBox boundingBox) : Renderable(), Body(), _boundingBox(boundingBox) {}
+    virtual ~GameObject() {}
+	
+	BoundingBox getBoundingBox();
+	virtual std::string getType() = 0;
     
 protected:
     virtual mat4 getModelTransformationMatrix();
     
 private:
-    
+    BoundingBox _boundingBox;
     
 };
 

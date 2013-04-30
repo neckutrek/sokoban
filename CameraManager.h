@@ -22,9 +22,10 @@ public:
 		static CameraManager instance;
 		return instance;
 	}
+	
 	void setActiveCamera(Camera* c);
 	Camera* getActiveCamera();
-	void update();
+	void update(int dtime);
 	
 protected:
 	

@@ -13,3 +13,7 @@ mat4 GameObject::getModelTransformationMatrix()
     return Body::getModelMatrix();
 }
 
+BoundingBox GameObject::getBoundingBox()
+{
+	return _boundingBox;
+}

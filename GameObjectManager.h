@@ -23,8 +23,11 @@
 class GameObjectManager
 {
 public:
-    GameObjectManager();
-    ~GameObjectManager();
+	static GameObjectManager& getInstance()
+	{
+		static GameObjectManager instance;
+		return instance;
+	}
     
 //unsigned int registerCollisionFn(std::string component_id_1,
 //                                 std::string component_id_2,
@@ -33,16 +36,21 @@ public:
     unsigned int addObject(GameObject* go);
     void removeObject(unsigned int id);
     
-    GameObject* getObjectFromName(unsigned int id);
+    GameObject* getObjectFromId(unsigned int id);
     std::vector<GameObject*> getObjectsFromType(std::string type);
     std::vector<GameObject*> getObjectsWithinBox(BoundingBox box);
     std::vector<GameObject*> getObjectsAtPosition(vec3 pos);
-    
-    
-    void update();
-    void render();
+	
+	
+	
+    void update(int dtime);
+    void render(GLuint prog_ref_id);
     
 private:
+	GameObjectManager();
+	GameObjectManager(const GameObjectManager&);
+	GameObjectManager& operator=(const GameObjectManager&);
+	
     //std::vector<CollisionCallbackType*> _coll_callback_fns;
     
     struct EntryInfo {
@@ -50,7 +58,8 @@ private:
         GameObject* object;
     };
     
-    std::map<unsigned int, EntryInfo> _game_entities_on_id;
+    std::map<unsigned int, EntryInfo> _game_entities;
+	int _id_counter;
 };
 
 #endif /* defined(__OpenGLGLUTApp__GameComponentContainer__) */

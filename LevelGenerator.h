@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <fstream>
+#include "GameObjectManager.h"
+#include "GameObjectFactory.h"
 
 class LevelGenerator
 {

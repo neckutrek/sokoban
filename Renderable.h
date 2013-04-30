@@ -22,6 +22,7 @@
 class Renderable {
 public:
     Renderable() : _is_model_loaded(false) {};
+	virtual ~Renderable() {}
     
     int loadModel(const char* model_filename);
     virtual int render(GLuint program_reference_id);

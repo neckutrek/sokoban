@@ -134,6 +134,7 @@ LevelGenerator::ExtraType LevelGenerator::getExtraType(std::string extra)
 
 void LevelGenerator::generateMap()
 {
+	GameObject* go;
 	for(int x=0; x<_mapWidth; x++)
 		for(int y=0; y<_mapHeight; y++)
 		{
@@ -143,6 +144,8 @@ void LevelGenerator::generateMap()
 					break;
 				case WALL:
 					std::cout << "Wall(" << x << ", " << y << ")" << std::endl;
+					go = GameObjectFactory::getInstance().createWall(vec3(x, 0, y));
+					GameObjectManager::getInstance().addObject(go);
 					break;
 				case PLATE:
 					std::cout << "Plate(" << x << ", " << y << ")" << std::endl;

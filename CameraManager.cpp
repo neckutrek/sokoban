@@ -23,7 +23,7 @@ Camera* CameraManager::getActiveCamera()
 CameraManager::CameraManager() : _activeCamera(new Camera(0, 0, 5))
 {}
 
-void CameraManager::update()
+void CameraManager::update(int dtime)
 {
 	CutsceneCamera* cc = dynamic_cast<CutsceneCamera*>(_activeCamera);
 	if(cc != NULL && cc->trackFinished())

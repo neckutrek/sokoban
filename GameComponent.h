@@ -13,6 +13,7 @@ class GameComponent
 {
 public:
     GameComponent() : _active(true) {}
+	virtual ~GameComponent() {}
     
     int update(unsigned int time) {
         if (_active) {

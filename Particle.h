@@ -17,7 +17,7 @@
 class Particle : virtual public GameComponent {
 public:
     Particle(GLfloat x=0, GLfloat y=0, GLfloat z=0);
-	~Particle() {}
+	virtual ~Particle() {}
 	
     void setPosition(GLfloat x, GLfloat y, GLfloat z);
 	void setPosition(vec3 v);
