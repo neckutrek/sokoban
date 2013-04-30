@@ -1,6 +1,6 @@
 // Micro-GLUT, bare essentials
 // Single-file GLUT subset.
-// By Ingemar Ragnemalm 2012
+// By Ingemar Ragnemalm 2012-2013
 
 // I wrote this since GLUT seems not to have been updated to support
 // creation of a 3.2 context on the Mac. With a single-file solution like
@@ -8,7 +8,7 @@
 // to hack around in a local copy as needed.
 
 // To do: Linux/Windows/iOS ports. (Preliminary versions exist of both.)
-// Some additional features. Text rendering? Menus? Multi-window?
+// Some additional features. Text rendering? Menus? (OK) Multi-window?
 
 // Changes:
 // Several additions for the lab 3 version: Simple menu, glutTimerFunc and my own glutrepeatingTimerFunc.
@@ -17,13 +17,19 @@
 // 120228: Added glutSetWindowTitle, glutKeyIsDown, glutInitContextVersion
 // NOTE: glutInitContextVersion is now required for 3.2 code!
 // NOTE: This statement is incorrect; MicroGLUT still only supports 3.2 and with no extra calls.
+// Note however the GL3ONLY define.
 // 120301: Resizable window. Correct vertical window position.
 // 120808: Fixed a bug that caused error messages. (Calling finishLaunching twice.)
 // 120822: Stencil now uses 8 instead of 32
 // 120905: Two corrections suggested by Marcus Stenbäck.
 // 120913: Added 2-button emulation with CTRL
 // 130103: Added [m_context makeCurrentContext]; in all user callbacks. (GL calls had no effect.)
-
+// 130127: Added basic popup menu support
+// 130214: Added glutSpecialFunc and glutSpecialUpFunc. Sets focus to window when created.
+// 130220: Modified idle support, added fake visibility support.
+// 130325: Corrected name of glutWarpPointer
+// 130330: Added GLUT_MULTISAMPLE
+// 130331: Added glutChangeMenuEntry
 
 #import <Cocoa/Cocoa.h>
 #include <OpenGL/gl.h>
@@ -35,12 +41,17 @@
 
 #include "MicroGlut.h"
 
+// Comment out to support GL2, requiring glutInitContextVersion for newer.
+//#define GL3ONLY
+
 // Vital internal variables
 
 void (*gDisplay)(void);
 void (*gReshape)(int width, int height);
 void (*gKey)(unsigned char key, int x, int y);
+void (*gSpecialKey)(unsigned char key, int x, int y);
 void (*gKeyUp)(unsigned char key, int x, int y);
+void (*gSpecialKeyUp)(unsigned char key, int x, int y);
 void (*gMouseMoved)(int x, int y);
 void (*gMouseDragged)(int x, int y);
 void (*gMouseFunc)(int button, int state, int x, int y);
@@ -62,7 +73,7 @@ NSView *theView;
 void MakeContext(NSView *view)
 {
 	NSOpenGLPixelFormat *fmt;
-	int zdepth, sdepth;
+	int zdepth, sdepth, i;
 	int profile = 0, profileVersion = 0;
 	
 	if (gContextInitMode & GLUT_DEPTH)
@@ -74,25 +85,44 @@ void MakeContext(NSView *view)
 		sdepth = 8;
 	else
 		sdepth = 0;
+
+	NSOpenGLPixelFormatAttribute attrs[] =
+	{
+//		NSOpenGLPFAPixelBuffer,
+//		NSOpenGLPFAAccelerated,
+//		NSOpenGLPFADoubleBuffer,
+		NSOpenGLPFADepthSize, zdepth,
+		NSOpenGLPFAStencilSize, sdepth,
+		0,0,0,0,0,0,0
+//		profile, profileVersion,
+//		multi,
+	};
 	
+	i = 4;
+	
+// Def this out about for disabling profile selection support,
+// if it is on we are defaulting to GL 1/2
+#ifndef GL3ONLY
 	if (gContextVersionMajor == 3)
+#endif
 	// I ignore the minor version for now, 3.2 is all we can choose currently
 	{
 		profile = NSOpenGLPFAOpenGLProfile;
 		profileVersion = NSOpenGLProfileVersion3_2Core;
+		attrs[i++] = profile;
+		attrs[i++] = profileVersion;
 	}
-	// UNUSED - will be fixed when GL2 is supported
-	
-	NSOpenGLPixelFormatAttribute attrs[] =
-	{
-		NSOpenGLPFAOpenGLProfile, NSOpenGLProfileVersion3_2Core,
-		NSOpenGLPFADoubleBuffer,
-		NSOpenGLPFADepthSize, zdepth,
-		NSOpenGLPFAStencilSize, sdepth,
-		profile, profileVersion,
-		0
-	};
 
+	if (gContextInitMode & GLUT_DOUBLE)
+	{
+		attrs[i++] = NSOpenGLPFADoubleBuffer;
+	}
+	
+	if (gContextInitMode & GLUT_MULTISAMPLE)
+	{
+		attrs[i++] = NSOpenGLPFAMultisample;
+	}
+	
 	// Save view (should be packaged with context for multi-window application - to do)
 	theView = view;
 	
@@ -104,6 +134,153 @@ void MakeContext(NSView *view)
 	[m_context makeCurrentContext];
 }
 
+// ---------------------- Menus ----------------------
+
+// MicroGlut menu support
+// This is a subset of the GLUT menu support, focused on what seems to be used
+// in current GLUT-using demos. If nobody uses it, don't add it (unless it is
+// a feature that you really want people to learn using).
+
+typedef void (*MenuProc)(int value);
+@interface TPopupMenu : NSMenu {@public MenuProc funcCallback;}
+-(void)selectMenuItem:(id *)sender;
+@end
+
+@implementation TPopupMenu
+
+-(void)selectMenuItem:(id *)sender
+{
+	funcCallback( [((NSMenuItem *) sender) tag]);
+}
+
+@end
+
+TPopupMenu *currentMenu;
+
+TPopupMenu *buttons[10]; // Menu by button id - for a button, what menu should be used, if any?
+TPopupMenu *menuList[10]; // List of menus by (internal) menu id
+int menuCount = -1;
+
+int glutCreateMenu(void (*func)(int value))
+{
+	currentMenu = [[TPopupMenu alloc] initWithTitle: @""];
+	currentMenu->funcCallback = func;
+	menuCount += 1;
+	menuList[menuCount] = currentMenu;
+	return menuCount;
+}
+void glutAddMenuEntry(char *name, int value)
+{
+	NSMenuItem *menuItem1;
+	
+	menuItem1 = NSMenuItem.alloc;
+	// string to NSString
+	NSString * s = [NSString stringWithCString: name encoding: NSASCIIStringEncoding];
+	[menuItem1 initWithTitle: s action: nil keyEquivalent: @""];
+	[menuItem1 setTarget: currentMenu]; // Who will handle it?
+	[menuItem1 setAction: @selector(selectMenuItem:)];
+	[menuItem1 setTag: value]; // Save value
+	[currentMenu addItem: menuItem1];
+}
+
+void glutChangeToMenuEntry(int index, char *name, int value)
+{
+	NSMenuItem *menuItem1;
+	
+	menuItem1 = [currentMenu itemAtIndex: index-1];
+	if (menuItem1 != NULL)
+	{
+		// string to NSString
+		NSString * s = [NSString stringWithCString: name encoding: NSASCIIStringEncoding];
+		[menuItem1 setTarget: currentMenu]; // Who will handle it?
+		[menuItem1 setAction: @selector(selectMenuItem:)];
+		[menuItem1 setTag: value]; // Save value
+		[menuItem1 setTitle: s];
+	}
+}
+
+
+
+void glutAttachMenu(int button)
+{
+	// set a data item for the button
+	buttons[button] = currentMenu;
+}
+
+void glutAddSubMenu(char *name, int menu)
+{
+	NSMenuItem *item;
+	NSString * s = [NSString stringWithCString: name encoding: NSASCIIStringEncoding];
+	
+	item = [currentMenu addItemWithTitle: s action: nil keyEquivalent: @""];
+	[currentMenu setSubmenu: menuList[menu] forItem: item];
+}
+
+void glutDetachMenu(int button)
+{
+	// reset a data item for the button
+	buttons[button] = nil;	
+}
+
+// Check name on this!
+void glutSetMenu(int menu)
+{
+	currentMenu = menuList[menu];
+}
+
+int glutGetMenu(void)
+{
+	int i;
+	for (i = 0; i <= menuCount; i++)
+		if (menuList[i] == currentMenu)
+			return i;
+	return -1;
+}
+
+// End of MicroGlut button support
+
+
+static char doKeyboardEvent(NSEvent *theEvent, void (*func)(unsigned char key, int x, int y), void (*specialfunc)(unsigned char key, int x, int y), int keyMapValue)
+{
+	char *chars;
+	
+	chars = (char *)[[theEvent characters] cStringUsingEncoding: NSMacOSRomanStringEncoding];
+	
+	if (chars != NULL)
+	{
+		if (func != NULL) // Change 120913
+			func(chars[0], 0, 0); // TO DO: x and y
+		
+		gKeymap[(unsigned int)chars[0]] = keyMapValue;
+	}
+	else
+	{
+		char code;
+		switch( [theEvent keyCode] )
+		{
+			case 126: code = GLUT_KEY_UP; break;
+			case 125: code = GLUT_KEY_DOWN; break;
+			case 124: code = GLUT_KEY_RIGHT; break;
+			case 123: code = GLUT_KEY_LEFT; break;
+			case 122: code = GLUT_KEY_F1; break;
+			case 120: code = GLUT_KEY_F2; break;
+			case 99: code = GLUT_KEY_F3; break;
+			case 118: code = GLUT_KEY_F4; break;
+			case 96: code = GLUT_KEY_F5; break;
+			case 97: code = GLUT_KEY_F6; break;
+			case 98: code = GLUT_KEY_F7; break;
+			case 115: code = GLUT_KEY_HOME; break; // ?
+			case 116: code = GLUT_KEY_PAGE_UP; break;
+			case 119: code = GLUT_KEY_END; break; // ?
+			case 121: code = GLUT_KEY_PAGE_DOWN; break;
+			case 117: code = GLUT_KEY_INSERT; break; // Looks more like DEL?
+			default: code = [theEvent keyCode];
+		}
+		if (specialfunc != NULL) // Change 130114
+			specialfunc(code, 0, 0); // TO DO: x and y
+		gKeymap[code] = keyMapValue;
+	}
+}
 
 
 // -------------------- View ------------------------
@@ -191,6 +368,20 @@ char gLeftIsRight = 0;
 			gLeftIsRight = 0;
 		}
 	}
+//	else
+
+	if ([NSEvent modifierFlags] & NSControlKeyMask)
+	{
+		if (buttons[GLUT_RIGHT_BUTTON] != nil)
+			[NSMenu popUpContextMenu: buttons[GLUT_RIGHT_BUTTON]
+						withEvent: theEvent forView: (NSButton *)self];
+	}
+	else
+	{
+		if (buttons[GLUT_LEFT_BUTTON] != nil)
+			[NSMenu popUpContextMenu: buttons[GLUT_LEFT_BUTTON]
+						withEvent: theEvent forView: (NSButton *)self];
+	}
 }
 
 -(void) mouseUp:(NSEvent *)theEvent
@@ -224,6 +415,10 @@ char gLeftIsRight = 0;
 		p = [self convertPoint: p fromView: nil];
 		gMouseFunc(GLUT_RIGHT_BUTTON, GLUT_DOWN, p.x, p.y);
 	}
+	else
+		if (buttons[GLUT_RIGHT_BUTTON] != nil)
+			[NSMenu popUpContextMenu: buttons[GLUT_RIGHT_BUTTON]
+						withEvent: theEvent forView: (NSButton *)self];
 }
 
 -(void) rightMouseUp:(NSEvent *)theEvent
@@ -244,31 +439,49 @@ char gLeftIsRight = 0;
 {
 	char *chars;
 	[m_context makeCurrentContext];
+	doKeyboardEvent(theEvent, gKey, gSpecialKey, 1);
 	
-	chars = (char *)[[theEvent characters] cStringUsingEncoding: NSASCIIStringEncoding];
+	/*
+	// We only support ASCII. Why not UTF-8? Well, slightly more complicated, and is it needed?
+	chars = (char *)[[theEvent characters] cStringUsingEncoding: NSMacOSRomanStringEncoding];
 	if (chars != NULL)
 	{
-		if (gKey != NULL) // Change 120913
-			gKey(chars[0], 0, 0); // TO DO: x and y
-//			printf("keydown %c\n", chars[0]);
+		if (chars[0] < 32 || chars[0] == 127)
+		{
+			if (gSpecialKey != NULL) // Change 130114
+				gSpecialKey(chars[0], 0, 0); // TO DO: x and y
+		}
+		else
+			if (gKey != NULL) // Change 120913
+				gKey(chars[0], 0, 0); // TO DO: x and y
 		
 		gKeymap[(unsigned int)chars[0]] = 1;
 	}
+	*/
 }
 
 -(void)keyUp:(NSEvent *)theEvent
 {
 	char *chars;
-	
-	chars = (char *)[[theEvent characters] cStringUsingEncoding: NSASCIIStringEncoding];
+	[m_context makeCurrentContext];
+	doKeyboardEvent(theEvent, gKeyUp, gSpecialKeyUp, 0);
+/*	
+	chars = (char *)[[theEvent characters] cStringUsingEncoding: NSMacOSRomanStringEncoding];
 	if (chars != NULL)
 	{
-		if (gKeyUp != NULL) // Change 120913
-			gKeyUp(chars[0], 0, 0); // TO DO: x and y
+		if (chars[0] < 32 || chars[0] == 127)
+		{
+			if (gSpecialKeyUp != NULL) // Change 130114
+				gSpecialKeyUp(chars[0], 0, 0); // TO DO: x and y
+		}
+		else
+			if (gKeyUp != NULL) // Change 120913
+				gKeyUp(chars[0], 0, 0); // TO DO: x and y
 //			printf("keyup %c\n", chars[0]);
 
 		gKeymap[(unsigned int)chars[0]] = 0;
 	}
+*/
 }
 
 - (BOOL)acceptsFirstResponder	{ return YES; }
@@ -296,9 +509,9 @@ char gLeftIsRight = 0;
 	[m_context makeCurrentContext];
 	
 	// Draw
+	updatePending = 0; // Did not help
 	if (gDisplay != NULL)
 		gDisplay();
-	updatePending = 0;
 	
 	[m_context flushBuffer];
 	[NSOpenGLContext clearCurrentContext];
@@ -513,6 +726,7 @@ void glutCreateWindow (char *windowTitle)
 //	[window setContentView: view];
 	[window setDelegate: (TestView*)view];
 	[window makeKeyAndOrderFront: nil];
+	[window makeFirstResponder: view]; // Added 130214
 }
 
 void glutMainLoop()
@@ -524,7 +738,6 @@ void glutMainLoop()
 //	[myApp run];
 
 	[myApp finishLaunching];
-
 	NSEvent *event;
 
 	while (gRunning)
@@ -532,6 +745,15 @@ void glutMainLoop()
 		[pool release];
 		pool = [NSAutoreleasePool new];
 		
+		if (updatePending || gIdle != NULL) // If it is, then the setNeedsDisplay below has been called and we will get an update event - but must not block!
+		// (If there was an update coming I think it should not block, but at least this works.)
+		event = [myApp nextEventMatchingMask: NSAnyEventMask
+							untilDate: [NSDate dateWithTimeIntervalSinceNow: 0.0]
+//							untilDate: [NSDate distantFuture]
+							inMode: NSDefaultRunLoopMode
+							dequeue: true
+							];
+		else
 		event = [myApp nextEventMatchingMask: NSAnyEventMask
 //							untilDate: [NSDate dateWithTimeIntervalSinceNow: 0.0]
 							untilDate: [NSDate distantFuture]
@@ -545,6 +767,10 @@ void glutMainLoop()
 		if (gIdle != NULL)
 			if (!updatePending)
 				gIdle();
+		
+		// Did not help
+		if (updatePending)
+			[theView setNeedsDisplay: YES];
 	}
 }
 
@@ -612,6 +838,16 @@ void glutKeyboardUpFunc(void (*func)(unsigned char key, int x, int y))
 	gKeyUp = func;
 }
 
+void glutSpecialFunc(void (*func)(unsigned char key, int x, int y))
+{
+	gSpecialKey = func;
+}
+
+void glutSpecialUpFunc(void (*func)(unsigned char key, int x, int y))
+{
+	gSpecialKeyUp = func;
+}
+
 void glutPassiveMotionFunc(void (*func)(int x, int y))
 {
 	gMouseMoved = func;
@@ -630,7 +866,8 @@ void glutMouseFunc(void (*func)(int button, int state, int x, int y))
 // You can safely skip this
 void glutSwapBuffers()
 {
- 	[m_context flushBuffer];
+	glFlush();
+//	[m_context flushBuffer];// Seems to cause problems with flicker!
 }
 
 int glutGet(int type)
@@ -650,7 +887,6 @@ void glutIdleFunc(void (*func)(void))
 {
 // glutIdleFunc not recommended.
 	gIdle = func;
-	glutRepeatingTimerFunc(10);
 }
 
 void glutReshapeWindow(int width, int height)
@@ -680,4 +916,39 @@ void glutInitContextVersion(int major, int minor)
 }
 
 // glutInitContextFlags(int flags); Add this?
+
+// Visibility: Just call back immediately and claim we are visible!
+void glutVisibilityFunc(void (*visibility)(int status))
+{
+	visibility(GLUT_VISIBLE);
+}
+
+void glutWarpPointer(int x, int y)
+{
+	CGPoint pt;
+	pt.x = x;
+	pt.y = y;
+	CGPostMouseEvent( pt, 1, 0, 0);
+}
+
+// Should be used for auto-show-hide on activate/deactivate
+// (Not yet implemented)
+char hidden = 0;
+
+void glutShowCursor()
+{
+	if (hidden)
+	{
+		[NSCursor unhide];
+		hidden = 0;
+	}
+}
+void glutHideCursor()
+{
+	if (!hidden)
+	{
+		[NSCursor hide];
+		hidden = 1;
+	}
+}
 

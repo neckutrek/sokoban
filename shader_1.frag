@@ -5,14 +5,9 @@ in vec4 view_vector;
 in vec4 transformed_light_source_pos_array[8];
 in vec2 texture_coordinate;
 
-<<<<<<< HEAD
-uniform Sampler2D texture_id;
-uniform float texture_specular_exponent;
-=======
 //uniform bool have_texture;
 //uniform Sampler2D texture_id;
 //uniform float texture_specular_exponent;
->>>>>>> GameObject factory and manager
 uniform vec3 light_sources_color_array[8];
 uniform float light_sources_lux_array[8];
 uniform int light_counter;
@@ -51,7 +46,7 @@ void main(void)
         float Idiff = max(dot(N, L), 0.0);
         Idiff = clamp(Idiff, 0.0, 1.0);
         Idiff *= light_sources_lux_array[i];
-        Idiff /= light_travel_distance * light_travel_distance;
+        //Idiff /= light_travel_distance * light_travel_distance;
 		
 //        float Ispec = 0.0;
 //        if (have_texture) {

@@ -2,7 +2,7 @@
 
 #include "LoadTGA2.h"
 
-bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA File Into Memory
+char LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA File Into Memory
 {
 	GLuint i;
 	GLubyte
@@ -37,18 +37,18 @@ bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 	{
 		switch (err)
 		{
-			case 1: printf("could not open file %s\n", filename); return false;break;
-			case 2: printf("could not read header of %s\n", filename); return false;break;
-			case 3: printf("unsupported format in %s\n", filename); return false;break;
-			case 4: printf("could not read file %s\n", filename); return false;break;
+			case 1: printf("could not open file %s\n", filename); return 0; break;
+			case 2: printf("could not read header of %s\n", filename); return 0; break;
+			case 3: printf("unsupported format in %s\n", filename); return 0; break;
+			case 4: printf("could not read file %s\n", filename); return 0; break;
 		}
 		
 		if(file == NULL)		// Did The File Even Exist? *Added Jim Strong*
-			return false;
+			return 0;
 		else
 		{
 			fclose(file);		// If Anything Failed, Close The File
-			return false;
+			return 0;
 		}
 	}
 	texture->width  = header[1] * 256 + header[0];	// Determine The TGA Width (highbyte*256+lowbyte)
@@ -58,7 +58,7 @@ bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 	(header[4] != 24 && header[4] != 32))			// Is The TGA 24 or 32 Bit?
 	{
 		fclose(file);		// If Anything Failed, Close The File
-		return false;
+		return 0;
 	}
 	
 	w = 1;
@@ -77,7 +77,7 @@ bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 	if (texture->imageData == NULL)				// Does The Storage Memory Exist?
 	{
 		fclose(file);
-		return false;
+		return 0;
 	}
 
 	if (actualHeader[2] == 2) // uncompressed
@@ -91,7 +91,7 @@ bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 			{
 				free(texture->imageData);	// If So, Release The Image Data
 				fclose(file);			// Close The File
-				return false;			// Return False
+				return 0;			// Return False
 			}
 		}
 	}
@@ -137,13 +137,13 @@ bool LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 		texture->imageData[i + 2] = temp;	// Set The 3rd Byte To The Value In 'temp' (1st Byte Value)
 	}
 	fclose (file);
-	return true;				// Texture Building Went Ok, Return True
+	return 1;				// Texture Building Went Ok, Return True
 }
 
 
-bool LoadTGATexture(char *filename, TextureData *texture)	// Loads A TGA File Into Memory and uploads to VRAM
+char LoadTGATexture(char *filename, TextureData *texture)	// Loads A TGA File Into Memory and uploads to VRAM
 {
-	bool result = LoadTGATextureData(filename, texture); // Loads A TGA File Into Memory
+	char result = LoadTGATextureData(filename, texture); // Loads A TGA File Into Memory
 	if (!result)
 		return result;
 	

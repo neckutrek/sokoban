@@ -14,9 +14,8 @@
     #include "MicroGlut.h"
 #endif
 
-#include "GL_utilities.h"
-#include "VectorUtils3Addons.h"
-#include "loadobj.h"
+//#include "GL_utilities.h"
+//#include "VectorUtils3Addons.h"
 
 const unsigned int MAX_LAYERS = 8;
 
@@ -29,13 +28,13 @@ public:
     
     void initialize(GLuint program_reference_id);
     
-    void setTransparencies(float *transparencies);
+    void setTransparencies(GLfloat *transparencies);
     
-    void setSpecularities(float *specularities);
+    void setSpecularities(GLfloat *specularities);
     
-    void setTexureIDs(unsigned int *texture_ids);
+    void setTexureIDs(GLuint *texture_ids);
     
-    void setMaterialsCounter(unsigned int count);
+    void setMaterialsCounter(GLint count);
     
     int render(GLuint program_reference_id);
     
@@ -45,11 +44,11 @@ private:
     MaterialManager(const MaterialManager&);
     MaterialManager& operator=(const MaterialManager&);
     
-    unsigned int texture_units_array[MAX_LAYERS];
-    float *transparency_array;
-    float *specularity_array;
-    unsigned int *texture_id_array;
-    unsigned int materials_counter;
+    GLint texture_units_array[MAX_LAYERS];
+    GLfloat *transparency_array;
+    GLfloat *specularity_array;
+    GLuint *texture_id_array;
+    GLint materials_counter;
 };
 
 #endif /* defined(__OpenGLGLUTApp__Material__) */

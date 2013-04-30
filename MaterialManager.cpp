@@ -4,7 +4,6 @@
 //
 //  Created by Marcus Johansson on 4/28/13.
 //
-//
 
 #include "MaterialManager.h"
 
@@ -23,22 +22,22 @@ void MaterialManager::initialize(GLuint program_reference_id)
                  &texture_units_array[0]);
 }
 
-void MaterialManager::setTransparencies(float *transparencies)
+void MaterialManager::setTransparencies(GLfloat *transparencies)
 {
     transparency_array = transparencies;
 }
 
-void MaterialManager::setSpecularities(float *specularities)
+void MaterialManager::setSpecularities(GLfloat *specularities)
 {
     specularity_array = specularities;
 }
 
-void MaterialManager::setTexureIDs(unsigned int *texture_ids)
+void MaterialManager::setTexureIDs(GLuint *texture_ids)
 {
     texture_id_array = texture_ids;
 }
 
-void MaterialManager::setMaterialsCounter(unsigned int count)
+void MaterialManager::setMaterialsCounter(GLint count)
 {
     materials_counter = count;
     if (materials_counter > MAX_LAYERS)
@@ -76,4 +75,7 @@ MaterialManager::MaterialManager()
     }
 }
 MaterialManager::MaterialManager(const MaterialManager&) {}
-MaterialManager& MaterialManager::operator=(const MaterialManager&) {}
+MaterialManager& MaterialManager::operator=(const MaterialManager&)
+{
+    return *this;
+}

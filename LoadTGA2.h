@@ -1,30 +1,34 @@
 #ifndef __TGA_LOADER__
 #define __TGA_LOADER__
 
+#ifdef __cplusplus
+    extern "C" {
+#endif
+
 #ifdef __APPLE__
-	#include <OpenGL/gl.h>
-	#include <OpenGL/glu.h>
+	#include <OpenGL/gl3.h>
+//	#include <OpenGL/glu.h>
 #else
 //	#include <GL/glee.h> Might be needed for Windows - not tested
 	#include <GL/gl.h>
-	#include <GL/glu.h>
+//	#include <GL/glu.h>
 #endif
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#ifndef true
-#define true 1
-#endif
-
-#ifndef false
-#define false 0
-#endif
-
-#ifndef bool
-#define bool char
-#endif
+//#ifndef true
+//#define true 1
+//#endif
+//
+//#ifndef false
+//#define false 0
+//#endif
+//
+//#ifndef bool
+//#define bool char
+//#endif
 
 // Constants for SaveTGA
 #define	TGA_ERROR_FILE_OPEN				-5
@@ -44,10 +48,14 @@ typedef struct					// Create A Structure for .tga loading.
 	GLfloat	texWidth, texHeight;
 } TextureData, *TextureDataPtr;					// Structure Name
 
-bool LoadTGATexture(char *filename, TextureData *texture);
+char LoadTGATexture(char *filename, TextureData *texture);
 void LoadTGATextureSimple(char *filename, GLuint *tex);
 
-bool LoadTGATextureData(char *filename, TextureData *texture);	// Loads A TGA File Into Memory but doesn't create the texture.
+char LoadTGATextureData(char *filename, TextureData *texture);	// Loads A TGA File Into Memory but doesn't create the texture.
 void SaveTGA(TextureData *tex, char *filename);
+
+#ifdef __cplusplus
+    }
+#endif
 
 #endif

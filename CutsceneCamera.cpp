@@ -27,7 +27,7 @@ void CutsceneCamera::addWaypoint(CameraWaypoint waypoint)
 
 void CutsceneCamera::addWaypoint(vec3 pos, vec3 dir, GLfloat time)
 {
-	CameraWaypoint c = {pos, dir, time};
+	CameraWaypoint c = {pos, dir, static_cast<int>(time)};
 	addWaypoint(c);
 }
 

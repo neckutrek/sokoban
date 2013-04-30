@@ -9,13 +9,13 @@
 #ifndef __OpenGLGLUTApp__GameObject__
 #define __OpenGLGLUTApp__GameObject__
 
-#include "Renderable.h"
+#include "RenderableMultilayer.h"
 #include "Body.h"
 #include "BoundingBox.h"
 
-class GameObject : virtual public Renderable, virtual public Body {
+class GameObject : virtual public RenderableMultilayer, virtual public Body {
 public:
-    GameObject(BoundingBox boundingBox) : Renderable(), Body(), _boundingBox(boundingBox) {}
+    GameObject(BoundingBox boundingBox) : RenderableMultilayer(), Body(), _boundingBox(boundingBox) {}
     virtual ~GameObject() {}
 	
 	BoundingBox getBoundingBox();
