@@ -1,25 +1,5 @@
-//
-//  main.cpp
-//  OpenGLGLUTApp
-//
-//  Created by Marcus Johansson on 4/4/13.
-//
-//
-
+/*
 #include "SigmaGameEngine.h"
-
-#include <iostream>
-using namespace std;
-
-mat4 projection_transformation;
-GameObject* objects[27];
-Model* bunnyModel;
-DebugCamera* c1 = new DebugCamera();
-ObjectCamera* c2 = new ObjectCamera(objects[0]);
-CutsceneCamera* c3 = new CutsceneCamera();
-int keyboardMap[256];
-GLuint program_ref_id;
-LightContainer* light_instances;
 
 void init(void) {
     glClearColor(0.2,0.2,0.5,0);
@@ -143,3 +123,4 @@ int main(int argc, char *argv[])
 	glutMainLoop();
 	exit(0);
 }
+*/

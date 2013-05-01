@@ -5,15 +5,31 @@
 //  Created by Marcus Johansson on 4/4/13.
 //
 //
+#ifdef __APPLE__
+#include <OpenGL/gl3.h>
+#include "MicroGlut.h"
+#endif
 
-#include "SigmaGameEngine.h"
+#include <SDL/SDL.h>
+#include "SDLMain.h"
+
+#include "GL_utilities.h"
+#include "VectorUtils3Addons.h"
+#include "loadobj.h"
+#include "LoadTGA2.h"
+#include "GameObject.h"
+#include "ObjectCamera.h"
+#include "DebugCamera.h"
+#include "CutsceneCamera.h"
+#include "CameraManager.h"
+#include "LightContainer.h"
+#include "MaterialManager.h"
+#include "Wall.h"
 
 #include <iostream>
 using namespace std;
-
 mat4 projection_transformation;
 GameObject* objects[27];
-Model* bunnyModel;
 DebugCamera* c1 = new DebugCamera();
 ObjectCamera* c2 = new ObjectCamera(objects[0]);
 CutsceneCamera* c3 = new CutsceneCamera();
@@ -36,8 +52,6 @@ void init(void) {
     //projection_transformation = IdentityMatrix();
     glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "projection_transformation"),
                        1, GL_TRUE, projection_transformation.m);
-    
-    //bunnyModel = LoadModelPlus("bunnyplus.obj");
     
     string models[5] =
     {"bunnyplus.obj", "cow.obj", "klingon.obj", "plutt.obj", "teddy.obj"};
@@ -121,25 +135,49 @@ void update(int dtime)
 	Camera* activeCamera = CameraManager::getInstance().getActiveCamera();
 	activeCamera->update(dtime);
 	CameraManager::getInstance().update(dtime);
-	updateKeyboard();
-    glutWarpPointer(50, 50);
+	//updateKeyboard();
+    
+    SDL_Event event;
+    while (SDL_PollEvent(&event)) {
+        switch (event.type) {
+            case SDL_KEYDOWN:
+                if (event.key.keysym.sym==SDLK_LEFT) {
+                    objects[0]->setPosition(0, 0, 0);
+                } else if (event.key.keysym.sym==SDLK_RIGHT) {
+                    objects[0]->setPosition(1, 1, 1);
+                } else if (event.key.keysym.sym==SDLK_UP) {
+                    objects[0]->setPosition(1, 0, 1);
+                } else if (event.key.keysym.sym==SDLK_DOWN) {
+                    objects[0]->setPosition(0, 1, 0);
+                }
+                break;
+        }
+    }
+    
     glutPostRedisplay();
 }
 
-int main(int argc, char *argv[])
-{
-    srand(time(0));
-	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
-    glutInitContextVersion(3,2);
-	glutInitWindowSize(800, 800);
-	glutCreateWindow("TSBK07 Lab 4");
-	glutDisplayFunc(display);
-	glutKeyboardFunc(setKeyDown);
-	glutKeyboardUpFunc(setKeyUp);
-	init();
-	glutTimerFunc(20, &update, 0);
-    
-	glutMainLoop();
-	exit(0);
-}
+int main(int argc, char * argv[])
+    {
+        SDL_Init(SDL_INIT_VIDEO);
+        
+        
+        srand(time(0));
+        glutInit(&argc, argv);
+        glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
+        glutInitContextVersion(3,2);
+        glutInitWindowSize(800, 800);
+        glutCreateWindow("TSBK07 Lab 4");
+        glutDisplayFunc(display);
+        glutKeyboardFunc(setKeyDown);
+        glutKeyboardUpFunc(setKeyUp);
+        init();
+        glutTimerFunc(20, &update, 0);
+        
+        glutMainLoop();
+        
+        SDL_Quit();
+        
+        exit(0);
+    }
+
