@@ -16,19 +16,25 @@ Wall* GameObjectFactory::createWall(vec3 pos)
 	return new Wall(pos);
 }
 
-/*
-GameObject* GameObjectFactory::createPlayer(vec3 pos)
+Ground* GameObjectFactory::createGround()
 {
-	
+	return new Ground();
 }
 
-GameObject* GameObjectFactory::createBlock(vec3 pos)
+Player* GameObjectFactory::createPlayer(vec3 pos)
 {
-	
+	Player* player = new Player(pos);
+	ObjectCamera* cam = new ObjectCamera(player);
+	CameraManager::getInstance().setActiveCamera(cam);
+	return player;
 }
 
-GameObject* GameObjectFactory::createPlate(vec3 pos)
+Block* GameObjectFactory::createBlock(vec3 pos)
 {
-	
+	return new Block(pos);
 }
-*/
+
+Billboard* GameObjectFactory::createBillboard(vec3 pos)
+{
+	return new Billboard(pos);
+}

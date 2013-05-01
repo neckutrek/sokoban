@@ -11,6 +11,12 @@
 
 #include <iostream>
 #include "Wall.h"
+#include "Ground.h"
+#include "Player.h"
+#include "Block.h"
+#include "CameraManager.h"
+#include "ObjectCamera.h"
+#include "Billboard.h"
 
 class GameObjectFactory
 {
@@ -22,11 +28,10 @@ public:
 	}
 	
 	Wall* createWall(vec3 pos);
-	/*
-	GameObject* createPlayer(vec3 pos);
-	GameObject* createBlock(vec3 pos);
-	GameObject* createPlate(vec3 pos);
-	 */
+	Ground* createGround();
+	Player* createPlayer(vec3 pos);
+	Block* createBlock(vec3 pos);
+	Billboard* createBillboard(vec3 pos); 
 	
 protected:
 	

@@ -8,10 +8,12 @@
 
 #include "Wall.h"
 
-Wall::Wall(vec3 position) : GameObject(BoundingBox(0.5))
+Wall::Wall(vec3 pos) : GameObject(BoundingBox(0.5))
 {
-	loadModel("bunnyplus.obj");
-	setPosition(position);
+	loadModel("crate.obj");
+	setPosition(pos);
+	setRotVelocity(0, 1, 0, 0.02);
+	setScaling(0.5, 0.5, 0.5);
 }
 
 std::string Wall::getType()

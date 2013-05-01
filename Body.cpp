@@ -54,7 +54,7 @@ mat4 Body::getRotAcceleration() const
 
 mat4 Body::getModelMatrix() const
 {
-	return Particle::getModelMatrix() * _rotation;
+	return Particle::getModelMatrix() * _rotation * _scaling;
 }
 
 int Body::update_function(unsigned int time)

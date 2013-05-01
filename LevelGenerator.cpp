@@ -58,6 +58,7 @@ void LevelGenerator::load(const std::string &fileName)
 	std::cout << "Loading file " << fileName << "... ";
 	open(fileName);
 	read();
+	//here some map (and extras) checking would be suitable
 	generateMap();
 	applyExtras();
 	close();
@@ -135,6 +136,8 @@ LevelGenerator::ExtraType LevelGenerator::getExtraType(std::string extra)
 void LevelGenerator::generateMap()
 {
 	GameObject* go;
+	GameObjectManager& gom = GameObjectManager::getInstance();
+	GameObjectFactory& gof = GameObjectFactory::getInstance();
 	for(int x=0; x<_mapWidth; x++)
 		for(int y=0; y<_mapHeight; y++)
 		{
@@ -143,29 +146,26 @@ void LevelGenerator::generateMap()
 				case EMPTY:
 					break;
 				case WALL:
-					std::cout << "Wall(" << x << ", " << y << ")" << std::endl;
-					go = GameObjectFactory::getInstance().createWall(vec3(x, 0, y));
-					GameObjectManager::getInstance().addObject(go);
+					go = gof.createWall(vec3(x, 0.5, y));
+					gom.addObject(go);
 					break;
 				case PLATE:
-					std::cout << "Plate(" << x << ", " << y << ")" << std::endl;
 					break;
 				case PLAYER:
-					std::cout << "Player(" << x << ", " << y << ")" << std::endl;
+					go = gof.createPlayer(vec3(x, 1, y));
+					gom.addObject(go);
 					break;
 				case PLAYER_ON_PLATE:
-					std::cout << "Plate(" << x << ", " << y << ")" << std::endl;
-					std::cout << "Player(" << x << ", " << y << ")" << std::endl;
 					break;
 				case BLOCK:
-					std::cout << "Block(" << x << ", " << y << ")" << std::endl;
-					break;
+					go = gof.createBlock(vec3(x, 0.5, y));
+					gom.addObject(go);
 				case BLOCK_ON_PLATE:
-					std::cout << "Block(" << x << ", " << y << ")" << std::endl;
-					std::cout << "Plate(" << x << ", " << y << ")" << std::endl;
 					break;
 			}
 		}
+	go = gof.createGround();
+	gom.addObject(go);
 }
 
 void LevelGenerator::applyExtras()

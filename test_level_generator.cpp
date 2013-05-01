@@ -22,6 +22,7 @@
 #include "LevelGenerator.h"
 #include "LightContainer.h"
 #include "GameObjectManager.h"
+#include "Billboard.h"
 
 #include <iostream>
 using namespace std;
@@ -55,6 +56,7 @@ void init(void) {
     light_instances->addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 0.0, 0.0), 1.0);
     light_instances->addLight(vec3(0.0, 0.0, 5.0), vec3(0.0, 1.0, 0.0), 0.5);
     light_instances->addLight(vec3(5.0, 0.0, 0.0), vec3(0.0, 0.0, 1.0), 1.0);
+	GameObjectManager::getInstance().addObject(GameObjectFactory::getInstance().createBillboard(vec3(0,10,0)));
 }
 
 void display(void) {
@@ -94,6 +96,14 @@ void updateKeyboard() {
 	CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);
 }
 
+void updateMouse(int x, int y) {
+	GLfloat dx = x - 500/2;
+	GLfloat dy = y - 500/2;
+	ObjectCamera* oc = dynamic_cast<ObjectCamera*>(CameraManager::getInstance().getActiveCamera());
+	if(oc)
+		oc->setViewDirection(dy/100, dx/100);
+}
+
 void update(int dtime)
 {
     glutTimerFunc(20, &update, dtime);
@@ -116,6 +126,7 @@ int main(int argc, char *argv[])
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("TSBK07 Lab 4");
 	glutDisplayFunc(display);
+	glutPassiveMotionFunc(updateMouse);
 	glutKeyboardFunc(setKeyDown);
 	glutKeyboardUpFunc(setKeyUp);
 	init();
