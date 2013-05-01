@@ -5,6 +5,7 @@
 //  Created by Marcus Johansson on 4/28/13.
 //
 
+#include <iostream>
 #include "MaterialManager.h"
 
 MaterialManager& MaterialManager::getInstance()
@@ -48,6 +49,10 @@ int MaterialManager::render(GLuint program_reference_id)
 {
     glUniform1i(glGetUniformLocation(program_reference_id, "materials_counter"),
                 materials_counter);
+    glUniform1fv(glGetUniformLocation(program_reference_id, "material_transparencies"),
+                 materials_counter, &transparency_array[0]);
+    glUniform1fv(glGetUniformLocation(program_reference_id, "material_specularities"),
+                 materials_counter, &specularity_array[0]);
     
     for (unsigned int i=0; i<materials_counter; ++i) {
         switch (i) {

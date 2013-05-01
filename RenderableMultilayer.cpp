@@ -19,11 +19,13 @@ RenderableMultilayer::RenderableMultilayer()
     }
 }
 
-void RenderableMultilayer::addMaterial(char *texture_file_name,
+void RenderableMultilayer::addMaterial(const char *texture_file_name,
                  float transparency,
                  float specularity)
 {
-    if (materials_counter >= MAX_LAYERS) return;
+    if (materials_counter >= MAX_LAYERS) {
+        return;
+    }
     
     LoadTGATextureSimple(texture_file_name, &texture_ids[materials_counter]);
     transparencies[materials_counter] = transparency;

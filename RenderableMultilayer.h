@@ -24,7 +24,7 @@ public:
     RenderableMultilayer();
     virtual ~RenderableMultilayer() {}
     
-    void addMaterial(char *texture_file_name,
+    void addMaterial(const char *texture_file_name,
                      float transparency,
                      float specularity);
     

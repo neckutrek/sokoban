@@ -450,7 +450,6 @@
 		892D8DE5172FA4C500C13D95 /* GL_utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7C16D379C100E3644E /* GL_utilities.h */; };
 		892D8DE6172FA4C500C13D95 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		892D8DE7172FA4C500C13D95 /* MicroGlut.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4D16D37A0900E3644E /* MicroGlut.h */; };
-		892D8DE8172FA4C500C13D95 /* test_level_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE617265F55006AF594 /* test_level_generator.cpp */; };
 		892D8DE9172FA4C500C13D95 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
 		892D8DEA172FA4C500C13D95 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
 		892D8DEB172FA4C500C13D95 /* loadobj.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8116D379C100E3644E /* loadobj.h */; };
@@ -557,6 +556,12 @@
 		8964AFCF171D817A009BD6A2 /* OpenGLCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDCE16D379C100E3644E /* OpenGLCamera.h */; };
 		8964AFD0171D817A009BD6A2 /* OpenGLObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDD116D379C100E3644E /* OpenGLObject.h */; };
 		8964AFD1171D818A009BD6A2 /* GL_utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7C16D379C100E3644E /* GL_utilities.h */; };
+		89E7578A173121A3003F2781 /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
+		89E7579017312950003F2781 /* test_multitexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC4DC172D5D4F00BF8EF7 /* test_multitexture.cpp */; };
+		89E7579217313330003F2781 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 89E7579117313330003F2781 /* sphere.obj */; };
+		89E7579317313330003F2781 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 89E7579117313330003F2781 /* sphere.obj */; };
+		89E7579417313330003F2781 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 89E7579117313330003F2781 /* sphere.obj */; };
+		89E7579517313330003F2781 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 89E7579117313330003F2781 /* sphere.obj */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -790,6 +795,7 @@
 		89CE01921715B92D00D6783A /* test_renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderable.cpp; sourceTree = "<group>"; };
 		89CE01971715C2D000D6783A /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
 		89CE01981715C2D000D6783A /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		89E7579117313330003F2781 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		89FECBCB170DDF6400F40F3A /* lab4-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "lab4-1.c"; sourceTree = "<group>"; };
 		89FECC31170DE02E00F40F3A /* «PROJECTNAME» copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "«PROJECTNAME» copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/«PROJECTNAME» copy-Info.plist"; sourceTree = "<absolute>"; };
 		89FECC36170DE73A00F40F3A /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
@@ -879,6 +885,7 @@
 		115EED8616D379C100E3644E /* models */ = {
 			isa = PBXGroup;
 			children = (
+				89E7579117313330003F2781 /* sphere.obj */,
 				115EED8716D379C100E3644E /* castle */,
 				115EED8C16D379C100E3644E /* LittleNell */,
 				115EEDB816D379C100E3644E /* various */,
@@ -1530,6 +1537,7 @@
 				11924B3917265F72006AF594 /* SkyBox512.tga in Resources */,
 				11924B3A17265F72006AF594 /* wall_512_1_05.tga in Resources */,
 				11924B6D172660C5006AF594 /* testlevel.txt in Resources */,
+				89E7579317313330003F2781 /* sphere.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1618,6 +1626,7 @@
 				11B56087171F647300D5A5DA /* rutor.tga in Resources */,
 				11B56088171F647300D5A5DA /* SkyBox512.tga in Resources */,
 				11B56089171F647300D5A5DA /* wall_512_1_05.tga in Resources */,
+				89E7579217313330003F2781 /* sphere.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1707,6 +1716,7 @@
 				892D8DC8172FA4C500C13D95 /* SkyBox512.tga in Resources */,
 				892D8DC9172FA4C500C13D95 /* wall_512_1_05.tga in Resources */,
 				892D8DCA172FA4C500C13D95 /* testlevel.txt in Resources */,
+				89E7579517313330003F2781 /* sphere.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1719,6 +1729,8 @@
 				895EC4EA172D5DF000BF8EF7 /* InfoPlist.strings in Resources */,
 				895EC4F0172D5DF000BF8EF7 /* Credits.rtf in Resources */,
 				895EC4F6172D5DF000BF8EF7 /* MainMenu.xib in Resources */,
+				89E7578A173121A3003F2781 /* SkyBox512.tga in Resources */,
+				89E7579417313330003F2781 /* sphere.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,6 +1917,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E7579017312950003F2781 /* test_multitexture.cpp in Sources */,
 				892D8E15172FB56200C13D95 /* BoundingBox.h in Sources */,
 				892D8E16172FB56200C13D95 /* GameObjectManager.h in Sources */,
 				892D8E04172FA4E300C13D95 /* MaterialManager.cpp in Sources */,
@@ -1939,7 +1952,6 @@
 				892D8DE5172FA4C500C13D95 /* GL_utilities.h in Sources */,
 				892D8DE6172FA4C500C13D95 /* GameObject.cpp in Sources */,
 				892D8DE7172FA4C500C13D95 /* MicroGlut.h in Sources */,
-				892D8DE8172FA4C500C13D95 /* test_level_generator.cpp in Sources */,
 				892D8DE9172FA4C500C13D95 /* MicroGlut.m in Sources */,
 				892D8DEA172FA4C500C13D95 /* LevelGenerator.h in Sources */,
 				892D8DEB172FA4C500C13D95 /* loadobj.h in Sources */,

@@ -48,10 +48,10 @@ typedef struct					// Create A Structure for .tga loading.
 	GLfloat	texWidth, texHeight;
 } TextureData, *TextureDataPtr;					// Structure Name
 
-char LoadTGATexture(char *filename, TextureData *texture);
-void LoadTGATextureSimple(char *filename, GLuint *tex);
+char LoadTGATexture(const char *filename, TextureData *texture);
+void LoadTGATextureSimple(const char *filename, GLuint *tex);
 
-char LoadTGATextureData(char *filename, TextureData *texture);	// Loads A TGA File Into Memory but doesn't create the texture.
+char LoadTGATextureData(const char *filename, TextureData *texture);	// Loads A TGA File Into Memory but doesn't create the texture.
 void SaveTGA(TextureData *tex, char *filename);
 
 #ifdef __cplusplus

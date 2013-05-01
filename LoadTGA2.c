@@ -2,7 +2,7 @@
 
 #include "LoadTGA2.h"
 
-char LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA File Into Memory
+char LoadTGATextureData(const char *filename, TextureData *texture)	// Loads A TGA File Into Memory
 {
 	GLuint i;
 	GLubyte
@@ -141,7 +141,7 @@ char LoadTGATextureData(char *filename, TextureData *texture)	// Loads A TGA Fil
 }
 
 
-char LoadTGATexture(char *filename, TextureData *texture)	// Loads A TGA File Into Memory and uploads to VRAM
+char LoadTGATexture(const char *filename, TextureData *texture)	// Loads A TGA File Into Memory and uploads to VRAM
 {
 	char result = LoadTGATextureData(filename, texture); // Loads A TGA File Into Memory
 	if (!result)
@@ -170,7 +170,7 @@ char LoadTGATexture(char *filename, TextureData *texture)	// Loads A TGA File In
 	return result;
 }
 
-void LoadTGATextureSimple(char *filename, GLuint *tex) // If you really only need the texture object.
+void LoadTGATextureSimple(const char *filename, GLuint *tex) // If you really only need the texture object.
 {
 	TextureData texture;
 	
