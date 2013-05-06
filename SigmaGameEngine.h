@@ -22,7 +22,7 @@
 #include "DebugCamera.h"
 #include "CutsceneCamera.h"
 #include "CameraManager.h"
-#include "LightContainer.h"
+#include "LightManager.h"
 #include "MaterialManager.h"
 #include "GO_Wall.h"
 

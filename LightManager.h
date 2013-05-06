@@ -14,14 +14,12 @@
 
 const unsigned int MAX_LIGHT_SOURCES = 8;
 
-class LightContainer
+class LightManager
 {
 public:
-    LightContainer()
-    : _light_counter(0)
-    {}
+    static LightManager& getInstance();
     
-    ~LightContainer() {}
+    ~LightManager() {}
     
     // from GameComponent
     virtual int update_function(unsigned int time);
@@ -49,6 +47,10 @@ public:
     
     
 private:
+    LightManager()
+    : _light_counter(0)
+    {}
+    
     unsigned int _light_counter;
     
     vec3 _light_sources_position_array[MAX_LIGHT_SOURCES];

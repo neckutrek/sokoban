@@ -19,7 +19,6 @@ ObjectCamera* c2 = new ObjectCamera(objects[0]);
 CutsceneCamera* c3 = new CutsceneCamera();
 int keyboardMap[256];
 GLuint program_ref_id;
-LightContainer* light_instances;
 
 void init(void) {
     glClearColor(0.2,0.2,0.5,0);
@@ -67,9 +66,8 @@ void init(void) {
 	c3->addWaypoint(vec3(0,0,-8), objects[13]->getPosition(), 400);
 	c3->addWaypoint(vec3(0,0,-8), objects[13]->getPosition(), 450);
     
-    light_instances = new LightContainer();
-    light_instances->addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), 1.0);
-    light_instances->addLight(vec3(0.0, 0.0, 5.0), vec3(1.0, 1.0, 1.0), 1.0);
+    LightManager::getInstance().addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), 1.0);
+    LightManager::getInstance().addLight(vec3(0.0, 0.0, 5.0), vec3(1.0, 1.0, 1.0), 1.0);
     //    light_instances->addLight(vec3(5.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), 1.0);
 }
 
@@ -77,13 +75,13 @@ void display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     // upload light information to shader
-    glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), light_instances->getLightCounter());
+    glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), LightManager::getInstance().getLightCounter());
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_pos_array"),
-                 8, light_instances->getLightSourcesPositionArray());
+                 8, LightManager::getInstance().getLightSourcesPositionArray());
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_color_array"),
-                 8, light_instances->getLightSourcesColorArray());
+                 8, LightManager::getInstance().getLightSourcesColorArray());
     glUniform1fv(glGetUniformLocation(program_ref_id, "light_sources_lux_array"),
-                 8, light_instances->getLightSourcesLuxArray());
+                 8, LightManager::getInstance().getLightSourcesLuxArray());
     
 	glUseProgram(program_ref_id);
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),

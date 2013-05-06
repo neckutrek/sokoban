@@ -1,8 +1,8 @@
-/*
 #include "SigmaGameEngine.h"
 
-void init(void) {
-    glClearColor(0.2,0.2,0.5,0);
+void SigmaInit(void) {
+    
+    glClearColor(0.3, 0.3, 0.5, 0.0);
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
     
