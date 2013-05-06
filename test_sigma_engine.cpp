@@ -14,12 +14,11 @@ int main(int argc, char *argv[])
                     "shader_1.vert", "shader_1.frag",
                     800, 800, "SigmaGameEngine running . . .");
     
-    string models[4] =
-    {"bunnyplus.obj", "klingon.obj", "plutt.obj", "teddy.obj"};
+    string models[5] =
+    {"bunnyplus.obj", "button.obj", "crate.obj", "ground.obj", "sphere.obj"};
     
-    string skins[6] =
-    {"dirt.tga", "grass.tga", "maskros512.tga",
-        "rutor.tga", "SkyBox512.tga", "wall_512_1_05.tga"};
+    string skins[3] =
+    {"button_c.tga", "crate.tga", "robot_c.tga"};
     
     int i=0;
     int j=0;
@@ -34,7 +33,9 @@ int main(int argc, char *argv[])
                 GameObjectManager::getInstance().addObject(go);
 
                 i++; j++;
-                if (i>=4) i=0;
-                if (j>=4) j=0;
+                if (i>=5-2) i=0;
+                if (j>=3) j=0;
 			}
+    
+    game.run();
 }

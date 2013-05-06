@@ -413,44 +413,10 @@
 		89C61C08173807A1002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
 		89C61C09173807A1002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
 		89C61C0A173807A1002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61C0C173808DC002D79A3 /* test_sigma_engine.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
-		89C61C0D173808DC002D79A3 /* test_sigma_engine.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
 		89C61C101738141D002D79A3 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89C61C111738141D002D79A3 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
-		89C61C121738141D002D79A3 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
-		89C61C131738141D002D79A3 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		89C61C141738141D002D79A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		89C61C151738141D002D79A3 /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
-		89C61C161738141D002D79A3 /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
-		89C61C171738141D002D79A3 /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
-		89C61C181738141D002D79A3 /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
-		89C61C191738141D002D79A3 /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
-		89C61C1A1738141D002D79A3 /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
-		89C61C1B1738141D002D79A3 /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
-		89C61C1C1738141D002D79A3 /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
 		89C61C1D1738141D002D79A3 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
-		89C61C1E1738141D002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61C1F1738141D002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61C201738141D002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61C211738141D002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61C221738141D002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61C231738141D002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61C241738141D002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61C251738141D002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61C261738141D002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61C271738141D002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61C281738141D002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61C291738141D002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61C2A1738141D002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61C2B1738141D002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61C2C1738141D002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61C2D1738141D002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61C2E1738141D002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61C2F1738141D002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61C301738141D002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61C311738141D002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61C321738141D002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61C331738141D002D79A3 /* test_sigma_engine.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
 		89C61C361738141D002D79A3 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
 		89C61C371738141D002D79A3 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
 		89C61C381738141D002D79A3 /* MaterialManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47D172D386800BF8EF7 /* MaterialManager.h */; };
@@ -516,6 +482,27 @@
 		89C61C7C17381458002D79A3 /* SigmaGameEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F917314FA6003F2781 /* SigmaGameEngine.h */; };
 		89C61C7D17381458002D79A3 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA4172FA719006AF594 /* GameObjectManager.h */; };
 		89C61C7E17381458002D79A3 /* test_sigma_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
+		89C61C9F173819A1002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
+		89C61CA0173819A1002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
+		89C61CA1173819A1002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
+		89C61CA2173819A1002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
+		89C61CA3173819A1002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
+		89C61CA4173819A1002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
+		89C61CA5173819A1002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
+		89C61CA6173819A1002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
+		89C61CA7173819A1002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
+		89C61CA8173819A1002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
+		89C61CA9173819A1002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
+		89C61CAA173819A1002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
+		89C61CAB173819A1002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
+		89C61CAC173819A1002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
+		89C61CAD173819A4002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
+		89C61CAE173819A4002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
+		89C61CAF173819A4002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
+		89C61CB0173819A4002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
+		89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
+		89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
+		89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
 		89E7579017312950003F2781 /* test_multitexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC4DC172D5D4F00BF8EF7 /* test_multitexture.cpp */; };
 		89E757A3173135D5003F2781 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E757A1173135D5003F2781 /* InfoPlist.strings */; };
 		89E757A9173135D5003F2781 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89E757A7173135D5003F2781 /* Credits.rtf */; };
@@ -1579,7 +1566,6 @@
 				89C61C01173807A0002D79A3 /* skybox_c.tga in Resources */,
 				89C61C02173807A0002D79A3 /* tracks_c.tga in Resources */,
 				89C61C03173807A0002D79A3 /* wall_c.tga in Resources */,
-				89C61C0C173808DC002D79A3 /* test_sigma_engine.cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1622,40 +1608,29 @@
 			files = (
 				89C61C101738141D002D79A3 /* shader_1.frag in Resources */,
 				89C61C111738141D002D79A3 /* shader_1.vert in Resources */,
-				89C61C121738141D002D79A3 /* terrain.frag in Resources */,
-				89C61C131738141D002D79A3 /* terrain.vert in Resources */,
 				89C61C141738141D002D79A3 /* InfoPlist.strings in Resources */,
-				89C61C151738141D002D79A3 /* 44-terrain.tga in Resources */,
-				89C61C161738141D002D79A3 /* f3.tga in Resources */,
-				89C61C171738141D002D79A3 /* f3gr.tga in Resources */,
-				89C61C181738141D002D79A3 /* fft-terrain.tga in Resources */,
-				89C61C191738141D002D79A3 /* newterrain.tga in Resources */,
-				89C61C1A1738141D002D79A3 /* ok1.tga in Resources */,
-				89C61C1B1738141D002D79A3 /* ok2.tga in Resources */,
-				89C61C1C1738141D002D79A3 /* TERRA2.tga in Resources */,
 				89C61C1D1738141D002D79A3 /* testlevel.txt in Resources */,
-				89C61C1E1738141D002D79A3 /* bunnyplus.obj in Resources */,
-				89C61C1F1738141D002D79A3 /* button.obj in Resources */,
-				89C61C201738141D002D79A3 /* crate.obj in Resources */,
-				89C61C211738141D002D79A3 /* ground.obj in Resources */,
-				89C61C221738141D002D79A3 /* robot.obj in Resources */,
-				89C61C231738141D002D79A3 /* skybox.obj in Resources */,
-				89C61C241738141D002D79A3 /* sphere.obj in Resources */,
-				89C61C251738141D002D79A3 /* treads.obj in Resources */,
-				89C61C261738141D002D79A3 /* wall0.obj in Resources */,
-				89C61C271738141D002D79A3 /* wall1.obj in Resources */,
-				89C61C281738141D002D79A3 /* wall2a.obj in Resources */,
-				89C61C291738141D002D79A3 /* wall2b.obj in Resources */,
-				89C61C2A1738141D002D79A3 /* wall3.obj in Resources */,
-				89C61C2B1738141D002D79A3 /* wall4.obj in Resources */,
-				89C61C2C1738141D002D79A3 /* button_c.tga in Resources */,
-				89C61C2D1738141D002D79A3 /* crate.tga in Resources */,
-				89C61C2E1738141D002D79A3 /* ground.tga in Resources */,
-				89C61C2F1738141D002D79A3 /* robot_c.tga in Resources */,
-				89C61C301738141D002D79A3 /* skybox_c.tga in Resources */,
-				89C61C311738141D002D79A3 /* tracks_c.tga in Resources */,
-				89C61C321738141D002D79A3 /* wall_c.tga in Resources */,
-				89C61C331738141D002D79A3 /* test_sigma_engine.cpp in Resources */,
+				89C61C9F173819A1002D79A3 /* bunnyplus.obj in Resources */,
+				89C61CA0173819A1002D79A3 /* button.obj in Resources */,
+				89C61CA1173819A1002D79A3 /* crate.obj in Resources */,
+				89C61CA2173819A1002D79A3 /* ground.obj in Resources */,
+				89C61CA3173819A1002D79A3 /* robot.obj in Resources */,
+				89C61CA4173819A1002D79A3 /* skybox.obj in Resources */,
+				89C61CA5173819A1002D79A3 /* sphere.obj in Resources */,
+				89C61CA6173819A1002D79A3 /* treads.obj in Resources */,
+				89C61CA7173819A1002D79A3 /* wall0.obj in Resources */,
+				89C61CA8173819A1002D79A3 /* wall1.obj in Resources */,
+				89C61CA9173819A1002D79A3 /* wall2a.obj in Resources */,
+				89C61CAA173819A1002D79A3 /* wall2b.obj in Resources */,
+				89C61CAB173819A1002D79A3 /* wall3.obj in Resources */,
+				89C61CAC173819A1002D79A3 /* wall4.obj in Resources */,
+				89C61CAD173819A4002D79A3 /* button_c.tga in Resources */,
+				89C61CAE173819A4002D79A3 /* crate.tga in Resources */,
+				89C61CAF173819A4002D79A3 /* ground.tga in Resources */,
+				89C61CB0173819A4002D79A3 /* robot_c.tga in Resources */,
+				89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */,
+				89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */,
+				89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1687,7 +1662,6 @@
 				89C61C08173807A1002D79A3 /* skybox_c.tga in Resources */,
 				89C61C09173807A1002D79A3 /* tracks_c.tga in Resources */,
 				89C61C0A173807A1002D79A3 /* wall_c.tga in Resources */,
-				89C61C0D173808DC002D79A3 /* test_sigma_engine.cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
