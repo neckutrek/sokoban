@@ -701,7 +701,7 @@ void glutInitWindowSize (int width, int height)
 	gWindowWidth = width;
 	gWindowHeight = height;
 }
-void glutCreateWindow (char *windowTitle)
+void glutCreateWindow (const char *windowTitle)
 {
 // To do: Should get screen height instead of 1000
 	NSRect frame = NSMakeRect(gWindowPosX, NSScreen.mainScreen.frame.size.height - gWindowPosY-gWindowHeight, gWindowWidth, gWindowHeight);

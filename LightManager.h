@@ -22,7 +22,7 @@ public:
     ~LightManager() {}
     
     // from GameComponent
-    virtual int update_function(unsigned int time);
+    virtual int update(unsigned int time);
     
     void addLight(vec3 position, vec3 color, float lux_level);
     

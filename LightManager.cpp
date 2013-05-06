@@ -29,7 +29,7 @@ void LightManager::addLight(vec3 position, vec3 color, float lux_level)
     }
 }
 
-int LightManager::update_function(unsigned int time)
+int LightManager::update(unsigned int time)
 {
     return 0;
 }

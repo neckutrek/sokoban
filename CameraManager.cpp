@@ -31,4 +31,6 @@ void CameraManager::update(int dtime)
 		cc->reset();
 		_activeCamera = _previousCamera;
 	}
+    
+    _activeCamera->update(dtime);
 }
