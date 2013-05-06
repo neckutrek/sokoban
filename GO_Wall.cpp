@@ -6,9 +6,9 @@
 //
 //
 
-#include "Wall.h"
+#include "GO_Wall.h"
 
-Wall::Wall(vec3 pos) : GameObject(BoundingBox(0.5))
+GO_Wall::GO_Wall(vec3 pos) : GameObject(BoundingBox(0.5))
 {
 	loadModel("crate.obj");
 	setPosition(pos);
@@ -16,7 +16,7 @@ Wall::Wall(vec3 pos) : GameObject(BoundingBox(0.5))
 	setScaling(0.5, 0.5, 0.5);
 }
 
-std::string Wall::getType()
+std::string GO_Wall::getType()
 {
 	return "wall";
 }

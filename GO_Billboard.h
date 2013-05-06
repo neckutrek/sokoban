@@ -13,11 +13,11 @@
 #include "GameObject.h"
 #include "CameraManager.h"
 
-class Billboard : public GameObject
+class GO_Billboard : public GameObject
 {
 public:
-	Billboard(vec3 pos);
-	~Billboard() {}
+	GO_Billboard(vec3 pos);
+	~GO_Billboard() {}
 	std::string getType();
 	
 	virtual int update_function(unsigned int time);

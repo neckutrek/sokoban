@@ -11,30 +11,30 @@
 GameObjectFactory::GameObjectFactory()
 {}
 
-Wall* GameObjectFactory::createWall(vec3 pos)
+GO_Wall* GameObjectFactory::createWall(vec3 pos)
 {
-	return new Wall(pos);
+	return new GO_Wall(pos);
 }
 
-Ground* GameObjectFactory::createGround()
+GO_Ground* GameObjectFactory::createGround()
 {
-	return new Ground();
+	return new GO_Ground();
 }
 
-Player* GameObjectFactory::createPlayer(vec3 pos)
+GO_Player* GameObjectFactory::createPlayer(vec3 pos)
 {
-	Player* player = new Player(pos);
+	GO_Player* player = new GO_Player(pos);
 	ObjectCamera* cam = new ObjectCamera(player);
 	CameraManager::getInstance().setActiveCamera(cam);
 	return player;
 }
 
-Block* GameObjectFactory::createBlock(vec3 pos)
+GO_Block* GameObjectFactory::createBlock(vec3 pos)
 {
-	return new Block(pos);
+	return new GO_Block(pos);
 }
 
-Billboard* GameObjectFactory::createBillboard(vec3 pos)
+GO_Billboard* GameObjectFactory::createBillboard(vec3 pos)
 {
-	return new Billboard(pos);
+	return new GO_Billboard(pos);
 }

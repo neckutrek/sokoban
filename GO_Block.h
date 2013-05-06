@@ -12,11 +12,11 @@
 #include <iostream>
 #include "GameObject.h"
 
-class Block : public GameObject
+class GO_Block : public GameObject
 {
 public:
-	Block(vec3 pos);
-	~Block() {}
+	GO_Block(vec3 pos);
+	~GO_Block() {}
 	std::string getType();
 	
 protected:

@@ -6,14 +6,14 @@
 //
 //
 
-#include "Ground.h"
+#include "GO_Ground.h"
 
-Ground::Ground() : GameObject(BoundingBox(0))
+GO_Ground::GO_Ground() : GameObject(BoundingBox(0))
 {
 	loadModel("ground.obj");
 }
 
-std::string Ground::getType()
+std::string GO_Ground::getType()
 {
 	return "ground";
 }

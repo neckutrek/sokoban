@@ -24,7 +24,7 @@
 #include "CameraManager.h"
 #include "LightContainer.h"
 #include "MaterialManager.h"
-#include "Wall.h"
+#include "GO_Wall.h"
 
 
 

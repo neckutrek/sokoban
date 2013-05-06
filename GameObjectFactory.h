@@ -10,13 +10,13 @@
 #define __OpenGLGLUTApp__GameObjectFactory__
 
 #include <iostream>
-#include "Wall.h"
-#include "Ground.h"
-#include "Player.h"
-#include "Block.h"
+#include "GO_Wall.h"
+#include "GO_Ground.h"
+#include "GO_Player.h"
+#include "GO_Block.h"
 #include "CameraManager.h"
 #include "ObjectCamera.h"
-#include "Billboard.h"
+#include "GO_Billboard.h"
 
 class GameObjectFactory
 {
@@ -27,11 +27,11 @@ public:
 		return instance;
 	}
 	
-	Wall* createWall(vec3 pos);
-	Ground* createGround();
-	Player* createPlayer(vec3 pos);
-	Block* createBlock(vec3 pos);
-	Billboard* createBillboard(vec3 pos); 
+	GO_Wall* createWall(vec3 pos);
+	GO_Ground* createGround();
+	GO_Player* createPlayer(vec3 pos);
+	GO_Block* createBlock(vec3 pos);
+	GO_Billboard* createBillboard(vec3 pos); 
 	
 protected:
 	

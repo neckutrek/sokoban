@@ -6,15 +6,15 @@
 //
 //
 
-#include "Block.h"
+#include "GO_Block.h"
 
-Block::Block(vec3 pos) : GameObject(BoundingBox(0.5))
+GO_Block::GO_Block(vec3 pos) : GameObject(BoundingBox(0.5))
 {
 	loadModel("crate.obj");
 	setPosition(pos);
 }
 
-std::string Block::getType()
+std::string GO_Block::getType()
 {
 	return "block";
 }

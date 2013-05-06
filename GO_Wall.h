@@ -12,11 +12,11 @@
 #include <iostream>
 #include "GameObject.h"
 
-class Wall : public GameObject
+class GO_Wall : public GameObject
 {
 public:
-	Wall(vec3 pos);
-	~Wall() {}
+	GO_Wall(vec3 pos);
+	~GO_Wall() {}
 	std::string getType();
 	
 protected:

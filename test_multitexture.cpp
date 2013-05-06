@@ -52,7 +52,7 @@ void init(void) {
 		for(int y=0; y<3; y++)
 			for(int z=0; z<3; z++)
 			{
-				objects[9*x+3*y+z] = new Wall(vec3(3*(x-1), 3*(y-1), 3*(z-1)));
+				objects[9*x+3*y+z] = new GO_Wall(vec3(3*(x-1), 3*(y-1), 3*(z-1)));
 				objects[9*x+3*y+z]->loadModel(models[j].c_str());
                 objects[9*x+3*y+z]->addMaterial(skins[i].c_str(), 0.5, 200);
                 objects[9*x+3*y+z]->addMaterial(skins[i+1].c_str(), 0.5, 50);

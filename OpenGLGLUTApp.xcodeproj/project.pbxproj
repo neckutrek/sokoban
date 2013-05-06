@@ -219,8 +219,7 @@
 		11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
-		11924B8F172D32E6006AF594 /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* Wall.cpp */; };
-		11924B92172D4E63006AF594 /* Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8E172D32E6006AF594 /* Wall.h */; };
+		11924B8F172D32E6006AF594 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
 		11924B95172D4E63006AF594 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
 		11924B96172D4E63006AF594 /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B73172671D3006AF594 /* CameraManager.h */; };
 		11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
@@ -228,9 +227,8 @@
 		11924B99172D4E63006AF594 /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B79172671D3006AF594 /* ObjectCamera.h */; };
 		11924B9C172D4E63006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
 		11924B9D172D4E63006AF594 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
-		11924BA2172FA107006AF594 /* Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* Ground.cpp */; };
+		11924BA2172FA107006AF594 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
 		11924BA5172FA719006AF594 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
-		11924BA8172FA75A006AF594 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA6172FA75A006AF594 /* BoundingBox.cpp */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B56039171F647300D5A5DA /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11B5603A171F647300D5A5DA /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -342,17 +340,16 @@
 		11B560A8171F647300D5A5DA /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		11B560A9171F647300D5A5DA /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		11B560AF171F649000D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
-		11B82FB6172FAE1C00787A41 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* Player.cpp */; };
-		11B82FB7172FB40C00787A41 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA7172FA75A006AF594 /* BoundingBox.h */; };
-		11B82FB8172FB40C00787A41 /* Ground.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA1172FA107006AF594 /* Ground.h */; };
-		11B82FB9172FB40C00787A41 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* Player.cpp */; };
-		11B82FBA172FB40C00787A41 /* Player.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB5172FAE1C00787A41 /* Player.h */; };
+		11B82FB6172FAE1C00787A41 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		11B82FB8172FB40C00787A41 /* GO_Ground.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA1172FA107006AF594 /* GO_Ground.h */; };
+		11B82FB9172FB40C00787A41 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		11B82FBA172FB40C00787A41 /* GO_Player.h in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB5172FAE1C00787A41 /* GO_Player.h */; };
 		11B82FBB172FB40C00787A41 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA4172FA719006AF594 /* GameObjectManager.h */; };
 		11B82FBD172FB8EC00787A41 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FBC172FB8EC00787A41 /* skybox.obj */; };
 		11B82FC0173034DE00787A41 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FBE173034DD00787A41 /* crate.obj */; };
 		11B82FC1173034DE00787A41 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FBF173034DD00787A41 /* crate.tga */; };
-		11B82FC4173124E100787A41 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* Block.cpp */; };
-		11B82FEC173130B500787A41 /* Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* Billboard.cpp */; };
+		11B82FC4173124E100787A41 /* GO_Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* GO_Block.cpp */; };
+		11B82FEC173130B500787A41 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* GO_Billboard.cpp */; };
 		11B82FEE1731350B00787A41 /* billboard.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FED1731350B00787A41 /* billboard.obj */; };
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		892D8D79172FA4C500C13D95 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
@@ -437,7 +434,6 @@
 		892D8DC8172FA4C500C13D95 /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
 		892D8DC9172FA4C500C13D95 /* wall_512_1_05.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE816D379C100E3644E /* wall_512_1_05.tga */; };
 		892D8DCA172FA4C500C13D95 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
-		892D8DCC172FA4C500C13D95 /* Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8E172D32E6006AF594 /* Wall.h */; };
 		892D8DCD172FA4C500C13D95 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
 		892D8DCE172FA4C500C13D95 /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B73172671D3006AF594 /* CameraManager.h */; };
 		892D8DCF172FA4C500C13D95 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
@@ -476,7 +472,7 @@
 		892D8DF1172FA4C500C13D95 /* CutsceneCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B74172671D3006AF594 /* CutsceneCamera.cpp */; };
 		892D8DF2172FA4C500C13D95 /* DebugCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B76172671D3006AF594 /* DebugCamera.cpp */; };
 		892D8DF3172FA4C500C13D95 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
-		892D8DF4172FA4C500C13D95 /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* Wall.cpp */; };
+		892D8DF4172FA4C500C13D95 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
 		892D8DF6172FA4C500C13D95 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		892D8DF7172FA4C500C13D95 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		892D8DF8172FA4C500C13D95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
@@ -487,16 +483,11 @@
 		892D8E05172FA4E300C13D95 /* MaterialManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47D172D386800BF8EF7 /* MaterialManager.h */; };
 		892D8E06172FA4E300C13D95 /* RenderableMultilayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47F172D53EC00BF8EF7 /* RenderableMultilayer.cpp */; };
 		892D8E07172FA4E300C13D95 /* RenderableMultilayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC480172D53EC00BF8EF7 /* RenderableMultilayer.h */; };
-		892D8E0A172FAB3400C13D95 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */; };
-		892D8E0B172FAB3400C13D95 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */; };
-		892D8E0C172FAB3400C13D95 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */; };
-		892D8E0D172FAB3400C13D95 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */; };
 		892D8E11172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E12172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E13172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E14172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E15172FB56200C13D95 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
-		892D8E16172FB56200C13D95 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E09172FAB3400C13D95 /* GameObjectManager.h */; };
 		8941779617266ACC00D30FBA /* LightContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightContainer.cpp */; };
 		8941779717266ACC00D30FBA /* LightContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightContainer.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
@@ -571,6 +562,30 @@
 		8964AFCF171D817A009BD6A2 /* OpenGLCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDCE16D379C100E3644E /* OpenGLCamera.h */; };
 		8964AFD0171D817A009BD6A2 /* OpenGLObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEDD116D379C100E3644E /* OpenGLObject.h */; };
 		8964AFD1171D818A009BD6A2 /* GL_utilities.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7C16D379C100E3644E /* GL_utilities.h */; };
+		89C61B6017380278002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* GO_Billboard.cpp */; };
+		89C61B6117380284002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* GO_Billboard.cpp */; };
+		89C61B621738028A002D79A3 /* GO_Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* GO_Block.cpp */; };
+		89C61B631738028B002D79A3 /* GO_Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* GO_Block.cpp */; };
+		89C61B641738028C002D79A3 /* GO_Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* GO_Block.cpp */; };
+		89C61B651738028D002D79A3 /* GO_Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FC2173124E100787A41 /* GO_Block.cpp */; };
+		89C61B6617380290002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* GO_Billboard.cpp */; };
+		89C61B6717380291002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FEA173130B400787A41 /* GO_Billboard.cpp */; };
+		89C61B6817380293002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		89C61B6917380294002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		89C61B6A17380295002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		89C61B6B17380295002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B82FB4172FAE1C00787A41 /* GO_Player.cpp */; };
+		89C61B6C17380298002D79A3 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
+		89C61B6D17380299002D79A3 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
+		89C61B6E17380299002D79A3 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
+		89C61B6F1738029A002D79A3 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
+		89C61B701738029E002D79A3 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
+		89C61B711738029F002D79A3 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
+		89C61B72173802B8002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
+		89C61B73173802B9002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
+		89C61B74173802B9002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
+		89C61B75173802BA002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
+		89C61B76173802BD002D79A3 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
+		89C61B77173802BE002D79A3 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		89E7578A173121A3003F2781 /* SkyBox512.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDE716D379C100E3644E /* SkyBox512.tga */; };
 		89E7579017312950003F2781 /* test_multitexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC4DC172D5D4F00BF8EF7 /* test_multitexture.cpp */; };
 		89E7579217313330003F2781 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 89E7579117313330003F2781 /* sphere.obj */; };
@@ -582,8 +597,7 @@
 		89E757AF173135D6003F2781 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E757AD173135D6003F2781 /* MainMenu.xib */; };
 		89E757B3173135EB003F2781 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		89E757B4173135EB003F2781 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
-		89E757B5173135EB003F2781 /* Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* Wall.cpp */; };
-		89E757B6173135EB003F2781 /* Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8E172D32E6006AF594 /* Wall.h */; };
+		89E757B5173135EB003F2781 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
 		89E757B7173135EB003F2781 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
 		89E757B8173135EB003F2781 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
 		89E757B9173135EB003F2781 /* CameraManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B72172671D3006AF594 /* CameraManager.cpp */; };
@@ -602,8 +616,6 @@
 		89E757C617313611003F2781 /* MaterialManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47D172D386800BF8EF7 /* MaterialManager.h */; };
 		89E757C717313611003F2781 /* RenderableMultilayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47F172D53EC00BF8EF7 /* RenderableMultilayer.cpp */; };
 		89E757C817313611003F2781 /* RenderableMultilayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC480172D53EC00BF8EF7 /* RenderableMultilayer.h */; };
-		89E757C917313611003F2781 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */; };
-		89E757CA17313611003F2781 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E09172FAB3400C13D95 /* GameObjectManager.h */; };
 		89E757CB17313611003F2781 /* GameComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC46170DEB8600F40F3A /* GameComponent.cpp */; };
 		89E757CC17313611003F2781 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		89E757CD17313611003F2781 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
@@ -802,26 +814,23 @@
 		11924B79172671D3006AF594 /* ObjectCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCamera.h; sourceTree = "<group>"; };
 		11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectFactory.cpp; sourceTree = "<group>"; };
 		11924B8A172D2F0E006AF594 /* GameObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectFactory.h; sourceTree = "<group>"; };
-		11924B8D172D32E6006AF594 /* Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wall.cpp; sourceTree = "<group>"; };
-		11924B8E172D32E6006AF594 /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
-		11924BA0172FA107006AF594 /* Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ground.cpp; sourceTree = "<group>"; };
-		11924BA1172FA107006AF594 /* Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ground.h; sourceTree = "<group>"; };
+		11924B8D172D32E6006AF594 /* GO_Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Wall.cpp; sourceTree = "<group>"; };
+		11924BA0172FA107006AF594 /* GO_Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Ground.cpp; sourceTree = "<group>"; };
+		11924BA1172FA107006AF594 /* GO_Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Ground.h; sourceTree = "<group>"; };
 		11924BA3172FA719006AF594 /* GameObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectManager.cpp; sourceTree = "<group>"; };
 		11924BA4172FA719006AF594 /* GameObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectManager.h; sourceTree = "<group>"; };
-		11924BA6172FA75A006AF594 /* BoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundingBox.cpp; sourceTree = "<group>"; };
-		11924BA7172FA75A006AF594 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
 		11B56034171F644700D5A5DA /* test_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_camera.cpp; sourceTree = "<group>"; };
 		11B560AD171F647300D5A5DA /* test_renderable copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_renderable copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B560AE171F647400D5A5DA /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
-		11B82FB4172FAE1C00787A41 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		11B82FB5172FAE1C00787A41 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		11B82FB4172FAE1C00787A41 /* GO_Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Player.cpp; sourceTree = "<group>"; };
+		11B82FB5172FAE1C00787A41 /* GO_Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Player.h; sourceTree = "<group>"; };
 		11B82FBC172FB8EC00787A41 /* skybox.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = skybox.obj; path = "../../../../../Dropbox/Pågående kurser/TSBK07/lab2012-3/skybox.obj"; sourceTree = "<group>"; };
 		11B82FBE173034DD00787A41 /* crate.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crate.obj; path = "../../../../Dropbox/Pågående kurser/TSBK07/Resurser/crate.obj"; sourceTree = "<group>"; };
 		11B82FBF173034DD00787A41 /* crate.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = crate.tga; path = "../../../../Dropbox/Pågående kurser/TSBK07/Resurser/crate.tga"; sourceTree = "<group>"; };
-		11B82FC2173124E100787A41 /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
-		11B82FC3173124E100787A41 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
-		11B82FEA173130B400787A41 /* Billboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Billboard.cpp; sourceTree = "<group>"; };
-		11B82FEB173130B400787A41 /* Billboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Billboard.h; sourceTree = "<group>"; };
+		11B82FC2173124E100787A41 /* GO_Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Block.cpp; sourceTree = "<group>"; };
+		11B82FC3173124E100787A41 /* GO_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Block.h; sourceTree = "<group>"; };
+		11B82FEA173130B400787A41 /* GO_Billboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Billboard.cpp; sourceTree = "<group>"; };
+		11B82FEB173130B400787A41 /* GO_Billboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Billboard.h; sourceTree = "<group>"; };
 		11B82FED1731350B00787A41 /* billboard.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = billboard.obj; path = ../../../../../Dropbox/billboard.obj; sourceTree = "<group>"; };
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
@@ -832,8 +841,6 @@
 		11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3Addons.h; sourceTree = "<group>"; };
 		892D8E00172FA4C500C13D95 /* test_level_generator copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_level_generator copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892D8E02172FA4C500C13D95 /* test_level_generator copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_level_generator copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/test_level_generator copy-Info.plist"; sourceTree = "<absolute>"; };
-		892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectManager.cpp; sourceTree = "<group>"; };
-		892D8E09172FAB3400C13D95 /* GameObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectManager.h; sourceTree = "<group>"; };
 		892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundingBox.cpp; sourceTree = "<group>"; };
 		892D8E10172FAB6600C13D95 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
 		895C7D5B172520DA00A18429 /* test_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_light.cpp; sourceTree = "<group>"; };
@@ -877,6 +884,7 @@
 		8964AF8D171D8058009BD6A2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8964AF8E171D8058009BD6A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8964AFA7171D8058009BD6A2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /System/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		89C61B5F1738018D002D79A3 /* GO_Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Wall.h; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -1191,27 +1199,18 @@
 		11924B8C172D32D1006AF594 /* Sokoban */ = {
 			isa = PBXGroup;
 			children = (
-				11924B8D172D32E6006AF594 /* Wall.cpp */,
-				11924B8E172D32E6006AF594 /* Wall.h */,
-				11924BA0172FA107006AF594 /* Ground.cpp */,
-				11924BA1172FA107006AF594 /* Ground.h */,
-				11B82FB4172FAE1C00787A41 /* Player.cpp */,
-				11B82FB5172FAE1C00787A41 /* Player.h */,
-				11B82FC2173124E100787A41 /* Block.cpp */,
-				11B82FC3173124E100787A41 /* Block.h */,
-				11B82FEA173130B400787A41 /* Billboard.cpp */,
-				11B82FEB173130B400787A41 /* Billboard.h */,
+				11924B8D172D32E6006AF594 /* GO_Wall.cpp */,
+				89C61B5F1738018D002D79A3 /* GO_Wall.h */,
+				11924BA0172FA107006AF594 /* GO_Ground.cpp */,
+				11924BA1172FA107006AF594 /* GO_Ground.h */,
+				11B82FB4172FAE1C00787A41 /* GO_Player.cpp */,
+				11B82FB5172FAE1C00787A41 /* GO_Player.h */,
+				11B82FC2173124E100787A41 /* GO_Block.cpp */,
+				11B82FC3173124E100787A41 /* GO_Block.h */,
+				11B82FEA173130B400787A41 /* GO_Billboard.cpp */,
+				11B82FEB173130B400787A41 /* GO_Billboard.h */,
 			);
 			name = Sokoban;
-			sourceTree = "<group>";
-		};
-		11924BA9172FA75F006AF594 /* Collision */ = {
-			isa = PBXGroup;
-			children = (
-				11924BA6172FA75A006AF594 /* BoundingBox.cpp */,
-				11924BA7172FA75A006AF594 /* BoundingBox.h */,
-			);
-			name = Collision;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -1232,7 +1231,6 @@
 			children = (
 				89E757EF1731379F003F2781 /* SDL */,
 				892D8E0E172FAB5600C13D95 /* Collision */,
-				11924BA9172FA75F006AF594 /* Collision */,
 				11924B8C172D32D1006AF594 /* Sokoban */,
 				11924AE5172525AF006AF594 /* Camera */,
 				89CE01871715B2EA00D6783A /* Shaders */,
@@ -1482,8 +1480,6 @@
 		89FECC45170DEB6F00F40F3A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				892D8E08172FAB3400C13D95 /* GameObjectManager.cpp */,
-				892D8E09172FAB3400C13D95 /* GameObjectManager.h */,
 				89FECC46170DEB8600F40F3A /* GameComponent.cpp */,
 				89FECC47170DEB8600F40F3A /* GameComponent.h */,
 				89CE01971715C2D000D6783A /* GameObject.cpp */,
@@ -2038,12 +2034,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B82FB7172FB40C00787A41 /* BoundingBox.h in Sources */,
-				11B82FB8172FB40C00787A41 /* Ground.h in Sources */,
-				11B82FB9172FB40C00787A41 /* Player.cpp in Sources */,
-				11B82FBA172FB40C00787A41 /* Player.h in Sources */,
+				11B82FB8172FB40C00787A41 /* GO_Ground.h in Sources */,
+				11B82FB9172FB40C00787A41 /* GO_Player.cpp in Sources */,
+				11B82FBA172FB40C00787A41 /* GO_Player.h in Sources */,
 				11B82FBB172FB40C00787A41 /* GameObjectManager.h in Sources */,
-				11924B92172D4E63006AF594 /* Wall.h in Sources */,
 				11924B95172D4E63006AF594 /* Camera.h in Sources */,
 				11924B96172D4E63006AF594 /* CameraManager.h in Sources */,
 				11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */,
@@ -2083,14 +2077,12 @@
 				11924B82172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
 				11924B85172671D3006AF594 /* DebugCamera.cpp in Sources */,
 				11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */,
-				11924B8F172D32E6006AF594 /* Wall.cpp in Sources */,
-				892D8E0B172FAB3400C13D95 /* GameObjectManager.cpp in Sources */,
+				11924B8F172D32E6006AF594 /* GO_Wall.cpp in Sources */,
 				892D8E12172FAB6600C13D95 /* BoundingBox.cpp in Sources */,
-				11924BA2172FA107006AF594 /* Ground.cpp in Sources */,
+				11924BA2172FA107006AF594 /* GO_Ground.cpp in Sources */,
 				11924BA5172FA719006AF594 /* GameObjectManager.cpp in Sources */,
-				11924BA8172FA75A006AF594 /* BoundingBox.cpp in Sources */,
-				11B82FC4173124E100787A41 /* Block.cpp in Sources */,
-				11B82FEC173130B500787A41 /* Billboard.cpp in Sources */,
+				11B82FC4173124E100787A41 /* GO_Block.cpp in Sources */,
+				11B82FEC173130B500787A41 /* GO_Billboard.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2128,8 +2120,14 @@
 				11924B81172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
 				11924B84172671D3006AF594 /* DebugCamera.cpp in Sources */,
 				11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */,
-				892D8E0A172FAB3400C13D95 /* GameObjectManager.cpp in Sources */,
 				892D8E11172FAB6600C13D95 /* BoundingBox.cpp in Sources */,
+				89C61B651738028D002D79A3 /* GO_Block.cpp in Sources */,
+				89C61B6717380291002D79A3 /* GO_Billboard.cpp in Sources */,
+				89C61B6817380293002D79A3 /* GO_Player.cpp in Sources */,
+				89C61B6C17380298002D79A3 /* GO_Ground.cpp in Sources */,
+				89C61B711738029F002D79A3 /* GO_Wall.cpp in Sources */,
+				89C61B72173802B8002D79A3 /* GameObjectManager.cpp in Sources */,
+				89C61B77173802BE002D79A3 /* LevelGenerator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2139,12 +2137,10 @@
 			files = (
 				89E7579017312950003F2781 /* test_multitexture.cpp in Sources */,
 				892D8E15172FB56200C13D95 /* BoundingBox.h in Sources */,
-				892D8E16172FB56200C13D95 /* GameObjectManager.h in Sources */,
 				892D8E04172FA4E300C13D95 /* MaterialManager.cpp in Sources */,
 				892D8E05172FA4E300C13D95 /* MaterialManager.h in Sources */,
 				892D8E06172FA4E300C13D95 /* RenderableMultilayer.cpp in Sources */,
 				892D8E07172FA4E300C13D95 /* RenderableMultilayer.h in Sources */,
-				892D8DCC172FA4C500C13D95 /* Wall.h in Sources */,
 				892D8DCD172FA4C500C13D95 /* Camera.h in Sources */,
 				892D8DCE172FA4C500C13D95 /* CameraManager.h in Sources */,
 				892D8DCF172FA4C500C13D95 /* CutsceneCamera.h in Sources */,
@@ -2183,9 +2179,13 @@
 				892D8DF1172FA4C500C13D95 /* CutsceneCamera.cpp in Sources */,
 				892D8DF2172FA4C500C13D95 /* DebugCamera.cpp in Sources */,
 				892D8DF3172FA4C500C13D95 /* ObjectCamera.cpp in Sources */,
-				892D8DF4172FA4C500C13D95 /* Wall.cpp in Sources */,
-				892D8E0D172FAB3400C13D95 /* GameObjectManager.cpp in Sources */,
+				892D8DF4172FA4C500C13D95 /* GO_Wall.cpp in Sources */,
 				892D8E14172FAB6600C13D95 /* BoundingBox.cpp in Sources */,
+				89C61B6117380284002D79A3 /* GO_Billboard.cpp in Sources */,
+				89C61B631738028B002D79A3 /* GO_Block.cpp in Sources */,
+				89C61B6A17380295002D79A3 /* GO_Player.cpp in Sources */,
+				89C61B6E17380299002D79A3 /* GO_Ground.cpp in Sources */,
+				89C61B74173802B9002D79A3 /* GameObjectManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2232,8 +2232,14 @@
 				895EC50F172D5E0500BF8EF7 /* GameComponent.h in Sources */,
 				895EC510172D5E0500BF8EF7 /* GameObject.cpp in Sources */,
 				895EC511172D5E0500BF8EF7 /* GameObject.h in Sources */,
-				892D8E0C172FAB3400C13D95 /* GameObjectManager.cpp in Sources */,
 				892D8E13172FAB6600C13D95 /* BoundingBox.cpp in Sources */,
+				89C61B641738028C002D79A3 /* GO_Block.cpp in Sources */,
+				89C61B6617380290002D79A3 /* GO_Billboard.cpp in Sources */,
+				89C61B6917380294002D79A3 /* GO_Player.cpp in Sources */,
+				89C61B6D17380299002D79A3 /* GO_Ground.cpp in Sources */,
+				89C61B701738029E002D79A3 /* GO_Wall.cpp in Sources */,
+				89C61B73173802B9002D79A3 /* GameObjectManager.cpp in Sources */,
+				89C61B76173802BD002D79A3 /* LevelGenerator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2249,8 +2255,6 @@
 				89E757C617313611003F2781 /* MaterialManager.h in Sources */,
 				89E757C717313611003F2781 /* RenderableMultilayer.cpp in Sources */,
 				89E757C817313611003F2781 /* RenderableMultilayer.h in Sources */,
-				89E757C917313611003F2781 /* GameObjectManager.cpp in Sources */,
-				89E757CA17313611003F2781 /* GameObjectManager.h in Sources */,
 				89E757CB17313611003F2781 /* GameComponent.cpp in Sources */,
 				89E757CC17313611003F2781 /* GameComponent.h in Sources */,
 				89E757CD17313611003F2781 /* GameObject.cpp in Sources */,
@@ -2277,8 +2281,7 @@
 				89E757E217313611003F2781 /* VectorUtils3Addons.h in Sources */,
 				89E757B3173135EB003F2781 /* BoundingBox.cpp in Sources */,
 				89E757B4173135EB003F2781 /* BoundingBox.h in Sources */,
-				89E757B5173135EB003F2781 /* Wall.cpp in Sources */,
-				89E757B6173135EB003F2781 /* Wall.h in Sources */,
+				89E757B5173135EB003F2781 /* GO_Wall.cpp in Sources */,
 				89E757B7173135EB003F2781 /* Camera.cpp in Sources */,
 				89E757B8173135EB003F2781 /* Camera.h in Sources */,
 				89E757B9173135EB003F2781 /* CameraManager.cpp in Sources */,
@@ -2292,6 +2295,11 @@
 				89E757F2173137A8003F2781 /* SDLMain.m in Sources */,
 				89E757F617313F16003F2781 /* test_sdl_input.cpp in Sources */,
 				89E757F817314F92003F2781 /* SigmaGameEngine.cpp in Sources */,
+				89C61B6017380278002D79A3 /* GO_Billboard.cpp in Sources */,
+				89C61B621738028A002D79A3 /* GO_Block.cpp in Sources */,
+				89C61B6B17380295002D79A3 /* GO_Player.cpp in Sources */,
+				89C61B6F1738029A002D79A3 /* GO_Ground.cpp in Sources */,
+				89C61B75173802BA002D79A3 /* GameObjectManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2331,7 +2339,7 @@
 				895EC481172D53EC00BF8EF7 /* RenderableMultilayer.cpp in Sources */,
 				895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */,
 				11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */,
-				11B82FB6172FAE1C00787A41 /* Player.cpp in Sources */,
+				11B82FB6172FAE1C00787A41 /* GO_Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2789,6 +2797,7 @@
 				89E757B2173135D6003F2781 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "lab4-1" */ = {
 			isa = XCConfigurationList;

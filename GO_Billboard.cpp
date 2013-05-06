@@ -6,20 +6,20 @@
 //
 //
 
-#include "Billboard.h"
+#include "GO_Billboard.h"
 
-Billboard::Billboard(vec3 pos) : GameObject(BoundingBox(0))
+GO_Billboard::GO_Billboard(vec3 pos) : GameObject(BoundingBox(0))
 {
 	loadModel("billboard.obj");
 	setPosition(pos);
 }
 
-std::string Billboard::getType()
+std::string GO_Billboard::getType()
 {
 	return "billboard";
 }
 
-int Billboard::update_function(unsigned int time)
+int GO_Billboard::update_function(unsigned int time)
 {
 	vec3 camVec = Normalize(CameraManager::getInstance().getActiveCamera()->getPosition() - getPosition());
 	mat4 rotMat = getRot();

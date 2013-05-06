@@ -6,15 +6,15 @@
 //
 //
 
-#include "Player.h"
+#include "GO_Player.h"
 
-Player::Player(vec3 pos) : GameObject(BoundingBox(0.5))
+GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(0.5))
 {
 	loadModel("bunnyplus.obj");
 	setPosition(pos);
 }
 
-std::string Player::getType()
+std::string GO_Player::getType()
 {
 	return "player";
 }

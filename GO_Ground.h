@@ -13,11 +13,11 @@
 #include "GameObject.h"
 #include "CameraManager.h"
 
-class Ground : public GameObject
+class GO_Ground : public GameObject
 {
 public:
-	Ground();
-	~Ground() {}
+	GO_Ground();
+	~GO_Ground() {}
 	std::string getType();
 	
 protected:
