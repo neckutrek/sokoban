@@ -5,34 +5,6 @@
 #include "SigmaGameEngine.h"
 #include <iostream>
 
-// TODO: Take these away!
-
-//DebugCamera* c1 = new DebugCamera();
-//ObjectCamera* c2 = new ObjectCamera(objects[0]);
-//CutsceneCamera* c3 = new CutsceneCamera();
-/*
-
-void setKeyUp(unsigned char key, int x, int y) {
-	keyboardMap[key] = 0;
-}
-
-void setKeyDown(unsigned char key, int x, int y) {
-	keyboardMap[key] = 1;
-}
-
-void updateKeyboard() {
-    //std::cerr << "updateKeyboard" << std::endl;
-	if (keyboardMap['1'] == 1)
-		CameraManager::getInstance().setActiveCamera(c1);
-//	if (keyboardMap['2'] == 1)
-//		CameraManager::getInstance().setActiveCamera(c2);
-	if (keyboardMap['3'] == 1)
-		CameraManager::getInstance().setActiveCamera(c3);
-    
-	CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);     
-}
-*/
-
 void _setKeyUp(unsigned char key, int x, int y) {
     SigmaGameEngine::getInstance().setKeyUp(key);
 }
@@ -97,11 +69,9 @@ void SigmaGameEngine::initialize(int argc,
     this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());
     glUseProgram(shaderProgramID_);
-    std::cerr << "FIRST shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
     
     MaterialManager::getInstance().initialize(shaderProgramID_);
     LightManager::getInstance();
-    //CameraManager::getInstance().setActiveCamera(c1);
     
     mat4 projection_transformation = frustum(-0.133333, 0.133333, -0.1, 0.1, 0.1, 100.0);
     
@@ -116,10 +86,7 @@ void SigmaGameEngine::run()
 }
 
 void SigmaGameEngine::display() {
-    //std::cerr << "SigmaGameEngine::display()" << std::endl;
-    std::cerr << "before shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
     glUseProgram(this->shaderProgramID_);
-    std::cerr << "after shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
@@ -138,13 +105,9 @@ void SigmaGameEngine::display() {
                        1, GL_TRUE,
                        CameraManager::getInstance().getActiveCamera()->getCameraMatrix().m);
     
-    //std::cerr << "camera_transformation:\n" << CameraManager::getInstance().getActiveCamera()->getCameraMatrix() << std::endl;
-    
     GameObjectManager::getInstance().render(shaderProgramID_);
     
-    //std::cerr << "before glutSwapBuffers()\n";
     glutSwapBuffers();
-    //std::cerr << "after glutSwapBuffers()\n";
 }
 
 void SigmaGameEngine::update(int timeStep)
