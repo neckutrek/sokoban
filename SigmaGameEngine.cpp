@@ -69,6 +69,7 @@ void SigmaGameEngine::initialize(int argc,
     this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());
     glUseProgram(shaderProgramID_);
+    std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     MaterialManager::getInstance().initialize(shaderProgramID_);
     LightManager::getInstance();
@@ -87,10 +88,11 @@ void SigmaGameEngine::run()
 
 void SigmaGameEngine::display() {
     glUseProgram(this->shaderProgramID_);
+    std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    LightManager lm = LightManager::getInstance();
+    LightManager& lm = LightManager::getInstance();
     glUniform1i(glGetUniformLocation(shaderProgramID_, "light_counter"),
                 lm.getLightCounter());
     glUniform3fv(glGetUniformLocation(shaderProgramID_, "light_sources_pos_array"),

@@ -195,6 +195,10 @@
 		8946E361173A7529001BC84C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E360173A7529001BC84C /* level1.txt */; };
 		8946E363173A76B1001BC84C /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E362173A76B1001BC84C /* level2.txt */; };
 		8946E364173A7D4F001BC84C /* test_sigmagameengine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */; };
+		8946E36F173A8ED6001BC84C /* GO_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23C173A7F8C00EB9285 /* GO_Button.cpp */; };
+		8946E371173A8EEF001BC84C /* GO_Button.h in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23D173A7F8C00EB9285 /* GO_Button.h */; };
+		8946E372173A8EEF001BC84C /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
+		8946E373173A8EEF001BC84C /* GO_Skybox.h in Sources */ = {isa = PBXBuildFile; fileRef = 118BE241173A842600EB9285 /* GO_Skybox.h */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
@@ -1866,6 +1870,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8946E371173A8EEF001BC84C /* GO_Button.h in Sources */,
+				8946E372173A8EEF001BC84C /* GO_Skybox.cpp in Sources */,
+				8946E373173A8EEF001BC84C /* GO_Skybox.h in Sources */,
 				89C61C7617381458002D79A3 /* GO_Billboard.h in Sources */,
 				89C61C7717381458002D79A3 /* GO_Block.h in Sources */,
 				89C61C7817381458002D79A3 /* GO_Player.h in Sources */,
@@ -1925,6 +1932,7 @@
 				89C61C671738141D002D79A3 /* GO_Player.cpp in Sources */,
 				893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */,
 				8946E364173A7D4F001BC84C /* test_sigmagameengine2.cpp in Sources */,
+				8946E36F173A8ED6001BC84C /* GO_Button.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

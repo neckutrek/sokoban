@@ -12,7 +12,7 @@ uniform float material_specularities[8];
 uniform vec3 light_sources_color_array[8];
 uniform float light_sources_lux_array[8];
 uniform int light_counter;
-uniform int is_affected_by_light
+uniform int is_affected_by_light;
 
 out vec4 outColor;
 

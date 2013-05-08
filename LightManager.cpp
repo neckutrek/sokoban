@@ -13,6 +13,11 @@ LightManager& LightManager::getInstance()
     static LightManager instance;
     return instance;
 }
+LightManager::LightManager(const LightManager&) {}
+LightManager& LightManager::operator=(const LightManager&)
+{
+    return *this;
+}
 
 void LightManager::addLight(vec3 position, vec3 color, float lux_level)
 {

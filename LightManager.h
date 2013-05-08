@@ -50,6 +50,8 @@ private:
     LightManager()
     : _light_counter(0)
     {}
+    LightManager(const LightManager&);
+    LightManager& operator=(const LightManager&);
     
     unsigned int _light_counter;
     
