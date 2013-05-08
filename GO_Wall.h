@@ -15,7 +15,7 @@
 class GO_Wall : public GameObject
 {
 public:
-	GO_Wall(vec3 pos);
+	GO_Wall(vec3 pos, GLfloat rot, std::string fileName);
 	~GO_Wall() {}
 	std::string getType();
 	

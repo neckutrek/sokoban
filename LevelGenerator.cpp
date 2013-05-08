@@ -10,6 +10,14 @@
 
 const std::string LevelGenerator::CHAR_MAPPER = " X.pPoO";
 const std::string LevelGenerator::EXTRA_MAPPER[] = {"Test extra"};
+const std::string LevelGenerator::WALL_NAME_MAPPER[] = {"4", "3", "3", "2b",
+														"3", "2a", "2a", "1",
+														"3", "2a", "2a", "1",
+														"2b", "1", "1", "0"};
+const GLfloat LevelGenerator::WALL_ROT_MAPPER[] = {0, 0, 1, 0.5,
+													1.5, 1.5, 1, 1.5,
+													0.5, 0, 0.5, 0.5,
+													0, 0, 1, 0};
 
 
 bool LevelGenerator::fileExists(const std::string &fileName) const
@@ -146,26 +154,49 @@ void LevelGenerator::generateMap()
 				case EMPTY:
 					break;
 				case WALL:
-					go = gof.createWall(vec3(x, 0.5, y));
-					gom.addObject(go);
+					addWall(x, y);
 					break;
-				case PLATE:
+				case BUTTON:
+					go = gof.createButton(vec3(x, 0, y));
+					gom.addObject(go);
 					break;
 				case PLAYER:
-					go = gof.createPlayer(vec3(x, 1, y));
+					go = gof.createPlayer(vec3(x, 0, y));
 					gom.addObject(go);
 					break;
-				case PLAYER_ON_PLATE:
+				case PLAYER_ON_BUTTON:
+					go = gof.createPlayer(vec3(x, 0, y));
+					gom.addObject(go);
+					go = gof.createButton(vec3(x, 0, y));
+					gom.addObject(go);
 					break;
 				case BLOCK:
 					go = gof.createBlock(vec3(x, 0.5, y));
 					gom.addObject(go);
-				case BLOCK_ON_PLATE:
+				case BLOCK_ON_BUTTON:
+					go = gof.createBlock(vec3(x, 0.5, y));
+					gom.addObject(go);
+					go = gof.createButton(vec3(x, 0, y));
+					gom.addObject(go);
 					break;
 			}
 		}
 	go = gof.createGround();
 	gom.addObject(go);
+	go = gof.createSkybox();
+	gom.addObject(go);
+}
+
+void LevelGenerator::addWall(int x, int y)
+{
+	int index = 8*(x>0 ? _map[y*MAX_LEVEL_HEIGHT+x-1] == WALL : false) +
+				4*(x<_mapWidth ? _map[y*MAX_LEVEL_HEIGHT+x+1] == WALL : false) +
+				2*(y>0 ? _map[(y-1)*MAX_LEVEL_HEIGHT+x] == WALL : false) +
+				(y<_mapHeight ? _map[(y+1)*MAX_LEVEL_HEIGHT+x] == WALL : false);
+	GO_Wall* wall = GameObjectFactory::getInstance().createWall(vec3(x, 0, y),
+																WALL_ROT_MAPPER[index] * M_PI,
+																"wall" + WALL_NAME_MAPPER[index] + ".obj");
+	GameObjectManager::getInstance().addObject(wall);
 }
 
 void LevelGenerator::applyExtras()

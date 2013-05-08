@@ -11,7 +11,6 @@
 
 #include <iostream>
 #include "GameObject.h"
-#include "CameraManager.h"
 
 class GO_Ground : public GameObject
 {

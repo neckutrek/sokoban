@@ -11,6 +11,10 @@
 		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		115EEE5216D3813200E3644E /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		115EEE5316D3813200E3644E /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
+		118BE23E173A7F8C00EB9285 /* GO_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23C173A7F8C00EB9285 /* GO_Button.cpp */; };
+		118BE23F173A7F8C00EB9285 /* GO_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23C173A7F8C00EB9285 /* GO_Button.cpp */; };
+		118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
+		118BE243173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
 		11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		11924AEA17265F72006AF594 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11924AEB17265F72006AF594 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -114,6 +118,15 @@
 		11B560AF171F649000D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
 		11B82FB8172FB40C00787A41 /* GO_Ground.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA1172FA107006AF594 /* GO_Ground.h */; };
 		11B82FBB172FB40C00787A41 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA4172FA719006AF594 /* GameObjectManager.h */; };
+		11B83058173A78E400787A41 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
+		11B83059173A78E400787A41 /* GO_Billboard.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B8E17380760002D79A3 /* GO_Billboard.h */; };
+		11B8305A173A78E400787A41 /* GO_Block.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9017380760002D79A3 /* GO_Block.h */; };
+		11B8305B173A78E400787A41 /* GO_Player.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9C17380778002D79A3 /* GO_Player.h */; };
+		11B8305C173A78E400787A41 /* GO_Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B5F1738018D002D79A3 /* GO_Wall.h */; };
+		11B8305D173A78E400787A41 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
+		11B8305E173A78E400787A41 /* MaterialManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47D172D386800BF8EF7 /* MaterialManager.h */; };
+		11B8305F173A78E400787A41 /* RenderableMultilayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47F172D53EC00BF8EF7 /* RenderableMultilayer.cpp */; };
+		11B83060173A78E400787A41 /* RenderableMultilayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 895EC480172D53EC00BF8EF7 /* RenderableMultilayer.h */; };
 		11DA4B8416C41DD8009A9277 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		892D8D79172FA4C500C13D95 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		892D8D7A172FA4C500C13D95 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
@@ -616,6 +629,10 @@
 		115EEDD516D379C100E3644E /* terrain.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = terrain.vert; sourceTree = "<group>"; };
 		115EEE4D16D37A0900E3644E /* MicroGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGlut.h; sourceTree = "<group>"; };
 		115EEE4E16D37A0900E3644E /* MicroGlut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGlut.m; sourceTree = "<group>"; };
+		118BE23C173A7F8C00EB9285 /* GO_Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Button.cpp; sourceTree = "<group>"; };
+		118BE23D173A7F8C00EB9285 /* GO_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Button.h; sourceTree = "<group>"; };
+		118BE240173A842600EB9285 /* GO_Skybox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Skybox.cpp; sourceTree = "<group>"; };
+		118BE241173A842600EB9285 /* GO_Skybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Skybox.h; sourceTree = "<group>"; };
 		11924AE217251FC6006AF594 /* LevelGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGenerator.cpp; sourceTree = "<group>"; };
 		11924AE317251FC6006AF594 /* LevelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGenerator.h; sourceTree = "<group>"; };
 		11924AE617265F55006AF594 /* test_level_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_level_generator.cpp; sourceTree = "<group>"; };
@@ -923,6 +940,10 @@
 				89C61B5F1738018D002D79A3 /* GO_Wall.h */,
 				11924BA0172FA107006AF594 /* GO_Ground.cpp */,
 				11924BA1172FA107006AF594 /* GO_Ground.h */,
+				118BE23C173A7F8C00EB9285 /* GO_Button.cpp */,
+				118BE23D173A7F8C00EB9285 /* GO_Button.h */,
+				118BE240173A842600EB9285 /* GO_Skybox.cpp */,
+				118BE241173A842600EB9285 /* GO_Skybox.h */,
 			);
 			name = Sokoban;
 			sourceTree = "<group>";
@@ -1622,6 +1643,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B83058173A78E400787A41 /* BoundingBox.h in Sources */,
+				11B83059173A78E400787A41 /* GO_Billboard.h in Sources */,
+				11B8305A173A78E400787A41 /* GO_Block.h in Sources */,
+				11B8305B173A78E400787A41 /* GO_Player.h in Sources */,
+				11B8305C173A78E400787A41 /* GO_Wall.h in Sources */,
+				11B8305D173A78E400787A41 /* MaterialManager.cpp in Sources */,
+				11B8305E173A78E400787A41 /* MaterialManager.h in Sources */,
+				11B8305F173A78E400787A41 /* RenderableMultilayer.cpp in Sources */,
+				11B83060173A78E400787A41 /* RenderableMultilayer.h in Sources */,
 				11B82FB8172FB40C00787A41 /* GO_Ground.h in Sources */,
 				11B82FBB172FB40C00787A41 /* GameObjectManager.h in Sources */,
 				11924B95172D4E63006AF594 /* Camera.h in Sources */,
@@ -1670,6 +1700,8 @@
 				89C61B9217380760002D79A3 /* GO_Billboard.cpp in Sources */,
 				89C61B9717380760002D79A3 /* GO_Block.cpp in Sources */,
 				89C61B9E17380778002D79A3 /* GO_Player.cpp in Sources */,
+				118BE23F173A7F8C00EB9285 /* GO_Button.cpp in Sources */,
+				118BE243173A842700EB9285 /* GO_Skybox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1993,6 +2025,8 @@
 				895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */,
 				11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */,
 				893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */,
+				118BE23E173A7F8C00EB9285 /* GO_Button.cpp in Sources */,
+				118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

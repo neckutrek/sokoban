@@ -11,6 +11,7 @@
 GO_Block::GO_Block(vec3 pos) : GameObject(BoundingBox(0.5))
 {
 	loadModel("crate.obj");
+	addMaterial("crate.tga", 1, 1);
 	setPosition(pos);
 }
 

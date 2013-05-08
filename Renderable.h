@@ -29,6 +29,7 @@ public:
     
 protected:
     virtual mat4 getModelTransformationMatrix() = 0;
+	bool _is_affected_by_light = true;
     
 private:
     Model* _model;

@@ -33,7 +33,6 @@ DebugCamera* c1 = new DebugCamera();
 CutsceneCamera* c3 = new CutsceneCamera();
 int keyboardMap[256];
 GLuint program_ref_id;
-LightContainer* light_instances;
 
 void init(void) {
     glClearColor(0.2,0.2,0.5,0);
@@ -52,24 +51,26 @@ void init(void) {
     //bunnyModel = LoadModelPlus("bunnyplus.obj");
     
     
-    light_instances = new LightContainer();
-    light_instances->addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 0.0, 0.0), 1.0);
-    light_instances->addLight(vec3(0.0, 0.0, 5.0), vec3(0.0, 1.0, 0.0), 0.5);
-    light_instances->addLight(vec3(5.0, 0.0, 0.0), vec3(0.0, 0.0, 1.0), 1.0);
-	GameObjectManager::getInstance().addObject(GameObjectFactory::getInstance().createBillboard(vec3(0,10,0)));
+    LightManager lm = LightManager::getInstance();
+    lm.addLight(vec3(-5.0, 0.0, 0.0), vec3(1.0, 1.0, 1.0), 1.0);
+    lm.addLight(vec3(0.0, 0.0, 5.0), vec3(1.0, 1.0, 1.0), 0.5);
+    lm.addLight(vec3(5.0, 10.0, 0.0), vec3(1.0, 1.0, 1.0), 50.0);
+	//GameObjectManager::getInstance().addObject(GameObjectFactory::getInstance().createBillboard(vec3(0,10,0)));
 }
 
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
+	LightManager lm = LightManager::getInstance();
+	
     // upload light information to shader
-    glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), light_instances->getLightCounter());
+    glUniform1i(glGetUniformLocation(program_ref_id, "light_counter"), lm.getLightCounter());
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_pos_array"),
-                 8, light_instances->getLightSourcesPositionArray());
+                 8, lm.getLightSourcesPositionArray());
     glUniform3fv(glGetUniformLocation(program_ref_id, "light_sources_color_array"),
-                 8, light_instances->getLightSourcesColorArray());
+                 8, lm.getLightSourcesColorArray());
     glUniform1fv(glGetUniformLocation(program_ref_id, "light_sources_lux_array"),
-                 8, light_instances->getLightSourcesLuxArray());
+                 8, lm.getLightSourcesLuxArray());
     
 	glUseProgram(program_ref_id);
 	glUniformMatrix4fv(glGetUniformLocation(program_ref_id, "camera_transformation"),
@@ -107,10 +108,9 @@ void updateMouse(int x, int y) {
 void update(int dtime)
 {
     glutTimerFunc(20, &update, dtime);
-	Camera* activeCamera = CameraManager::getInstance().getActiveCamera();
-	activeCamera->update(dtime);
 	CameraManager::getInstance().update(dtime);
 	GameObjectManager::getInstance().update(dtime);
+	LightManager::getInstance().update(dtime);
 	updateKeyboard();
 	//std::cout << "viewDirection = " << activeCamera->getViewDirection() << std::endl;
 	//std::cout << "position = " << activeCamera->getPosition() << std::endl << std::endl;

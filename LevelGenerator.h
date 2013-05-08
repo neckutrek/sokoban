@@ -37,6 +37,7 @@ protected:
 	void readExtras();
 	void generateMap();
 	void applyExtras();
+	void addWall(int x, int y);
 	
 	//Ska detta ligga nån annanstans
 	//bool generateComponent(GameComponent component, vec3 pos);
@@ -46,11 +47,11 @@ private:
 	{
 		EMPTY=0,
 		WALL=1,
-		PLATE=2,
+		BUTTON=2,
 		PLAYER=3,
-		PLAYER_ON_PLATE=4,
+		PLAYER_ON_BUTTON=4,
 		BLOCK=5,
-		BLOCK_ON_PLATE=6
+		BLOCK_ON_BUTTON=6
 	};
 	
 	enum ExtraType
@@ -70,6 +71,8 @@ private:
 	static const int MAX_EXTRAS = 10;
 	static const std::string CHAR_MAPPER;
 	static const std::string EXTRA_MAPPER[];
+	static const std::string WALL_NAME_MAPPER[];
+	static const GLfloat WALL_ROT_MAPPER[];
 	
 	MapToken getMapToken(char token);
 	ExtraType getExtraType(std::string extra);

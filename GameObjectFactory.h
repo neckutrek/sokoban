@@ -17,6 +17,8 @@
 #include "CameraManager.h"
 #include "ObjectCamera.h"
 #include "GO_Billboard.h"
+#include "GO_Button.h"
+#include "GO_Skybox.h"
 
 class GameObjectFactory
 {
@@ -27,11 +29,13 @@ public:
 		return instance;
 	}
 	
-	GO_Wall* createWall(vec3 pos);
+	GO_Wall* createWall(vec3 pos, GLfloat rot, std::string fileName);
 	GO_Ground* createGround();
 	GO_Player* createPlayer(vec3 pos);
 	GO_Block* createBlock(vec3 pos);
-	GO_Billboard* createBillboard(vec3 pos); 
+	GO_Button* createButton(vec3 pos);
+	GO_Billboard* createBillboard(vec3 pos);
+	GO_Skybox* createSkybox();
 	
 protected:
 	

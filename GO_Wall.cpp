@@ -8,12 +8,12 @@
 
 #include "GO_Wall.h"
 
-GO_Wall::GO_Wall(vec3 pos) : GameObject(BoundingBox(0.5))
+GO_Wall::GO_Wall(vec3 pos, GLfloat rot, std::string fileName) : GameObject(BoundingBox(0.5))
 {
-	loadModel("crate.obj");
+	loadModel(fileName.c_str());
+	addMaterial("wall_c.tga", 1, 10);
 	setPosition(pos);
-	setRotVelocity(0, 1, 0, 0.02);
-	setScaling(0.5, 0.5, 0.5);
+	setRot(0, 1, 0, rot);
 }
 
 std::string GO_Wall::getType()

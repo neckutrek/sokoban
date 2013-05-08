@@ -11,6 +11,7 @@ uniform vec3 light_sources_pos_array[8];
 uniform vec3 light_sources_color_array[8];
 uniform float light_sources_lux_array[8];
 uniform int light_counter;
+uniform int is_affected_by_light;
 
 out vec3 transformed_normal_vector;
 out vec4 view_vector;
