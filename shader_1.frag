@@ -21,7 +21,7 @@ void main(void)
     vec3 total_shade = vec3(0.0, 0.0, 0.0);
 	
     // if no texture is used, full color component should be used!
-    vec4 texture_total_color = vec4(0.5);
+    vec4 texture_total_color = vec4(0);
     for (int i = 0; i < materials_counter; ++i) {
         texture_total_color +=
             material_transparencies[i] *
@@ -52,7 +52,7 @@ void main(void)
 			float Idiff = max(dot(N, L), 0.0);
 			Idiff = clamp(Idiff, 0.0, 1.0);
 			Idiff *= light_sources_lux_array[i];
-			Idiff /= light_travel_distance * light_travel_distance;
+			Idiff /= light_travel_distance;
 			
 			float Ispec = 0.0;
 			for (int j = 0; j < materials_counter; ++j) {
@@ -62,7 +62,7 @@ void main(void)
 				Ispec += Ispec_component;
 			}
 			Ispec *= light_sources_lux_array[i];
-            Ispec /= light_travel_distance * light_travel_distance;
+            Ispec /= light_travel_distance;
 			
 			total_shade += vec3(Idiff * light_sources_color_array[i]);
 			total_shade += vec3(Ispec * light_sources_color_array[i]);
@@ -70,7 +70,7 @@ void main(void)
 	}
 	else
 	{
-		total_shade+=vec3(1);
+		total_shade=vec3(1);
 	}
 
 	outColor = vec4(total_shade, 1.0) * texture_total_color;

@@ -189,8 +189,8 @@ void LevelGenerator::generateMap()
 		}
 	go = gof.createGround();
 	gom.addObject(go);
-//	go = gof.createSkybox();
-//	gom.addObject(go);
+	go = gof.createSkybox();
+	gom.addObject(go);
 }
 
 void LevelGenerator::addWall(int x, int y)

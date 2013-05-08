@@ -60,8 +60,8 @@ int main(int argc, char *argv[])
     LightManager::getInstance().addLight(vec3(1.0, 1.0, 1.0), vec3(1, 1, 1), 2.0);
     
     
-    if (LevelGenerator::getInstance().fileExists("level3.txt")) {
-        LevelGenerator::getInstance().load("level3.txt");
+    if (LevelGenerator::getInstance().fileExists("level2.txt")) {
+        LevelGenerator::getInstance().load("level2.txt");
     }
 
     

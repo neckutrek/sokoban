@@ -11,7 +11,7 @@
 GO_Skybox::GO_Skybox() : GameObject(BoundingBox(0))
 {
 	loadModel("skybox.obj");
-	addMaterial("skybox_c.tga", 1, 0);
+	addMaterial("skybox_c.tga", 1, 1);
 	setScaling(100, 100, 100);
 	_is_affected_by_light = false;
 }

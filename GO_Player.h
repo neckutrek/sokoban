@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "GameObject.h"
+#include "GameObjectManager.h"
 
 class GO_Player : public GameObject
 {
@@ -19,9 +20,26 @@ public:
 	~GO_Player() {}
 	std::string getType();
 	
+	virtual int update_function(unsigned int time);
+	
 protected:
 	
 private:
+	
+	class GO_PlayerBase : public GameObject
+	{
+	public:
+		GO_PlayerBase();
+		~GO_PlayerBase() {}
+		std::string getType();
+		
+	protected:
+		
+	private:
+		
+	};
+	
+	GO_PlayerBase* _playerBase;
 	
 };
 

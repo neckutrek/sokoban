@@ -91,5 +91,10 @@ void GameObjectManager::render(GLuint prog_ref_id)
 {
     std::map<unsigned int, EntryInfo>::iterator iter;
 	for(iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
-		iter->second.object->render(prog_ref_id);
+		if(iter->second.type == "skybox")
+			iter->second.object->render(prog_ref_id);
+	
+	for(iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
+		if(iter->second.type != "skybox")
+			iter->second.object->render(prog_ref_id);
 }
