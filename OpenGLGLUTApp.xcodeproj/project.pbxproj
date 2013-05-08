@@ -213,6 +213,7 @@
 		8941779617266ACC00D30FBA /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		8941779717266ACC00D30FBA /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
 		8946E361173A7529001BC84C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E360173A7529001BC84C /* level1.txt */; };
+		8946E363173A76B1001BC84C /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E362173A76B1001BC84C /* level2.txt */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
@@ -715,6 +716,7 @@
 		892D8E10172FAB6600C13D95 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
 		893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_sigmagameengine2.cpp; sourceTree = "<group>"; };
 		8946E360173A7529001BC84C /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		8946E362173A76B1001BC84C /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 		895C7D5B172520DA00A18429 /* test_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_light.cpp; sourceTree = "<group>"; };
 		895C7D5E17252F2800A18429 /* LightManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightManager.cpp; sourceTree = "<group>"; };
 		895C7D5F17252F2800A18429 /* LightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightManager.h; sourceTree = "<group>"; };
@@ -1075,6 +1077,7 @@
 			children = (
 				11924B6C172660C5006AF594 /* testlevel.txt */,
 				8946E360173A7529001BC84C /* level1.txt */,
+				8946E362173A76B1001BC84C /* level2.txt */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -1696,6 +1699,7 @@
 				115EEE4116D379C100E3644E /* TERRA2.tga in Resources */,
 				8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */,
 				8946E361173A7529001BC84C /* level1.txt in Resources */,
+				8946E363173A76B1001BC84C /* level2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,10 @@
+%MAP
+ XX XXXXX
+XX XX . X
+X XX o. X
+ XX o   X
+XX op XXX
+X o  XX
+X.. XX XX
+X   X XX
+XXXXX X
