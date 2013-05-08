@@ -78,7 +78,7 @@ void GameObjectManager::update(int dtime)
 
 void GameObjectManager::render(GLuint prog_ref_id)
 {
-	std::map<unsigned int, EntryInfo>::iterator iter;
+    std::map<unsigned int, EntryInfo>::iterator iter;
 	for(iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
 		iter->second.object->render(prog_ref_id);
 }

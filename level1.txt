@@ -1,0 +1,12 @@
+%MAP
+   XXX
+  XX X XXXX
+ XX  XXX  X
+XX o      X
+X   po X  X
+XXX oXXX  X
+  X  X..  X
+ XX XX.X XX
+ X      XX
+ X     XX
+ XXXXXXX

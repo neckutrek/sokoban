@@ -207,8 +207,12 @@
 		892D8E13172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E14172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E15172FB56200C13D95 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
+		893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */; };
+		893EB6391738DD0F0005077D /* test_sigma_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
+		893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F717314F92003F2781 /* SigmaGameEngine.cpp */; };
 		8941779617266ACC00D30FBA /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		8941779717266ACC00D30FBA /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
+		8946E361173A7529001BC84C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E360173A7529001BC84C /* level1.txt */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
@@ -478,10 +482,8 @@
 		89C61C7817381458002D79A3 /* GO_Player.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9C17380778002D79A3 /* GO_Player.h */; };
 		89C61C7917381458002D79A3 /* GO_Wall.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B5F1738018D002D79A3 /* GO_Wall.h */; };
 		89C61C7A17381458002D79A3 /* GO_Ground.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA1172FA107006AF594 /* GO_Ground.h */; };
-		89C61C7B17381458002D79A3 /* SigmaGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F717314F92003F2781 /* SigmaGameEngine.cpp */; };
 		89C61C7C17381458002D79A3 /* SigmaGameEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F917314FA6003F2781 /* SigmaGameEngine.h */; };
 		89C61C7D17381458002D79A3 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA4172FA719006AF594 /* GameObjectManager.h */; };
-		89C61C7E17381458002D79A3 /* test_sigma_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
 		89C61C9F173819A1002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
 		89C61CA0173819A1002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
 		89C61CA1173819A1002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
@@ -711,6 +713,8 @@
 		892D8E02172FA4C500C13D95 /* test_level_generator copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_level_generator copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/test_level_generator copy-Info.plist"; sourceTree = "<absolute>"; };
 		892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundingBox.cpp; sourceTree = "<group>"; };
 		892D8E10172FAB6600C13D95 /* BoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBox.h; sourceTree = "<group>"; };
+		893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_sigmagameengine2.cpp; sourceTree = "<group>"; };
+		8946E360173A7529001BC84C /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		895C7D5B172520DA00A18429 /* test_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_light.cpp; sourceTree = "<group>"; };
 		895C7D5E17252F2800A18429 /* LightManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightManager.cpp; sourceTree = "<group>"; };
 		895C7D5F17252F2800A18429 /* LightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightManager.h; sourceTree = "<group>"; };
@@ -961,6 +965,7 @@
 		11924B8C172D32D1006AF594 /* Sokoban */ = {
 			isa = PBXGroup;
 			children = (
+				8946E35E173A751B001BC84C /* Levels */,
 				89C61B8D17380760002D79A3 /* GO_Billboard.cpp */,
 				89C61B8E17380760002D79A3 /* GO_Billboard.h */,
 				89C61B8F17380760002D79A3 /* GO_Block.cpp */,
@@ -1030,8 +1035,8 @@
 			children = (
 				89C61B7917380445002D79A3 /* LabCode */,
 				89C61B781738043B002D79A3 /* OldTests */,
-				11924B6C172660C5006AF594 /* testlevel.txt */,
 				89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */,
+				893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */,
 			);
 			name = Targets;
 			sourceTree = "<group>";
@@ -1063,6 +1068,15 @@
 				892D8E10172FAB6600C13D95 /* BoundingBox.h */,
 			);
 			name = Collision;
+			sourceTree = "<group>";
+		};
+		8946E35E173A751B001BC84C /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				11924B6C172660C5006AF594 /* testlevel.txt */,
+				8946E360173A7529001BC84C /* level1.txt */,
+			);
+			name = Levels;
 			sourceTree = "<group>";
 		};
 		895C7D681725379200A18429 /* test_light */ = {
@@ -1681,6 +1695,7 @@
 				115EEE4016D379C100E3644E /* ok2.tga in Resources */,
 				115EEE4116D379C100E3644E /* TERRA2.tga in Resources */,
 				8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */,
+				8946E361173A7529001BC84C /* level1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1908,10 +1923,8 @@
 				89C61C7817381458002D79A3 /* GO_Player.h in Sources */,
 				89C61C7917381458002D79A3 /* GO_Wall.h in Sources */,
 				89C61C7A17381458002D79A3 /* GO_Ground.h in Sources */,
-				89C61C7B17381458002D79A3 /* SigmaGameEngine.cpp in Sources */,
 				89C61C7C17381458002D79A3 /* SigmaGameEngine.h in Sources */,
 				89C61C7D17381458002D79A3 /* GameObjectManager.h in Sources */,
-				89C61C7E17381458002D79A3 /* test_sigma_engine.cpp in Sources */,
 				89C61C361738141D002D79A3 /* BoundingBox.h in Sources */,
 				89C61C371738141D002D79A3 /* MaterialManager.cpp in Sources */,
 				89C61C381738141D002D79A3 /* MaterialManager.h in Sources */,
@@ -1962,6 +1975,8 @@
 				89C61C651738141D002D79A3 /* GO_Billboard.cpp in Sources */,
 				89C61C661738141D002D79A3 /* GO_Block.cpp in Sources */,
 				89C61C671738141D002D79A3 /* GO_Player.cpp in Sources */,
+				893EB6391738DD0F0005077D /* test_sigma_engine.cpp in Sources */,
+				893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2061,6 +2076,7 @@
 				895EC481172D53EC00BF8EF7 /* RenderableMultilayer.cpp in Sources */,
 				895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */,
 				11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */,
+				893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,7 +48,9 @@ public:
                     std::string fragShaderFileName,
                     int windowWidth,
                     int windowHeight,
-                    std::string windowName);
+                    std::string windowName,
+                    void (*_display)(void),
+                    void (*_update)(int));
     void run();
     
     GLuint getShaderProgramID() { return shaderProgramID_; }
@@ -60,6 +62,9 @@ private:
     SigmaGameEngine();
     
     GLuint shaderProgramID_;
+    
+    void (*_display)(void);
+    void (*_update)(int);
     
     void display();
     void update(int timeStep);
