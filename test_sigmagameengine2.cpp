@@ -6,6 +6,7 @@
 using namespace std;
 
 #include "SigmaGameEngine.h"
+#include "GO_Wall.h"
 DebugCamera* c1 = new DebugCamera();
 CutsceneCamera* c3 = new CutsceneCamera();
 
@@ -23,11 +24,9 @@ void init27Objects()
 		for(int y=0; y<3; y++)
 			for(int z=0; z<3; z++)
 			{
-                GameObject* go = new GO_Wall(vec3(3*(x-1), 3*(y-1), 3*(z-1)));
-                go->loadModel("bunnyplus.obj");//models[j].c_str());
-                go->addMaterial("button_c.tga", 0.5, 200);//skins[i].c_str()
-                go->addMaterial("button_c.tga", 0.5, 50);//skins[i+1].c_str()
-                go->setRotVelocity(0.5, 0.5, 0.5, 0.5);
+                GameObject* go = new GO_Wall(vec3(3*(x-1), 3*(y-1), 3*(z-1)),
+                                             1.0,
+                                             "wall1.obj");
                 GameObjectManager::getInstance().addObject(go);
                 
                 i++; j++;
@@ -38,13 +37,14 @@ void init27Objects()
 
 void init1Object()
 {
+    /*
     GameObject* go = new GO_Wall(vec3(0.0, 0.0, 0.0));
     go->loadModel("bunnyplus.obj");
     go->addMaterial("button_c.tga", 1.0, 200);
     go->setRotVelocity(0.5, 0.5, 0.5, 0.05);
     GameObjectManager::getInstance().addObject(go);
     
-    
+    */
 }
 
 int main(int argc, char *argv[])
