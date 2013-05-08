@@ -53,7 +53,7 @@ void main(void)
 			float Idiff = max(dot(N, L), 0.0);
 			Idiff = clamp(Idiff, 0.0, 1.0);
 			Idiff *= light_sources_lux_array[i];
-			//Idiff /= light_travel_distance;// * light_travel_distance;
+			Idiff /= light_travel_distance * light_travel_distance;
 			
 			float Ispec = 0.0;
 			for (int j = 0; j < materials_counter; ++j) {
@@ -63,7 +63,7 @@ void main(void)
 				Ispec += Ispec_component;
 			}
 			Ispec *= light_sources_lux_array[i];
-            //Ispec /= light_travel_distance;// * light_travel_distance;
+            Ispec /= light_travel_distance * light_travel_distance;
 			
 			total_shade += vec3(Idiff * light_sources_color_array[i]);
 			total_shade += vec3(Ispec * light_sources_color_array[i]);
