@@ -11,7 +11,6 @@
 //ObjectCamera* c2 = new ObjectCamera(objects[0]);
 //CutsceneCamera* c3 = new CutsceneCamera();
 /*
-int keyboardMap[256];
 
 void setKeyUp(unsigned char key, int x, int y) {
 	keyboardMap[key] = 0;
@@ -33,7 +32,15 @@ void updateKeyboard() {
 	CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);     
 }
 */
-/*
+
+void _setKeyUp(unsigned char key, int x, int y) {
+    SigmaGameEngine::getInstance().setKeyUp(key);
+}
+
+void _setKeyDown(unsigned char key, int x, int y) {
+	SigmaGameEngine::getInstance().setKeyDown(key);
+}
+
 void _update(int timeStep) {
     SigmaGameEngine::getInstance().update(timeStep);
 }
@@ -41,9 +48,23 @@ void _update(int timeStep) {
 void _display(void) {
     SigmaGameEngine::getInstance().display();
 }
-*/
+
+
+SigmaGameEngine& SigmaGameEngine::getInstance()
+{
+    static SigmaGameEngine instance;
+    return instance;
+}
+SigmaGameEngine::~SigmaGameEngine() {}
+
 SigmaGameEngine::SigmaGameEngine()
 {}
+
+SigmaGameEngine::SigmaGameEngine(const SigmaGameEngine&) {}
+SigmaGameEngine& SigmaGameEngine::operator=(const SigmaGameEngine&)
+{
+    return *this;
+}
 
 void SigmaGameEngine::initialize(int argc,
                                  char *argv[],
@@ -51,12 +72,10 @@ void SigmaGameEngine::initialize(int argc,
                                  std::string fragShaderFileName,
                                  int windowWidth,
                                  int windowHeight,
-                                 std::string windowName,
-                                 void (*_display)(void),
-                                 void (*_update)(int))
+                                 std::string windowName)
 {
-    this->_display = _display;
-    this->_update = _update;
+    this->displayCallback = _display;
+    this->updateCallback = _update;
     
     srand(time(0));
     
@@ -68,22 +87,23 @@ void SigmaGameEngine::initialize(int argc,
 	glutCreateWindow(windowName.c_str());
     
     glutDisplayFunc(_display);
-	//glutKeyboardFunc(setKeyDown);
-	//glutKeyboardUpFunc(setKeyUp);
+	glutKeyboardFunc(_setKeyDown);
+	glutKeyboardUpFunc(_setKeyUp);
     
-    glClearColor(0.3, 0.3, 0.5, 0.0);
+    glClearColor(0.2, 0.2, 0.6, 0.0);
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
     
-    shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
+    this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());
     glUseProgram(shaderProgramID_);
+    std::cerr << "FIRST shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
     
     MaterialManager::getInstance().initialize(shaderProgramID_);
     LightManager::getInstance();
     //CameraManager::getInstance().setActiveCamera(c1);
-	
-    mat4 projection_transformation = frustum(-0.1, 0.1, -0.1, 0.1, 0.1, 100.0);
+    
+    mat4 projection_transformation = frustum(-0.133333, 0.133333, -0.1, 0.1, 0.1, 100.0);
     
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramID_, "projection_transformation"),
                        1, GL_TRUE, projection_transformation.m);
@@ -97,7 +117,9 @@ void SigmaGameEngine::run()
 
 void SigmaGameEngine::display() {
     //std::cerr << "SigmaGameEngine::display()" << std::endl;
-    glUseProgram(shaderProgramID_);
+    std::cerr << "before shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
+    glUseProgram(this->shaderProgramID_);
+    std::cerr << "after shaderProgramID_ = " << this->shaderProgramID_ << std::endl;
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
@@ -120,7 +142,9 @@ void SigmaGameEngine::display() {
     
     GameObjectManager::getInstance().render(shaderProgramID_);
     
+    //std::cerr << "before glutSwapBuffers()\n";
     glutSwapBuffers();
+    //std::cerr << "after glutSwapBuffers()\n";
 }
 
 void SigmaGameEngine::update(int timeStep)
@@ -136,3 +160,16 @@ void SigmaGameEngine::update(int timeStep)
     glutWarpPointer(50, 50);
     glutPostRedisplay();
 }
+
+void SigmaGameEngine::setKeyUp(unsigned char key)
+{
+    keyboardMap[key] = 1;
+}
+
+void SigmaGameEngine::setKeyDown(unsigned char key)
+{
+    keyboardMap[key] = 0;
+}
+
+
+

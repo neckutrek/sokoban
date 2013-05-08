@@ -176,12 +176,12 @@
 		892D8E14172FAB6600C13D95 /* BoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E0F172FAB6600C13D95 /* BoundingBox.cpp */; };
 		892D8E15172FB56200C13D95 /* BoundingBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 892D8E10172FAB6600C13D95 /* BoundingBox.h */; };
 		893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */; };
-		893EB6391738DD0F0005077D /* test_sigma_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */; };
 		893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F717314F92003F2781 /* SigmaGameEngine.cpp */; };
 		8941779617266ACC00D30FBA /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		8941779717266ACC00D30FBA /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
 		8946E361173A7529001BC84C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E360173A7529001BC84C /* level1.txt */; };
 		8946E363173A76B1001BC84C /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E362173A76B1001BC84C /* level2.txt */; };
+		8946E364173A7D4F001BC84C /* test_sigmagameengine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
@@ -1891,8 +1891,8 @@
 				89C61C651738141D002D79A3 /* GO_Billboard.cpp in Sources */,
 				89C61C661738141D002D79A3 /* GO_Block.cpp in Sources */,
 				89C61C671738141D002D79A3 /* GO_Player.cpp in Sources */,
-				893EB6391738DD0F0005077D /* test_sigma_engine.cpp in Sources */,
 				893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */,
+				8946E364173A7D4F001BC84C /* test_sigmagameengine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

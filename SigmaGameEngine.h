@@ -30,17 +30,11 @@
 #include "GameObjectFactory.h"
 #include "GameObject.h"
 
-//#include "GO_Wall.h"
-
 class SigmaGameEngine
 {
 public:
-    static SigmaGameEngine& getInstance()
-    {
-        static SigmaGameEngine instance;
-        return instance;
-    }
-    ~SigmaGameEngine() {}
+    static SigmaGameEngine& getInstance();
+    ~SigmaGameEngine();
     
     void initialize(int argc,
                     char *argv[],
@@ -48,27 +42,32 @@ public:
                     std::string fragShaderFileName,
                     int windowWidth,
                     int windowHeight,
-                    std::string windowName,
-                    void (*_display)(void),
-                    void (*_update)(int));
+                    std::string windowName);
     void run();
     
     GLuint getShaderProgramID() { return shaderProgramID_; }
     
     friend void _display();
     friend void _update(int);
+    friend void _setKeyUp(unsigned char, int, int);
+    friend void _setKeyDown(unsigned char, int, int);
     
 private:
     SigmaGameEngine();
+    SigmaGameEngine(const SigmaGameEngine&);
+    SigmaGameEngine& operator=(const SigmaGameEngine&);
     
     GLuint shaderProgramID_;
+    unsigned char keyboardMap[256];
     
-    void (*_display)(void);
-    void (*_update)(int);
+    void (*displayCallback)(void);
+    void (*updateCallback)(int);
     
     void display();
     void update(int timeStep);
     
+    void setKeyUp(unsigned char key);
+    void setKeyDown(unsigned char key);
 };
 
 

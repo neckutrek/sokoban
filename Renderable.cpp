@@ -23,6 +23,7 @@ int Renderable::render(GLuint program_reference_id)
         glUniformMatrix4fv(glGetUniformLocation(program_reference_id,
                                                 "model_transformation"),
                            1, GL_TRUE, getModelTransformationMatrix().m);
+
         DrawModel(_model,
                   program_reference_id,
                   "in_vertex_coordinate",
