@@ -28,8 +28,7 @@ void main(void)
             texture(texture_units[i], texture_coordinate);
     }
     
-	//if(is_affected_by_light != 0)
-	if(true)
+	if(is_affected_by_light != 0)
 	{
 		vec3 N = normalize(transformed_normal_vector);
 		float Iamb = 0.1;

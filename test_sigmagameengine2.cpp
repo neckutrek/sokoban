@@ -64,11 +64,6 @@ int main(int argc, char *argv[])
         LevelGenerator::getInstance().load("level3.txt");
     }
 
-    DebugCamera *c1 = new DebugCamera();
-    c1->setPosition(5,5,5);
-    c1->setViewLocation(0, 0, 0);
-    CameraManager::getInstance().setActiveCamera(c1);
-
     
     //init27Objects();
     

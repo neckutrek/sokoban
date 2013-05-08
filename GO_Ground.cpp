@@ -11,7 +11,7 @@
 GO_Ground::GO_Ground() : GameObject(BoundingBox(0))
 {
 	loadModel("ground.obj");
-	addMaterial("ground.tga", 1, 10);
+	addMaterial("ground.tga", 1, 1);
 }
 
 std::string GO_Ground::getType()
