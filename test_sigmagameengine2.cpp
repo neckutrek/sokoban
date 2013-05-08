@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
                     1024, 768, "SigmaGameEngine running . . .");
     
     
-    
-    LightManager::getInstance().addLight(vec3(1.0, 1.0, 1.0), vec3(1, 1, 1), 2.0);
+    // add the sun
+    LightManager::getInstance().addLight(vec3(1.0, 100.0, 1.0), vec3(1, 1, 1), 150.0);
     
     
     if (LevelGenerator::getInstance().fileExists("level2.txt")) {
