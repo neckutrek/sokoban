@@ -20,7 +20,7 @@ void main(void)
     vec3 total_shade = vec3(0.0, 0.0, 0.0);
 	
     // if no texture is used, full color component should be used!
-    vec4 texture_total_color = vec4(0.0);
+    vec4 texture_total_color = vec4(0.5);
     for (int i = 0; i < materials_counter; ++i) {
         texture_total_color +=
             material_transparencies[i] *
