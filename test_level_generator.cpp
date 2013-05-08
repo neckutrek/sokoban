@@ -14,15 +14,15 @@
 #include "VectorUtils3Addons.h"
 #include "loadobj.h"
 #include "LoadTGA2.h"
-#include "Wall.h"
+#include "GO_Wall.h"
 #include "ObjectCamera.h"
 #include "DebugCamera.h"
 #include "CutsceneCamera.h"
 #include "CameraManager.h"
 #include "LevelGenerator.h"
-#include "LightContainer.h"
+#include "LightManager.h"
 #include "GameObjectManager.h"
-#include "Billboard.h"
+#include "GO_Billboard.h"
 
 #include <iostream>
 using namespace std;

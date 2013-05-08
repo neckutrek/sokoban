@@ -9,14 +9,6 @@
 /* Begin PBXBuildFile section */
 		002F3C0109D093BD00EBEB88 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		002F3C6109D0951E00EBEB88 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
-		115EEE3A16D379C100E3644E /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
-		115EEE3B16D379C100E3644E /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
-		115EEE3C16D379C100E3644E /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
-		115EEE3D16D379C100E3644E /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
-		115EEE3E16D379C100E3644E /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
-		115EEE3F16D379C100E3644E /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
-		115EEE4016D379C100E3644E /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
-		115EEE4116D379C100E3644E /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
 		115EEE5216D3813200E3644E /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		115EEE5316D3813200E3644E /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
@@ -25,14 +17,6 @@
 		11924AEC17265F72006AF594 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		11924AED17265F72006AF594 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11924AEE17265F72006AF594 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		11924B2B17265F72006AF594 /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
-		11924B2C17265F72006AF594 /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
-		11924B2D17265F72006AF594 /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
-		11924B2E17265F72006AF594 /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
-		11924B2F17265F72006AF594 /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
-		11924B3017265F72006AF594 /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
-		11924B3117265F72006AF594 /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
-		11924B3217265F72006AF594 /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
 		11924B3C17265F72006AF594 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		11924B3D17265F72006AF594 /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		11924B3E17265F72006AF594 /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
@@ -99,14 +83,6 @@
 		11B5603B171F647300D5A5DA /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		11B5603C171F647300D5A5DA /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		11B5603D171F647300D5A5DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		11B5607A171F647300D5A5DA /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
-		11B5607B171F647300D5A5DA /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
-		11B5607C171F647300D5A5DA /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
-		11B5607D171F647300D5A5DA /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
-		11B5607E171F647300D5A5DA /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
-		11B5607F171F647300D5A5DA /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
-		11B56080171F647300D5A5DA /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
-		11B56081171F647300D5A5DA /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
 		11B5608B171F647300D5A5DA /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		11B5608C171F647300D5A5DA /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		11B5608D171F647300D5A5DA /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
@@ -144,14 +120,6 @@
 		892D8D7B172FA4C500C13D95 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
 		892D8D7C172FA4C500C13D95 /* terrain.vert in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD516D379C100E3644E /* terrain.vert */; };
 		892D8D7D172FA4C500C13D95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		892D8DBA172FA4C500C13D95 /* 44-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD816D379C100E3644E /* 44-terrain.tga */; };
-		892D8DBB172FA4C500C13D95 /* f3.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD916D379C100E3644E /* f3.tga */; };
-		892D8DBC172FA4C500C13D95 /* f3gr.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDA16D379C100E3644E /* f3gr.tga */; };
-		892D8DBD172FA4C500C13D95 /* fft-terrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDB16D379C100E3644E /* fft-terrain.tga */; };
-		892D8DBE172FA4C500C13D95 /* newterrain.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDC16D379C100E3644E /* newterrain.tga */; };
-		892D8DBF172FA4C500C13D95 /* ok1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDD16D379C100E3644E /* ok1.tga */; };
-		892D8DC0172FA4C500C13D95 /* ok2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDE16D379C100E3644E /* ok2.tga */; };
-		892D8DC1172FA4C500C13D95 /* TERRA2.tga in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDDF16D379C100E3644E /* TERRA2.tga */; };
 		892D8DCA172FA4C500C13D95 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
 		892D8DCD172FA4C500C13D95 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
 		892D8DCE172FA4C500C13D95 /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B73172671D3006AF594 /* CameraManager.h */; };
@@ -646,14 +614,6 @@
 		115EEDD116D379C100E3644E /* OpenGLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLObject.h; sourceTree = "<group>"; };
 		115EEDD316D379C100E3644E /* terrain.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = terrain.frag; sourceTree = "<group>"; };
 		115EEDD516D379C100E3644E /* terrain.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = terrain.vert; sourceTree = "<group>"; };
-		115EEDD816D379C100E3644E /* 44-terrain.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "44-terrain.tga"; sourceTree = "<group>"; };
-		115EEDD916D379C100E3644E /* f3.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = f3.tga; sourceTree = "<group>"; };
-		115EEDDA16D379C100E3644E /* f3gr.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = f3gr.tga; sourceTree = "<group>"; };
-		115EEDDB16D379C100E3644E /* fft-terrain.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fft-terrain.tga"; sourceTree = "<group>"; };
-		115EEDDC16D379C100E3644E /* newterrain.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = newterrain.tga; sourceTree = "<group>"; };
-		115EEDDD16D379C100E3644E /* ok1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ok1.tga; sourceTree = "<group>"; };
-		115EEDDE16D379C100E3644E /* ok2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ok2.tga; sourceTree = "<group>"; };
-		115EEDDF16D379C100E3644E /* TERRA2.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = TERRA2.tga; sourceTree = "<group>"; };
 		115EEE4D16D37A0900E3644E /* MicroGlut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicroGlut.h; sourceTree = "<group>"; };
 		115EEE4E16D37A0900E3644E /* MicroGlut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MicroGlut.m; sourceTree = "<group>"; };
 		11924AE217251FC6006AF594 /* LevelGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGenerator.cpp; sourceTree = "<group>"; };
@@ -918,21 +878,6 @@
 			path = models;
 			sourceTree = "<group>";
 		};
-		115EEDD716D379C100E3644E /* terrains */ = {
-			isa = PBXGroup;
-			children = (
-				115EEDD816D379C100E3644E /* 44-terrain.tga */,
-				115EEDD916D379C100E3644E /* f3.tga */,
-				115EEDDA16D379C100E3644E /* f3gr.tga */,
-				115EEDDB16D379C100E3644E /* fft-terrain.tga */,
-				115EEDDC16D379C100E3644E /* newterrain.tga */,
-				115EEDDD16D379C100E3644E /* ok1.tga */,
-				115EEDDE16D379C100E3644E /* ok2.tga */,
-				115EEDDF16D379C100E3644E /* TERRA2.tga */,
-			);
-			path = terrains;
-			sourceTree = "<group>";
-		};
 		115EEDE016D379C100E3644E /* textures */ = {
 			isa = PBXGroup;
 			children = (
@@ -1010,7 +955,6 @@
 				89FECC3A170DE80000F40F3A /* Physics */,
 				89FECC39170DE75000F40F3A /* Math */,
 				115EED8616D379C100E3644E /* models */,
-				115EEDD716D379C100E3644E /* terrains */,
 				115EEDE016D379C100E3644E /* textures */,
 				29B97315FDCFA39411CA2CEA /* Targets */,
 				F4EAD2EE0D11D50A00A7D2A0 /* Headers */,
@@ -1470,14 +1414,6 @@
 				11924AEC17265F72006AF594 /* terrain.frag in Resources */,
 				11924AED17265F72006AF594 /* terrain.vert in Resources */,
 				11924AEE17265F72006AF594 /* InfoPlist.strings in Resources */,
-				11924B2B17265F72006AF594 /* 44-terrain.tga in Resources */,
-				11924B2C17265F72006AF594 /* f3.tga in Resources */,
-				11924B2D17265F72006AF594 /* f3gr.tga in Resources */,
-				11924B2E17265F72006AF594 /* fft-terrain.tga in Resources */,
-				11924B2F17265F72006AF594 /* newterrain.tga in Resources */,
-				11924B3017265F72006AF594 /* ok1.tga in Resources */,
-				11924B3117265F72006AF594 /* ok2.tga in Resources */,
-				11924B3217265F72006AF594 /* TERRA2.tga in Resources */,
 				11924B6D172660C5006AF594 /* testlevel.txt in Resources */,
 				89C61BCC17380792002D79A3 /* bunnyplus.obj in Resources */,
 				89C61BCD17380792002D79A3 /* button.obj in Resources */,
@@ -1512,14 +1448,6 @@
 				11B5603B171F647300D5A5DA /* terrain.frag in Resources */,
 				11B5603C171F647300D5A5DA /* terrain.vert in Resources */,
 				11B5603D171F647300D5A5DA /* InfoPlist.strings in Resources */,
-				11B5607A171F647300D5A5DA /* 44-terrain.tga in Resources */,
-				11B5607B171F647300D5A5DA /* f3.tga in Resources */,
-				11B5607C171F647300D5A5DA /* f3gr.tga in Resources */,
-				11B5607D171F647300D5A5DA /* fft-terrain.tga in Resources */,
-				11B5607E171F647300D5A5DA /* newterrain.tga in Resources */,
-				11B5607F171F647300D5A5DA /* ok1.tga in Resources */,
-				11B56080171F647300D5A5DA /* ok2.tga in Resources */,
-				11B56081171F647300D5A5DA /* TERRA2.tga in Resources */,
 				89C61BDA17380793002D79A3 /* bunnyplus.obj in Resources */,
 				89C61BDB17380793002D79A3 /* button.obj in Resources */,
 				89C61BDC17380793002D79A3 /* crate.obj in Resources */,
@@ -1553,14 +1481,6 @@
 				892D8D7B172FA4C500C13D95 /* terrain.frag in Resources */,
 				892D8D7C172FA4C500C13D95 /* terrain.vert in Resources */,
 				892D8D7D172FA4C500C13D95 /* InfoPlist.strings in Resources */,
-				892D8DBA172FA4C500C13D95 /* 44-terrain.tga in Resources */,
-				892D8DBB172FA4C500C13D95 /* f3.tga in Resources */,
-				892D8DBC172FA4C500C13D95 /* f3gr.tga in Resources */,
-				892D8DBD172FA4C500C13D95 /* fft-terrain.tga in Resources */,
-				892D8DBE172FA4C500C13D95 /* newterrain.tga in Resources */,
-				892D8DBF172FA4C500C13D95 /* ok1.tga in Resources */,
-				892D8DC0172FA4C500C13D95 /* ok2.tga in Resources */,
-				892D8DC1172FA4C500C13D95 /* TERRA2.tga in Resources */,
 				892D8DCA172FA4C500C13D95 /* testlevel.txt in Resources */,
 				89C61BB017380791002D79A3 /* bunnyplus.obj in Resources */,
 				89C61BB117380791002D79A3 /* button.obj in Resources */,
@@ -1689,14 +1609,6 @@
 				115EEE5216D3813200E3644E /* terrain.frag in Resources */,
 				115EEE5316D3813200E3644E /* terrain.vert in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				115EEE3A16D379C100E3644E /* 44-terrain.tga in Resources */,
-				115EEE3B16D379C100E3644E /* f3.tga in Resources */,
-				115EEE3C16D379C100E3644E /* f3gr.tga in Resources */,
-				115EEE3D16D379C100E3644E /* fft-terrain.tga in Resources */,
-				115EEE3E16D379C100E3644E /* newterrain.tga in Resources */,
-				115EEE3F16D379C100E3644E /* ok1.tga in Resources */,
-				115EEE4016D379C100E3644E /* ok2.tga in Resources */,
-				115EEE4116D379C100E3644E /* TERRA2.tga in Resources */,
 				8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */,
 				8946E361173A7529001BC84C /* level1.txt in Resources */,
 				8946E363173A76B1001BC84C /* level2.txt in Resources */,
