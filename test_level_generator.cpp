@@ -132,9 +132,9 @@ int main(int argc, char *argv[])
 	init();
 	glutTimerFunc(20, &update, 0);
     
-	if(LevelGenerator::getInstance().fileExists("testlevel.txt"))
+	if(LevelGenerator::getInstance().fileExists("level1.txt"))
 	{
-		LevelGenerator::getInstance().load("testLevel.txt");
+		LevelGenerator::getInstance().load("level1.txt");
 	}
 	
 	glutMainLoop();
