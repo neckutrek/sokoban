@@ -21,7 +21,7 @@
 
 class Renderable {
 public:
-    Renderable() : _is_model_loaded(false) {};
+    Renderable() : _is_model_loaded(false), _is_affected_by_light(true) {};
 	virtual ~Renderable() {}
     
     int loadModel(const char* model_filename);
@@ -29,7 +29,7 @@ public:
     
 protected:
     virtual mat4 getModelTransformationMatrix() = 0;
-	bool _is_affected_by_light = true;
+	bool _is_affected_by_light;
     
 private:
     Model* _model;

@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
     
     
     
-    LightManager::getInstance().addLight(vec3(1.0, 1.0, 1.0), vec3(1., 1., 1.), 1.0);
+    LightManager::getInstance().addLight(vec3(1.0, 10.0, 1.0), vec3(.5, .5, .5), 1.0);
     
     
     if (LevelGenerator::getInstance().fileExists("testlevel.txt")) {

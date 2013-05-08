@@ -187,8 +187,8 @@ void LevelGenerator::generateMap()
 					break;
 			}
 		}
-//	go = gof.createGround();
-//	gom.addObject(go);
+	go = gof.createGround();
+	gom.addObject(go);
 //	go = gof.createSkybox();
 //	gom.addObject(go);
 }
