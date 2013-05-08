@@ -72,7 +72,7 @@ void ObjectCamera::setMaxTheta(GLfloat maxTheta)
 		_theta = _maxTheta;
 }
 
-void ObjectCamera::updateKeyboard(int *keyboardMap)
+void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
 {
 	if (keyboardMap['W'] == 1 || keyboardMap['w'] == 1) {
 		setRelViewDirection(-0.05, 0);

@@ -69,7 +69,7 @@ void SigmaGameEngine::initialize(int argc,
     this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());
     glUseProgram(shaderProgramID_);
-    std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
+    //std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     MaterialManager::getInstance().initialize(shaderProgramID_);
     LightManager::getInstance();
@@ -88,7 +88,7 @@ void SigmaGameEngine::run()
 
 void SigmaGameEngine::display() {
     glUseProgram(this->shaderProgramID_);
-    std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
+    //std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
@@ -121,6 +121,8 @@ void SigmaGameEngine::update(int timeStep)
     GameObjectManager::getInstance().update(timeStep);
 	CameraManager::getInstance().update(timeStep);
 	
+    CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);
+    
     //updateKeyboard();
     glutWarpPointer(50, 50);
     glutPostRedisplay();
@@ -128,12 +130,12 @@ void SigmaGameEngine::update(int timeStep)
 
 void SigmaGameEngine::setKeyUp(unsigned char key)
 {
-    keyboardMap[key] = 1;
+    keyboardMap[key] = 0;
 }
 
 void SigmaGameEngine::setKeyDown(unsigned char key)
 {
-    keyboardMap[key] = 0;
+    keyboardMap[key] = 1;
 }
 
 

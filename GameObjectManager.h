@@ -23,11 +23,7 @@
 class GameObjectManager
 {
 public:
-	static GameObjectManager& getInstance()
-	{
-		static GameObjectManager instance;
-		return instance;
-	}
+	static GameObjectManager& getInstance();
     
 //unsigned int registerCollisionFn(std::string component_id_1,
 //                                 std::string component_id_2,

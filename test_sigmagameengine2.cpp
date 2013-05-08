@@ -6,6 +6,7 @@
 using namespace std;
 
 #include "SigmaGameEngine.h"
+#include "LevelGenerator.h"
 #include "GO_Wall.h"
 DebugCamera* c1 = new DebugCamera();
 CutsceneCamera* c3 = new CutsceneCamera();
@@ -52,14 +53,24 @@ int main(int argc, char *argv[])
     SigmaGameEngine& game = SigmaGameEngine::getInstance();
     game.initialize(argc, argv,
                     "shader_1.vert", "shader_1.frag",
-                    800, 600, "SigmaGameEngine running . . .");
+                    1024, 768, "SigmaGameEngine running . . .");
     
-    init27Objects();
+    
+    
     LightManager::getInstance().addLight(vec3(1.0, 1.0, 1.0), vec3(1., 1., 1.), 1.0);
+    
+    
+    if (LevelGenerator::getInstance().fileExists("testlevel.txt")) {
+        LevelGenerator::getInstance().load("testlevel.txt");
+    }
+
     DebugCamera *c1 = new DebugCamera();
     c1->setPosition(5,5,5);
     c1->setViewLocation(0, 0, 0);
     CameraManager::getInstance().setActiveCamera(c1);
+
+    
+    //init27Objects();
     
     game.run();
 }

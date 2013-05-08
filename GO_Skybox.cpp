@@ -13,7 +13,7 @@ GO_Skybox::GO_Skybox() : GameObject(BoundingBox(0))
 	loadModel("skybox.obj");
 	addMaterial("skybox_c.tga", 1, 0);
 	setScaling(100, 100, 100);
-	_is_affected_by_light = false;
+	//_is_affected_by_light = false;
 }
 
 std::string GO_Skybox::getType()

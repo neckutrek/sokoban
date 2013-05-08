@@ -19,11 +19,8 @@ class LevelGenerator
 	
 public:
 	
-	static LevelGenerator& getInstance()
-	{
-		static LevelGenerator instance;
-		return instance;
-	}
+	static LevelGenerator& getInstance();
+    //LevelGenerator();
 	
 	bool fileExists(const std::string& fileName) const;
 	void load(const std::string &fileName);

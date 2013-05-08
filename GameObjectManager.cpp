@@ -8,8 +8,19 @@
 
 #include "GameObjectManager.h"
 
+GameObjectManager& GameObjectManager::getInstance()
+{
+    static GameObjectManager instance;
+    return instance;
+}
+
 GameObjectManager::GameObjectManager() : _id_counter(0)
 {}
+GameObjectManager::GameObjectManager(const GameObjectManager&) {}
+GameObjectManager& GameObjectManager::operator=(const GameObjectManager&)
+{
+    return *this;
+}
 
 unsigned int GameObjectManager::addObject(GameObject *go)
 {

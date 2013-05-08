@@ -23,11 +23,7 @@
 class GameObjectFactory
 {
 public:
-	static GameObjectFactory& getInstance()
-	{
-		static GameObjectFactory instance;
-		return instance;
-	}
+	static GameObjectFactory& getInstance();
 	
 	GO_Wall* createWall(vec3 pos, GLfloat rot, std::string fileName);
 	GO_Ground* createGround();

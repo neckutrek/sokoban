@@ -20,6 +20,12 @@ const GLfloat LevelGenerator::WALL_ROT_MAPPER[] = {0, 0, 1, 0.5,
 													0, 0, 1, 0};
 
 
+LevelGenerator& LevelGenerator::getInstance()
+{
+    static LevelGenerator instance;
+    return instance;
+}
+
 bool LevelGenerator::fileExists(const std::string &fileName) const
 {
 	std::ifstream ifs(fileName.c_str());
@@ -181,10 +187,10 @@ void LevelGenerator::generateMap()
 					break;
 			}
 		}
-	go = gof.createGround();
-	gom.addObject(go);
-	go = gof.createSkybox();
-	gom.addObject(go);
+//	go = gof.createGround();
+//	gom.addObject(go);
+//	go = gof.createSkybox();
+//	gom.addObject(go);
 }
 
 void LevelGenerator::addWall(int x, int y)
@@ -220,5 +226,12 @@ std::string& LevelGenerator::getFileName()
 }
 
 
-LevelGenerator::LevelGenerator()
-{}
+LevelGenerator::LevelGenerator() {}
+LevelGenerator::LevelGenerator(const LevelGenerator&) {}
+LevelGenerator& LevelGenerator::operator=(const LevelGenerator&)
+{
+    return *this;
+}
+
+
+

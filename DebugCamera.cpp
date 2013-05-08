@@ -40,7 +40,7 @@ void DebugCamera::setRelViewDirection(GLfloat dtheta, GLfloat dphi)
 	setViewDirection(_theta + dtheta, _phi + dphi);
 }
 
-void DebugCamera::updateKeyboard(int *keyboardMap)
+void DebugCamera::updateKeyboard(unsigned char keyboardMap[256])
 {
 	if (keyboardMap['W'] == 1 || keyboardMap['w'] == 1) {
 		setRelPosition(0, 0, -0.1);

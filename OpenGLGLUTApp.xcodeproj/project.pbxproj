@@ -199,6 +199,10 @@
 		8946E371173A8EEF001BC84C /* GO_Button.h in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23D173A7F8C00EB9285 /* GO_Button.h */; };
 		8946E372173A8EEF001BC84C /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
 		8946E373173A8EEF001BC84C /* GO_Skybox.h in Sources */ = {isa = PBXBuildFile; fileRef = 118BE241173A842600EB9285 /* GO_Skybox.h */; };
+		8946E374173A92D0001BC84C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E360173A7529001BC84C /* level1.txt */; };
+		8946E375173A92D0001BC84C /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E362173A76B1001BC84C /* level2.txt */; };
+		8946E377173A95B7001BC84C /* testlevel2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E376173A95B7001BC84C /* testlevel2.txt */; };
+		8946E378173A95D4001BC84C /* testlevel2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E376173A95B7001BC84C /* testlevel2.txt */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
@@ -698,6 +702,7 @@
 		893EB6351738D7A50005077D /* test_sigmagameengine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_sigmagameengine2.cpp; sourceTree = "<group>"; };
 		8946E360173A7529001BC84C /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
 		8946E362173A76B1001BC84C /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		8946E376173A95B7001BC84C /* testlevel2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testlevel2.txt; sourceTree = "<group>"; };
 		895C7D5B172520DA00A18429 /* test_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_light.cpp; sourceTree = "<group>"; };
 		895C7D5E17252F2800A18429 /* LightManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LightManager.cpp; sourceTree = "<group>"; };
 		895C7D5F17252F2800A18429 /* LightManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightManager.h; sourceTree = "<group>"; };
@@ -1047,6 +1052,7 @@
 				11924B6C172660C5006AF594 /* testlevel.txt */,
 				8946E360173A7529001BC84C /* level1.txt */,
 				8946E362173A76B1001BC84C /* level2.txt */,
+				8946E376173A95B7001BC84C /* testlevel2.txt */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -1568,6 +1574,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8946E374173A92D0001BC84C /* level1.txt in Resources */,
+				8946E375173A92D0001BC84C /* level2.txt in Resources */,
 				89C61C101738141D002D79A3 /* shader_1.frag in Resources */,
 				89C61C111738141D002D79A3 /* shader_1.vert in Resources */,
 				89C61C141738141D002D79A3 /* InfoPlist.strings in Resources */,
@@ -1593,6 +1601,7 @@
 				89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */,
 				89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */,
 				89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */,
+				8946E378173A95D4001BC84C /* testlevel2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1637,6 +1646,7 @@
 				8964AF68171D77B6009BD6A2 /* test_vectorAddons.cpp in Resources */,
 				8946E361173A7529001BC84C /* level1.txt in Resources */,
 				8946E363173A76B1001BC84C /* level2.txt in Resources */,
+				8946E377173A95B7001BC84C /* testlevel2.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

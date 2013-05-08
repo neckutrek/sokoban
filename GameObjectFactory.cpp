@@ -8,8 +8,20 @@
 
 #include "GameObjectFactory.h"
 
+
+GameObjectFactory& GameObjectFactory::getInstance()
+{
+    static GameObjectFactory instance;
+    return instance;
+}
+
 GameObjectFactory::GameObjectFactory()
 {}
+GameObjectFactory::GameObjectFactory(const GameObjectFactory&) {}
+GameObjectFactory& GameObjectFactory::operator=(const GameObjectFactory&)
+{
+    return *this;
+}
 
 GO_Wall* GameObjectFactory::createWall(vec3 pos, GLfloat rot, std::string fileName)
 {

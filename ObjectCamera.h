@@ -26,7 +26,7 @@ public:
 	void setMinTheta(GLfloat minTheta);
 	void setMaxTheta(GLfloat maxTheta);
 	
-	virtual void updateKeyboard(int *keyboardMap);
+	virtual void updateKeyboard(unsigned char keyboardMap[256]);
 	
     virtual int update_function(unsigned int time);
 	
