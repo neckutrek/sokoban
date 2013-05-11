@@ -466,7 +466,6 @@
 		89C61C691738141D002D79A3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		89C61C6A1738141D002D79A3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		89C61C6B1738141D002D79A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
-		89C61C6D1738141D002D79A3 /* Cocoa.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 11DA4B7F16C41D18009A9277 /* Cocoa.framework */; };
 		89C61C6E1738141D002D79A3 /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		89C61C6F1738141D002D79A3 /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		89C61C7617381458002D79A3 /* GO_Billboard.h in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B8E17380760002D79A3 /* GO_Billboard.h */; };
@@ -497,6 +496,10 @@
 		89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
 		89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
 		89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
+		89CB3720173D2215002FC265 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB371E173D2215002FC265 /* InputManager.cpp */; };
+		89CB3722173D28AC002FC265 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB371E173D2215002FC265 /* InputManager.cpp */; };
+		89CB3726173D386E002FC265 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E757EC1731378D003F2781 /* SDL.framework */; };
+		89CB3727173D3877002FC265 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F1173137A8003F2781 /* SDLMain.m */; };
 		89E7579017312950003F2781 /* test_multitexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC4DC172D5D4F00BF8EF7 /* test_multitexture.cpp */; };
 		89E757A3173135D5003F2781 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89E757A1173135D5003F2781 /* InfoPlist.strings */; };
 		89E757A9173135D5003F2781 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 89E757A7173135D5003F2781 /* Credits.rtf */; };
@@ -612,7 +615,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				89C61C6D1738141D002D79A3 /* Cocoa.framework in Copy Frameworks into .app bundle */,
 				89C61C6E1738141D002D79A3 /* GLUT.framework in Copy Frameworks into .app bundle */,
 				89C61C6F1738141D002D79A3 /* OpenGL.framework in Copy Frameworks into .app bundle */,
 			);
@@ -757,6 +759,8 @@
 		89C61C0B173808DC002D79A3 /* test_sigma_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_sigma_engine.cpp; sourceTree = "<group>"; };
 		89C61C731738141D002D79A3 /* test_multitexture2 copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_multitexture2 copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C61C751738141D002D79A3 /* test_multitexture2 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_multitexture2 copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/test_multitexture2 copy-Info.plist"; sourceTree = "<absolute>"; };
+		89CB371E173D2215002FC265 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		89CB371F173D2215002FC265 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 		89CE01841715B22100D6783A /* Renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderable.cpp; sourceTree = "<group>"; };
 		89CE01851715B22100D6783A /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
 		89CE01881715B32C00D6783A /* shader_1.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader_1.frag; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
@@ -839,6 +843,7 @@
 				89C61C691738141D002D79A3 /* GLUT.framework in Frameworks */,
 				89C61C6A1738141D002D79A3 /* OpenGL.framework in Frameworks */,
 				89C61C6B1738141D002D79A3 /* Cocoa.framework in Frameworks */,
+				89CB3726173D386E002FC265 /* SDL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1267,6 +1272,8 @@
 				11924AE317251FC6006AF594 /* LevelGenerator.h */,
 				11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */,
 				11924B8A172D2F0E006AF594 /* GameObjectFactory.h */,
+				89CB371E173D2215002FC265 /* InputManager.cpp */,
+				89CB371F173D2215002FC265 /* InputManager.h */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -1949,6 +1956,8 @@
 				893EB63A1738DD180005077D /* SigmaGameEngine.cpp in Sources */,
 				8946E364173A7D4F001BC84C /* test_sigmagameengine2.cpp in Sources */,
 				8946E36F173A8ED6001BC84C /* GO_Button.cpp in Sources */,
+				89CB3722173D28AC002FC265 /* InputManager.cpp in Sources */,
+				89CB3727173D3877002FC265 /* SDLMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2051,6 +2060,7 @@
 				893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */,
 				118BE23E173A7F8C00EB9285 /* GO_Button.cpp in Sources */,
 				118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */,
+				89CB3720173D2215002FC265 /* InputManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2320,6 +2330,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -2339,6 +2354,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
 				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

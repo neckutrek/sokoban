@@ -72,6 +72,7 @@ void ObjectCamera::setMaxTheta(GLfloat maxTheta)
 		_theta = _maxTheta;
 }
 
+/*
 void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
 {
 	if (keyboardMap['W'] == 1 || keyboardMap['w'] == 1) {
@@ -92,11 +93,15 @@ void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
 		setRelDistance(0.1);
 	}
 }
+*/
 
 int ObjectCamera::update_function(unsigned int time)
 {
+    
+    
 	setPosition(_object->getPosition() +
 				_distance * vec3(sin(_theta)*cos(_phi), cos(_theta), sin(_theta)*sin(_phi)));
 	setViewLocation(_object);
 	return 0;
 }
+

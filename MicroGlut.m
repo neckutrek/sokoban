@@ -928,7 +928,7 @@ void glutWarpPointer(int x, int y)
 	CGPoint pt;
 	pt.x = x;
 	pt.y = y;
-	CGPostMouseEvent( pt, 1, 0, 0);
+    CGPostMouseEvent( pt, 1, 0, 0);
 }
 
 // Should be used for auto-show-hide on activate/deactivate

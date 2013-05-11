@@ -11,6 +11,8 @@
     #include "MicroGlut.h"
 #endif
 
+#include <SDL/SDL.h>
+
 #include <ctime>
 
 #include "GL_utilities.h"
@@ -26,6 +28,7 @@
 #include "LightManager.h"
 #include "MaterialManager.h"
 #include "GameObjectManager.h"
+#include "InputManager.h"
 
 #include "GameObjectFactory.h"
 #include "GameObject.h"
@@ -44,13 +47,19 @@ public:
                     int windowHeight,
                     std::string windowName);
     void run();
+    void quit();
     
     GLuint getShaderProgramID() { return shaderProgramID_; }
     
     friend void _display();
     friend void _update(int);
+    
+    // Link the friendship from InputManager onto the global callback
+    // functions that picks up user input
     friend void _setKeyUp(unsigned char, int, int);
     friend void _setKeyDown(unsigned char, int, int);
+    friend void _updateMouse(int, int, int, int);
+    friend void _updateMouse(int, int);
     
 private:
     SigmaGameEngine();
@@ -58,16 +67,10 @@ private:
     SigmaGameEngine& operator=(const SigmaGameEngine&);
     
     GLuint shaderProgramID_;
-    unsigned char keyboardMap[256];
-    
-    void (*displayCallback)(void);
-    void (*updateCallback)(int);
     
     void display();
     void update(int timeStep);
     
-    void setKeyUp(unsigned char key);
-    void setKeyDown(unsigned char key);
 };
 
 

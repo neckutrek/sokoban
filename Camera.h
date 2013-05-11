@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "Particle.h"
+#include "InputManager.h"
 
 class Camera : public Particle
 {
@@ -27,8 +28,6 @@ public:
 	
 	vec3 getUpDirection() const;
 	vec3 getViewDirection() const;
-	
-	virtual void updateKeyboard(unsigned char keyboardMap[256]) {}
 	
 	mat4 getCameraMatrix() const;
 	

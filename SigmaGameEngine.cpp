@@ -6,11 +6,21 @@
 #include <iostream>
 
 void _setKeyUp(unsigned char key, int x, int y) {
-    SigmaGameEngine::getInstance().setKeyUp(key);
+    InputManager::getInstance().setKeyUp(key);
 }
 
 void _setKeyDown(unsigned char key, int x, int y) {
-	SigmaGameEngine::getInstance().setKeyDown(key);
+	InputManager::getInstance().setKeyDown(key);
+}
+
+// this is only called upon when clicking a mouse button!
+void _updateMouse(int button, int state, int x, int y) {
+    InputManager::getInstance().updateMouse(button, state, x, y);
+}
+
+void _updateMouse(int x, int y)
+{
+    InputManager::getInstance().updateMouse(x, y);
 }
 
 void _update(int timeStep) {
@@ -27,7 +37,8 @@ SigmaGameEngine& SigmaGameEngine::getInstance()
     static SigmaGameEngine instance;
     return instance;
 }
-SigmaGameEngine::~SigmaGameEngine() {}
+SigmaGameEngine::~SigmaGameEngine() {
+}
 
 SigmaGameEngine::SigmaGameEngine()
 {}
@@ -46,10 +57,8 @@ void SigmaGameEngine::initialize(int argc,
                                  int windowHeight,
                                  std::string windowName)
 {
-    this->displayCallback = _display;
-    this->updateCallback = _update;
-    
     srand(time(0));
+    InputManager::getInstance().init(); // run this first to put the sdl window behind the glut window!
     
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
@@ -59,8 +68,10 @@ void SigmaGameEngine::initialize(int argc,
 	glutCreateWindow(windowName.c_str());
     
     glutDisplayFunc(_display);
-	glutKeyboardFunc(_setKeyDown);
-	glutKeyboardUpFunc(_setKeyUp);
+	//glutKeyboardFunc(_setKeyDown);
+	//glutKeyboardUpFunc(_setKeyUp);
+    //glutMouseFunc(_updateMouse);
+    //glutPassiveMotionFunc(_updateMouse);
     
     glClearColor(0.2, 0.2, 0.6, 0.0);
 	glEnable(GL_DEPTH_TEST);
@@ -69,12 +80,12 @@ void SigmaGameEngine::initialize(int argc,
     this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());
     glUseProgram(shaderProgramID_);
-    //std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     MaterialManager::getInstance().initialize(shaderProgramID_);
     LightManager::getInstance();
     
-    mat4 projection_transformation = frustum(-0.133333, 0.133333, -0.1, 0.1, 0.1, 100.0);
+    float proj_width = 0.2 * static_cast<float>(windowWidth) / static_cast<float>(windowHeight);
+    mat4 projection_transformation = frustum(-proj_width/2, proj_width/2, -0.1, 0.1, 0.1, 100.0);
     
     glUniformMatrix4fv(glGetUniformLocation(shaderProgramID_, "projection_transformation"),
                        1, GL_TRUE, projection_transformation.m);
@@ -84,6 +95,12 @@ void SigmaGameEngine::run()
 {
     glutTimerFunc(20, _update, 20);
     glutMainLoop();
+}
+
+void SigmaGameEngine::quit()
+{
+    SDL_Quit();
+    exit(0);
 }
 
 void SigmaGameEngine::display() {
@@ -120,23 +137,13 @@ void SigmaGameEngine::update(int timeStep)
     LightManager::getInstance().update(timeStep);
     GameObjectManager::getInstance().update(timeStep);
 	CameraManager::getInstance().update(timeStep);
+    InputManager::getInstance().update(timeStep);
 	
-    CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);
+    //CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);
     
     //updateKeyboard();
     glutWarpPointer(50, 50);
     glutPostRedisplay();
 }
-
-void SigmaGameEngine::setKeyUp(unsigned char key)
-{
-    keyboardMap[key] = 0;
-}
-
-void SigmaGameEngine::setKeyDown(unsigned char key)
-{
-    keyboardMap[key] = 1;
-}
-
 
 

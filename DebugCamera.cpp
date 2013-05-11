@@ -40,19 +40,23 @@ void DebugCamera::setRelViewDirection(GLfloat dtheta, GLfloat dphi)
 	setViewDirection(_theta + dtheta, _phi + dphi);
 }
 
-void DebugCamera::updateKeyboard(unsigned char keyboardMap[256])
+int DebugCamera::update_function(unsigned int time)
 {
-	if (keyboardMap['W'] == 1 || keyboardMap['w'] == 1) {
-		setRelPosition(0, 0, -0.1);
-	} else if (keyboardMap['S'] == 1 || keyboardMap['s'] == 1) {
-		setRelPosition(0, 0, 0.1);
-	}
+    InputManager& im = InputManager::getInstance();
+    
+    if (im.isKeyDown('w')) setRelPosition(0, 0, -0.1);
+    else if (im.isKeyDown('s')) setRelPosition(0, 0, 0.1);
+    
+    if (im.isKeyDown('a')) setRelPosition(-0.1, 0, 0);
+    else if (im.isKeyDown('d')) setRelPosition(0.1, 0, 0);
+    
+    setRelViewDirection(0.01 * im.getMouseSpeedY(),
+                        0.01 * im.getMouseSpeedX());
+        
+    return 0;
+    
+    /*
 	
-	if (keyboardMap['A'] == 1 || keyboardMap['a'] == 1) {
-		setRelPosition(-0.1, 0, 0);
-	} else if (keyboardMap['D'] == 1 || keyboardMap['d'] == 1) {
-		setRelPosition(0.1, 0, 0);
-	}
 	
 	if (keyboardMap['I'] == 1 || keyboardMap['i'] == 1) {
 		setRelViewDirection(-0.05, 0);
@@ -71,4 +75,5 @@ void DebugCamera::updateKeyboard(unsigned char keyboardMap[256])
 	} else if (keyboardMap['>'] == 1 || keyboardMap['<'] == 1) {
 		setRelPosition(0, -0.1, 0);
 	}
+     */
 }

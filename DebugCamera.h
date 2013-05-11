@@ -23,7 +23,7 @@ public:
 	void setViewDirection(GLfloat theta, GLfloat phi);
 	void setRelViewDirection(GLfloat dtheta, GLfloat dphi);
 	
-	virtual void updateKeyboard(unsigned char keyboardMap[256]);
+	virtual int update_function(unsigned int time);
 	
 protected:
 	
