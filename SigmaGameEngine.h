@@ -54,13 +54,6 @@ public:
     friend void _display();
     friend void _update(int);
     
-    // Link the friendship from InputManager onto the global callback
-    // functions that picks up user input
-    friend void _setKeyUp(unsigned char, int, int);
-    friend void _setKeyDown(unsigned char, int, int);
-    friend void _updateMouse(int, int, int, int);
-    friend void _updateMouse(int, int);
-    
 private:
     SigmaGameEngine();
     SigmaGameEngine(const SigmaGameEngine&);

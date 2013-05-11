@@ -31,7 +31,7 @@ void main(void)
 	if(is_affected_by_light != 0)
 	{
 		vec3 N = normalize(transformed_normal_vector);
-		float Iamb = 0.4;
+		float Iamb = 0.1;
 		total_shade += vec3( Iamb );
 		
 		int counter = light_counter;

@@ -5,24 +5,6 @@
 #include "SigmaGameEngine.h"
 #include <iostream>
 
-void _setKeyUp(unsigned char key, int x, int y) {
-    InputManager::getInstance().setKeyUp(key);
-}
-
-void _setKeyDown(unsigned char key, int x, int y) {
-	InputManager::getInstance().setKeyDown(key);
-}
-
-// this is only called upon when clicking a mouse button!
-void _updateMouse(int button, int state, int x, int y) {
-    InputManager::getInstance().updateMouse(button, state, x, y);
-}
-
-void _updateMouse(int x, int y)
-{
-    InputManager::getInstance().updateMouse(x, y);
-}
-
 void _update(int timeStep) {
     SigmaGameEngine::getInstance().update(timeStep);
 }
@@ -68,10 +50,6 @@ void SigmaGameEngine::initialize(int argc,
 	glutCreateWindow(windowName.c_str());
     
     glutDisplayFunc(_display);
-	//glutKeyboardFunc(_setKeyDown);
-	//glutKeyboardUpFunc(_setKeyUp);
-    //glutMouseFunc(_updateMouse);
-    //glutPassiveMotionFunc(_updateMouse);
     
     glClearColor(0.2, 0.2, 0.6, 0.0);
 	glEnable(GL_DEPTH_TEST);
@@ -105,7 +83,6 @@ void SigmaGameEngine::quit()
 
 void SigmaGameEngine::display() {
     glUseProgram(this->shaderProgramID_);
-    //std::cerr << "shaderProgramID_=" << shaderProgramID_ << std::endl;
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
@@ -131,18 +108,13 @@ void SigmaGameEngine::display() {
 
 void SigmaGameEngine::update(int timeStep)
 {
-    //std::cerr << "SigmaGameEngine::update()" << std::endl;
     glutTimerFunc(20, _update, timeStep);
     
     LightManager::getInstance().update(timeStep);
     GameObjectManager::getInstance().update(timeStep);
 	CameraManager::getInstance().update(timeStep);
     InputManager::getInstance().update(timeStep);
-	
-    //CameraManager::getInstance().getActiveCamera()->updateKeyboard(keyboardMap);
-    
-    //updateKeyboard();
-    glutWarpPointer(50, 50);
+
     glutPostRedisplay();
 }
 
