@@ -50,30 +50,11 @@ int DebugCamera::update_function(unsigned int time)
     if (im.isKeyDown('a')) setRelPosition(-0.1, 0, 0);
     else if (im.isKeyDown('d')) setRelPosition(0.1, 0, 0);
     
-    setRelViewDirection(0.01 * im.getMouseSpeedY(),
-                        0.01 * im.getMouseSpeedX());
+    if (im.isKeyDown(' ')) setRelPosition(0, 0.1, 0);
+    else if (im.isKeyDown('<')) setRelPosition(0, -0.1, 0);
+	
+    setRelViewDirection(0.008 * im.getMouseSpeedY(),
+                        0.008 * im.getMouseSpeedX());
         
     return 0;
-    
-    /*
-	
-	
-	if (keyboardMap['I'] == 1 || keyboardMap['i'] == 1) {
-		setRelViewDirection(-0.05, 0);
-	} else if (keyboardMap['K'] == 1 || keyboardMap['k'] == 1) {
-		setRelViewDirection(0.05, 0);
-	}
-	
-	if (keyboardMap['J'] == 1 || keyboardMap['j'] == 1) {
-		setRelViewDirection(0, -0.05);
-	} else if (keyboardMap['L'] == 1 || keyboardMap['l'] == 1) {
-		setRelViewDirection(0, 0.05);
-	}
-	 
-	if (keyboardMap[32] == 1) {
-		setRelPosition(0, 0.1, 0);
-	} else if (keyboardMap['>'] == 1 || keyboardMap['<'] == 1) {
-		setRelPosition(0, -0.1, 0);
-	}
-     */
 }

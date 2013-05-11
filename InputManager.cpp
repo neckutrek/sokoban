@@ -56,6 +56,8 @@ void InputManager::update(unsigned int dtime)
                     case SDLK_a: keyboardMap['a'] = 1; break;
                     case SDLK_s: keyboardMap['s'] = 1; break;
                     case SDLK_d: keyboardMap['d'] = 1; break;
+                    case SDLK_SPACE: keyboardMap[' '] = 1; break;
+                    case SDLK_LESS: keyboardMap['<'] = 1; break;
                     case SDLK_ESCAPE: SigmaGameEngine::getInstance().quit();
                     default: break;
                 }
@@ -66,7 +68,8 @@ void InputManager::update(unsigned int dtime)
                     case SDLK_a: keyboardMap['a'] = 0; break;
                     case SDLK_s: keyboardMap['s'] = 0; break;
                     case SDLK_d: keyboardMap['d'] = 0; break;
-                    case SDLK_ESCAPE: SigmaGameEngine::getInstance().quit();
+                    case SDLK_SPACE: keyboardMap[' '] = 0; break;
+                    case SDLK_LESS: keyboardMap['<'] = 0; break;
                     default: break;
                 }
                 break;
