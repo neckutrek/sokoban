@@ -32,15 +32,18 @@ int main(int argc, char *argv[])
     
     
     // add the sun
-    LightManager::getInstance().addLight(vec3(5.0, 100.0, 5.0), vec3(1, 1, 1), 1700.0);
-//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 0.0), vec3(1, 1, 1), 20.0);
-//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 10.0), vec3(1, 1, 1), 20.0);
-//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 0.0), vec3(1, 1, 1), 20.0);
-//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 10.0), vec3(1, 1, 1), 20.0);
+    LightManager::getInstance().addLight(vec3(5.0, 100.0, 5.0), vec3(1, 1, 1), 300.0);
+    LightManager::getInstance().addLight(vec3(5.0, 10.0, 5.0), vec3(1, 1, 1), 5.0);
+    LightManager::getInstance().addLight(vec3(5.0, -10.0, 5.0), vec3(1, 1, 1), 5.0);
+        LightManager::getInstance().addLight(vec3(5.0, 2.0, 5.0), vec3(1, 1, 1), 1.0);
+//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 0.0), vec3(1, 1, 1), 0.3);
+//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 10.0), vec3(1, 1, 1), 0.3);
+//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 0.0), vec3(1, 1, 1), 0.3);
+//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 10.0), vec3(1, 1, 1), 0.3);
     
     
-    if (LevelGenerator::getInstance().fileExists("level3.txt")) {
-        LevelGenerator::getInstance().load("level3.txt");
+    if (LevelGenerator::getInstance().fileExists("level1.txt")) {
+        LevelGenerator::getInstance().load("level1.txt");
     }
     
 

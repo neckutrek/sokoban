@@ -19,7 +19,7 @@ LightManager& LightManager::operator=(const LightManager&)
     return *this;
 }
 
-void LightManager::addLight(vec3 position, vec3 color, float lux_level)
+int LightManager::addLight(vec3 position, vec3 color, float lux_level)
 {
     if (_light_counter < MAX_LIGHT_SOURCES) {
         _light_sources_position_array[_light_counter] = position;
@@ -31,7 +31,10 @@ void LightManager::addLight(vec3 position, vec3 color, float lux_level)
         _light_sources_lux_array[_light_counter] = lux_level;
         
         _light_counter++;
+        
+        return _light_counter-1;
     }
+    return -1;
 }
 
 int LightManager::update(unsigned int time)
@@ -41,7 +44,7 @@ int LightManager::update(unsigned int time)
 
 void LightManager::setLightPosition(int light_index, vec3 position)
 {
-    
+    _light_sources_position_array[light_index] = position;
 }
 
 void LightManager::setLightVelocity(int light_index, vec3 velocity)

@@ -24,7 +24,7 @@ public:
     // from GameComponent
     virtual int update(unsigned int time);
     
-    void addLight(vec3 position, vec3 color, float lux_level);
+    int addLight(vec3 position, vec3 color, float lux_level);
     
     void setLightPosition(int light_index, vec3 position);
     void setLightVelocity(int light_index, vec3 velocity);

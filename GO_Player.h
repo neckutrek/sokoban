@@ -42,6 +42,7 @@ private:
 	};
 	
 	GO_PlayerBase* _playerBase;
+    int my_light_index;
 	
 };
 

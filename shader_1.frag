@@ -53,7 +53,8 @@ void main(void)
 			Idiff = clamp(Idiff, 0.0, 1.0);
 			Idiff *= light_sources_lux_array[i];
             if (light_travel_distance >= 1) {
-                Idiff /= 0.1 * light_travel_distance * light_travel_distance + 0.9;
+                //Idiff = max(0.0, Idiff - 0.48 * (light_travel_distance - 1) );
+                Idiff /= pow(light_travel_distance, 1.5);// * light_travel_distance;
             }
 			
 			float Ispec = 0.0;
@@ -65,7 +66,9 @@ void main(void)
 			}
 			Ispec *= light_sources_lux_array[i];
             if (light_travel_distance >= 1) {
-                Ispec /= 0.1 * light_travel_distance * light_travel_distance + 0.9;
+                //Ispec -= 0.5 * (light_travel_distance - 1);
+                //Ispec = max(0.0, Ispec - 0.48 * (light_travel_distance - 1) );
+                Ispec /= pow(light_travel_distance, 1.5);
             }
 			
 			total_shade += vec3(Idiff * light_sources_color_array[i]);
