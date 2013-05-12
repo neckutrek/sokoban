@@ -11,31 +11,6 @@ using namespace std;
 DebugCamera* c1 = new DebugCamera();
 CutsceneCamera* c3 = new CutsceneCamera();
 
-void init27Objects()
-{
-    string models[5] =
-    {"bunnyplus.obj", "button.obj", "crate.obj", "ground.obj", "sphere.obj"};
-    
-    string skins[3] =
-    {"button_c.tga", "crate.tga", "robot_c.tga"};
-    
-    int i=0;
-    int j=0;
-	for(int x=0; x<3; x++)
-		for(int y=0; y<3; y++)
-			for(int z=0; z<3; z++)
-			{
-                GameObject* go = new GO_Wall(vec3(3*(x-1), 3*(y-1), 3*(z-1)),
-                                             1.0,
-                                             "wall1.obj");
-                GameObjectManager::getInstance().addObject(go);
-                
-                i++; j++;
-                if (i>=5-2) i=0;
-                if (j>=3) j=0;
-			}
-}
-
 void init1Object()
 {
     /*
@@ -57,14 +32,19 @@ int main(int argc, char *argv[])
     
     
     // add the sun
-    LightManager::getInstance().addLight(vec3(1.0, 100.0, 1.0), vec3(1, 1, 1), 150.0);
+    LightManager::getInstance().addLight(vec3(5.0, 100.0, 5.0), vec3(1, 1, 1), 1700.0);
+//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 0.0), vec3(1, 1, 1), 20.0);
+//    LightManager::getInstance().addLight(vec3(0.0, 5.0, 10.0), vec3(1, 1, 1), 20.0);
+//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 0.0), vec3(1, 1, 1), 20.0);
+//    LightManager::getInstance().addLight(vec3(10.0, 5.0, 10.0), vec3(1, 1, 1), 20.0);
     
     
-    if (LevelGenerator::getInstance().fileExists("level2.txt")) {
-        LevelGenerator::getInstance().load("level2.txt");
+    if (LevelGenerator::getInstance().fileExists("level3.txt")) {
+        LevelGenerator::getInstance().load("level3.txt");
     }
+    
 
-    CameraManager::getInstance().setActiveCamera(new DebugCamera());
+    //CameraManager::getInstance().setActiveCamera(new DebugCamera());
     
     //init27Objects();
     

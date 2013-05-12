@@ -22,6 +22,8 @@ public:
 	
 	virtual int update_function(unsigned int time);
 	
+	void setRelPosToVector(vec3 v, vec3 pos);
+	
 protected:
 	
 private:

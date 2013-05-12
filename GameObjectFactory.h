@@ -30,7 +30,7 @@ public:
 	GO_Player* createPlayer(vec3 pos);
 	GO_Block* createBlock(vec3 pos);
 	GO_Button* createButton(vec3 pos);
-	GO_Billboard* createBillboard(vec3 pos);
+	GO_Billboard* createBillboard(vec3 pos, std::string texture);
 	GO_Skybox* createSkybox();
 	
 protected:

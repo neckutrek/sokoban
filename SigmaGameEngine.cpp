@@ -54,6 +54,8 @@ void SigmaGameEngine::initialize(int argc,
     glClearColor(0.2, 0.2, 0.6, 0.0);
 	glEnable(GL_DEPTH_TEST);
 	glDisable(GL_CULL_FACE);
+    glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
     this->shaderProgramID_ = loadShaders(vertShaderFileName.c_str(),
                                    fragShaderFileName.c_str());

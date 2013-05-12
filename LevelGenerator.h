@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include "GameObjectManager.h"
 #include "GameObjectFactory.h"
 
@@ -35,6 +36,8 @@ protected:
 	void generateMap();
 	void applyExtras();
 	void addWall(int x, int y);
+	void runIntro();
+	void addTrees();
 	
 	//Ska detta ligga nån annanstans
 	//bool generateComponent(GameComponent component, vec3 pos);
@@ -70,6 +73,7 @@ private:
 	static const std::string EXTRA_MAPPER[];
 	static const std::string WALL_NAME_MAPPER[];
 	static const GLfloat WALL_ROT_MAPPER[];
+	static const int TREE_MARGIN = 3;
 	
 	MapToken getMapToken(char token);
 	ExtraType getExtraType(std::string extra);

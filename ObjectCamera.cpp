@@ -8,8 +8,8 @@
 
 #include "ObjectCamera.h"
 
-ObjectCamera::ObjectCamera(Particle* object) : Camera(), _theta(M_PI/4), _phi(M_PI), _object(object), _distance(3),
-_minDistance(1), _maxDistance(10), _minTheta(0.00001), _maxTheta(M_PI/2)
+ObjectCamera::ObjectCamera(Particle* object) : Camera(), _theta(M_PI/4), _phi(M_PI/2), _object(object), _distance(3),
+_minDistance(1), _maxDistance(10), _minTheta(0.00001), _maxTheta(M_PI/2), _displacement(vec3(0, 1, 0))
 {}
 
 void ObjectCamera::setViewDirection(GLfloat theta, GLfloat phi)
@@ -72,36 +72,52 @@ void ObjectCamera::setMaxTheta(GLfloat maxTheta)
 		_theta = _maxTheta;
 }
 
-/*
+
 void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
 {
-	if (keyboardMap['W'] == 1 || keyboardMap['w'] == 1) {
-		setRelViewDirection(-0.05, 0);
-	} else if (keyboardMap['S'] == 1 || keyboardMap['s'] == 1) {
-		setRelViewDirection(0.05, 0);
-	}
 	
-	if (keyboardMap['A'] == 1 || keyboardMap['a'] == 1) {
-		setRelViewDirection(0, 0.05);
-	} else if (keyboardMap['D'] == 1 || keyboardMap['d'] == 1) {
-		setRelViewDirection(0, -0.05);
-	}
-	
-	if (keyboardMap['I'] == 1 || keyboardMap['i'] == 1) {
-		setRelDistance(-0.1);
-	} else if (keyboardMap['K'] == 1 || keyboardMap['k'] == 1) {
-		setRelDistance(0.1);
-	}
+ 
+ 
+    //Inte helsnyggt att detta ligger här, men tidspress...
+ 
+    
 }
-*/
 
 int ObjectCamera::update_function(unsigned int time)
 {
+    InputManager& im = InputManager::getInstance();
     
+    if (im.isKeyDown('<')) setRelDistance(-0.1);
+    else if (im.isKeyDown(' ')) setRelDistance(0.1);
+	
+    setRelViewDirection(-0.008 * im.getMouseSpeedY(),
+                        0.008 * im.getMouseSpeedX());
+
+    GO_Player* player = dynamic_cast<GO_Player*>(_object);
+    if(player)
+    {
+        vec3 totalMovement;
+        vec3 v = _distance * vec3(sin(_theta)*cos(_phi), 0, sin(_theta)*sin(_phi));
+        
+        if (im.isKeyDown('w')) totalMovement.z -= 1;
+        else if (im.isKeyDown('s')) totalMovement.z += 1;
+        
+        if (im.isKeyDown('a')) totalMovement.x -= 1;
+        else if (im.isKeyDown('d')) totalMovement.x += 1;
+        
+        if (totalMovement != vec3(0))
+        {
+            totalMovement = Normalize(totalMovement)/10;
+            player->setRelPosToVector(v, totalMovement);
+        }
+        
+        player->setRot(0, 1, 0, -_phi-M_PI/2);
+    }
     
-	setPosition(_object->getPosition() +
+    setPosition(_object->getPosition() + _displacement +
 				_distance * vec3(sin(_theta)*cos(_phi), cos(_theta), sin(_theta)*sin(_phi)));
 	setViewLocation(_object);
+    
 	return 0;
 }
 

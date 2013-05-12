@@ -10,14 +10,14 @@
 
 const std::string LevelGenerator::CHAR_MAPPER = " X.pPoO";
 const std::string LevelGenerator::EXTRA_MAPPER[] = {"Test extra"};
-const std::string LevelGenerator::WALL_NAME_MAPPER[] = {"4", "3", "3", "2b",
-														"3", "2a", "2a", "1",
-														"3", "2a", "2a", "1",
-														"2b", "1", "1", "0"};
-const GLfloat LevelGenerator::WALL_ROT_MAPPER[] = {0, 0, 1, 0.5,
-													1.5, 1.5, 1, 1.5,
-													0.5, 0, 0.5, 0.5,
-													0, 0, 1, 0};
+const std::string LevelGenerator::WALL_NAME_MAPPER[] = {"0", "1", "1", "2b",
+														"1", "2a", "2a", "3",
+														"1", "2a", "2a", "3",
+														"2b", "3", "3", "4"};
+const GLfloat LevelGenerator::WALL_ROT_MAPPER[] = {0, 0.5, 1.5, 0,
+													1, 1, 1.5, 1,
+													0, 0.5, 0, 0,
+													0.5, 0.5, 1.5, 0};
 
 
 LevelGenerator& LevelGenerator::getInstance()
@@ -106,7 +106,8 @@ void LevelGenerator::readMap()
 		//for each character except the last, linebreaking character
 		if(_buffer.at(0) == '%')
 			return;
-		for(int x=0; x<_buffer.length()-(_fileStream->eof() ? 0 : 1); x++)
+		//-(_fileStream->eof() ? 0 : 1) ???
+		for(int x=0; x<_buffer.length(); x++)
 		{
 			//if(x>MAX_LEVEL_WIDTH) Throw error...
 			if(x+1>_mapWidth)
@@ -153,6 +154,7 @@ void LevelGenerator::generateMap()
 	GameObjectManager& gom = GameObjectManager::getInstance();
 	GameObjectFactory& gof = GameObjectFactory::getInstance();
 	for(int x=0; x<_mapWidth; x++)
+	{
 		for(int y=0; y<_mapHeight; y++)
 		{
 			switch(_map[y*MAX_LEVEL_HEIGHT+x])
@@ -179,6 +181,7 @@ void LevelGenerator::generateMap()
 				case BLOCK:
 					go = gof.createBlock(vec3(x, 0.5, y));
 					gom.addObject(go);
+					break;
 				case BLOCK_ON_BUTTON:
 					go = gof.createBlock(vec3(x, 0.5, y));
 					gom.addObject(go);
@@ -187,10 +190,29 @@ void LevelGenerator::generateMap()
 					break;
 			}
 		}
+	}
 	go = gof.createGround();
 	gom.addObject(go);
 	go = gof.createSkybox();
 	gom.addObject(go);
+	addTrees();
+	runIntro();
+}
+
+void LevelGenerator::addTrees()
+{
+	GameObjectManager& gom = GameObjectManager::getInstance();
+	GO_Billboard* go;
+	int noOfTrees = 2*(_mapWidth+_mapHeight+4*TREE_MARGIN);
+	for(int tree=0; tree<noOfTrees/4; tree++)
+	{
+		go = new GO_Billboard(vec3(rand()%(_mapWidth+2*TREE_MARGIN)-TREE_MARGIN,
+								   1.5,
+								   rand()%TREE_MARGIN-2*TREE_MARGIN),
+							  "billboard.tga");
+		go->setScaling(3, 3, 3);
+		gom.addObject(go);
+	}
 }
 
 void LevelGenerator::addWall(int x, int y)
@@ -201,8 +223,18 @@ void LevelGenerator::addWall(int x, int y)
 				(y<_mapHeight ? _map[(y+1)*MAX_LEVEL_HEIGHT+x] == WALL : false);
 	GO_Wall* wall = GameObjectFactory::getInstance().createWall(vec3(x, 0, y),
 																WALL_ROT_MAPPER[index] * M_PI,
-																"wall" + WALL_NAME_MAPPER[index] + ".obj");
+																WALL_NAME_MAPPER[index]);
 	GameObjectManager::getInstance().addObject(wall);
+}
+
+void LevelGenerator::runIntro()
+{
+	vec3 playerPos = GameObjectManager::getInstance().getObjectsFromType("player").front()->getPosition();
+	CutsceneCamera* cc = new CutsceneCamera();
+	cc->addWaypoint(playerPos + vec3(-3.7, 5.2, -4.6), playerPos, 0);
+	cc->addWaypoint(playerPos + vec3(2.6, 4, -2.8), playerPos, 60);
+	cc->addWaypoint(playerPos + vec3(0, 3.12, 2.12), playerPos, 120);
+	CameraManager::getInstance().setActiveCamera(cc);
 }
 
 void LevelGenerator::applyExtras()

@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "Camera.h"
+#include "GO_Player.h"
 
 class ObjectCamera : public Camera
 {
@@ -26,6 +27,8 @@ public:
 	void setMinTheta(GLfloat minTheta);
 	void setMaxTheta(GLfloat maxTheta);
 	
+    virtual void updateKeyboard(unsigned char keyboardMap[256]);
+    
     virtual int update_function(unsigned int time);
 	
 protected:
@@ -40,6 +43,7 @@ private:
 	GLfloat _maxDistance;
 	GLfloat _minTheta;
 	GLfloat _maxTheta;
+	vec3 _displacement;
 };
 
 #endif /* defined(__OpenGLGLUTApp__ObjectCamera__) */

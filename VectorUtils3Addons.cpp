@@ -38,6 +38,12 @@ bool operator==(const vec3 &a, const vec3 &b)
 	return (a.x == b.x && a.y == b.y && a.z == b.z);
 }
 
+
+bool operator!=(const vec3 &a, const vec3 &b)
+{
+	return !(a==b);
+}
+
 GLfloat clamp(GLfloat x, GLfloat min, GLfloat max)
 {
 	return (x < min ? min : (x > max ? max : x));

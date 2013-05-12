@@ -15,7 +15,6 @@
 		118BE23F173A7F8C00EB9285 /* GO_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23C173A7F8C00EB9285 /* GO_Button.cpp */; };
 		118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
 		118BE243173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
-		11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		11924AEA17265F72006AF594 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11924AEB17265F72006AF594 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		11924AEC17265F72006AF594 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
@@ -50,8 +49,6 @@
 		11924B6217265F72006AF594 /* GLUT.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C6009D0951E00EBEB88 /* GLUT.framework */; };
 		11924B6317265F72006AF594 /* OpenGL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 002F3C0009D093BD00EBEB88 /* OpenGL.framework */; };
 		11924B6917265F87006AF594 /* test_level_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE617265F55006AF594 /* test_level_generator.cpp */; };
-		11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
-		11924B6B17266008006AF594 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
 		11924B6D172660C5006AF594 /* testlevel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11924B6C172660C5006AF594 /* testlevel.txt */; };
 		11924B6E17267041006AF594 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		11924B6F17267041006AF594 /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
@@ -70,15 +67,12 @@
 		11924B86172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B87172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
 		11924B88172671D3006AF594 /* ObjectCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B78172671D3006AF594 /* ObjectCamera.cpp */; };
-		11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
 		11924B8F172D32E6006AF594 /* GO_Wall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8D172D32E6006AF594 /* GO_Wall.cpp */; };
 		11924B95172D4E63006AF594 /* Camera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B71172671D3006AF594 /* Camera.h */; };
 		11924B96172D4E63006AF594 /* CameraManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B73172671D3006AF594 /* CameraManager.h */; };
 		11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
 		11924B98172D4E63006AF594 /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B77172671D3006AF594 /* DebugCamera.h */; };
 		11924B99172D4E63006AF594 /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B79172671D3006AF594 /* ObjectCamera.h */; };
-		11924B9C172D4E63006AF594 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
-		11924B9D172D4E63006AF594 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
 		11924BA2172FA107006AF594 /* GO_Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA0172FA107006AF594 /* GO_Ground.cpp */; };
 		11924BA5172FA719006AF594 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
 		11B56036171F644700D5A5DA /* test_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11B56034171F644700D5A5DA /* test_camera.cpp */; };
@@ -139,8 +133,6 @@
 		892D8DCF172FA4C500C13D95 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
 		892D8DD0172FA4C500C13D95 /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B77172671D3006AF594 /* DebugCamera.h */; };
 		892D8DD1172FA4C500C13D95 /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B79172671D3006AF594 /* ObjectCamera.h */; };
-		892D8DD2172FA4C500C13D95 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
-		892D8DD3172FA4C500C13D95 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
 		892D8DD4172FA4C500C13D95 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		892D8DD5172FA4C500C13D95 /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		892D8DD6172FA4C500C13D95 /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
@@ -162,9 +154,7 @@
 		892D8DE6172FA4C500C13D95 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		892D8DE7172FA4C500C13D95 /* MicroGlut.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4D16D37A0900E3644E /* MicroGlut.h */; };
 		892D8DE9172FA4C500C13D95 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
-		892D8DEA172FA4C500C13D95 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
 		892D8DEB172FA4C500C13D95 /* loadobj.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8116D379C100E3644E /* loadobj.h */; };
-		892D8DEC172FA4C500C13D95 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		892D8DED172FA4C500C13D95 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		892D8DEE172FA4C500C13D95 /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
 		892D8DEF172FA4C500C13D95 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
@@ -207,6 +197,43 @@
 		8946E37B173A9B25001BC84C /* level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8946E379173A9B04001BC84C /* level3.txt */; };
 		895C7D5C172520DA00A18429 /* test_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5B172520DA00A18429 /* test_light.cpp */; };
 		895C7D6017252F2800A18429 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
+		895D981F173FC28E00915259 /* billboard.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D980E173FC28E00915259 /* billboard.obj */; };
+		895D9820173FC28E00915259 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D980F173FC28E00915259 /* bunnyplus.obj */; };
+		895D9821173FC28E00915259 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9810173FC28E00915259 /* button.obj */; };
+		895D9822173FC28E00915259 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9811173FC28E00915259 /* crate.obj */; };
+		895D9823173FC28E00915259 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9812173FC28E00915259 /* ground.obj */; };
+		895D9824173FC28E00915259 /* lightHolder.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9813173FC28E00915259 /* lightHolder.obj */; };
+		895D9825173FC28E00915259 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9814173FC28E00915259 /* robot.obj */; };
+		895D9826173FC28E00915259 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9815173FC28E00915259 /* skybox.obj */; };
+		895D9827173FC28E00915259 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9816173FC28E00915259 /* sphere.obj */; };
+		895D9828173FC28E00915259 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9817173FC28E00915259 /* treads.obj */; };
+		895D9829173FC28E00915259 /* wall0n.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9818173FC28E00915259 /* wall0n.obj */; };
+		895D982A173FC28E00915259 /* wall1n.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D9819173FC28E00915259 /* wall1n.obj */; };
+		895D982B173FC28E00915259 /* wall2an.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D981A173FC28E00915259 /* wall2an.obj */; };
+		895D982C173FC28E00915259 /* wall2bn.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D981B173FC28E00915259 /* wall2bn.obj */; };
+		895D982D173FC28E00915259 /* wall2bn.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D981C173FC28E00915259 /* wall2bn.tga */; };
+		895D982E173FC28E00915259 /* wall3n.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D981D173FC28E00915259 /* wall3n.obj */; };
+		895D982F173FC28E00915259 /* wall4n.obj in Resources */ = {isa = PBXBuildFile; fileRef = 895D981E173FC28E00915259 /* wall4n.obj */; };
+		895D983D173FC2C200915259 /* billboard.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9830173FC2C200915259 /* billboard.tga */; };
+		895D983E173FC2C200915259 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9831173FC2C200915259 /* button_c.tga */; };
+		895D983F173FC2C200915259 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9832173FC2C200915259 /* crate.tga */; };
+		895D9840173FC2C200915259 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9833173FC2C200915259 /* ground.tga */; };
+		895D9841173FC2C200915259 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9834173FC2C200915259 /* robot_c.tga */; };
+		895D9842173FC2C200915259 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9835173FC2C200915259 /* skybox_c.tga */; };
+		895D9843173FC2C200915259 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9836173FC2C200915259 /* tracks_c.tga */; };
+		895D9844173FC2C200915259 /* wall0n.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9837173FC2C200915259 /* wall0n.tga */; };
+		895D9845173FC2C200915259 /* wall1n.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9838173FC2C200915259 /* wall1n.tga */; };
+		895D9846173FC2C200915259 /* wall2an.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D9839173FC2C200915259 /* wall2an.tga */; };
+		895D9847173FC2C200915259 /* wall2bn.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D983A173FC2C200915259 /* wall2bn.tga */; };
+		895D9848173FC2C200915259 /* wall3n.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D983B173FC2C200915259 /* wall3n.tga */; };
+		895D9849173FC2C200915259 /* wall4n.tga in Resources */ = {isa = PBXBuildFile; fileRef = 895D983C173FC2C200915259 /* wall4n.tga */; };
+		895D984C173FC5C200915259 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895D984A173FC5C200915259 /* LevelGenerator.cpp */; };
+		895D984F173FC5EB00915259 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895D984D173FC5EB00915259 /* GameObjectFactory.cpp */; };
+		895D9850173FC7EC00915259 /* SDLMain.h in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F0173137A8003F2781 /* SDLMain.h */; };
+		895D9851173FC7EC00915259 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 895D984E173FC5EB00915259 /* GameObjectFactory.h */; };
+		895D9852173FC7EC00915259 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 895D984B173FC5C200915259 /* LevelGenerator.h */; };
+		895D9853173FC7EC00915259 /* InputManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 89CB371F173D2215002FC265 /* InputManager.h */; };
+		895D9854173FC8A800915259 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47C172D386800BF8EF7 /* MaterialManager.cpp */; };
 		895EC481172D53EC00BF8EF7 /* RenderableMultilayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC47F172D53EC00BF8EF7 /* RenderableMultilayer.cpp */; };
 		895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895EC4DC172D5D4F00BF8EF7 /* test_multitexture.cpp */; };
@@ -287,8 +314,6 @@
 		89C61B73173802B9002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
 		89C61B74173802B9002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
 		89C61B75173802BA002D79A3 /* GameObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA3172FA719006AF594 /* GameObjectManager.cpp */; };
-		89C61B76173802BD002D79A3 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
-		89C61B77173802BE002D79A3 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		89C61B9117380760002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B8D17380760002D79A3 /* GO_Billboard.cpp */; };
 		89C61B9217380760002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B8D17380760002D79A3 /* GO_Billboard.cpp */; };
 		89C61B9317380760002D79A3 /* GO_Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B8D17380760002D79A3 /* GO_Billboard.cpp */; };
@@ -304,111 +329,6 @@
 		89C61B9F17380778002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9B17380778002D79A3 /* GO_Player.cpp */; };
 		89C61BA017380778002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9B17380778002D79A3 /* GO_Player.cpp */; };
 		89C61BA117380778002D79A3 /* GO_Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89C61B9B17380778002D79A3 /* GO_Player.cpp */; };
-		89C61BA217380790002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61BA317380790002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61BA417380790002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61BA517380790002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61BA617380790002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61BA717380790002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61BA817380790002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61BA917380790002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61BAA17380790002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61BAB17380790002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61BAC17380790002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61BAD17380790002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61BAE17380790002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61BAF17380790002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61BB017380791002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61BB117380791002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61BB217380791002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61BB317380791002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61BB417380791002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61BB517380791002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61BB617380791002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61BB717380791002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61BB817380791002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61BB917380791002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61BBA17380791002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61BBB17380791002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61BBC17380791002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61BBD17380791002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61BBE17380791002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61BBF17380791002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61BC017380791002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61BC117380791002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61BC217380791002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61BC317380791002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61BC417380791002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61BC517380791002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61BC617380791002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61BC717380791002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61BC817380791002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61BC917380791002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61BCA17380791002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61BCB17380791002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61BCC17380792002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61BCD17380792002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61BCE17380792002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61BCF17380792002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61BD017380792002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61BD117380792002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61BD217380792002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61BD317380792002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61BD417380792002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61BD517380792002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61BD617380792002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61BD717380792002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61BD817380792002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61BD917380792002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61BDA17380793002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61BDB17380793002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61BDC17380793002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61BDD17380793002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61BDE17380793002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61BDF17380793002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61BE017380793002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61BE117380793002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61BE217380793002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61BE317380793002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61BE417380793002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61BE517380793002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61BE617380793002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61BE717380793002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61BE81738079E002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61BE91738079E002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61BEA1738079E002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61BEB1738079E002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61BEC1738079E002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61BED1738079E002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61BEE1738079E002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61BEF1738079F002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61BF01738079F002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61BF11738079F002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61BF21738079F002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61BF31738079F002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61BF41738079F002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61BF51738079F002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61BF6173807A0002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61BF7173807A0002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61BF8173807A0002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61BF9173807A0002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61BFA173807A0002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61BFB173807A0002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61BFC173807A0002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61BFD173807A0002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61BFE173807A0002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61BFF173807A0002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61C00173807A0002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61C01173807A0002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61C02173807A0002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61C03173807A0002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
-		89C61C04173807A1002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61C05173807A1002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61C06173807A1002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61C07173807A1002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61C08173807A1002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61C09173807A1002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61C0A173807A1002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
 		89C61C101738141D002D79A3 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		89C61C111738141D002D79A3 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		89C61C141738141D002D79A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -423,8 +343,6 @@
 		89C61C3D1738141D002D79A3 /* CutsceneCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B75172671D3006AF594 /* CutsceneCamera.h */; };
 		89C61C3E1738141D002D79A3 /* DebugCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B77172671D3006AF594 /* DebugCamera.h */; };
 		89C61C3F1738141D002D79A3 /* ObjectCamera.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B79172671D3006AF594 /* ObjectCamera.h */; };
-		89C61C401738141D002D79A3 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
-		89C61C411738141D002D79A3 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
 		89C61C421738141D002D79A3 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		89C61C431738141D002D79A3 /* Renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01841715B22100D6783A /* Renderable.cpp */; };
 		89C61C441738141D002D79A3 /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
@@ -435,7 +353,6 @@
 		89C61C491738141D002D79A3 /* Renderable.h in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01851715B22100D6783A /* Renderable.h */; };
 		89C61C4A1738141D002D79A3 /* VectorUtils3.c in Sources */ = {isa = PBXBuildFile; fileRef = 11E82C9F170DE8F400911D57 /* VectorUtils3.c */; };
 		89C61C4B1738141D002D79A3 /* GL_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED7B16D379C100E3644E /* GL_utilities.c */; };
-		89C61C4C1738141D002D79A3 /* VectorUtils3Addons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D171715BB1B00911D57 /* VectorUtils3Addons.cpp */; };
 		89C61C4D1738141D002D79A3 /* VectorUtils3Addons.h in Sources */ = {isa = PBXBuildFile; fileRef = 11E82D181715BB1B00911D57 /* VectorUtils3Addons.h */; };
 		89C61C4E1738141D002D79A3 /* Particle.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC37170DE73A00F40F3A /* Particle.h */; };
 		89C61C4F1738141D002D79A3 /* Body.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC3C170DE88800F40F3A /* Body.h */; };
@@ -446,9 +363,7 @@
 		89C61C541738141D002D79A3 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		89C61C551738141D002D79A3 /* MicroGlut.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4D16D37A0900E3644E /* MicroGlut.h */; };
 		89C61C561738141D002D79A3 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
-		89C61C571738141D002D79A3 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
 		89C61C581738141D002D79A3 /* loadobj.h in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8116D379C100E3644E /* loadobj.h */; };
-		89C61C591738141D002D79A3 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
 		89C61C5A1738141D002D79A3 /* LightManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5E17252F2800A18429 /* LightManager.cpp */; };
 		89C61C5B1738141D002D79A3 /* LightManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 895C7D5F17252F2800A18429 /* LightManager.h */; };
 		89C61C5C1738141D002D79A3 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B70172671D3006AF594 /* Camera.cpp */; };
@@ -475,27 +390,6 @@
 		89C61C7A17381458002D79A3 /* GO_Ground.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA1172FA107006AF594 /* GO_Ground.h */; };
 		89C61C7C17381458002D79A3 /* SigmaGameEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 89E757F917314FA6003F2781 /* SigmaGameEngine.h */; };
 		89C61C7D17381458002D79A3 /* GameObjectManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924BA4172FA719006AF594 /* GameObjectManager.h */; };
-		89C61C9F173819A1002D79A3 /* bunnyplus.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FEF1738039300787A41 /* bunnyplus.obj */; };
-		89C61CA0173819A1002D79A3 /* button.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF01738039300787A41 /* button.obj */; };
-		89C61CA1173819A1002D79A3 /* crate.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF11738039300787A41 /* crate.obj */; };
-		89C61CA2173819A1002D79A3 /* ground.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF21738039300787A41 /* ground.obj */; };
-		89C61CA3173819A1002D79A3 /* robot.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF31738039300787A41 /* robot.obj */; };
-		89C61CA4173819A1002D79A3 /* skybox.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF41738039300787A41 /* skybox.obj */; };
-		89C61CA5173819A1002D79A3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF51738039300787A41 /* sphere.obj */; };
-		89C61CA6173819A1002D79A3 /* treads.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF61738039300787A41 /* treads.obj */; };
-		89C61CA7173819A1002D79A3 /* wall0.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF71738039300787A41 /* wall0.obj */; };
-		89C61CA8173819A1002D79A3 /* wall1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF81738039300787A41 /* wall1.obj */; };
-		89C61CA9173819A1002D79A3 /* wall2a.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FF91738039300787A41 /* wall2a.obj */; };
-		89C61CAA173819A1002D79A3 /* wall2b.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFA1738039300787A41 /* wall2b.obj */; };
-		89C61CAB173819A1002D79A3 /* wall3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFB1738039300787A41 /* wall3.obj */; };
-		89C61CAC173819A1002D79A3 /* wall4.obj in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFC1738039300787A41 /* wall4.obj */; };
-		89C61CAD173819A4002D79A3 /* button_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFD1738042F00787A41 /* button_c.tga */; };
-		89C61CAE173819A4002D79A3 /* crate.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFE1738042F00787A41 /* crate.tga */; };
-		89C61CAF173819A4002D79A3 /* ground.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B82FFF1738042F00787A41 /* ground.tga */; };
-		89C61CB0173819A4002D79A3 /* robot_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830001738042F00787A41 /* robot_c.tga */; };
-		89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830011738042F00787A41 /* skybox_c.tga */; };
-		89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830021738042F00787A41 /* tracks_c.tga */; };
-		89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */ = {isa = PBXBuildFile; fileRef = 11B830031738042F00787A41 /* wall_c.tga */; };
 		89CB3720173D2215002FC265 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB371E173D2215002FC265 /* InputManager.cpp */; };
 		89CB3722173D28AC002FC265 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CB371E173D2215002FC265 /* InputManager.cpp */; };
 		89CB3726173D386E002FC265 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E757EC1731378D003F2781 /* SDL.framework */; };
@@ -529,10 +423,6 @@
 		89E757CC17313611003F2781 /* GameComponent.h in Sources */ = {isa = PBXBuildFile; fileRef = 89FECC47170DEB8600F40F3A /* GameComponent.h */; };
 		89E757CD17313611003F2781 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01971715C2D000D6783A /* GameObject.cpp */; };
 		89E757CE17313611003F2781 /* GameObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 89CE01981715C2D000D6783A /* GameObject.h */; };
-		89E757CF17313611003F2781 /* LevelGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE217251FC6006AF594 /* LevelGenerator.cpp */; };
-		89E757D017313611003F2781 /* LevelGenerator.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924AE317251FC6006AF594 /* LevelGenerator.h */; };
-		89E757D117313611003F2781 /* GameObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */; };
-		89E757D217313611003F2781 /* GameObjectFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = 11924B8A172D2F0E006AF594 /* GameObjectFactory.h */; };
 		89E757D317313611003F2781 /* MicroGlut.m in Sources */ = {isa = PBXBuildFile; fileRef = 115EEE4E16D37A0900E3644E /* MicroGlut.m */; };
 		89E757D417313611003F2781 /* loadobj.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8016D379C100E3644E /* loadobj.c */; };
 		89E757D517313611003F2781 /* LoadTGA2.c in Sources */ = {isa = PBXBuildFile; fileRef = 115EED8216D379C100E3644E /* LoadTGA2.c */; };
@@ -645,8 +535,6 @@
 		118BE23D173A7F8C00EB9285 /* GO_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Button.h; sourceTree = "<group>"; };
 		118BE240173A842600EB9285 /* GO_Skybox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Skybox.cpp; sourceTree = "<group>"; };
 		118BE241173A842600EB9285 /* GO_Skybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Skybox.h; sourceTree = "<group>"; };
-		11924AE217251FC6006AF594 /* LevelGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGenerator.cpp; sourceTree = "<group>"; };
-		11924AE317251FC6006AF594 /* LevelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGenerator.h; sourceTree = "<group>"; };
 		11924AE617265F55006AF594 /* test_level_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_level_generator.cpp; sourceTree = "<group>"; };
 		11924B6717265F72006AF594 /* test_camera copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_camera copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11924B6817265F72006AF594 /* test_camera copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_camera copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_camera copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -661,8 +549,6 @@
 		11924B77172671D3006AF594 /* DebugCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCamera.h; sourceTree = "<group>"; };
 		11924B78172671D3006AF594 /* ObjectCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCamera.cpp; sourceTree = "<group>"; };
 		11924B79172671D3006AF594 /* ObjectCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCamera.h; sourceTree = "<group>"; };
-		11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectFactory.cpp; sourceTree = "<group>"; };
-		11924B8A172D2F0E006AF594 /* GameObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectFactory.h; sourceTree = "<group>"; };
 		11924B8D172D32E6006AF594 /* GO_Wall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Wall.cpp; sourceTree = "<group>"; };
 		11924BA0172FA107006AF594 /* GO_Ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Ground.cpp; sourceTree = "<group>"; };
 		11924BA1172FA107006AF594 /* GO_Ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Ground.h; sourceTree = "<group>"; };
@@ -671,27 +557,6 @@
 		11B56034171F644700D5A5DA /* test_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_camera.cpp; sourceTree = "<group>"; };
 		11B560AD171F647300D5A5DA /* test_renderable copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_renderable copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B560AE171F647400D5A5DA /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
-		11B82FEF1738039300787A41 /* bunnyplus.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = bunnyplus.obj; sourceTree = "<group>"; };
-		11B82FF01738039300787A41 /* button.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = button.obj; sourceTree = "<group>"; };
-		11B82FF11738039300787A41 /* crate.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = crate.obj; sourceTree = "<group>"; };
-		11B82FF21738039300787A41 /* ground.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = ground.obj; sourceTree = "<group>"; };
-		11B82FF31738039300787A41 /* robot.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = robot.obj; sourceTree = "<group>"; };
-		11B82FF41738039300787A41 /* skybox.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = skybox.obj; sourceTree = "<group>"; };
-		11B82FF51738039300787A41 /* sphere.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
-		11B82FF61738039300787A41 /* treads.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = treads.obj; sourceTree = "<group>"; };
-		11B82FF71738039300787A41 /* wall0.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall0.obj; sourceTree = "<group>"; };
-		11B82FF81738039300787A41 /* wall1.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall1.obj; sourceTree = "<group>"; };
-		11B82FF91738039300787A41 /* wall2a.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall2a.obj; sourceTree = "<group>"; };
-		11B82FFA1738039300787A41 /* wall2b.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall2b.obj; sourceTree = "<group>"; };
-		11B82FFB1738039300787A41 /* wall3.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall3.obj; sourceTree = "<group>"; };
-		11B82FFC1738039300787A41 /* wall4.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = wall4.obj; sourceTree = "<group>"; };
-		11B82FFD1738042F00787A41 /* button_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = button_c.tga; sourceTree = "<group>"; };
-		11B82FFE1738042F00787A41 /* crate.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = crate.tga; sourceTree = "<group>"; };
-		11B82FFF1738042F00787A41 /* ground.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ground.tga; sourceTree = "<group>"; };
-		11B830001738042F00787A41 /* robot_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = robot_c.tga; sourceTree = "<group>"; };
-		11B830011738042F00787A41 /* skybox_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = skybox_c.tga; sourceTree = "<group>"; };
-		11B830021738042F00787A41 /* tracks_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tracks_c.tga; sourceTree = "<group>"; };
-		11B830031738042F00787A41 /* wall_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall_c.tga; sourceTree = "<group>"; };
 		11DA4B7F16C41D18009A9277 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = SYSTEM_DEVELOPER_DIR; };
 		11E82C9F170DE8F400911D57 /* VectorUtils3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VectorUtils3.c; sourceTree = "<group>"; };
 		11E82CA0170DE8F400911D57 /* VectorUtils3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorUtils3.h; sourceTree = "<group>"; };
@@ -724,6 +589,40 @@
 		895C7D8A1725379300A18429 /* test_lightTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_lightTests.h; sourceTree = "<group>"; };
 		895C7D8B1725379300A18429 /* test_lightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_lightTests.m; sourceTree = "<group>"; };
 		895C7E281725387C00A18429 /* test_renderable copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_renderable copy-Info.plist"; path = "/Users/neckutrek/XCode_workspace/sokoban/test_renderable copy-Info.plist"; sourceTree = "<absolute>"; };
+		895D980E173FC28E00915259 /* billboard.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = billboard.obj; sourceTree = "<group>"; };
+		895D980F173FC28E00915259 /* bunnyplus.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunnyplus.obj; sourceTree = "<group>"; };
+		895D9810173FC28E00915259 /* button.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = button.obj; sourceTree = "<group>"; };
+		895D9811173FC28E00915259 /* crate.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crate.obj; sourceTree = "<group>"; };
+		895D9812173FC28E00915259 /* ground.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ground.obj; sourceTree = "<group>"; };
+		895D9813173FC28E00915259 /* lightHolder.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lightHolder.obj; sourceTree = "<group>"; };
+		895D9814173FC28E00915259 /* robot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robot.obj; sourceTree = "<group>"; };
+		895D9815173FC28E00915259 /* skybox.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skybox.obj; sourceTree = "<group>"; };
+		895D9816173FC28E00915259 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		895D9817173FC28E00915259 /* treads.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = treads.obj; sourceTree = "<group>"; };
+		895D9818173FC28E00915259 /* wall0n.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall0n.obj; sourceTree = "<group>"; };
+		895D9819173FC28E00915259 /* wall1n.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall1n.obj; sourceTree = "<group>"; };
+		895D981A173FC28E00915259 /* wall2an.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall2an.obj; sourceTree = "<group>"; };
+		895D981B173FC28E00915259 /* wall2bn.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall2bn.obj; sourceTree = "<group>"; };
+		895D981C173FC28E00915259 /* wall2bn.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall2bn.tga; sourceTree = "<group>"; };
+		895D981D173FC28E00915259 /* wall3n.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall3n.obj; sourceTree = "<group>"; };
+		895D981E173FC28E00915259 /* wall4n.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wall4n.obj; sourceTree = "<group>"; };
+		895D9830173FC2C200915259 /* billboard.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = billboard.tga; sourceTree = "<group>"; };
+		895D9831173FC2C200915259 /* button_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = button_c.tga; sourceTree = "<group>"; };
+		895D9832173FC2C200915259 /* crate.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = crate.tga; sourceTree = "<group>"; };
+		895D9833173FC2C200915259 /* ground.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ground.tga; sourceTree = "<group>"; };
+		895D9834173FC2C200915259 /* robot_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = robot_c.tga; sourceTree = "<group>"; };
+		895D9835173FC2C200915259 /* skybox_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = skybox_c.tga; sourceTree = "<group>"; };
+		895D9836173FC2C200915259 /* tracks_c.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = tracks_c.tga; sourceTree = "<group>"; };
+		895D9837173FC2C200915259 /* wall0n.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall0n.tga; sourceTree = "<group>"; };
+		895D9838173FC2C200915259 /* wall1n.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall1n.tga; sourceTree = "<group>"; };
+		895D9839173FC2C200915259 /* wall2an.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall2an.tga; sourceTree = "<group>"; };
+		895D983A173FC2C200915259 /* wall2bn.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall2bn.tga; sourceTree = "<group>"; };
+		895D983B173FC2C200915259 /* wall3n.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall3n.tga; sourceTree = "<group>"; };
+		895D983C173FC2C200915259 /* wall4n.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = wall4n.tga; sourceTree = "<group>"; };
+		895D984A173FC5C200915259 /* LevelGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelGenerator.cpp; sourceTree = "<group>"; };
+		895D984B173FC5C200915259 /* LevelGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelGenerator.h; sourceTree = "<group>"; };
+		895D984D173FC5EB00915259 /* GameObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObjectFactory.cpp; sourceTree = "<group>"; };
+		895D984E173FC5EB00915259 /* GameObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObjectFactory.h; sourceTree = "<group>"; };
 		895EC476172D350100BF8EF7 /* lab3-5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "lab3-5.c"; sourceTree = "<group>"; };
 		895EC477172D350100BF8EF7 /* lab3-5.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = "lab3-5.frag"; sourceTree = "<group>"; };
 		895EC478172D350100BF8EF7 /* lab3-5.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = "lab3-5.vert"; sourceTree = "<group>"; };
@@ -894,20 +793,23 @@
 		115EED8616D379C100E3644E /* models */ = {
 			isa = PBXGroup;
 			children = (
-				11B82FEF1738039300787A41 /* bunnyplus.obj */,
-				11B82FF01738039300787A41 /* button.obj */,
-				11B82FF11738039300787A41 /* crate.obj */,
-				11B82FF21738039300787A41 /* ground.obj */,
-				11B82FF31738039300787A41 /* robot.obj */,
-				11B82FF41738039300787A41 /* skybox.obj */,
-				11B82FF51738039300787A41 /* sphere.obj */,
-				11B82FF61738039300787A41 /* treads.obj */,
-				11B82FF71738039300787A41 /* wall0.obj */,
-				11B82FF81738039300787A41 /* wall1.obj */,
-				11B82FF91738039300787A41 /* wall2a.obj */,
-				11B82FFA1738039300787A41 /* wall2b.obj */,
-				11B82FFB1738039300787A41 /* wall3.obj */,
-				11B82FFC1738039300787A41 /* wall4.obj */,
+				895D980E173FC28E00915259 /* billboard.obj */,
+				895D980F173FC28E00915259 /* bunnyplus.obj */,
+				895D9810173FC28E00915259 /* button.obj */,
+				895D9811173FC28E00915259 /* crate.obj */,
+				895D9812173FC28E00915259 /* ground.obj */,
+				895D9813173FC28E00915259 /* lightHolder.obj */,
+				895D9814173FC28E00915259 /* robot.obj */,
+				895D9815173FC28E00915259 /* skybox.obj */,
+				895D9816173FC28E00915259 /* sphere.obj */,
+				895D9817173FC28E00915259 /* treads.obj */,
+				895D9818173FC28E00915259 /* wall0n.obj */,
+				895D9819173FC28E00915259 /* wall1n.obj */,
+				895D981A173FC28E00915259 /* wall2an.obj */,
+				895D981B173FC28E00915259 /* wall2bn.obj */,
+				895D981C173FC28E00915259 /* wall2bn.tga */,
+				895D981D173FC28E00915259 /* wall3n.obj */,
+				895D981E173FC28E00915259 /* wall4n.obj */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -915,13 +817,19 @@
 		115EEDE016D379C100E3644E /* textures */ = {
 			isa = PBXGroup;
 			children = (
-				11B82FFD1738042F00787A41 /* button_c.tga */,
-				11B82FFE1738042F00787A41 /* crate.tga */,
-				11B82FFF1738042F00787A41 /* ground.tga */,
-				11B830001738042F00787A41 /* robot_c.tga */,
-				11B830011738042F00787A41 /* skybox_c.tga */,
-				11B830021738042F00787A41 /* tracks_c.tga */,
-				11B830031738042F00787A41 /* wall_c.tga */,
+				895D9830173FC2C200915259 /* billboard.tga */,
+				895D9831173FC2C200915259 /* button_c.tga */,
+				895D9832173FC2C200915259 /* crate.tga */,
+				895D9833173FC2C200915259 /* ground.tga */,
+				895D9834173FC2C200915259 /* robot_c.tga */,
+				895D9835173FC2C200915259 /* skybox_c.tga */,
+				895D9836173FC2C200915259 /* tracks_c.tga */,
+				895D9837173FC2C200915259 /* wall0n.tga */,
+				895D9838173FC2C200915259 /* wall1n.tga */,
+				895D9839173FC2C200915259 /* wall2an.tga */,
+				895D983A173FC2C200915259 /* wall2bn.tga */,
+				895D983B173FC2C200915259 /* wall3n.tga */,
+				895D983C173FC2C200915259 /* wall4n.tga */,
 			);
 			path = textures;
 			sourceTree = "<group>";
@@ -1260,6 +1168,10 @@
 		89FECC45170DEB6F00F40F3A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				895D984D173FC5EB00915259 /* GameObjectFactory.cpp */,
+				895D984E173FC5EB00915259 /* GameObjectFactory.h */,
+				895D984A173FC5C200915259 /* LevelGenerator.cpp */,
+				895D984B173FC5C200915259 /* LevelGenerator.h */,
 				89E757F717314F92003F2781 /* SigmaGameEngine.cpp */,
 				89E757F917314FA6003F2781 /* SigmaGameEngine.h */,
 				89FECC46170DEB8600F40F3A /* GameComponent.cpp */,
@@ -1268,10 +1180,6 @@
 				89CE01981715C2D000D6783A /* GameObject.h */,
 				11924BA3172FA719006AF594 /* GameObjectManager.cpp */,
 				11924BA4172FA719006AF594 /* GameObjectManager.h */,
-				11924AE217251FC6006AF594 /* LevelGenerator.cpp */,
-				11924AE317251FC6006AF594 /* LevelGenerator.h */,
-				11924B89172D2F0E006AF594 /* GameObjectFactory.cpp */,
-				11924B8A172D2F0E006AF594 /* GameObjectFactory.h */,
 				89CB371E173D2215002FC265 /* InputManager.cpp */,
 				89CB371F173D2215002FC265 /* InputManager.h */,
 			);
@@ -1457,27 +1365,6 @@
 				11924AED17265F72006AF594 /* terrain.vert in Resources */,
 				11924AEE17265F72006AF594 /* InfoPlist.strings in Resources */,
 				11924B6D172660C5006AF594 /* testlevel.txt in Resources */,
-				89C61BCC17380792002D79A3 /* bunnyplus.obj in Resources */,
-				89C61BCD17380792002D79A3 /* button.obj in Resources */,
-				89C61BCE17380792002D79A3 /* crate.obj in Resources */,
-				89C61BCF17380792002D79A3 /* ground.obj in Resources */,
-				89C61BD017380792002D79A3 /* robot.obj in Resources */,
-				89C61BD117380792002D79A3 /* skybox.obj in Resources */,
-				89C61BD217380792002D79A3 /* sphere.obj in Resources */,
-				89C61BD317380792002D79A3 /* treads.obj in Resources */,
-				89C61BD417380792002D79A3 /* wall0.obj in Resources */,
-				89C61BD517380792002D79A3 /* wall1.obj in Resources */,
-				89C61BD617380792002D79A3 /* wall2a.obj in Resources */,
-				89C61BD717380792002D79A3 /* wall2b.obj in Resources */,
-				89C61BD817380792002D79A3 /* wall3.obj in Resources */,
-				89C61BD917380792002D79A3 /* wall4.obj in Resources */,
-				89C61BEF1738079F002D79A3 /* button_c.tga in Resources */,
-				89C61BF01738079F002D79A3 /* crate.tga in Resources */,
-				89C61BF11738079F002D79A3 /* ground.tga in Resources */,
-				89C61BF21738079F002D79A3 /* robot_c.tga in Resources */,
-				89C61BF31738079F002D79A3 /* skybox_c.tga in Resources */,
-				89C61BF41738079F002D79A3 /* tracks_c.tga in Resources */,
-				89C61BF51738079F002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1490,27 +1377,6 @@
 				11B5603B171F647300D5A5DA /* terrain.frag in Resources */,
 				11B5603C171F647300D5A5DA /* terrain.vert in Resources */,
 				11B5603D171F647300D5A5DA /* InfoPlist.strings in Resources */,
-				89C61BDA17380793002D79A3 /* bunnyplus.obj in Resources */,
-				89C61BDB17380793002D79A3 /* button.obj in Resources */,
-				89C61BDC17380793002D79A3 /* crate.obj in Resources */,
-				89C61BDD17380793002D79A3 /* ground.obj in Resources */,
-				89C61BDE17380793002D79A3 /* robot.obj in Resources */,
-				89C61BDF17380793002D79A3 /* skybox.obj in Resources */,
-				89C61BE017380793002D79A3 /* sphere.obj in Resources */,
-				89C61BE117380793002D79A3 /* treads.obj in Resources */,
-				89C61BE217380793002D79A3 /* wall0.obj in Resources */,
-				89C61BE317380793002D79A3 /* wall1.obj in Resources */,
-				89C61BE417380793002D79A3 /* wall2a.obj in Resources */,
-				89C61BE517380793002D79A3 /* wall2b.obj in Resources */,
-				89C61BE617380793002D79A3 /* wall3.obj in Resources */,
-				89C61BE717380793002D79A3 /* wall4.obj in Resources */,
-				89C61BE81738079E002D79A3 /* button_c.tga in Resources */,
-				89C61BE91738079E002D79A3 /* crate.tga in Resources */,
-				89C61BEA1738079E002D79A3 /* ground.tga in Resources */,
-				89C61BEB1738079E002D79A3 /* robot_c.tga in Resources */,
-				89C61BEC1738079E002D79A3 /* skybox_c.tga in Resources */,
-				89C61BED1738079E002D79A3 /* tracks_c.tga in Resources */,
-				89C61BEE1738079E002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1524,27 +1390,6 @@
 				892D8D7C172FA4C500C13D95 /* terrain.vert in Resources */,
 				892D8D7D172FA4C500C13D95 /* InfoPlist.strings in Resources */,
 				892D8DCA172FA4C500C13D95 /* testlevel.txt in Resources */,
-				89C61BB017380791002D79A3 /* bunnyplus.obj in Resources */,
-				89C61BB117380791002D79A3 /* button.obj in Resources */,
-				89C61BB217380791002D79A3 /* crate.obj in Resources */,
-				89C61BB317380791002D79A3 /* ground.obj in Resources */,
-				89C61BB417380791002D79A3 /* robot.obj in Resources */,
-				89C61BB517380791002D79A3 /* skybox.obj in Resources */,
-				89C61BB617380791002D79A3 /* sphere.obj in Resources */,
-				89C61BB717380791002D79A3 /* treads.obj in Resources */,
-				89C61BB817380791002D79A3 /* wall0.obj in Resources */,
-				89C61BB917380791002D79A3 /* wall1.obj in Resources */,
-				89C61BBA17380791002D79A3 /* wall2a.obj in Resources */,
-				89C61BBB17380791002D79A3 /* wall2b.obj in Resources */,
-				89C61BBC17380791002D79A3 /* wall3.obj in Resources */,
-				89C61BBD17380791002D79A3 /* wall4.obj in Resources */,
-				89C61BFD173807A0002D79A3 /* button_c.tga in Resources */,
-				89C61BFE173807A0002D79A3 /* crate.tga in Resources */,
-				89C61BFF173807A0002D79A3 /* ground.tga in Resources */,
-				89C61C00173807A0002D79A3 /* robot_c.tga in Resources */,
-				89C61C01173807A0002D79A3 /* skybox_c.tga in Resources */,
-				89C61C02173807A0002D79A3 /* tracks_c.tga in Resources */,
-				89C61C03173807A0002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1557,27 +1402,6 @@
 				895EC4EA172D5DF000BF8EF7 /* InfoPlist.strings in Resources */,
 				895EC4F0172D5DF000BF8EF7 /* Credits.rtf in Resources */,
 				895EC4F6172D5DF000BF8EF7 /* MainMenu.xib in Resources */,
-				89C61BBE17380791002D79A3 /* bunnyplus.obj in Resources */,
-				89C61BBF17380791002D79A3 /* button.obj in Resources */,
-				89C61BC017380791002D79A3 /* crate.obj in Resources */,
-				89C61BC117380791002D79A3 /* ground.obj in Resources */,
-				89C61BC217380791002D79A3 /* robot.obj in Resources */,
-				89C61BC317380791002D79A3 /* skybox.obj in Resources */,
-				89C61BC417380791002D79A3 /* sphere.obj in Resources */,
-				89C61BC517380791002D79A3 /* treads.obj in Resources */,
-				89C61BC617380791002D79A3 /* wall0.obj in Resources */,
-				89C61BC717380791002D79A3 /* wall1.obj in Resources */,
-				89C61BC817380791002D79A3 /* wall2a.obj in Resources */,
-				89C61BC917380791002D79A3 /* wall2b.obj in Resources */,
-				89C61BCA17380791002D79A3 /* wall3.obj in Resources */,
-				89C61BCB17380791002D79A3 /* wall4.obj in Resources */,
-				89C61BF6173807A0002D79A3 /* button_c.tga in Resources */,
-				89C61BF7173807A0002D79A3 /* crate.tga in Resources */,
-				89C61BF8173807A0002D79A3 /* ground.tga in Resources */,
-				89C61BF9173807A0002D79A3 /* robot_c.tga in Resources */,
-				89C61BFA173807A0002D79A3 /* skybox_c.tga in Resources */,
-				89C61BFB173807A0002D79A3 /* tracks_c.tga in Resources */,
-				89C61BFC173807A0002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1591,29 +1415,38 @@
 				89C61C111738141D002D79A3 /* shader_1.vert in Resources */,
 				89C61C141738141D002D79A3 /* InfoPlist.strings in Resources */,
 				89C61C1D1738141D002D79A3 /* testlevel.txt in Resources */,
-				89C61C9F173819A1002D79A3 /* bunnyplus.obj in Resources */,
-				89C61CA0173819A1002D79A3 /* button.obj in Resources */,
-				89C61CA1173819A1002D79A3 /* crate.obj in Resources */,
-				89C61CA2173819A1002D79A3 /* ground.obj in Resources */,
-				89C61CA3173819A1002D79A3 /* robot.obj in Resources */,
-				89C61CA4173819A1002D79A3 /* skybox.obj in Resources */,
-				89C61CA5173819A1002D79A3 /* sphere.obj in Resources */,
-				89C61CA6173819A1002D79A3 /* treads.obj in Resources */,
-				89C61CA7173819A1002D79A3 /* wall0.obj in Resources */,
-				89C61CA8173819A1002D79A3 /* wall1.obj in Resources */,
-				89C61CA9173819A1002D79A3 /* wall2a.obj in Resources */,
-				89C61CAA173819A1002D79A3 /* wall2b.obj in Resources */,
-				89C61CAB173819A1002D79A3 /* wall3.obj in Resources */,
-				89C61CAC173819A1002D79A3 /* wall4.obj in Resources */,
-				89C61CAD173819A4002D79A3 /* button_c.tga in Resources */,
-				89C61CAE173819A4002D79A3 /* crate.tga in Resources */,
-				89C61CAF173819A4002D79A3 /* ground.tga in Resources */,
-				89C61CB0173819A4002D79A3 /* robot_c.tga in Resources */,
-				89C61CB1173819A4002D79A3 /* skybox_c.tga in Resources */,
-				89C61CB2173819A4002D79A3 /* tracks_c.tga in Resources */,
-				89C61CB3173819A4002D79A3 /* wall_c.tga in Resources */,
 				8946E378173A95D4001BC84C /* testlevel2.txt in Resources */,
 				8946E37B173A9B25001BC84C /* level3.txt in Resources */,
+				895D981F173FC28E00915259 /* billboard.obj in Resources */,
+				895D9820173FC28E00915259 /* bunnyplus.obj in Resources */,
+				895D9821173FC28E00915259 /* button.obj in Resources */,
+				895D9822173FC28E00915259 /* crate.obj in Resources */,
+				895D9823173FC28E00915259 /* ground.obj in Resources */,
+				895D9824173FC28E00915259 /* lightHolder.obj in Resources */,
+				895D9825173FC28E00915259 /* robot.obj in Resources */,
+				895D9826173FC28E00915259 /* skybox.obj in Resources */,
+				895D9827173FC28E00915259 /* sphere.obj in Resources */,
+				895D9828173FC28E00915259 /* treads.obj in Resources */,
+				895D9829173FC28E00915259 /* wall0n.obj in Resources */,
+				895D982A173FC28E00915259 /* wall1n.obj in Resources */,
+				895D982B173FC28E00915259 /* wall2an.obj in Resources */,
+				895D982C173FC28E00915259 /* wall2bn.obj in Resources */,
+				895D982D173FC28E00915259 /* wall2bn.tga in Resources */,
+				895D982E173FC28E00915259 /* wall3n.obj in Resources */,
+				895D982F173FC28E00915259 /* wall4n.obj in Resources */,
+				895D983D173FC2C200915259 /* billboard.tga in Resources */,
+				895D983E173FC2C200915259 /* button_c.tga in Resources */,
+				895D983F173FC2C200915259 /* crate.tga in Resources */,
+				895D9840173FC2C200915259 /* ground.tga in Resources */,
+				895D9841173FC2C200915259 /* robot_c.tga in Resources */,
+				895D9842173FC2C200915259 /* skybox_c.tga in Resources */,
+				895D9843173FC2C200915259 /* tracks_c.tga in Resources */,
+				895D9844173FC2C200915259 /* wall0n.tga in Resources */,
+				895D9845173FC2C200915259 /* wall1n.tga in Resources */,
+				895D9846173FC2C200915259 /* wall2an.tga in Resources */,
+				895D9847173FC2C200915259 /* wall2bn.tga in Resources */,
+				895D9848173FC2C200915259 /* wall3n.tga in Resources */,
+				895D9849173FC2C200915259 /* wall4n.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1624,27 +1457,6 @@
 				89E757A3173135D5003F2781 /* InfoPlist.strings in Resources */,
 				89E757A9173135D5003F2781 /* Credits.rtf in Resources */,
 				89E757AF173135D6003F2781 /* MainMenu.xib in Resources */,
-				89C61BA217380790002D79A3 /* bunnyplus.obj in Resources */,
-				89C61BA317380790002D79A3 /* button.obj in Resources */,
-				89C61BA417380790002D79A3 /* crate.obj in Resources */,
-				89C61BA517380790002D79A3 /* ground.obj in Resources */,
-				89C61BA617380790002D79A3 /* robot.obj in Resources */,
-				89C61BA717380790002D79A3 /* skybox.obj in Resources */,
-				89C61BA817380790002D79A3 /* sphere.obj in Resources */,
-				89C61BA917380790002D79A3 /* treads.obj in Resources */,
-				89C61BAA17380790002D79A3 /* wall0.obj in Resources */,
-				89C61BAB17380790002D79A3 /* wall1.obj in Resources */,
-				89C61BAC17380790002D79A3 /* wall2a.obj in Resources */,
-				89C61BAD17380790002D79A3 /* wall2b.obj in Resources */,
-				89C61BAE17380790002D79A3 /* wall3.obj in Resources */,
-				89C61BAF17380790002D79A3 /* wall4.obj in Resources */,
-				89C61C04173807A1002D79A3 /* button_c.tga in Resources */,
-				89C61C05173807A1002D79A3 /* crate.tga in Resources */,
-				89C61C06173807A1002D79A3 /* ground.tga in Resources */,
-				89C61C07173807A1002D79A3 /* robot_c.tga in Resources */,
-				89C61C08173807A1002D79A3 /* skybox_c.tga in Resources */,
-				89C61C09173807A1002D79A3 /* tracks_c.tga in Resources */,
-				89C61C0A173807A1002D79A3 /* wall_c.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1686,8 +1498,6 @@
 				11924B97172D4E63006AF594 /* CutsceneCamera.h in Sources */,
 				11924B98172D4E63006AF594 /* DebugCamera.h in Sources */,
 				11924B99172D4E63006AF594 /* ObjectCamera.h in Sources */,
-				11924B9C172D4E63006AF594 /* GameObjectFactory.cpp in Sources */,
-				11924B9D172D4E63006AF594 /* GameObjectFactory.h in Sources */,
 				11924B3C17265F72006AF594 /* GameComponent.h in Sources */,
 				11924B3D17265F72006AF594 /* Renderable.cpp in Sources */,
 				11924B3E17265F72006AF594 /* LoadTGA2.c in Sources */,
@@ -1710,9 +1520,7 @@
 				11924B5417265F72006AF594 /* MicroGlut.h in Sources */,
 				11924B6917265F87006AF594 /* test_level_generator.cpp in Sources */,
 				11924B5917265F72006AF594 /* MicroGlut.m in Sources */,
-				11924B6B17266008006AF594 /* LevelGenerator.h in Sources */,
 				11924B5A17265F72006AF594 /* loadobj.h in Sources */,
-				11924B6A17266005006AF594 /* LevelGenerator.cpp in Sources */,
 				11924B6E17267041006AF594 /* LightManager.cpp in Sources */,
 				11924B6F17267041006AF594 /* LightManager.h in Sources */,
 				11924B7C172671D3006AF594 /* Camera.cpp in Sources */,
@@ -1770,7 +1578,6 @@
 				89C61B6C17380298002D79A3 /* GO_Ground.cpp in Sources */,
 				89C61B711738029F002D79A3 /* GO_Wall.cpp in Sources */,
 				89C61B72173802B8002D79A3 /* GameObjectManager.cpp in Sources */,
-				89C61B77173802BE002D79A3 /* LevelGenerator.cpp in Sources */,
 				89C61B9117380760002D79A3 /* GO_Billboard.cpp in Sources */,
 				89C61B9617380760002D79A3 /* GO_Block.cpp in Sources */,
 				89C61B9D17380778002D79A3 /* GO_Player.cpp in Sources */,
@@ -1792,8 +1599,6 @@
 				892D8DCF172FA4C500C13D95 /* CutsceneCamera.h in Sources */,
 				892D8DD0172FA4C500C13D95 /* DebugCamera.h in Sources */,
 				892D8DD1172FA4C500C13D95 /* ObjectCamera.h in Sources */,
-				892D8DD2172FA4C500C13D95 /* GameObjectFactory.cpp in Sources */,
-				892D8DD3172FA4C500C13D95 /* GameObjectFactory.h in Sources */,
 				892D8DD4172FA4C500C13D95 /* GameComponent.h in Sources */,
 				892D8DD5172FA4C500C13D95 /* Renderable.cpp in Sources */,
 				892D8DD6172FA4C500C13D95 /* LoadTGA2.c in Sources */,
@@ -1815,9 +1620,7 @@
 				892D8DE6172FA4C500C13D95 /* GameObject.cpp in Sources */,
 				892D8DE7172FA4C500C13D95 /* MicroGlut.h in Sources */,
 				892D8DE9172FA4C500C13D95 /* MicroGlut.m in Sources */,
-				892D8DEA172FA4C500C13D95 /* LevelGenerator.h in Sources */,
 				892D8DEB172FA4C500C13D95 /* loadobj.h in Sources */,
-				892D8DEC172FA4C500C13D95 /* LevelGenerator.cpp in Sources */,
 				892D8DED172FA4C500C13D95 /* LightManager.cpp in Sources */,
 				892D8DEE172FA4C500C13D95 /* LightManager.h in Sources */,
 				892D8DEF172FA4C500C13D95 /* Camera.cpp in Sources */,
@@ -1882,7 +1685,6 @@
 				89C61B6D17380299002D79A3 /* GO_Ground.cpp in Sources */,
 				89C61B701738029E002D79A3 /* GO_Wall.cpp in Sources */,
 				89C61B73173802B9002D79A3 /* GameObjectManager.cpp in Sources */,
-				89C61B76173802BD002D79A3 /* LevelGenerator.cpp in Sources */,
 				89C61B9317380760002D79A3 /* GO_Billboard.cpp in Sources */,
 				89C61B9817380760002D79A3 /* GO_Block.cpp in Sources */,
 				89C61B9F17380778002D79A3 /* GO_Player.cpp in Sources */,
@@ -1893,6 +1695,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895D9850173FC7EC00915259 /* SDLMain.h in Sources */,
+				895D9851173FC7EC00915259 /* GameObjectFactory.h in Sources */,
+				895D9852173FC7EC00915259 /* LevelGenerator.h in Sources */,
+				895D9853173FC7EC00915259 /* InputManager.h in Sources */,
 				8946E371173A8EEF001BC84C /* GO_Button.h in Sources */,
 				8946E372173A8EEF001BC84C /* GO_Skybox.cpp in Sources */,
 				8946E373173A8EEF001BC84C /* GO_Skybox.h in Sources */,
@@ -1913,8 +1719,6 @@
 				89C61C3D1738141D002D79A3 /* CutsceneCamera.h in Sources */,
 				89C61C3E1738141D002D79A3 /* DebugCamera.h in Sources */,
 				89C61C3F1738141D002D79A3 /* ObjectCamera.h in Sources */,
-				89C61C401738141D002D79A3 /* GameObjectFactory.cpp in Sources */,
-				89C61C411738141D002D79A3 /* GameObjectFactory.h in Sources */,
 				89C61C421738141D002D79A3 /* GameComponent.h in Sources */,
 				89C61C431738141D002D79A3 /* Renderable.cpp in Sources */,
 				89C61C441738141D002D79A3 /* LoadTGA2.c in Sources */,
@@ -1925,7 +1729,6 @@
 				89C61C491738141D002D79A3 /* Renderable.h in Sources */,
 				89C61C4A1738141D002D79A3 /* VectorUtils3.c in Sources */,
 				89C61C4B1738141D002D79A3 /* GL_utilities.c in Sources */,
-				89C61C4C1738141D002D79A3 /* VectorUtils3Addons.cpp in Sources */,
 				89C61C4D1738141D002D79A3 /* VectorUtils3Addons.h in Sources */,
 				89C61C4E1738141D002D79A3 /* Particle.h in Sources */,
 				89C61C4F1738141D002D79A3 /* Body.h in Sources */,
@@ -1936,9 +1739,7 @@
 				89C61C541738141D002D79A3 /* GameObject.cpp in Sources */,
 				89C61C551738141D002D79A3 /* MicroGlut.h in Sources */,
 				89C61C561738141D002D79A3 /* MicroGlut.m in Sources */,
-				89C61C571738141D002D79A3 /* LevelGenerator.h in Sources */,
 				89C61C581738141D002D79A3 /* loadobj.h in Sources */,
-				89C61C591738141D002D79A3 /* LevelGenerator.cpp in Sources */,
 				89C61C5A1738141D002D79A3 /* LightManager.cpp in Sources */,
 				89C61C5B1738141D002D79A3 /* LightManager.h in Sources */,
 				89C61C5C1738141D002D79A3 /* Camera.cpp in Sources */,
@@ -1958,6 +1759,9 @@
 				8946E36F173A8ED6001BC84C /* GO_Button.cpp in Sources */,
 				89CB3722173D28AC002FC265 /* InputManager.cpp in Sources */,
 				89CB3727173D3877002FC265 /* SDLMain.m in Sources */,
+				895D984C173FC5C200915259 /* LevelGenerator.cpp in Sources */,
+				895D984F173FC5EB00915259 /* GameObjectFactory.cpp in Sources */,
+				895D9854173FC8A800915259 /* VectorUtils3Addons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1977,10 +1781,6 @@
 				89E757CC17313611003F2781 /* GameComponent.h in Sources */,
 				89E757CD17313611003F2781 /* GameObject.cpp in Sources */,
 				89E757CE17313611003F2781 /* GameObject.h in Sources */,
-				89E757CF17313611003F2781 /* LevelGenerator.cpp in Sources */,
-				89E757D017313611003F2781 /* LevelGenerator.h in Sources */,
-				89E757D117313611003F2781 /* GameObjectFactory.cpp in Sources */,
-				89E757D217313611003F2781 /* GameObjectFactory.h in Sources */,
 				89E757D317313611003F2781 /* MicroGlut.m in Sources */,
 				89E757D417313611003F2781 /* loadobj.c in Sources */,
 				89E757D517313611003F2781 /* LoadTGA2.c in Sources */,
@@ -2047,7 +1847,6 @@
 				11B56036171F644700D5A5DA /* test_camera.cpp in Sources */,
 				895C7D5C172520DA00A18429 /* test_light.cpp in Sources */,
 				895C7D6017252F2800A18429 /* LightManager.cpp in Sources */,
-				11924AE417251FC6006AF594 /* LevelGenerator.cpp in Sources */,
 				11924B7A172671D3006AF594 /* Camera.cpp in Sources */,
 				11924B7D172671D3006AF594 /* CameraManager.cpp in Sources */,
 				11924B80172671D3006AF594 /* CutsceneCamera.cpp in Sources */,
@@ -2056,7 +1855,6 @@
 				895EC47E172D386800BF8EF7 /* MaterialManager.cpp in Sources */,
 				895EC481172D53EC00BF8EF7 /* RenderableMultilayer.cpp in Sources */,
 				895EC4DD172D5D4F00BF8EF7 /* test_multitexture.cpp in Sources */,
-				11924B8B172D2F0E006AF594 /* GameObjectFactory.cpp in Sources */,
 				893EB6361738D7A50005077D /* test_sigmagameengine2.cpp in Sources */,
 				118BE23E173A7F8C00EB9285 /* GO_Button.cpp in Sources */,
 				118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */,

@@ -46,9 +46,9 @@ GO_Block* GameObjectFactory::createBlock(vec3 pos)
 	return new GO_Block(pos);
 }
 
-GO_Billboard* GameObjectFactory::createBillboard(vec3 pos)
+GO_Billboard* GameObjectFactory::createBillboard(vec3 pos, std::string texture)
 {
-	return new GO_Billboard(pos);
+	return new GO_Billboard(pos, texture);
 }
 
 GO_Button* GameObjectFactory::createButton(vec3 pos)
