@@ -43,6 +43,7 @@ void GO_Player::setRelPosToVector(vec3 v, vec3 pos)
 	vec3 currPos = getPosition();
 	vec3 displacement = vec3(- pos.x*xVec + pos.z*v);
 	setPosition(currPos + displacement);
+	_playerBase->setPosition(getPosition());
 	if (displacement != vec3(0))
 		_playerBase->setRot(0, 1, 0, atan2(displacement.x, displacement.z));
 }

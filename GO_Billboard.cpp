@@ -13,7 +13,6 @@ GO_Billboard::GO_Billboard(vec3 pos, std::string texture) : GameObject(BoundingB
 	loadModel("billboard.obj");
 	addMaterial(texture.c_str(), 1, 1);
 	setPosition(pos);
-	_is_affected_by_light = false;
 }
 
 std::string GO_Billboard::getType()

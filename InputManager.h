@@ -24,6 +24,7 @@ public:
     
     int getMouseSpeedX();
     int getMouseSpeedY();
+	int getScrollSpeed();
     
     bool isKeyDown(unsigned char key);
     
@@ -46,6 +47,7 @@ private:
     unsigned char keyboardMap[256];
     int mouse_speed_x;
     int mouse_speed_y;
+	int scroll_speed;
 };
 
 #endif /* defined(__OpenGLGLUTApp__InputManager__) */

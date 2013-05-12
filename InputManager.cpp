@@ -45,7 +45,7 @@ void InputManager::init()
 
 void InputManager::update(unsigned int dtime)
 {
-    mouse_speed_x = mouse_speed_y = 0;
+    mouse_speed_x = mouse_speed_y = scroll_speed = 0;
     
     SDL_Event event;
     while( SDL_PollEvent( &event ) ){
@@ -78,6 +78,18 @@ void InputManager::update(unsigned int dtime)
                 mouse_speed_x += event.motion.xrel;
                 mouse_speed_y += event.motion.yrel;
                 break;
+				
+			case SDL_MOUSEBUTTONUP:
+				switch (event.button.button)
+				{
+				case SDL_BUTTON_WHEELUP:
+						scroll_speed--;
+					break;
+				case SDL_BUTTON_WHEELDOWN:
+						scroll_speed++;
+					break;
+				}
+				break;
         }
     }
     
@@ -95,6 +107,11 @@ int InputManager::getMouseSpeedX()
 int InputManager::getMouseSpeedY()
 {
     return mouse_speed_y;
+}
+
+int InputManager::getScrollSpeed()
+{
+	return scroll_speed;
 }
 
 bool InputManager::isKeyDown(unsigned char key)

@@ -113,9 +113,9 @@ void SigmaGameEngine::update(int timeStep)
     glutTimerFunc(20, _update, timeStep);
     
     LightManager::getInstance().update(timeStep);
+    InputManager::getInstance().update(timeStep);
     GameObjectManager::getInstance().update(timeStep);
 	CameraManager::getInstance().update(timeStep);
-    InputManager::getInstance().update(timeStep);
 
     glutPostRedisplay();
 }

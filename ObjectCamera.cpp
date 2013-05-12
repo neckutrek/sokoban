@@ -86,9 +86,8 @@ void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
 int ObjectCamera::update_function(unsigned int time)
 {
     InputManager& im = InputManager::getInstance();
-    
-    if (im.isKeyDown('<')) setRelDistance(-0.1);
-    else if (im.isKeyDown(' ')) setRelDistance(0.1);
+	
+	setRelDistance(0.1*im.getScrollSpeed());
 	
     setRelViewDirection(-0.008 * im.getMouseSpeedY(),
                         0.008 * im.getMouseSpeedX());

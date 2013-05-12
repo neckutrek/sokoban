@@ -521,7 +521,7 @@ void DecomposeToTriangles(struct Mesh *theMesh)
 		}
 	}
 	
-	printf("Found %d triangles\n", triangleCount);
+	//printf("Found %d triangles\n", triangleCount);
 	
 	newCoords = malloc(sizeof(int) * triangleCount * 3);
 	if (theMesh->normalsIndex != NULL)
