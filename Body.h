@@ -16,11 +16,11 @@ public:
 	Body(GLfloat x=0, GLfloat y=0, GLfloat z=0);
 	virtual ~Body() {}
 	
-	void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
-	void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);
-	void setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda);
-	void setScaling(GLfloat x, GLfloat y, GLfloat z);
-	void setScaling(vec3 v);
+	virtual void setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a);
+	virtual void setRotVelocity(GLfloat x, GLfloat y, GLfloat z, GLfloat da);
+	virtual void setRotAcceleration(GLfloat x, GLfloat y, GLfloat z, GLfloat dda);
+	virtual void setScaling(GLfloat x, GLfloat y, GLfloat z);
+	virtual void setScaling(vec3 v);
 	
 	mat4 getRot() const;
 	mat4 getRotVelocity() const;

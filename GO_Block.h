@@ -19,9 +19,18 @@ public:
 	~GO_Block() {}
 	std::string getType();
 	
+	//0=right, 1=up, 2=left, 3=down
+	void push(int direction);
+	bool pushable();
+	
+	virtual int update_function(unsigned int time);
+	
 protected:
 	
 private:
+	static const int TOTAL_MOVE_TIME = 20;
+	int _moveTime = 0;
+	vec3 _oldPos, _newPos;
 	
 };
 
