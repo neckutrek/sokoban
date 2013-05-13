@@ -9,7 +9,7 @@
 #include "ObjectCamera.h"
 
 ObjectCamera::ObjectCamera(Particle* object) : Camera(), _theta(M_PI/4), _phi(M_PI/2), _object(object), _distance(3),
-_minDistance(1), _maxDistance(10), _minTheta(0.00001), _maxTheta(M_PI/2), _displacement(vec3(0, 1, 0))
+_minDistance(1), _maxDistance(3), _minTheta(M_PI/6), _maxTheta(M_PI/2+M_PI/16), _displacement(vec3(0, 1, 0))
 {}
 
 void ObjectCamera::setViewDirection(GLfloat theta, GLfloat phi)
