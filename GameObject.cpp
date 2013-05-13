@@ -17,3 +17,8 @@ BoundingBox GameObject::getBoundingBox()
 {
 	return _boundingBox;
 }
+
+BoundingBox GameObject::getDisplacedBoundingBox()
+{
+    return _boundingBox + getPosition();
+}

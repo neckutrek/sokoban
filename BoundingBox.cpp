@@ -35,3 +35,17 @@ bool BoundingBox::intersect(const BoundingBox &boundingBox) const
 			(_topLeftBack.z < boundingBox._bottomRightFront.z) &&
 			(_bottomRightFront.z > boundingBox._topLeftBack.z));
 }
+
+BoundingBox BoundingBox::operator+(const vec3 &motion) const
+{
+    BoundingBox b(*this);
+    b += motion;
+    return b;
+}
+
+BoundingBox& BoundingBox::operator+=(const vec3 &motion)
+{
+    _topLeftBack += motion;
+    _bottomRightFront += motion;
+    return *this;
+}

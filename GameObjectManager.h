@@ -34,8 +34,10 @@ public:
     
     GameObject* getObjectFromId(unsigned int id);
     std::vector<GameObject*> getObjectsFromType(std::string type);
-    std::vector<GameObject*> getObjectsWithinBox(BoundingBox box);
+    std::vector<GameObject*> getObjectsWithinBox(const BoundingBox& displaced_box);
     std::vector<GameObject*> getObjectsAtPosition(vec3 pos);
+    
+    bool check_boundingbox_collision(const BoundingBox &box);
 	
 	
 	

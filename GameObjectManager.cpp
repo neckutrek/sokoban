@@ -52,18 +52,29 @@ std::vector<GameObject*> GameObjectManager::getObjectsFromType(std::string type)
 	return objects;
 }
 
-std::vector<GameObject*> GameObjectManager::getObjectsWithinBox(BoundingBox box)
+std::vector<GameObject*> GameObjectManager::getObjectsWithinBox(const BoundingBox& displaced_box)
 {
 	std::vector<GameObject*> objects;
 	GameObject* go;
 	std::map<unsigned int, EntryInfo>::iterator iter;
-	for(iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
+	for (iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
 	{
 		go = iter->second.object;
-		if(box.intersect(go->getBoundingBox()))
+		if (displaced_box.intersect(go->getDisplacedBoundingBox()))
 			objects.push_back(go);
 	}
 	return objects;
+}
+
+bool GameObjectManager::check_boundingbox_collision(const BoundingBox &displaced_box)
+{
+	std::map<unsigned int, EntryInfo>::iterator iter;
+	for (iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
+	{
+		if ( displaced_box.intersect(iter->second.object->getDisplacedBoundingBox()) )
+			return true;
+	}
+	return false;
 }
 
 std::vector<GameObject*> GameObjectManager::getObjectsAtPosition(vec3 pos)

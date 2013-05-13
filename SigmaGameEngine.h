@@ -49,6 +49,10 @@ public:
     void run();
     void quit();
     
+    vec3 check_collision_along_line(const BoundingBox & bb,
+                                    const vec3 &origin,
+                                    const vec3 &motion);
+    
     GLuint getShaderProgramID() { return shaderProgramID_; }
     
     friend void _display();

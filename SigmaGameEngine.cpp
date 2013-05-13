@@ -83,6 +83,64 @@ void SigmaGameEngine::quit()
     exit(0);
 }
 
+vec3 SigmaGameEngine::check_collision_along_line(const BoundingBox & bb,
+                                                 const vec3 &origin,
+                                                 const vec3 &motion)
+{
+    
+    // 1. Check the actual position
+    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + motion))
+        return motion;
+    
+    
+    // 2. Check the x and z components of the motion
+    bool x_motion_ok = false;
+    vec3 x_motion = vec3(motion.x, 0.0, 0.0);
+    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + x_motion))
+        x_motion_ok = true;
+    
+    bool z_motion_ok = false;
+    vec3 z_motion = vec3(0.0, 0.0, motion.z);
+    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + z_motion))
+        z_motion_ok = true;
+    
+    
+    // 3. Get to know the best approximation of x_motion and z_motion
+    double x_high_bound = 1.0;
+    double x_low_bound = 0.0;
+    double z_high_bound = 1.0;
+    double z_low_bound = 0.0;
+    double precision = 0.01;
+    
+    if ( !x_motion_ok ) {
+        while (x_high_bound - x_low_bound > precision) {
+            double middle = ( x_high_bound + x_low_bound ) / 2.0;
+            if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + middle * x_motion))
+                x_high_bound = middle;
+            else
+                x_low_bound = middle;
+        }
+    }
+    
+    if ( !z_motion_ok ) {
+        while (z_high_bound - z_low_bound > precision) {
+            double middle = ( z_high_bound + z_low_bound ) / 2.0;
+            if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + middle * z_motion))
+                z_high_bound = middle;
+            else
+                z_low_bound = middle;
+        }
+    }
+    
+    if (GameObjectManager::getInstance().check_boundingbox_collision(bb +
+                                                                     origin +
+                                                                     x_low_bound * x_motion +
+                                                                     z_low_bound * z_motion))
+        std::cerr << "COLLISIONG DETECTION ERROR: Algorithm failed!\n";
+    
+    return x_low_bound * x_motion + z_low_bound * z_motion;
+}
+
 void SigmaGameEngine::display() {
     glUseProgram(this->shaderProgramID_);
     

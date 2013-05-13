@@ -21,6 +21,9 @@ public:
 	~BoundingBox();
 	
 	bool intersect(const BoundingBox &boundingBox) const;
+    
+    BoundingBox operator+(const vec3 &motion) const;
+    BoundingBox& operator+=(const vec3 &motion);
 	
 protected:
 	

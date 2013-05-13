@@ -19,6 +19,7 @@ public:
     virtual ~GameObject() {}
 	
 	BoundingBox getBoundingBox();
+    BoundingBox getDisplacedBoundingBox();
 	virtual std::string getType() = 0;
     
 protected:
