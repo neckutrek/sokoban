@@ -195,8 +195,8 @@ void LevelGenerator::generateMap()
 	gom.addObject(go);
 	go = gof.createSkybox();
 	gom.addObject(go);
-	addTrees();
-	runIntro();
+	//addTrees();
+	//runIntro();
 }
 
 void LevelGenerator::addTrees()

@@ -22,13 +22,28 @@ std::string GO_Block::getType()
 
 void GO_Block::push(int direction)
 {
-	_oldPos = getPosition();
-	_newPos = _oldPos;
+	vec3 potentialNewPos = getPosition();
 	if(direction%2 == 0)
-		_newPos.x += 1-direction;
+		potentialNewPos.x += 1-direction;
 	else
-		_newPos.z += direction-2;
+		potentialNewPos.z += direction-2;
+	if(GameObjectManager::getInstance().check_boundingbox_collision(BoundingBox(0) + potentialNewPos))
+	   return;
+	_oldPos = getPosition();
+	_newPos = potentialNewPos;
 	_moveTime = TOTAL_MOVE_TIME;
+	
+	GO_Button* b;
+	std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
+	for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
+	{
+		b = dynamic_cast<GO_Button*>(*it);
+		if(Norm(getPosition() - vec3(0,0.5,0) - b->getPosition()) < 0.001)
+		{
+			b->setPressed(false);
+		}
+	}
+	setScaling(1, 1, 1);
 }
 
 bool GO_Block::pushable()
@@ -41,8 +56,37 @@ int GO_Block::update_function(unsigned int time)
 	if(!pushable())
 	{
 		_moveTime--;
-		setPosition(interpolate(_newPos, _oldPos, _moveTime/TOTAL_MOVE_TIME));
+		setPosition(interpolate(_newPos, _oldPos, (GLfloat)_moveTime/(GLfloat)TOTAL_MOVE_TIME));
+		
+		if(_moveTime==0)
+		{
+			GO_Button* b;
+			std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
+			for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
+			{
+				b = dynamic_cast<GO_Button*>(*it);
+				if(Norm(getPosition() - vec3(0,0.5,0) - b->getPosition()) < 0.001)
+				{
+					setScaling(0.8, 0.8, 0.8);
+					b->setPressed(true);
+					winCheck();
+				}
+			}
+		}
 	}
 	Body::update_function(time);
 	return 0;
+}
+
+void GO_Block::winCheck()
+{
+	GO_Button* b;
+	std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
+	for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
+	{
+		b = dynamic_cast<GO_Button*>(*it);
+		if(!b->getPressed())
+			return;
+	}
+	std::cout << "you have won" << std::endl;
 }

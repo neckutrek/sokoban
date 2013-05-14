@@ -104,6 +104,8 @@ int ObjectCamera::update_function(unsigned int time)
         if (im.isKeyDown('a')) totalMovement.x -= 1;
         else if (im.isKeyDown('d')) totalMovement.x += 1;
         
+		if(im.isKeyDown(' ')) player->push();
+		
         if (totalMovement != vec3(0))
         {
             totalMovement = Normalize(totalMovement)/10;

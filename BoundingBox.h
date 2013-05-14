@@ -18,18 +18,18 @@ public:
 	BoundingBox(vec3 lows, vec3 highs);
 	BoundingBox(vec3 highs);
 	BoundingBox(GLfloat high);
-	~BoundingBox();
+	virtual ~BoundingBox() {}
 	
 	bool intersect(const BoundingBox &boundingBox) const;
     
     BoundingBox operator+(const vec3 &motion) const;
     BoundingBox& operator+=(const vec3 &motion);
 	
+	vec3 _topLeftBack;
+	vec3 _bottomRightFront;
 protected:
 	
 private:
-	vec3 _topLeftBack;
-	vec3 _bottomRightFront;
 };
 
 #endif /* defined(__OpenGLGLUTApp__BoundingBox__) */

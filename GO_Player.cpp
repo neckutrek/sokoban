@@ -9,7 +9,7 @@
 #include "GO_Player.h"
 #include "LightManager.h"
 
-GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(0.5))
+GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(0.3))
 {
 	loadModel("robot.obj");
 	addMaterial("robot_c.tga", 1, 50);
@@ -28,7 +28,10 @@ std::string GO_Player::getType()
 
 void GO_Player::setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a)
 {
-	_myRot = a;
+	
+	_myRot = fmod(a,2*M_PI);
+	if (_myRot < 0)
+		_myRot += 2*M_PI;
 	Body::setRot(x, y, z, a);
 }
 
@@ -46,21 +49,28 @@ void GO_Player::setRelPosToVector(vec3 v, vec3 pos)
 
 void GO_Player::push()
 {
-	mat4 rot = getRot();
-	vec3 facing = Normalize(vec3(rot.m[3], rot.m[7], rot.m[11]));
-	vec3 point = getPosition() + 0.8*facing;
-	std::vector<GameObject* > objects = GameObjectManager::getInstance().getObjectsWithinBox(BoundingBox(0) + point);
-	if(objects.size() > 0 && objects.front()->getType() == "block")
+	vec3 facing = vec3(sin(_myRot), 0, cos(_myRot));
+	std::vector<GameObject*> blocks = GameObjectManager::getInstance().getObjectsFromType("block");
+	BoundingBox point =  BoundingBox(0) + (getPosition() + vec3(0,0.5,0) + 0.8*facing);
+	GO_Block* b;
+	for(std::vector<GameObject*>::iterator it = blocks.begin(); it != blocks.end(); ++it)
 	{
-		GLfloat clampedRot = _myRot;
-		int quadrant = 0;
-		while (clampedRot - M_PI/2 >= 0) {
-			clampedRot -= M_PI/2;
-			quadrant++;
+		b = dynamic_cast<GO_Block*>(*it);
+		if(b->getDisplacedBoundingBox().intersect(point) && b->pushable())
+		{
+			GLfloat clampedRot = _myRot;
+			int quadrant = 0;
+			while (clampedRot - M_PI/2 >= 0)
+			{
+				clampedRot -= M_PI/2;
+				quadrant++;
+			}
+			if(clampedRot<M_PI/6 || clampedRot>M_PI/3)
+			{
+				b->push((quadrant+(clampedRot>M_PI/3 ? 0 : 3))%4);
+				return;
+			}
 		}
-		if(clampedRot>M_PI/12 && clampedRot<M_PI/6)
-			break;
-		dynamic_cast<GO_Block*>(objects.front())->push(quadrant + (clampedRot>M_PI/6 ? 1 : 0));
 	}
 }
 

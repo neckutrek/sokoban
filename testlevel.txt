@@ -1,6 +1,6 @@
 %MAP
-XXXXXX
-Xp  .X
+pXXXXX
+X   .X
 X o  X
 XXX  X
   XXXX

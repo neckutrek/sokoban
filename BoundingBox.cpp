@@ -11,20 +11,11 @@
 BoundingBox::BoundingBox(vec3 lows, vec3 highs) : _topLeftBack(lows), _bottomRightFront(highs)
 {}
 
-BoundingBox::BoundingBox(vec3 highs)
-{
-	BoundingBox(highs, highs);
-}
+BoundingBox::BoundingBox(vec3 highs) : _topLeftBack(vec3(-highs.x, -highs.y, -highs.z)), _bottomRightFront(highs)
+{}
 
-BoundingBox::BoundingBox(GLfloat high)
-{
-	BoundingBox(vec3(high, high, high), vec3(high, high, high));
-}
-
-BoundingBox::~BoundingBox()
-{
-	
-}
+BoundingBox::BoundingBox(GLfloat high) : _topLeftBack(vec3(-high, -high, -high)), _bottomRightFront(vec3(high, high, high))
+{}
 
 bool BoundingBox::intersect(const BoundingBox &boundingBox) const
 {

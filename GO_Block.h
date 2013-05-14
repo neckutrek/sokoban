@@ -10,7 +10,10 @@
 #define __OpenGLGLUTApp__Block__
 
 #include <iostream>
+#include <vector>
 #include "GameObject.h"
+#include "GameObjectManager.h"
+#include "GO_Button.h"
 
 class GO_Block : public GameObject
 {
@@ -25,10 +28,12 @@ public:
 	
 	virtual int update_function(unsigned int time);
 	
+	static void winCheck();
+	
 protected:
 	
 private:
-	static const int TOTAL_MOVE_TIME = 20;
+	static const int TOTAL_MOVE_TIME = 10;
 	int _moveTime = 0;
 	vec3 _oldPos, _newPos;
 	

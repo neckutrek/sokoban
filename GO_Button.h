@@ -18,10 +18,13 @@ public:
 	GO_Button(vec3 pos);
 	~GO_Button() {}
 	std::string getType();
+	void setPressed(bool isPressed);
+	bool getPressed();
 	
 protected:
 	
 private:
+	bool _isPressed = false;
 	
 };
 

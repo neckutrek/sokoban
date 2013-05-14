@@ -42,6 +42,8 @@ void DebugCamera::setRelViewDirection(GLfloat dtheta, GLfloat dphi)
 
 int DebugCamera::update_function(unsigned int time)
 {
+	std::cout << getPosition() << std::endl;
+	
     InputManager& im = InputManager::getInstance();
     
     if (im.isKeyDown('w')) setRelPosition(0, 0, -0.1);

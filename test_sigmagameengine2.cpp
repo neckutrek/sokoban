@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     SigmaGameEngine& game = SigmaGameEngine::getInstance();
     game.initialize(argc, argv,
                     "shader_1.vert", "shader_1.frag",
-                    1024, 768, "SigmaGameEngine running . . .");
+                    600, 600, "SigmaGameEngine running . . .");
     
     
     // add the sun
@@ -41,11 +41,9 @@ int main(int argc, char *argv[])
 //    LightManager::getInstance().addLight(vec3(10.0, 5.0, 0.0), vec3(1, 1, 1), 0.3);
 //    LightManager::getInstance().addLight(vec3(10.0, 5.0, 10.0), vec3(1, 1, 1), 0.3);
     
-    
-    if (LevelGenerator::getInstance().fileExists("level1.txt")) {
-        LevelGenerator::getInstance().load("level1.txt");
+    if (LevelGenerator::getInstance().fileExists("level2.txt")) {
+        LevelGenerator::getInstance().load("level2.txt");
     }
-    
 
     //CameraManager::getInstance().setActiveCamera(new DebugCamera());
     
