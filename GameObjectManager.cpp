@@ -71,7 +71,8 @@ bool GameObjectManager::check_boundingbox_collision(const BoundingBox &displaced
 	std::map<unsigned int, EntryInfo>::iterator iter;
 	for (iter = _game_entities.begin(); iter != _game_entities.end(); iter++)
 	{
-		if ( displaced_box.intersect(iter->second.object->getDisplacedBoundingBox()) )
+		if ( iter->second.object->getType().compare("player") != 0 &&
+			 displaced_box.intersect(iter->second.object->getDisplacedBoundingBox()) )
 			return true;
 	}
 	return false;

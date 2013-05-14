@@ -5,7 +5,7 @@
 #include "SigmaGameEngine.h"
 #include <iostream>
 
-#define FPS 10
+#define FPS 30
 
 void _update(int timeStep) {
     SigmaGameEngine::getInstance().update(timeStep);
@@ -89,21 +89,21 @@ vec3 SigmaGameEngine::check_collision_along_line(const BoundingBox & bb,
                                                  const vec3 &origin,
                                                  const vec3 &motion)
 {
-    
+	std::cerr << "trying to move from " << origin << " to " << origin+motion << std::endl;
     // 1. Check the actual position
-    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + motion))
+    if (!GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + motion))
         return motion;
     
     
     // 2. Check the x and z components of the motion
     bool x_motion_ok = false;
     vec3 x_motion = vec3(motion.x, 0.0, 0.0);
-    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + x_motion))
+    if (!GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + x_motion))
         x_motion_ok = true;
     
     bool z_motion_ok = false;
     vec3 z_motion = vec3(0.0, 0.0, motion.z);
-    if (GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + z_motion))
+    if (!GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + z_motion))
         z_motion_ok = true;
     
     

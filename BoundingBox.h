@@ -25,11 +25,11 @@ public:
     BoundingBox operator+(const vec3 &motion) const;
     BoundingBox& operator+=(const vec3 &motion);
 	
-	vec3 _topLeftBack;
-	vec3 _bottomRightFront;
 protected:
 	
 private:
+	vec3 _topLeftBack;
+	vec3 _bottomRightFront;
 };
 
 #endif /* defined(__OpenGLGLUTApp__BoundingBox__) */

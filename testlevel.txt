@@ -1,9 +1,7 @@
 %MAP
-pXXXXX
-X   .X
-X o  X
-XXX  X
-  XXXX
+p  X
+   X
+ o
 %EXTRAS
 Test extra=foo
 Test extra=bar

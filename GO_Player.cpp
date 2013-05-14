@@ -10,7 +10,7 @@
 #include "LightManager.h"
 #include "SigmaGameEngine.h"
 
-GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(0.3))
+GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(vec3(-0.3, 0, -0.3), vec3(0.3, 0.6, 0.3)))
 {
 	loadModel("robot.obj");
 	addMaterial("robot_c.tga", 1, 50);

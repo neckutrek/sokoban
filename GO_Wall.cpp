@@ -14,6 +14,8 @@ GO_Wall::GO_Wall(vec3 pos, GLfloat rot, std::string modelType) : GameObject(Boun
 	addMaterial(("wall"+modelType+"n.tga").c_str(), 1, 1);
 	setPosition(pos);
 	setRot(0, 1, 0, rot);
+	
+	std::cout << "Wall " << getDisplacedBoundingBox()._bottomRightFront << " " << getDisplacedBoundingBox()._topLeftBack << std::endl;
 }
 
 std::string GO_Wall::getType()
