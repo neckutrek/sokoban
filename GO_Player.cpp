@@ -8,6 +8,7 @@
 
 #include "GO_Player.h"
 #include "LightManager.h"
+#include "SigmaGameEngine.h"
 
 GO_Player::GO_Player(vec3 pos) : GameObject(BoundingBox(0.3))
 {
@@ -28,7 +29,6 @@ std::string GO_Player::getType()
 
 void GO_Player::setRot(GLfloat x, GLfloat y, GLfloat z, GLfloat a)
 {
-	
 	_myRot = fmod(a,2*M_PI);
 	if (_myRot < 0)
 		_myRot += 2*M_PI;
@@ -41,6 +41,12 @@ void GO_Player::setRelPosToVector(vec3 v, vec3 pos)
 	vec3 xVec = CrossProduct(v, vec3(0,1,0));
 	vec3 currPos = getPosition();
 	vec3 displacement = vec3(- pos.x*xVec + pos.z*v);
+    
+    std::cerr << "displacement before: " << displacement << std::endl;
+    displacement = SigmaGameEngine::getInstance().check_collision_along_line(getBoundingBox(), currPos, displacement);
+//    setVelocity(real_velocity);
+    std::cerr << "displacement after: " << displacement << std::endl;
+    
 	setPosition(currPos + displacement);
 	_playerBase->setPosition(getPosition());
 	if (displacement != vec3(0))

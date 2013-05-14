@@ -5,6 +5,8 @@
 #include "SigmaGameEngine.h"
 #include <iostream>
 
+#define FPS 10
+
 void _update(int timeStep) {
     SigmaGameEngine::getInstance().update(timeStep);
 }
@@ -73,7 +75,7 @@ void SigmaGameEngine::initialize(int argc,
 
 void SigmaGameEngine::run()
 {
-    glutTimerFunc(20, _update, 20);
+    glutTimerFunc(1000/FPS, _update, 1000/FPS);
     glutMainLoop();
 }
 
@@ -168,7 +170,7 @@ void SigmaGameEngine::display() {
 
 void SigmaGameEngine::update(int timeStep)
 {
-    glutTimerFunc(20, _update, timeStep);
+    glutTimerFunc(1000/FPS, _update, 1000/FPS);
     
     LightManager::getInstance().update(timeStep);
     InputManager::getInstance().update(timeStep);
