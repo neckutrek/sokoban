@@ -15,6 +15,7 @@
 #include "GameObjectManager.h"
 #include "GO_Button.h"
 
+
 class GO_Block : public GameObject
 {
 public:
@@ -27,8 +28,6 @@ public:
 	bool pushable();
 	
 	virtual int update_function(unsigned int time);
-	
-	static void winCheck();
 	
 protected:
 	

@@ -185,4 +185,17 @@ void SigmaGameEngine::update(int timeStep)
     glutPostRedisplay();
 }
 
+void SigmaGameEngine::winCheck()
+{
+	GO_Button* b;
+	std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
+	for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
+	{
+		b = dynamic_cast<GO_Button*>(*it);
+		if(!b->getPressed())
+			return;
+	}
+	LevelGenerator::getInstance().runOutro();
+}
+
 

@@ -14,6 +14,7 @@
 #include <vector>
 #include "GameObjectManager.h"
 #include "GameObjectFactory.h"
+#include "GO_Button.h"
 
 class LevelGenerator
 {
@@ -26,6 +27,7 @@ public:
 	bool fileExists(const std::string& fileName) const;
 	void load(const std::string &fileName);
 	std::string& getFileName();
+	void runOutro();
 	
 protected:
 	bool open(const std::string& fileName);

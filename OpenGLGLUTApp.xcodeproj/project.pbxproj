@@ -15,6 +15,8 @@
 		118BE23F173A7F8C00EB9285 /* GO_Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE23C173A7F8C00EB9285 /* GO_Button.cpp */; };
 		118BE242173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
 		118BE243173A842700EB9285 /* GO_Skybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 118BE240173A842600EB9285 /* GO_Skybox.cpp */; };
+		118BE2A717421D9300EB9285 /* level0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 118BE2A617421D9300EB9285 /* level0.txt */; };
+		118BE2A817421D9300EB9285 /* level0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 118BE2A617421D9300EB9285 /* level0.txt */; };
 		11924AEA17265F72006AF594 /* shader_1.frag in Resources */ = {isa = PBXBuildFile; fileRef = 89CE01881715B32C00D6783A /* shader_1.frag */; };
 		11924AEB17265F72006AF594 /* shader_1.vert in Resources */ = {isa = PBXBuildFile; fileRef = 89CE018A1715B33700D6783A /* shader_1.vert */; };
 		11924AEC17265F72006AF594 /* terrain.frag in Resources */ = {isa = PBXBuildFile; fileRef = 115EEDD316D379C100E3644E /* terrain.frag */; };
@@ -535,6 +537,7 @@
 		118BE23D173A7F8C00EB9285 /* GO_Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Button.h; sourceTree = "<group>"; };
 		118BE240173A842600EB9285 /* GO_Skybox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GO_Skybox.cpp; sourceTree = "<group>"; };
 		118BE241173A842600EB9285 /* GO_Skybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GO_Skybox.h; sourceTree = "<group>"; };
+		118BE2A617421D9300EB9285 /* level0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level0.txt; sourceTree = "<group>"; };
 		11924AE617265F55006AF594 /* test_level_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_level_generator.cpp; sourceTree = "<group>"; };
 		11924B6717265F72006AF594 /* test_camera copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test_camera copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11924B6817265F72006AF594 /* test_camera copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test_camera copy-Info.plist"; path = "/Users/simonborgenvall/Documents/Xcode/sokoban/test_camera copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -970,6 +973,7 @@
 				8946E362173A76B1001BC84C /* level2.txt */,
 				8946E376173A95B7001BC84C /* testlevel2.txt */,
 				8946E379173A9B04001BC84C /* level3.txt */,
+				118BE2A617421D9300EB9285 /* level0.txt */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -1170,8 +1174,8 @@
 			children = (
 				895D984D173FC5EB00915259 /* GameObjectFactory.cpp */,
 				895D984E173FC5EB00915259 /* GameObjectFactory.h */,
-				895D984A173FC5C200915259 /* LevelGenerator.cpp */,
 				895D984B173FC5C200915259 /* LevelGenerator.h */,
+				895D984A173FC5C200915259 /* LevelGenerator.cpp */,
 				89E757F717314F92003F2781 /* SigmaGameEngine.cpp */,
 				89E757F917314FA6003F2781 /* SigmaGameEngine.h */,
 				89FECC46170DEB8600F40F3A /* GameComponent.cpp */,
@@ -1447,6 +1451,7 @@
 				895D9847173FC2C200915259 /* wall2bn.tga in Resources */,
 				895D9848173FC2C200915259 /* wall3n.tga in Resources */,
 				895D9849173FC2C200915259 /* wall4n.tga in Resources */,
+				118BE2A817421D9300EB9285 /* level0.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1472,6 +1477,7 @@
 				8946E363173A76B1001BC84C /* level2.txt in Resources */,
 				8946E377173A95B7001BC84C /* testlevel2.txt in Resources */,
 				8946E37A173A9B04001BC84C /* level3.txt in Resources */,
+				118BE2A717421D9300EB9285 /* level0.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,8 +41,13 @@ int main(int argc, char *argv[])
 //    LightManager::getInstance().addLight(vec3(10.0, 5.0, 0.0), vec3(1, 1, 1), 0.3);
 //    LightManager::getInstance().addLight(vec3(10.0, 5.0, 10.0), vec3(1, 1, 1), 0.3);
     
+<<<<<<< HEAD
     if (LevelGenerator::getInstance().fileExists("level3.txt")) {
         LevelGenerator::getInstance().load("level3.txt");
+=======
+    if (LevelGenerator::getInstance().fileExists("level0.txt")) {
+        LevelGenerator::getInstance().load("level0.txt");
+>>>>>>> fbuaeg
     }
 
     //CameraManager::getInstance().setActiveCamera(new DebugCamera());

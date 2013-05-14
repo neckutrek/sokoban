@@ -1,0 +1,7 @@
+%MAP
+XXXXXXXXX
+X   X  .X
+X   oo pX
+XXXX   .X
+   X  XXX
+   XXXX

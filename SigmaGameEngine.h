@@ -29,6 +29,7 @@
 #include "MaterialManager.h"
 #include "GameObjectManager.h"
 #include "InputManager.h"
+#include "LevelGenerator.h"
 
 #include "GameObjectFactory.h"
 #include "GameObject.h"
@@ -57,6 +58,8 @@ public:
     
     friend void _display();
     friend void _update(int);
+	
+	void winCheck();
     
 private:
     SigmaGameEngine();

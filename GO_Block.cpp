@@ -7,6 +7,7 @@
 //
 
 #include "GO_Block.h"
+#include "SigmaGameEngine.h"
 
 GO_Block::GO_Block(vec3 pos) : GameObject(BoundingBox(0.5)), _oldPos(pos), _newPos(pos)
 {
@@ -69,24 +70,11 @@ int GO_Block::update_function(unsigned int time)
 				{
 					setScaling(0.8, 0.8, 0.8);
 					b->setPressed(true);
-					winCheck();
+					SigmaGameEngine::getInstance().winCheck();
 				}
 			}
 		}
 	}
 	Body::update_function(time);
 	return 0;
-}
-
-void GO_Block::winCheck()
-{
-	GO_Button* b;
-	std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
-	for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
-	{
-		b = dynamic_cast<GO_Button*>(*it);
-		if(!b->getPressed())
-			return;
-	}
-	std::cout << "you have won" << std::endl;
 }

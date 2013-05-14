@@ -237,6 +237,24 @@ void LevelGenerator::runIntro()
 	CameraManager::getInstance().setActiveCamera(cc);
 }
 
+void LevelGenerator::runOutro()
+{
+	vec3 playerPos = GameObjectManager::getInstance().getObjectsFromType("player").front()->getPosition();
+	std::vector<GameObject*> buttons = GameObjectManager::getInstance().getObjectsFromType("button");
+	CutsceneCamera* cc = new CutsceneCamera();
+	GO_Button* b;
+	GLfloat time = 0;
+	for(std::vector<GameObject*>::iterator it=buttons.begin(); it != buttons.end(); ++it)
+	{
+		b=dynamic_cast<GO_Button*>(*it);
+		cc->addWaypoint(b->getPosition()+vec3((rand()%2-0.5)*4, 3, (rand()%2-0.5)*4), b->getPosition(), time);
+		time+=50;
+	}
+	
+	cc->addWaypoint(playerPos + vec3((rand()%2-0.5)*4, 3, (rand()%2-0.5)*4), playerPos, time+50);
+	CameraManager::getInstance().setActiveCamera(cc);
+}
+
 void LevelGenerator::applyExtras()
 {
 	for(int i=0; i<MAX_EXTRAS; i++)
