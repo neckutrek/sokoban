@@ -42,10 +42,10 @@ void GO_Player::setRelPosToVector(vec3 v, vec3 pos)
 	vec3 currPos = getPosition();
 	vec3 displacement = vec3(- pos.x*xVec + pos.z*v);
     
-    std::cerr << "displacement before: " << displacement << std::endl;
+    //std::cerr << "displacement before: " << displacement << std::endl;
     displacement = SigmaGameEngine::getInstance().check_collision_along_line(getBoundingBox(), currPos, displacement);
 //    setVelocity(real_velocity);
-    std::cerr << "displacement after: " << displacement << std::endl;
+    //std::cerr << "displacement after: " << displacement << std::endl;
     
 	setPosition(currPos + displacement);
 	_playerBase->setPosition(getPosition());

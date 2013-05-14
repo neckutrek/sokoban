@@ -89,7 +89,6 @@ vec3 SigmaGameEngine::check_collision_along_line(const BoundingBox & bb,
                                                  const vec3 &origin,
                                                  const vec3 &motion)
 {
-	std::cerr << "trying to move from " << origin << " to " << origin+motion << std::endl;
     // 1. Check the actual position
     if (!GameObjectManager::getInstance().check_boundingbox_collision(bb + origin + motion))
         return motion;
@@ -122,6 +121,8 @@ vec3 SigmaGameEngine::check_collision_along_line(const BoundingBox & bb,
             else
                 x_low_bound = middle;
         }
+    } else {
+        x_low_bound = x_high_bound;
     }
     
     if ( !z_motion_ok ) {
@@ -132,13 +133,17 @@ vec3 SigmaGameEngine::check_collision_along_line(const BoundingBox & bb,
             else
                 z_low_bound = middle;
         }
+    } else {
+        z_low_bound = z_high_bound;
     }
     
+    /*
     if (GameObjectManager::getInstance().check_boundingbox_collision(bb +
                                                                      origin +
                                                                      x_low_bound * x_motion +
                                                                      z_low_bound * z_motion))
         std::cerr << "COLLISIONG DETECTION ERROR: Algorithm failed!\n";
+     */
     
     return x_low_bound * x_motion + z_low_bound * z_motion;
 }

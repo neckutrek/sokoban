@@ -40,7 +40,7 @@ void InputManager::init()
                                                 16, SDL_SWSURFACE);
     
     SDL_WM_GrabInput(SDL_GRAB_ON);
-    SDL_ShowCursor(SDL_DISABLE);
+    //SDL_ShowCursor(SDL_DISABLE);
 }
 
 void InputManager::update(unsigned int dtime)

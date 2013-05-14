@@ -7,6 +7,7 @@
 // hej
 
 #include "ObjectCamera.h"
+#include "SigmaGameEngine.h"
 
 ObjectCamera::ObjectCamera(Particle* object) : Camera(), _theta(M_PI/4), _phi(M_PI/2), _object(object), _distance(3),
 _minDistance(1), _maxDistance(3), _minTheta(M_PI/6), _maxTheta(M_PI/2+M_PI/16), _displacement(vec3(0, 1, 0))
@@ -72,17 +73,6 @@ void ObjectCamera::setMaxTheta(GLfloat maxTheta)
 		_theta = _maxTheta;
 }
 
-
-void ObjectCamera::updateKeyboard(unsigned char keyboardMap[256])
-{
-	
- 
- 
-    //Inte helsnyggt att detta ligger här, men tidspress...
- 
-    
-}
-
 int ObjectCamera::update_function(unsigned int time)
 {
     InputManager& im = InputManager::getInstance();
@@ -115,8 +105,12 @@ int ObjectCamera::update_function(unsigned int time)
         player->setRot(0, 1, 0, -_phi-M_PI/2);
     }
     
-    setPosition(_object->getPosition() + _displacement +
-				_distance * vec3(sin(_theta)*cos(_phi), cos(_theta), sin(_theta)*sin(_phi)));
+    vec3 view_displacement = _distance * vec3(sin(_theta)*cos(_phi), cos(_theta), sin(_theta)*sin(_phi));
+    view_displacement = SigmaGameEngine::getInstance().check_collision_along_line(BoundingBox(0.1),
+                                                                                  _object->getPosition() + _displacement,
+                                                                                  view_displacement);
+    
+    setPosition(_object->getPosition() + _displacement + view_displacement);
 	setViewLocation(_object);
     
 	return 0;
